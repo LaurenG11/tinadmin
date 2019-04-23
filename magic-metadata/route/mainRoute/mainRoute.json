@@ -1,0 +1,114 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"mainRoute",
+		"component_path":	"route/mainRoute/",
+		"component_uniquename":	"mainRoute_mainRoute"
+	},
+	"coordinates":	{
+		"width":	384,
+		"height":	320
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnEvents",
+				"tab_order":	0,
+				"format":	"Events",
+				"common_line_id":	"line7"
+			},
+			"coordinates":	{
+				"x":	16,
+				"y":	7,
+				"width":	39,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnListing",
+				"tab_order":	0,
+				"format":	"Listing",
+				"common_line_id":	"line7"
+			},
+			"coordinates":	{
+				"x":	68,
+				"y":	9,
+				"width":	39,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label4",
+				"text":	"eoIsn",
+				"common_line_id":	"line7"
+			},
+			"coordinates":	{
+				"x":	138,
+				"y":	9,
+				"width":	28,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	3,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"eoIsn",
+				"tab_order":	0,
+				"pattern":	"^\\d{0,9}$",
+				"attribute":	"N",
+				"common_line_id":	"line7"
+			},
+			"coordinates":	{
+				"x":	171,
+				"y":	9,
+				"width":	55,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"magicRoute",
+				"tab_order":	0,
+				"is_router_outlet":	true,
+				"default_outlet":	true,
+				"common_line_id":	"line44"
+			},
+			"coordinates":	{
+				"x":	17,
+				"y":	44,
+				"width":	347,
+				"height":	250
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

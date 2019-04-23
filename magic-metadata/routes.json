@@ -1,0 +1,14 @@
+{
+	"routesArray":	[
+		{
+			"RouteName":	"Events/:inEoIsn",
+			"OutletName":	"",
+			"children":	null
+		},
+		{
+			"RouteName":	"EventListing/:inEoIsn",
+			"OutletName":	"",
+			"children":	null
+		}
+	]
+}

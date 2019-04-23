@@ -1,0 +1,332 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"viewMyEvents",
+		"window_type":	1,
+		"component_path":	"EventEntry/viewMyEvents/",
+		"component_uniquename":	"viewMyEvents_viewMyEvents"
+	},
+	"coordinates":	{
+		"width":	1068,
+		"height":	560
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label14",
+				"text":	"* From Date",
+				"common_line_id":	"line15"
+			},
+			"coordinates":	{
+				"x":	24,
+				"y":	19,
+				"width":	56,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"dFromDate",
+				"tab_order":	0,
+				"attribute":	"D",
+				"common_line_id":	"line15"
+			},
+			"coordinates":	{
+				"x":	85,
+				"y":	15,
+				"width":	73,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"aSearchString",
+				"tab_order":	0,
+				"pattern":	"^.{0,20}$",
+				"attribute":	"A",
+				"common_line_id":	"line15"
+			},
+			"coordinates":	{
+				"x":	296,
+				"y":	17,
+				"width":	180,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Search",
+				"tab_order":	0,
+				"format":	"Search",
+				"common_line_id":	"line15"
+			},
+			"coordinates":	{
+				"x":	481,
+				"y":	16,
+				"width":	60,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CreateEvent",
+				"tab_order":	0,
+				"format":	"CreateEvent",
+				"common_line_id":	"line15"
+			},
+			"coordinates":	{
+				"x":	545,
+				"y":	15,
+				"width":	77,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table3",
+				"table_row_height":	100,
+				"table_title_height":	18,
+				"no_modifiable_descendants":	true,
+				"common_line_id":	"line64"
+			},
+			"coordinates":	{
+				"x":	25,
+				"y":	64,
+				"width":	920,
+				"height":	164
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column8",
+						"column_title":	"Short Description",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	250
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	{
+								"border":	false,
+								"alignment":	{
+									"horizontal":	1,
+									"vertical":	null
+								}
+							},
+							"props":	{
+								"id":	"ShortDescription",
+								"tab_order":	0,
+								"modifiable":	false,
+								"pattern":	"^.{0,200}$",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line86"
+							},
+							"coordinates":	{
+								"x":	29,
+								"y":	86,
+								"width":	250,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column24",
+						"column_title":	"dStartDate",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	81
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	{
+								"border":	false,
+								"alignment":	{
+									"horizontal":	1,
+									"vertical":	null
+								}
+							},
+							"props":	{
+								"id":	"dStartDate",
+								"tab_order":	0,
+								"must_input":	false,
+								"modifiable":	false,
+								"formatter":	"magicDate",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line86"
+							},
+							"coordinates":	{
+								"x":	279,
+								"y":	86,
+								"width":	73,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column10",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	47
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Modify",
+								"tab_order":	0,
+								"format":	"Modify",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line86"
+							},
+							"coordinates":	{
+								"x":	360,
+								"y":	86,
+								"width":	39,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column22",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	47
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Delete",
+								"tab_order":	0,
+								"format":	"Delete",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line86"
+							},
+							"coordinates":	{
+								"x":	407,
+								"y":	86,
+								"width":	39,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"event_subform",
+				"tab_order":	0,
+				"common_line_id":	"line244"
+			},
+			"coordinates":	{
+				"x":	24,
+				"y":	244,
+				"width":	921,
+				"height":	211
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"ticket_subform",
+				"tab_order":	0,
+				"common_line_id":	"line473"
+			},
+			"coordinates":	{
+				"x":	24,
+				"y":	473,
+				"width":	920,
+				"height":	192
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

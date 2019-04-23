@@ -1,0 +1,44 @@
+/*this is a component css*/
+.ticketsProps {}
+
+.NoTicketsMessageProps {
+    overflow: hidden;
+}
+
+.CreateTicketProps {}
+
+.Table2TableContainerProps {}
+
+.Table2Props {
+    border: lightskyblue solid 1px;
+}
+
+.Table2_table_rowProps {}
+
+.Table2_table_rowProps:hover {
+    background-color: #EEEEEE;
+}
+
+.selected {
+    background: #F5F5F5;
+}
+
+.Column3Props {}
+
+.mat-column-Column3 {}
+
+.aTicketNameProps {}
+
+.Column7Props {}
+
+.mat-column-Column7 {}
+
+.ModifyProps {}
+
+.Column9Props {}
+
+.mat-column-Column9 {}
+
+.Button10Props {}
+
+.createModifyTicketProps {}

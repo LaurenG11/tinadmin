@@ -1,0 +1,70 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"NewEditEvent",
+		"component_path":	"Angular/EventEntryAngular/NewEditEvent/",
+		"component_uniquename":	"EventEntryAngular_NewEditEvent_NewEditEvent"
+	},
+	"coordinates":	{
+		"width":	1208,
+		"height":	546
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SaveEvent",
+				"tab_order":	0,
+				"format":	"Save Event",
+				"common_line_id":	"line7"
+			},
+			"coordinates":	{
+				"x":	401,
+				"y":	8,
+				"width":	113,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SaveNewEvent",
+				"tab_order":	0,
+				"format":	"Save \u0026 Add New Event",
+				"common_line_id":	"line7"
+			},
+			"coordinates":	{
+				"x":	518,
+				"y":	8,
+				"width":	126,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SaveNewTicket",
+				"tab_order":	0,
+				"format":	"Save \u0026 Create Ticket",
+				"common_line_id":	"line7"
+			},
+			"coordinates":	{
+				"x":	678,
+				"y":	7,
+				"width":	134,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

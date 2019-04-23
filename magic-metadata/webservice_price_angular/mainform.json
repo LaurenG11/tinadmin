@@ -1,0 +1,33 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"mainform",
+		"component_path":	"webservice_price_angular/",
+		"component_uniquename":	"webservice_price_angular_mainform"
+	},
+	"coordinates":	{
+		"width":	712,
+		"height":	551
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Subform1",
+				"tab_order":	0,
+				"common_line_id":	"line10"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	10,
+				"width":	692,
+				"height":	520
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

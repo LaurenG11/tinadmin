@@ -1,0 +1,195 @@
+<form
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="eventListing"
+        class="eventListingProps"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label6"
+                class="Label6Props mgFont1"
+            >
+                dFromDate</label>
+            <mat-form-field class="dFromDateProps">
+                <input
+                    matInput
+                    [matDatepicker]="dFromDate"
+                    formControlName="dFromDate"
+                    magic="dFromDate"
+                    class="dFromDateProps"
+                >
+                <mat-datepicker-toggle
+                    matSuffix
+                    [for]="dFromDate"
+                    *ngIf="mg.checkIsReadOnly('dFromDate')"
+                ></mat-datepicker-toggle>
+                <mat-datepicker #dFromDate></mat-datepicker>
+            </mat-form-field>
+            <label
+                magic="Label8"
+                class="Label8Props mgFont1"
+            >
+                dToDate</label>
+            <mat-form-field class="dToDateProps">
+                <input
+                    matInput
+                    [matDatepicker]="dToDate"
+                    formControlName="dToDate"
+                    magic="dToDate"
+                    class="dToDateProps"
+                >
+                <mat-datepicker-toggle
+                    matSuffix
+                    [for]="dToDate"
+                    *ngIf="mg.checkIsReadOnly('dToDate')"
+                ></mat-datepicker-toggle>
+                <mat-datepicker #dToDate></mat-datepicker>
+            </mat-form-field>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Search"
+                class="SearchProps"
+            >
+                Search</button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="NoEvents"
+                [style.visibility]="mg.getVisible('NoEvents')"
+                class="NoEventsProps"
+            >
+                No events for this period</label></div>
+        <div style="display: flex; flex-direction: row">
+            <div class="example-container mat-elevation-z8 Table2TableContainerProps">
+                <mat-table
+                    #table
+                    [dataSource]="dataSource"
+                    class="Table2Props"
+                    matSort
+                    matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)"
+                >
+                    <ng-container
+                        magic="Column9"
+                        matColumnDef="Column9"
+                    >
+                        <mat-header-cell *matHeaderCellDef> dEventDate </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <label
+                                    magic="dEventDate"
+                                    [rowId]="row.rowId"
+                                    class="dEventDateProps hidden_border"
+                                >
+                                    {{mg.getValue('dEventDate', row.rowId)
+| magicDate : 'dEventDate'}}</label>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <label
+                                    magic="tEventTime"
+                                    [rowId]="row.rowId"
+                                    class="tEventTimeProps hidden_border"
+                                >
+                                    {{mg.getValue('tEventTime', row.rowId)
+| magicTime : 'tEventTime'}}</label>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="Column17"
+                        matColumnDef="Column17"
+                    >
+                        <mat-header-cell *matHeaderCellDef> aEventShortDescription </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <label
+                                    magic="aEventShortDescription"
+                                    [rowId]="row.rowId"
+                                    class="aEventShortDescriptionProps hidden_border"
+                                >
+                                    {{mg.getValue('aEventShortDescription', row.rowId)
+}}</label>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <label
+                                    magic="aEventLongDescription"
+                                    [rowId]="row.rowId"
+                                    class="aEventLongDescriptionProps hidden_border"
+                                >
+                                    {{mg.getValue('aEventLongDescription', row.rowId)
+}}</label>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    mat-raised-button
+                                    color="primary"
+                                    magic="Tickets"
+                                    [rowId]="row.rowId"
+                                    [style.visibility]="mg.getVisible('Tickets', row.rowId)"
+                                    class="TicketsProps"
+                                >
+                                    Tickets</button>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row
+                        *matHeaderRowDef="displayedColumns"
+                        class="Table2_table_headerRowProps"
+                    ></mat-header-row>
+                    <mat-row
+                        *matRowDef="let row; columns: displayedColumns;"
+                        class="Table2_table_rowProps"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}"
+                        magicMark="magicTableRowContainer"
+                        (click)="tableService.selectRow(row.rowId)"
+                    >
+                    </mat-row>
+                </mat-table>
+                <mat-paginator
+                    #paginator
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 20]"
+                    (page)="tableService.mgOnPaginateChange($event)"
+                >
+                </mat-paginator>
+            </div><label
+                magic="aFeaturedShortDesctription"
+                class="aFeaturedShortDesctriptionProps"
+            >
+                {{mg.getValue('aFeaturedShortDesctription') }}
+            </label>
+            <div *ngIf="mg.isImageExists('Image1')">
+                <img
+                    magic="Image1"
+                    class="Image1Props"
+                    [src]="mg.getImage('Image1')"
+                />
+            </div>
+        </div>
+    </div>
+</form>

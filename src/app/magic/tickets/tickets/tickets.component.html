@@ -1,0 +1,138 @@
+<form
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="tickets"
+        class="ticketsProps"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="NoTicketsMessage"
+                [style.visibility]="mg.getVisible('NoTicketsMessage')"
+                class="NoTicketsMessageProps"
+            >
+                No Tickets Exist</label> <button
+                mat-raised-button
+                color="primary"
+                magic="CreateTicket"
+                class="CreateTicketProps"
+            >
+                Create Ticket</button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div class="example-container mat-elevation-z8 Table2TableContainerProps">
+                <mat-table
+                    #table
+                    [dataSource]="dataSource"
+                    class="Table2Props"
+                    matSort
+                    matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)"
+                >
+                    <ng-container
+                        magic="Column3"
+                        matColumnDef="Column3"
+                    >
+                        <mat-header-cell *matHeaderCellDef> aTicketName </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <label
+                                    magic="aTicketName"
+                                    [rowId]="row.rowId"
+                                    class="aTicketNameProps hidden_border"
+                                >
+                                    {{mg.getValue('aTicketName', row.rowId)
+}}</label>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="Column7"
+                        matColumnDef="Column7"
+                    >
+                        <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    mat-raised-button
+                                    color="primary"
+                                    magic="Modify"
+                                    [rowId]="row.rowId"
+                                    class="ModifyProps"
+                                >
+                                    Modify</button>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="Column9"
+                        matColumnDef="Column9"
+                    >
+                        <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    mat-raised-button
+                                    color="primary"
+                                    magic="Button10"
+                                    [rowId]="row.rowId"
+                                    class="Button10Props"
+                                    [disabled]="mg.isDisabled('Button10' , row.rowId)"
+                                >
+                                    Delete</button>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row
+                        *matHeaderRowDef="displayedColumns"
+                        class="Table2_table_headerRowProps"
+                    ></mat-header-row>
+                    <mat-row
+                        *matRowDef="let row; columns: displayedColumns;"
+                        class="Table2_table_rowProps"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}"
+                        magicMark="magicTableRowContainer"
+                        (click)="tableService.selectRow(row.rowId)"
+                    >
+                    </mat-row>
+                </mat-table>
+                <mat-paginator
+                    #paginator
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 20]"
+                    (page)="tableService.mgOnPaginateChange($event)"
+                >
+                </mat-paginator>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <mat-card>
+                <magic-subform
+                    magic="createModifyTicket"
+                    class="createModifyTicketProps"
+                >
+                </magic-subform>
+            </mat-card>
+        </div>
+    </div>
+</form>

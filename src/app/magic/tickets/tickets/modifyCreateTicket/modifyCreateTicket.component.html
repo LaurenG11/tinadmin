@@ -1,0 +1,111 @@
+<form
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="modifyCreateTicket"
+        class="modifyCreateTicketProps"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label6"
+                class="Label6Props mgFont1"
+            >
+                Ticket Type</label>
+            <div>
+                <mat-form-field class="nTicketTypeIsnProps">
+                    <mat-select
+                        magic="nTicketTypeIsn"
+                        class="nTicketTypeIsnProps"
+                        formControlName="nTicketTypeIsn"
+                    >
+                        <mat-option
+                            *ngFor="let o of mg.getItemListValues('nTicketTypeIsn');"
+                            [value]="o.index"
+                        >
+                            {{o.displayValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label2"
+                class="Label2Props mgFont1"
+            >
+                Ticket Name</label>
+            <mat-form-field class="aTicketNameProps">
+                <div>
+                    <input
+                        matInput
+                        magic="aTicketName"
+                        formControlName="aTicketName"
+                        pattern="^.{0,200}$"
+                    >
+                    <div *ngIf="(screenFormGroup.get('aTicketName').dirty) && (
+screenFormGroup.get('aTicketName').hasError('pattern')
+)">
+                        <p>{{ mg.getErrMsg('aTicketName') }}</p>
+                    </div>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label4"
+                class="Label4Props mgFont1"
+            >
+                Maximum Number of Tickets</label>
+            <mat-form-field class="nMaximumNumberTicketsProps">
+                <div>
+                    <input
+                        matInput
+                        type='number'
+                        magic="nMaximumNumberTickets"
+                        formControlName="nMaximumNumberTickets"
+                        pattern="^\d{0,9}$"
+                    >
+                    <div *ngIf="(screenFormGroup.get('nMaximumNumberTickets').dirty) && (
+screenFormGroup.get('nMaximumNumberTickets').hasError('pattern')
+)">
+                        <p>{{ mg.getErrMsg('nMaximumNumberTickets') }}</p>
+                    </div>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label9"
+                class="Label9Props mgFont1"
+            >
+                Price</label>
+            <mat-form-field class="nPriceProps">
+                <div>
+                    <input
+                        matInput
+                        type='number'
+                        magic="nPrice"
+                        formControlName="nPrice"
+                        pattern="^\d{0,6}(\.\d{1,2})?$"
+                    >
+                    <div *ngIf="(screenFormGroup.get('nPrice').dirty) && (
+screenFormGroup.get('nPrice').hasError('pattern')
+)">
+                        <p>{{ mg.getErrMsg('nPrice') }}</p>
+                    </div>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                mat-raised-button
+                color="primary"
+                magic="save_ticket"
+                class="save_ticketProps"
+            >
+                Save Ticket</button>
+        </div>
+    </div>
+</form>

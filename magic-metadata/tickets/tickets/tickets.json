@@ -1,0 +1,208 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"tickets",
+		"component_path":	"tickets/tickets/",
+		"component_uniquename":	"tickets_tickets"
+	},
+	"coordinates":	{
+		"width":	820,
+		"height":	461
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"NoTicketsMessage",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"No Tickets Exist",
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	17,
+				"width":	297,
+				"height":	31
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CreateTicket",
+				"tab_order":	0,
+				"format":	"Create Ticket",
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	603,
+				"y":	16,
+				"width":	87,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	48,
+				"table_title_height":	18,
+				"common_line_id":	"line48"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	48,
+				"width":	676,
+				"height":	127
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"aTicketName",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	408
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	{
+								"border":	false,
+								"alignment":	{
+									"horizontal":	1,
+									"vertical":	null
+								}
+							},
+							"props":	{
+								"id":	"aTicketName",
+								"tab_order":	0,
+								"pattern":	"^.{0,200}$",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line70"
+							},
+							"coordinates":	{
+								"x":	19,
+								"y":	70,
+								"width":	400,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	47
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Modify",
+								"tab_order":	0,
+								"format":	"Modify",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line70"
+							},
+							"coordinates":	{
+								"x":	427,
+								"y":	70,
+								"width":	39,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column9",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	47
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Button10",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"tab_order":	0,
+								"format":	"Delete",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line70"
+							},
+							"coordinates":	{
+								"x":	474,
+								"y":	70,
+								"width":	39,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"createModifyTicket",
+				"tab_order":	0,
+				"common_line_id":	"line196"
+			},
+			"coordinates":	{
+				"x":	17,
+				"y":	196,
+				"width":	673,
+				"height":	192
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

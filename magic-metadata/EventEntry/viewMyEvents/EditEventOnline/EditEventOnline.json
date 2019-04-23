@@ -1,0 +1,844 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"EditEventOnline",
+		"window_type":	1,
+		"component_path":	"EventEntry/viewMyEvents/EditEventOnline/",
+		"component_uniquename":	"viewMyEvents_EditEventOnline_EditEventOnline"
+	},
+	"coordinates":	{
+		"width":	892,
+		"height":	286
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SaveEventButton",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"format":	"Save Event",
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	684,
+				"y":	12,
+				"width":	156,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label14",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"* Event Name",
+				"common_line_id":	"line38"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	38,
+				"width":	72,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"aShortDescription",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"pattern":	"^.{0,1000}$",
+				"attribute":	"A",
+				"common_line_id":	"line38"
+			},
+			"coordinates":	{
+				"x":	64,
+				"y":	38,
+				"width":	300,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"StartDateLabel",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Start Date",
+				"common_line_id":	"line38"
+			},
+			"coordinates":	{
+				"x":	380,
+				"y":	38,
+				"width":	52,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"dStartDate",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"attribute":	"D",
+				"common_line_id":	"line38"
+			},
+			"coordinates":	{
+				"x":	433,
+				"y":	38,
+				"width":	73,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"EndDateLabel",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"End Date",
+				"common_line_id":	"line38"
+			},
+			"coordinates":	{
+				"x":	509,
+				"y":	38,
+				"width":	50,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"dEndDate",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"attribute":	"D",
+				"common_line_id":	"line38"
+			},
+			"coordinates":	{
+				"x":	535,
+				"y":	38,
+				"width":	73,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"TimeFromLabel",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Time From",
+				"common_line_id":	"line38"
+			},
+			"coordinates":	{
+				"x":	619,
+				"y":	38,
+				"width":	53,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"tTimeFrom",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"attribute":	"T",
+				"common_line_id":	"line38"
+			},
+			"coordinates":	{
+				"x":	660,
+				"y":	38,
+				"width":	57,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"TimeToLabel",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Time To",
+				"common_line_id":	"line38"
+			},
+			"coordinates":	{
+				"x":	728,
+				"y":	38,
+				"width":	46,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"dTimeTo",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"attribute":	"T",
+				"common_line_id":	"line38"
+			},
+			"coordinates":	{
+				"x":	773,
+				"y":	38,
+				"width":	57,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label36",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Summary",
+				"common_line_id":	"line77"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	77,
+				"width":	86,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"aLongDescription",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"pattern":	"^.{0,1200}$",
+				"attribute":	"A",
+				"common_line_id":	"line77"
+			},
+			"coordinates":	{
+				"x":	80,
+				"y":	77,
+				"width":	800,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label29",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"* Event Category",
+				"common_line_id":	"line116"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	117,
+				"width":	64,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"aCategoryID",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"items_list":	"",
+				"attribute":	"N",
+				"common_line_id":	"line116"
+			},
+			"coordinates":	{
+				"x":	88,
+				"y":	116,
+				"width":	164,
+				"height":	17
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label18",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"URL",
+				"common_line_id":	"line116"
+			},
+			"coordinates":	{
+				"x":	253,
+				"y":	117,
+				"width":	56,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"aEventURL",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"pattern":	"^.{0,120}$",
+				"attribute":	"A",
+				"common_line_id":	"line116"
+			},
+			"coordinates":	{
+				"x":	328,
+				"y":	117,
+				"width":	336,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"aLocation",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"pattern":	"^.{0,100}$",
+				"attribute":	"A",
+				"common_line_id":	"line155"
+			},
+			"coordinates":	{
+				"x":	73,
+				"y":	155,
+				"width":	322,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label22",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Address",
+				"common_line_id":	"line155"
+			},
+			"coordinates":	{
+				"x":	400,
+				"y":	155,
+				"width":	48,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"aAddress",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"pattern":	"^.{0,50}$",
+				"attribute":	"A",
+				"common_line_id":	"line155"
+			},
+			"coordinates":	{
+				"x":	433,
+				"y":	155,
+				"width":	324,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label24",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"* PostalCode",
+				"common_line_id":	"line155"
+			},
+			"coordinates":	{
+				"x":	764,
+				"y":	155,
+				"width":	64,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"aPostalCode",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"pattern":	"^.{0,9}$",
+				"attribute":	"A",
+				"common_line_id":	"line155"
+			},
+			"coordinates":	{
+				"x":	808,
+				"y":	155,
+				"width":	62,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label20",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"* Location",
+				"common_line_id":	"line168"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	168,
+				"width":	57,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label16",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Price",
+				"common_line_id":	"line207"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	207,
+				"width":	60,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	3,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"aEventPrice",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"pattern":	"^\\d{0,10}(\\.\\d{1,2})?$",
+				"attribute":	"N",
+				"common_line_id":	"line207"
+			},
+			"coordinates":	{
+				"x":	80,
+				"y":	207,
+				"width":	83,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label27",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"BonusFactor",
+				"common_line_id":	"line207"
+			},
+			"coordinates":	{
+				"x":	173,
+				"y":	207,
+				"width":	68,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	3,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"nBonusFactor",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tooltip":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"pattern":	"^\\d{0,3}$",
+				"attribute":	"N",
+				"common_line_id":	"line207"
+			},
+			"coordinates":	{
+				"x":	248,
+				"y":	207,
+				"width":	21,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label38",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Event Image",
+				"common_line_id":	"line207"
+			},
+			"coordinates":	{
+				"x":	308,
+				"y":	207,
+				"width":	64,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"imageFileName",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"pattern":	"^.{0,200}$",
+				"attribute":	"A",
+				"common_line_id":	"line207"
+			},
+			"coordinates":	{
+				"x":	373,
+				"y":	208,
+				"width":	300,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label30",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Publish Event?",
+				"common_line_id":	"line247"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	247,
+				"width":	72,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"lPublishEvent",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"text":	"Publish  Event?",
+				"attribute":	"B",
+				"common_line_id":	"line247"
+			},
+			"coordinates":	{
+				"x":	100,
+				"y":	247,
+				"width":	96,
+				"height":	19
+			},
+			"hint":	null,
+			"controlType":	"C",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label32",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Featured Event?",
+				"common_line_id":	"line259"
+			},
+			"coordinates":	{
+				"x":	368,
+				"y":	259,
+				"width":	72,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"lFeatureEvent",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	0,
+				"text":	"Feature Event?",
+				"attribute":	"B",
+				"common_line_id":	"line259"
+			},
+			"coordinates":	{
+				"x":	448,
+				"y":	259,
+				"width":	96,
+				"height":	19
+			},
+			"hint":	null,
+			"controlType":	"C",
+			"children":	null
+		}
+	]
+}
