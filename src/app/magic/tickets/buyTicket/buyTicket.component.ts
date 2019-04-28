@@ -6,12 +6,13 @@ import {
     matMagicProviders
 } from "@magic-xpa/angular-material-core";
 @Component({
-    selector: 'mga-tickets',
+    selector: 'mga-buyTicket',
     providers: [...matMagicProviders],
-    templateUrl: './tickets.component.html'
-}) export class tickets extends BaseMatTableMagicComponent {
-    displayedColumns = ['Column3',
-        'Column7',
+    templateUrl: './buyTicket.component.html'
+}) export class buyTicket extends BaseMatTableMagicComponent {
+    displayedColumns = ['Column2',
+        'Column5',
         'Column9',
+        'Column6',
     ];
 }

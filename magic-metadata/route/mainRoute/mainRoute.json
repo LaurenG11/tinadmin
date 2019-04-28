@@ -6,6 +6,8 @@
 		"component_uniquename":	"mainRoute_mainRoute"
 	},
 	"coordinates":	{
+		"x":	0,
+		"y":	0,
 		"width":	384,
 		"height":	320
 	},
@@ -16,7 +18,6 @@
 			"style":	null,
 			"props":	{
 				"id":	"btnEvents",
-				"tab_order":	0,
 				"format":	"Events",
 				"common_line_id":	"line7"
 			},
@@ -34,7 +35,6 @@
 			"style":	null,
 			"props":	{
 				"id":	"btnListing",
-				"tab_order":	0,
 				"format":	"Listing",
 				"common_line_id":	"line7"
 			},
@@ -68,16 +68,10 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	3,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"eoIsn",
-				"tab_order":	0,
-				"pattern":	"^\\d{0,9}$",
+				"mgformat":	"mgFormat",
 				"attribute":	"N",
 				"common_line_id":	"line7"
 			},
@@ -95,7 +89,6 @@
 			"style":	null,
 			"props":	{
 				"id":	"magicRoute",
-				"tab_order":	0,
 				"is_router_outlet":	true,
 				"default_outlet":	true,
 				"common_line_id":	"line44"

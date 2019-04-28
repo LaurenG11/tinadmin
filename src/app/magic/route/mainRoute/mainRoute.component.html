@@ -1,56 +1,44 @@
-<form
+<div
     novalidate
     [formGroup]="screenFormGroup"
 >
     <div
         style="display: flex; flex-direction: column"
         magic="mainRoute"
-        class="mainRouteProps"
     >
         <div style="display: flex; flex-direction: row">
             <button
                 mat-raised-button
                 color="primary"
                 magic="btnEvents"
-                class="btnEventsProps"
             >
                 Events</button>
             <button
                 mat-raised-button
                 color="primary"
                 magic="btnListing"
-                class="btnListingProps"
             >
                 Listing</button>
             <label
                 magic="Label4"
-                class="Label4Props mgFont1"
+                class="lable_overflow mgFont1"
             >
                 eoIsn</label>
-            <mat-form-field class="eoIsnProps">
-                <div>
-                    <input
+            <mat-form-field>
+                <div><input
                         matInput
                         type='number'
                         magic="eoIsn"
                         formControlName="eoIsn"
-                        pattern="^\d{0,9}$"
+                        mgFormat
                     >
-                    <div *ngIf="(screenFormGroup.get('eoIsn').dirty) && (
-screenFormGroup.get('eoIsn').hasError('pattern')
-)">
-                        <p>{{ mg.getErrMsg('eoIsn') }}</p>
-                    </div>
+                    <mgError magic="eoIsn"> </mgError>
                 </div>
             </mat-form-field>
         </div>
         <div style="display: flex; flex-direction: row">
-            <router-outlet
-                magic="magicRoute"
-                class="magicRouteProps"
-            >
+            <router-outlet magic="magicRoute">
             </router-outlet>
         </div>
     </div>
-
-</form>
+</div>

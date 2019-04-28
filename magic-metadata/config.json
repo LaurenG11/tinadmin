@@ -2,17 +2,22 @@
 	"create_route_map":	false,
 	"create_new_project":	false,
 	"created_menu":	false,
-	"created_views":	false,
+	"created_views":	true,
 	"theme":	"material",
-	"output_folder":	"C:\\Magic\\Web\\git",
-	"absolute_position":	false,
+	"output_folder":	"C:\\Magic\\Web\\",
 	"backup_current":	false,
-	"source_images_folder":	"C:\\Magic\\Web\\git",
+	"source_images_folder":	"C:\\Magic\\Web\\",
 	"copy_images":	false,
 	"exposed_functionality":	true,
 	"allow_testing":	false,
-	"project_name":	"sicListing",
-	"form_files":	[
-		"tickets/tickets/modifyCreateTicket/modifyCreateTicket"
+	"project_name":	"tinadmingit",
+	"web_modules":	[
+		{
+			"module_name":	"",
+			"load_on_demand":	false,
+			"form_files":	[
+				"tickets/buyTicket/buyTicket"
+			]
+		}
 	]
 }

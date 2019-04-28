@@ -4,23 +4,10 @@
 >
     <div
         style="display: flex; flex-direction: column"
-        magic="tickets"
+        magic="buyTicket"
     >
         <div style="display: flex; flex-direction: row">
-            <label
-                magic="NoTicketsMessage"
-                [style.visibility]="mg.getVisible('NoTicketsMessage')"
-                class="lable_overflow"
-            >
-                No Tickets Exist</label> <button
-                mat-raised-button
-                color="primary"
-                magic="CreateTicket"
-            >
-                Create Ticket</button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div class="example-container mat-elevation-z8 Table2TableContainerProps">
+            <div class="example-container mat-elevation-z8 Table1TableContainerProps">
                 <mat-table
                     #table
                     [dataSource]="dataSource"
@@ -30,8 +17,8 @@
                     (matSortChange)="tableService.sortData($event)"
                 >
                     <ng-container
-                        magic="Column3"
-                        matColumnDef="Column3"
+                        magic="Column2"
+                        matColumnDef="Column2"
                     >
                         <mat-header-cell *matHeaderCellDef> aTicketName </mat-header-cell>
                         <mat-cell
@@ -73,8 +60,8 @@
                         </mat-cell>
                     </ng-container>
                     <ng-container
-                        magic="Column7"
-                        matColumnDef="Column7"
+                        magic="Column5"
+                        matColumnDef="Column5"
                     >
                         <mat-header-cell *matHeaderCellDef> </mat-header-cell>
                         <mat-cell
@@ -88,10 +75,11 @@
                                 <button
                                     mat-raised-button
                                     color="primary"
-                                    magic="Modify"
+                                    magic="btnOneLess"
                                     [rowId]="row.rowId"
+                                    [disabled]="mg.isDisabled('btnOneLess' , row.rowId)"
                                 >
-                                    Modify</button>
+                                    -</button>
                             </div>
                         </mat-cell>
                     </ng-container>
@@ -99,6 +87,50 @@
                         magic="Column9"
                         matColumnDef="Column9"
                     >
+                        <mat-header-cell *matHeaderCellDef> noTickets </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div
+                                    [formGroup]="mg.getFormGroupByRow(row.rowId)"
+                                    style="display: flex; flex-direction: row"
+                                >
+                                    <mat-form-field *ngIf="mg.isRowInRowEditing(row)">
+                                        <div><input
+                                                *ngIf="mg.isRowInRowEditing(row)"
+                                                matInput
+                                                type='number'
+                                                magic="noTickets"
+                                                [rowId]="row.rowId"
+                                                formControlName="noTickets"
+                                                mgFormat
+                                            >
+                                            <mgError
+                                                magic="noTickets"
+                                                [rowId]="row.rowId"
+                                            > </mgError>
+                                        </div>
+                                    </mat-form-field><label
+                                        *ngIf="!mg.isRowInRowEditing(row)"
+                                        magic="noTickets"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue('noTickets', row.rowId)
+}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="Column6"
+                        matColumnDef="Column6"
+                    >
                         <mat-header-cell *matHeaderCellDef> </mat-header-cell>
                         <mat-cell
                             *matCellDef="let row"
@@ -111,11 +143,10 @@
                                 <button
                                     mat-raised-button
                                     color="primary"
-                                    magic="Button10"
+                                    magic="btnOneMore"
                                     [rowId]="row.rowId"
-                                    [disabled]="mg.isDisabled('Button10' , row.rowId)"
                                 >
-                                    Delete</button>
+                                    +</button>
                             </div>
                         </mat-cell>
                     </ng-container>
@@ -139,10 +170,12 @@
             </div>
         </div>
         <div style="display: flex; flex-direction: row">
-            <mat-card>
-                <magic-subform magic="createModifyTicket">
-                </magic-subform>
-            </mat-card>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="btnBuyTicket"
+            >
+                Buy Ticket</button>
         </div>
     </div>
 </div>

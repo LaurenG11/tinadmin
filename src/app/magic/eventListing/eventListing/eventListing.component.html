@@ -1,25 +1,25 @@
-<form
+<div
     novalidate
     [formGroup]="screenFormGroup"
 >
     <div
         style="display: flex; flex-direction: column"
         magic="eventListing"
-        class="eventListingProps"
     >
         <div style="display: flex; flex-direction: row">
             <label
                 magic="Label6"
-                class="Label6Props mgFont1"
+                class="lable_overflow mgFont1"
             >
                 dFromDate</label>
-            <mat-form-field class="dFromDateProps">
-                <input
+            <mat-form-field
+                magic="dFromDate"
+                [eventsOnly]=true
+            ><input
                     matInput
                     [matDatepicker]="dFromDate"
-                    formControlName="dFromDate"
                     magic="dFromDate"
-                    class="dFromDateProps"
+                    formControlName="dFromDate"
                 >
                 <mat-datepicker-toggle
                     matSuffix
@@ -27,19 +27,19 @@
                     *ngIf="mg.checkIsReadOnly('dFromDate')"
                 ></mat-datepicker-toggle>
                 <mat-datepicker #dFromDate></mat-datepicker>
-            </mat-form-field>
-            <label
+            </mat-form-field><label
                 magic="Label8"
-                class="Label8Props mgFont1"
+                class="lable_overflow mgFont1"
             >
                 dToDate</label>
-            <mat-form-field class="dToDateProps">
-                <input
+            <mat-form-field
+                magic="dToDate"
+                [eventsOnly]=true
+            ><input
                     matInput
                     [matDatepicker]="dToDate"
-                    formControlName="dToDate"
                     magic="dToDate"
-                    class="dToDateProps"
+                    formControlName="dToDate"
                 >
                 <mat-datepicker-toggle
                     matSuffix
@@ -47,12 +47,10 @@
                     *ngIf="mg.checkIsReadOnly('dToDate')"
                 ></mat-datepicker-toggle>
                 <mat-datepicker #dToDate></mat-datepicker>
-            </mat-form-field>
-            <button
+            </mat-form-field> <button
                 mat-raised-button
                 color="primary"
                 magic="Search"
-                class="SearchProps"
             >
                 Search</button>
         </div>
@@ -60,7 +58,7 @@
             <label
                 magic="NoEvents"
                 [style.visibility]="mg.getVisible('NoEvents')"
-                class="NoEventsProps"
+                class="lable_overflow"
             >
                 No events for this period</label></div>
         <div style="display: flex; flex-direction: row">
@@ -68,7 +66,7 @@
                 <mat-table
                     #table
                     [dataSource]="dataSource"
-                    class="Table2Props"
+                    class="container_border"
                     matSort
                     matSortDisableClear
                     (matSortChange)="tableService.sortData($event)"
@@ -86,25 +84,35 @@
                                 style="display: flex; flex-direction: row"
                                 *ngIf="mg.ifRowCreated(row)"
                             >
-                                <label
-                                    magic="dEventDate"
-                                    [rowId]="row.rowId"
-                                    class="dEventDateProps hidden_border"
+                                <div
+                                    [formGroup]="mg.getFormGroupByRow(row.rowId)"
+                                    style="display: flex; flex-direction: row"
                                 >
-                                    {{mg.getValue('dEventDate', row.rowId)
-| magicDate : 'dEventDate'}}</label>
+                                    <label
+                                        magic="dEventDate"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue('dEventDate', row.rowId)
+| magicDate : 'dEventDate'}}
+                                    </label>
+                                </div>
                             </div>
                             <div
                                 style="display: flex; flex-direction: row"
                                 *ngIf="mg.ifRowCreated(row)"
                             >
-                                <label
-                                    magic="tEventTime"
-                                    [rowId]="row.rowId"
-                                    class="tEventTimeProps hidden_border"
+                                <div
+                                    [formGroup]="mg.getFormGroupByRow(row.rowId)"
+                                    style="display: flex; flex-direction: row"
                                 >
-                                    {{mg.getValue('tEventTime', row.rowId)
-| magicTime : 'tEventTime'}}</label>
+                                    <label
+                                        magic="tEventTime"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue('tEventTime', row.rowId)
+| magicTime : 'tEventTime'}}
+                                    </label>
+                                </div>
                             </div>
                         </mat-cell>
                     </ng-container>
@@ -121,25 +129,35 @@
                                 style="display: flex; flex-direction: row"
                                 *ngIf="mg.ifRowCreated(row)"
                             >
-                                <label
-                                    magic="aEventShortDescription"
-                                    [rowId]="row.rowId"
-                                    class="aEventShortDescriptionProps hidden_border"
+                                <div
+                                    [formGroup]="mg.getFormGroupByRow(row.rowId)"
+                                    style="display: flex; flex-direction: row"
                                 >
-                                    {{mg.getValue('aEventShortDescription', row.rowId)
-}}</label>
+                                    <label
+                                        magic="aEventShortDescription"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue('aEventShortDescription', row.rowId)
+}}
+                                    </label>
+                                </div>
                             </div>
                             <div
                                 style="display: flex; flex-direction: row"
                                 *ngIf="mg.ifRowCreated(row)"
                             >
-                                <label
-                                    magic="aEventLongDescription"
-                                    [rowId]="row.rowId"
-                                    class="aEventLongDescriptionProps hidden_border"
+                                <div
+                                    [formGroup]="mg.getFormGroupByRow(row.rowId)"
+                                    style="display: flex; flex-direction: row"
                                 >
-                                    {{mg.getValue('aEventLongDescription', row.rowId)
-}}</label>
+                                    <label
+                                        magic="aEventLongDescription"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue('aEventLongDescription', row.rowId)
+}}
+                                    </label>
+                                </div>
                             </div>
                             <div
                                 style="display: flex; flex-direction: row"
@@ -151,21 +169,17 @@
                                     magic="Tickets"
                                     [rowId]="row.rowId"
                                     [style.visibility]="mg.getVisible('Tickets', row.rowId)"
-                                    class="TicketsProps"
                                 >
                                     Tickets</button>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <mat-header-row
-                        *matHeaderRowDef="displayedColumns"
-                        class="Table2_table_headerRowProps"
-                    ></mat-header-row>
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
                     <mat-row
                         *matRowDef="let row; columns: displayedColumns;"
-                        class="Table2_table_rowProps"
+                        class="table_row"
                         [ngClass]="{ 'selected': selection.isSelected(row)}"
-                        magicMark="magicTableRowContainer"
+                        [magicRow]="row?.rowId"
                         (click)="tableService.selectRow(row.rowId)"
                     >
                     </mat-row>
@@ -177,19 +191,15 @@
                     (page)="tableService.mgOnPaginateChange($event)"
                 >
                 </mat-paginator>
-            </div><label
-                magic="aFeaturedShortDesctription"
-                class="aFeaturedShortDesctriptionProps"
-            >
+            </div><label magic="aFeaturedShortDesctription">
                 {{mg.getValue('aFeaturedShortDesctription') }}
             </label>
             <div *ngIf="mg.isImageExists('Image1')">
                 <img
                     magic="Image1"
-                    class="Image1Props"
                     [src]="mg.getImage('Image1')"
                 />
             </div>
         </div>
     </div>
-</form>
+</div>

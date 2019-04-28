@@ -1,23 +1,21 @@
-<form
+<div
     novalidate
     [formGroup]="screenFormGroup"
 >
     <div
         style="display: flex; flex-direction: column"
         magic="modifyCreateTicket"
-        class="modifyCreateTicketProps"
     >
         <div style="display: flex; flex-direction: row">
             <label
                 magic="Label6"
-                class="Label6Props mgFont1"
+                class="lable_overflow mgFont1"
             >
                 Ticket Type</label>
             <div>
-                <mat-form-field class="nTicketTypeIsnProps">
+                <mat-form-field>
                     <mat-select
                         magic="nTicketTypeIsn"
-                        class="nTicketTypeIsnProps"
                         formControlName="nTicketTypeIsn"
                     >
                         <mat-option
@@ -33,68 +31,53 @@
         <div style="display: flex; flex-direction: row">
             <label
                 magic="Label2"
-                class="Label2Props mgFont1"
+                class="lable_overflow mgFont1"
             >
                 Ticket Name</label>
-            <mat-form-field class="aTicketNameProps">
-                <div>
-                    <input
+            <mat-form-field>
+                <div><input
                         matInput
                         magic="aTicketName"
                         formControlName="aTicketName"
-                        pattern="^.{0,200}$"
+                        mgFormat
                     >
-                    <div *ngIf="(screenFormGroup.get('aTicketName').dirty) && (
-screenFormGroup.get('aTicketName').hasError('pattern')
-)">
-                        <p>{{ mg.getErrMsg('aTicketName') }}</p>
-                    </div>
+                    <mgError magic="aTicketName"> </mgError>
                 </div>
             </mat-form-field>
         </div>
         <div style="display: flex; flex-direction: row">
             <label
                 magic="Label4"
-                class="Label4Props mgFont1"
+                class="lable_overflow mgFont1"
             >
                 Maximum Number of Tickets</label>
-            <mat-form-field class="nMaximumNumberTicketsProps">
-                <div>
-                    <input
+            <mat-form-field>
+                <div><input
                         matInput
                         type='number'
                         magic="nMaximumNumberTickets"
                         formControlName="nMaximumNumberTickets"
-                        pattern="^\d{0,9}$"
+                        mgFormat
                     >
-                    <div *ngIf="(screenFormGroup.get('nMaximumNumberTickets').dirty) && (
-screenFormGroup.get('nMaximumNumberTickets').hasError('pattern')
-)">
-                        <p>{{ mg.getErrMsg('nMaximumNumberTickets') }}</p>
-                    </div>
+                    <mgError magic="nMaximumNumberTickets"> </mgError>
                 </div>
             </mat-form-field>
         </div>
         <div style="display: flex; flex-direction: row">
             <label
                 magic="Label9"
-                class="Label9Props mgFont1"
+                class="lable_overflow mgFont1"
             >
                 Price</label>
-            <mat-form-field class="nPriceProps">
-                <div>
-                    <input
+            <mat-form-field>
+                <div><input
                         matInput
                         type='number'
                         magic="nPrice"
                         formControlName="nPrice"
-                        pattern="^\d{0,6}(\.\d{1,2})?$"
+                        mgFormat
                     >
-                    <div *ngIf="(screenFormGroup.get('nPrice').dirty) && (
-screenFormGroup.get('nPrice').hasError('pattern')
-)">
-                        <p>{{ mg.getErrMsg('nPrice') }}</p>
-                    </div>
+                    <mgError magic="nPrice"> </mgError>
                 </div>
             </mat-form-field>
         </div>
@@ -103,9 +86,8 @@ screenFormGroup.get('nPrice').hasError('pattern')
                 mat-raised-button
                 color="primary"
                 magic="save_ticket"
-                class="save_ticketProps"
             >
                 Save Ticket</button>
         </div>
     </div>
-</form>
+</div>

@@ -1,14 +1,19 @@
-{
-	"routesArray":	[
-		{
-			"RouteName":	"Events/:inEoIsn",
-			"OutletName":	"",
-			"children":	null
-		},
-		{
-			"RouteName":	"EventListing/:inEoIsn",
-			"OutletName":	"",
-			"children":	null
-		}
-	]
-}
+[
+	{
+		"module_name":	"",
+		"routesArray":	[
+			{
+				"RouteName":	"Events/:inEoIsn",
+				"ModuleName":	"",
+				"OutletName":	"",
+				"children":	null
+			},
+			{
+				"RouteName":	"EventListing/:inEoIsn",
+				"ModuleName":	"",
+				"OutletName":	"",
+				"children":	null
+			}
+		]
+	}
+]

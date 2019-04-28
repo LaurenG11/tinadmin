@@ -6,6 +6,8 @@
 		"component_uniquename":	"tickets_modifyCreateTicket_modifyCreateTicket"
 	},
 	"coordinates":	{
+		"x":	0,
+		"y":	0,
 		"width":	572,
 		"height":	301
 	},
@@ -35,7 +37,6 @@
 			"style":	null,
 			"props":	{
 				"id":	"nTicketTypeIsn",
-				"tab_order":	0,
 				"items_list":	"",
 				"attribute":	"N",
 				"common_line_id":	"line4"
@@ -70,16 +71,10 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"aTicketName",
-				"tab_order":	0,
-				"pattern":	"^.{0,200}$",
+				"mgformat":	"mgFormat",
 				"attribute":	"A",
 				"common_line_id":	"line36"
 			},
@@ -113,16 +108,10 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	3,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"nMaximumNumberTickets",
-				"tab_order":	0,
-				"pattern":	"^\\d{0,9}$",
+				"mgformat":	"mgFormat",
 				"attribute":	"N",
 				"common_line_id":	"line63"
 			},
@@ -156,16 +145,10 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	3,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"nPrice",
-				"tab_order":	0,
-				"pattern":	"^\\d{0,6}(\\.\\d{1,2})?$",
+				"mgformat":	"mgFormat",
 				"attribute":	"N",
 				"common_line_id":	"line97"
 			},
@@ -183,7 +166,6 @@
 			"style":	null,
 			"props":	{
 				"id":	"save_ticket",
-				"tab_order":	0,
 				"format":	"Save Ticket",
 				"common_line_id":	"line138"
 			},

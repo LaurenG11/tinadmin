@@ -6,6 +6,8 @@
 		"component_uniquename":	"eventListing_eventListing"
 	},
 	"coordinates":	{
+		"x":	0,
+		"y":	0,
 		"width":	920,
 		"height":	590
 	},
@@ -32,15 +34,9 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"dFromDate",
-				"tab_order":	0,
 				"must_input":	false,
 				"attribute":	"D",
 				"common_line_id":	"line9"
@@ -75,15 +71,9 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"dToDate",
-				"tab_order":	0,
 				"must_input":	false,
 				"attribute":	"D",
 				"common_line_id":	"line9"
@@ -102,7 +92,6 @@
 			"style":	null,
 			"props":	{
 				"id":	"Search",
-				"tab_order":	0,
 				"format":	"Search",
 				"common_line_id":	"line9"
 			},
@@ -171,16 +160,9 @@
 					"controlType":	"K",
 					"children":	[
 						{
-							"style":	{
-								"border":	false,
-								"alignment":	{
-									"horizontal":	1,
-									"vertical":	null
-								}
-							},
+							"style":	null,
 							"props":	{
 								"id":	"dEventDate",
-								"tab_order":	0,
 								"modifiable":	false,
 								"formatter":	"magicDate",
 								"attribute":	"D",
@@ -199,16 +181,9 @@
 							"children":	null
 						},
 						{
-							"style":	{
-								"border":	false,
-								"alignment":	{
-									"horizontal":	1,
-									"vertical":	null
-								}
-							},
+							"style":	null,
 							"props":	{
 								"id":	"tEventTime",
-								"tab_order":	0,
 								"modifiable":	false,
 								"formatter":	"magicTime",
 								"attribute":	"T",
@@ -243,18 +218,11 @@
 					"controlType":	"K",
 					"children":	[
 						{
-							"style":	{
-								"border":	false,
-								"alignment":	{
-									"horizontal":	1,
-									"vertical":	null
-								}
-							},
+							"style":	null,
 							"props":	{
 								"id":	"aEventShortDescription",
-								"tab_order":	0,
 								"modifiable":	false,
-								"pattern":	"^.{0,200}$",
+								"mgformat":	"mgFormat",
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
@@ -271,18 +239,11 @@
 							"children":	null
 						},
 						{
-							"style":	{
-								"border":	false,
-								"alignment":	{
-									"horizontal":	1,
-									"vertical":	null
-								}
-							},
+							"style":	null,
 							"props":	{
 								"id":	"aEventLongDescription",
-								"tab_order":	0,
 								"modifiable":	false,
-								"pattern":	"^.{0,1000}$",
+								"mgformat":	"mgFormat",
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
@@ -306,10 +267,10 @@
 									"value":	null,
 									"has_exp":	true
 								},
-								"tab_order":	0,
 								"format":	"Tickets",
 								"is_table_child":	true,
 								"web_style":	2,
+								"row_editing_type":	0,
 								"common_line_id":	"line100"
 							},
 							"coordinates":	{
@@ -327,17 +288,11 @@
 			]
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"aFeaturedShortDesctription",
-				"tab_order":	0,
 				"modifiable":	false,
-				"pattern":	"^.{0,200}$",
+				"mgformat":	"mgFormat",
 				"attribute":	"A",
 				"common_line_id":	"line52"
 			},

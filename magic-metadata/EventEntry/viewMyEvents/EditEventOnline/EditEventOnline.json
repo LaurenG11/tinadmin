@@ -7,6 +7,8 @@
 		"component_uniquename":	"viewMyEvents_EditEventOnline_EditEventOnline"
 	},
 	"coordinates":	{
+		"x":	0,
+		"y":	0,
 		"width":	892,
 		"height":	286
 	},
@@ -17,11 +19,6 @@
 			"style":	null,
 			"props":	{
 				"id":	"SaveEventButton",
-				"enabled":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"tab_order":	0,
 				"format":	"Save Event",
 				"common_line_id":	"line12"
 			},
@@ -59,20 +56,14 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"aShortDescription",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
-				"pattern":	"^.{0,1000}$",
+				"mgformat":	"mgFormat",
 				"attribute":	"A",
 				"common_line_id":	"line38"
 			},
@@ -110,19 +101,13 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"dStartDate",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
 				"attribute":	"D",
 				"common_line_id":	"line38"
 			},
@@ -160,19 +145,13 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"dEndDate",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
 				"attribute":	"D",
 				"common_line_id":	"line38"
 			},
@@ -210,19 +189,13 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"tTimeFrom",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
 				"attribute":	"T",
 				"common_line_id":	"line38"
 			},
@@ -260,19 +233,13 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"dTimeTo",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
 				"attribute":	"T",
 				"common_line_id":	"line38"
 			},
@@ -310,20 +277,14 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"aLongDescription",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
-				"pattern":	"^.{0,1200}$",
+				"mgformat":	"mgFormat",
 				"attribute":	"A",
 				"common_line_id":	"line77"
 			},
@@ -368,7 +329,6 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
 				"items_list":	"",
 				"attribute":	"N",
 				"common_line_id":	"line116"
@@ -407,20 +367,14 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"aEventURL",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
-				"pattern":	"^.{0,120}$",
+				"mgformat":	"mgFormat",
 				"attribute":	"A",
 				"common_line_id":	"line116"
 			},
@@ -435,20 +389,14 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"aLocation",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
-				"pattern":	"^.{0,100}$",
+				"mgformat":	"mgFormat",
 				"attribute":	"A",
 				"common_line_id":	"line155"
 			},
@@ -486,20 +434,14 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"aAddress",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
-				"pattern":	"^.{0,50}$",
+				"mgformat":	"mgFormat",
 				"attribute":	"A",
 				"common_line_id":	"line155"
 			},
@@ -537,20 +479,14 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"aPostalCode",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
-				"pattern":	"^.{0,9}$",
+				"mgformat":	"mgFormat",
 				"attribute":	"A",
 				"common_line_id":	"line155"
 			},
@@ -611,20 +547,14 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	3,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"aEventPrice",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
-				"pattern":	"^\\d{0,10}(\\.\\d{1,2})?$",
+				"mgformat":	"mgFormat",
 				"attribute":	"N",
 				"common_line_id":	"line207"
 			},
@@ -662,12 +592,7 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	3,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"nBonusFactor",
 				"enabled":	{
@@ -678,8 +603,7 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
-				"pattern":	"^\\d{0,3}$",
+				"mgformat":	"mgFormat",
 				"attribute":	"N",
 				"common_line_id":	"line207"
 			},
@@ -717,12 +641,7 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"imageFileName",
 				"visible":	{
@@ -733,8 +652,7 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
-				"pattern":	"^.{0,200}$",
+				"mgformat":	"mgFormat",
 				"attribute":	"A",
 				"common_line_id":	"line207"
 			},
@@ -779,7 +697,6 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
 				"text":	"Publish  Event?",
 				"attribute":	"B",
 				"common_line_id":	"line247"
@@ -825,7 +742,6 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"tab_order":	0,
 				"text":	"Feature Event?",
 				"attribute":	"B",
 				"common_line_id":	"line259"

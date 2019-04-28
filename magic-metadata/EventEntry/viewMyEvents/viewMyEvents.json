@@ -7,6 +7,8 @@
 		"component_uniquename":	"viewMyEvents_viewMyEvents"
 	},
 	"coordinates":	{
+		"x":	0,
+		"y":	0,
 		"width":	1068,
 		"height":	560
 	},
@@ -33,15 +35,9 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"dFromDate",
-				"tab_order":	0,
 				"attribute":	"D",
 				"common_line_id":	"line15"
 			},
@@ -56,16 +52,10 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"alignment":	{
-					"horizontal":	1,
-					"vertical":	null
-				}
-			},
+			"style":	null,
 			"props":	{
 				"id":	"aSearchString",
-				"tab_order":	0,
-				"pattern":	"^.{0,20}$",
+				"mgformat":	"mgFormat",
 				"attribute":	"A",
 				"common_line_id":	"line15"
 			},
@@ -83,7 +73,6 @@
 			"style":	null,
 			"props":	{
 				"id":	"Search",
-				"tab_order":	0,
 				"format":	"Search",
 				"common_line_id":	"line15"
 			},
@@ -101,7 +90,6 @@
 			"style":	null,
 			"props":	{
 				"id":	"CreateEvent",
-				"tab_order":	0,
 				"format":	"CreateEvent",
 				"common_line_id":	"line15"
 			},
@@ -148,18 +136,11 @@
 					"controlType":	"K",
 					"children":	[
 						{
-							"style":	{
-								"border":	false,
-								"alignment":	{
-									"horizontal":	1,
-									"vertical":	null
-								}
-							},
+							"style":	null,
 							"props":	{
 								"id":	"ShortDescription",
-								"tab_order":	0,
 								"modifiable":	false,
-								"pattern":	"^.{0,200}$",
+								"mgformat":	"mgFormat",
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
@@ -192,16 +173,9 @@
 					"controlType":	"K",
 					"children":	[
 						{
-							"style":	{
-								"border":	false,
-								"alignment":	{
-									"horizontal":	1,
-									"vertical":	null
-								}
-							},
+							"style":	null,
 							"props":	{
 								"id":	"dStartDate",
-								"tab_order":	0,
 								"must_input":	false,
 								"modifiable":	false,
 								"formatter":	"magicDate",
@@ -239,10 +213,10 @@
 							"style":	null,
 							"props":	{
 								"id":	"Modify",
-								"tab_order":	0,
 								"format":	"Modify",
 								"is_table_child":	true,
 								"web_style":	2,
+								"row_editing_type":	0,
 								"common_line_id":	"line86"
 							},
 							"coordinates":	{
@@ -274,10 +248,10 @@
 							"style":	null,
 							"props":	{
 								"id":	"Delete",
-								"tab_order":	0,
 								"format":	"Delete",
 								"is_table_child":	true,
 								"web_style":	2,
+								"row_editing_type":	0,
 								"common_line_id":	"line86"
 							},
 							"coordinates":	{
@@ -297,8 +271,7 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"event_subform",
-				"tab_order":	0,
+				"id":	"eventsubform",
 				"common_line_id":	"line244"
 			},
 			"coordinates":	{
@@ -315,7 +288,6 @@
 			"style":	null,
 			"props":	{
 				"id":	"ticket_subform",
-				"tab_order":	0,
 				"common_line_id":	"line473"
 			},
 			"coordinates":	{
