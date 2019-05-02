@@ -910,3 +910,13 @@ Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN"
 "Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
  <-1> 02/05/2019 08:27:56.714     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
 "Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 02/05/2019 08:52:40.517     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 02/05/2019 08:52:40.526     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 02/05/2019 08:52:40.529     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <529955119744768768> 02/05/2019 08:53:09.784     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.eventListing".
+ <529955119744768768> 02/05/2019 08:53:09.786     [Error  ] - admin-tin-magic : JSON text is not properly formatted. Unexpected character '"' is found at position 3987., Program: "mainRoute.eventListing".
+ <529955119744768768> 02/05/2019 08:53:09.788     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
+ <529955119744768768> 02/05/2019 08:53:09.791     [Error  ] - EndTaskRequest(): Invalid SQL command, database: tinAzureSQLDb : eventListing admin-tin-magic : JSON text is not properly formatted. Unexpected character '"' is found at position 3987.Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN")  (msgid "2623"), Program: "Main Program".

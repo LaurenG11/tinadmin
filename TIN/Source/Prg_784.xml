@@ -36,7 +36,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737181" _time="30881" date="02/05/2019" time="08:34:41"/>
+          <LastModified _date="737181" _time="31584" date="02/05/2019" time="08:46:24"/>
         </Header>
         <ItemIsn val="33"/>
         <Resource>
@@ -925,96 +925,6 @@
                     </Argument>
                     <Argument>
                       <Variable val="5"/>
-                      <Skip val="N"/>
-                    </Argument>
-                  </Arguments>
-                  <Wait val="Y"/>
-                  <SyncData val="N"/>
-                  <IsRoute val="N"/>
-                  <RetainFocus val="N"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </CallTask>
-              </LogicLine>
-              <LogicLine>
-                <Remark FlowIsn="41">
-                  <Type val="2"/>
-                  <Text val="**cal tin.api wrapper for predict_hq events**"/>
-                </Remark>
-              </LogicLine>
-              <LogicLine>
-                <CallTask FlowIsn="42">
-                  <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
-                  <TaskID comp="-1" obj="799"/>
-                  <Lock val="N"/>
-                  <Arguments>
-                    <Argument>
-                      <Expression val="1"/>
-                      <Skip val="N"/>
-                    </Argument>
-                    <Argument>
-                      <Expression val="7"/>
-                      <Skip val="N"/>
-                    </Argument>
-                    <Argument>
-                      <Skip val="Y"/>
-                    </Argument>
-                    <Argument>
-                      <Skip val="Y"/>
-                    </Argument>
-                    <Argument>
-                      <Variable val="19"/>
-                      <Skip val="N"/>
-                    </Argument>
-                  </Arguments>
-                  <Wait val="Y"/>
-                  <SyncData val="N"/>
-                  <IsRoute val="N"/>
-                  <RetainFocus val="N"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </CallTask>
-              </LogicLine>
-              <LogicLine>
-                <Update FlowIsn="43">
-                  <FieldID val="19"/>
-                  <WithValue val="12"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
-              </LogicLine>
-              <LogicLine>
-                <Update FlowIsn="146">
-                  <FieldID val="19"/>
-                  <WithValue val="13"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
-              </LogicLine>
-              <LogicLine>
-                <CallTask FlowIsn="44">
-                  <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
-                  <TaskID comp="-1" obj="800"/>
-                  <Lock val="N"/>
-                  <Arguments>
-                    <Argument>
-                      <Variable val="19"/>
                       <Skip val="N"/>
                     </Argument>
                   </Arguments>

@@ -35,9 +35,9 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737180" _time="46759" date="01/05/2019" time="12:59:19"/>
+          <LastModified _date="737181" _time="32025" date="02/05/2019" time="08:53:45"/>
         </Header>
-        <ItemIsn val="8"/>
+        <ItemIsn val="10"/>
         <Resource>
           <Columns>
             <Column id="1" name="inRoute">
@@ -85,6 +85,15 @@
                 <_Whole id="182" val="10"/>
                 <_Negative id="192"/>
                 <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="10" name="aPredictHQReturnPayload">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="8000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="8000"/>
+                <_Flip id="194"/>
               </PropertyList>
             </Column>
             <Column id="4" name="Route name">
@@ -262,6 +271,24 @@
                   <Direction val="C"/>
                 </Select>
               </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="27">
+                  <Type val="0"/>
+                  <Text val="**predictHQ for listings**"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="10" FlowIsn="28" id="10">
+                  <Column val="10"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="3" propagate="89">
@@ -302,6 +329,12 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="40">
+                  <Type val="2"/>
+                  <Text val="**routes**"/>
+                </Remark>
               </LogicLine>
               <LogicLine>
                 <CallTask FlowIsn="10">
@@ -396,7 +429,7 @@
                   <WithValue val="7"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
+                  <Condition Exp="12"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
@@ -407,7 +440,7 @@
                   <WithValue val="8"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
+                  <Condition Exp="13"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
@@ -418,10 +451,100 @@
                   <WithValue val="9"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Condition Exp="14"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="26">
+                  <Type val="2"/>
+                  <Text val="**call predict HQ"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="24">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="799"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="2"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Expression val="6"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="10"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="50">
+                  <FieldID val="10"/>
+                  <WithValue val="10"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="51">
+                  <FieldID val="10"/>
+                  <WithValue val="11"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="25">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="800"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="10"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -604,6 +727,14 @@
             <ExpSyntax val="'Events'"/>
             <ExpAttribute val="A"/>
           </Expression>
+          <Expression id="10">
+            <ExpSyntax val="RepStr({0,10},ASCIIChr(13),'')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="11">
+            <ExpSyntax val="RepStr({0,10},ASCIIChr(10),'')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
           <Expression id="2">
             <ExpSyntax val="'GET'"/>
             <ExpAttribute val="A"/>
@@ -621,7 +752,7 @@
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="6">
-            <ExpSyntax val="'http://tin.info/api/v1/events/get_events_phq?offset=0&amp;lat=44.781662&amp;lng=20.484732'"/>
+            <ExpSyntax val="'http://tin.info/api/v1/events/get_events_phq?offset='&amp;Trim(Str({0,8},'10'))&amp;'&amp;lat='&amp;Trim(Str({0,7},'8.3'))&amp;'&amp;lng='&amp;Trim(Str({0,6},'8.3'))"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="7">
@@ -635,6 +766,18 @@
           <Expression id="9">
             <ExpSyntax val="0"/>
             <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="12">
+            <ExpSyntax val="{0,6}=0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="13">
+            <ExpSyntax val="{0,7}=0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="14">
+            <ExpSyntax val="{0,8}=0"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
       </Task>

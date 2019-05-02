@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737181" _time="30902" date="02/05/2019" time="08:35:02"/>
+          <LastModified _date="737181" _time="31296" date="02/05/2019" time="08:41:36"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -216,7 +216,7 @@
         </TaskForms>
         <Expressions>
           <Expression id="1">
-            <ExpSyntax val="RepStr({0,1},'''','test')"/>
+            <ExpSyntax val="RepStr({0,1},'''','\u2019')"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="2">
