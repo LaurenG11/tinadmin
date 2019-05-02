@@ -10,6 +10,7 @@
             <label
                 magic="Label6"
                 class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('Label6' )"
             >
                 Ticket Type</label>
             <div>
@@ -32,6 +33,7 @@
             <label
                 magic="Label2"
                 class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('Label2' )"
             >
                 Ticket Name</label>
             <mat-form-field>
@@ -49,6 +51,7 @@
             <label
                 magic="Label4"
                 class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('Label4' )"
             >
                 Maximum Number of Tickets</label>
             <mat-form-field>
@@ -67,6 +70,7 @@
             <label
                 magic="Label9"
                 class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('Label9' )"
             >
                 Price</label>
             <mat-form-field>
@@ -86,6 +90,7 @@
                 mat-raised-button
                 color="primary"
                 magic="save_ticket"
+                [disabled]="mg.isDisabled('save_ticket' )"
             >
                 Save Ticket</button>
         </div>

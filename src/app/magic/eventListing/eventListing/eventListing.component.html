@@ -62,7 +62,7 @@
             >
                 No events for this period</label></div>
         <div style="display: flex; flex-direction: row">
-            <div class="example-container mat-elevation-z8 Table2TableContainerProps">
+            <div class="example-container mat-elevation-z8 Table7TableContainerProps">
                 <mat-table
                     #table
                     [dataSource]="dataSource"
@@ -72,10 +72,10 @@
                     (matSortChange)="tableService.sortData($event)"
                 >
                     <ng-container
-                        magic="Column9"
-                        matColumnDef="Column9"
+                        magic="clmEventDate"
+                        matColumnDef="clmEventDate"
                     >
-                        <mat-header-cell *matHeaderCellDef> dEventDate </mat-header-cell>
+                        <mat-header-cell *matHeaderCellDef> Event Date </mat-header-cell>
                         <mat-cell
                             *matCellDef="let row"
                             magicMark="magicTableRowContainer"
@@ -97,6 +97,17 @@
                                     </label>
                                 </div>
                             </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="clmEventTime"
+                        matColumnDef="clmEventTime"
+                    >
+                        <mat-header-cell *matHeaderCellDef> Event Time </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
                             <div
                                 style="display: flex; flex-direction: row"
                                 *ngIf="mg.ifRowCreated(row)"
@@ -117,10 +128,10 @@
                         </mat-cell>
                     </ng-container>
                     <ng-container
-                        magic="Column17"
-                        matColumnDef="Column17"
+                        magic="clmEvent"
+                        matColumnDef="clmEvent"
                     >
-                        <mat-header-cell *matHeaderCellDef> aEventShortDescription </mat-header-cell>
+                        <mat-header-cell *matHeaderCellDef> Event </mat-header-cell>
                         <mat-cell
                             *matCellDef="let row"
                             magicMark="magicTableRowContainer"
@@ -142,6 +153,17 @@
                                     </label>
                                 </div>
                             </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="clmDescription"
+                        matColumnDef="clmDescription"
+                    >
+                        <mat-header-cell *matHeaderCellDef> Description </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
                             <div
                                 style="display: flex; flex-direction: row"
                                 *ngIf="mg.ifRowCreated(row)"
@@ -159,6 +181,17 @@
                                     </label>
                                 </div>
                             </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="Column23"
+                        matColumnDef="Column23"
+                    >
+                        <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
                             <div
                                 style="display: flex; flex-direction: row"
                                 *ngIf="mg.ifRowCreated(row)"
@@ -191,15 +224,11 @@
                     (page)="tableService.mgOnPaginateChange($event)"
                 >
                 </mat-paginator>
-            </div><label magic="aFeaturedShortDesctription">
-                {{mg.getValue('aFeaturedShortDesctription') }}
-            </label>
-            <div *ngIf="mg.isImageExists('Image1')">
-                <img
-                    magic="Image1"
-                    [src]="mg.getImage('Image1')"
-                />
             </div>
+            <mat-card>
+                <magic-subform magic="buyticketsubform">
+                </magic-subform>
+            </mat-card>
         </div>
     </div>
 </div>

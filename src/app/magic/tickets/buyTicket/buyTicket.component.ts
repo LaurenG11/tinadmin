@@ -10,9 +10,8 @@ import {
     providers: [...matMagicProviders],
     templateUrl: './buyTicket.component.html'
 }) export class buyTicket extends BaseMatTableMagicComponent {
-    displayedColumns = ['Column2',
+    displayedColumns = ['clmTicket',
+        'clmPrice',
         'Column5',
-        'Column9',
-        'Column6',
     ];
 }

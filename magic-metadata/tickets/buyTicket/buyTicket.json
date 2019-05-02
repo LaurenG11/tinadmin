@@ -2,14 +2,15 @@
 	"style":	null,
 	"props":	{
 		"id":	"buyTicket",
+		"window_type":	1,
 		"component_path":	"tickets/buyTicket/",
 		"component_uniquename":	"buyTicket_buyTicket"
 	},
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	596,
-		"height":	325
+		"width":	624,
+		"height":	412
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -18,15 +19,15 @@
 			"style":	null,
 			"props":	{
 				"id":	"Table1",
-				"table_row_height":	26,
+				"table_row_height":	70,
 				"table_title_height":	18,
-				"common_line_id":	"line24"
+				"common_line_id":	"line8"
 			},
 			"coordinates":	{
-				"x":	20,
-				"y":	24,
-				"width":	563,
-				"height":	261
+				"x":	9,
+				"y":	8,
+				"width":	604,
+				"height":	155
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -34,8 +35,8 @@
 				{
 					"style":	null,
 					"props":	{
-						"id":	"Column2",
-						"column_title":	"aTicketName",
+						"id":	"clmTicket",
+						"column_title":	"Ticket Type",
 						"is_table_child":	true,
 						"web_style":	2
 					},
@@ -53,12 +54,48 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line46"
+								"common_line_id":	"line30"
 							},
 							"coordinates":	{
-								"x":	24,
-								"y":	46,
+								"x":	13,
+								"y":	30,
 								"width":	400,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"clmPrice",
+						"column_title":	"Price",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	68
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"nPrice",
+								"mgformat":	"mgFormat",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line30"
+							},
+							"coordinates":	{
+								"x":	414,
+								"y":	30,
+								"width":	60,
 								"height":	18
 							},
 							"hint":	null,
@@ -75,7 +112,7 @@
 						"web_style":	2
 					},
 					"coordinates":	{
-						"width":	47
+						"width":	124
 					},
 					"hint":	null,
 					"controlType":	"K",
@@ -92,34 +129,18 @@
 								"is_table_child":	true,
 								"web_style":	2,
 								"row_editing_type":	0,
-								"common_line_id":	"line46"
+								"common_line_id":	"line30"
 							},
 							"coordinates":	{
-								"x":	425,
-								"y":	46,
+								"x":	482,
+								"y":	30,
 								"width":	39,
 								"height":	22
 							},
 							"hint":	null,
 							"controlType":	"B",
 							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column9",
-						"column_title":	"noTickets",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	56
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
+						},
 						{
 							"style":	null,
 							"props":	{
@@ -128,33 +149,18 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line46"
+								"common_line_id":	"line30"
 							},
 							"coordinates":	{
-								"x":	472,
-								"y":	46,
+								"x":	524,
+								"y":	31,
 								"width":	32,
 								"height":	18
 							},
 							"hint":	null,
 							"controlType":	"T",
 							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column6",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	47
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
+						},
 						{
 							"style":	null,
 							"props":	{
@@ -163,11 +169,11 @@
 								"is_table_child":	true,
 								"web_style":	2,
 								"row_editing_type":	0,
-								"common_line_id":	"line46"
+								"common_line_id":	"line30"
 							},
 							"coordinates":	{
-								"x":	528,
-								"y":	46,
+								"x":	557,
+								"y":	30,
 								"width":	39,
 								"height":	22
 							},
@@ -183,18 +189,255 @@
 			"style":	null,
 			"props":	{
 				"id":	"btnBuyTicket",
-				"format":	"Buy Ticket",
-				"common_line_id":	"line288"
+				"format":	"Add",
+				"common_line_id":	"line167"
 			},
 			"coordinates":	{
-				"x":	506,
-				"y":	288,
+				"x":	536,
+				"y":	167,
 				"width":	76,
 				"height":	22
 			},
 			"hint":	null,
 			"controlType":	"B",
 			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"grpPayment",
+				"common_line_id":	"line193"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	193,
+				"width":	603,
+				"height":	204
+			},
+			"hint":	null,
+			"controlType":	"G",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"aTicketPurchaseSummary",
+						"modifiable":	false,
+						"mgformat":	"mgFormat",
+						"attribute":	"A",
+						"common_line_id":	"line223"
+					},
+					"coordinates":	{
+						"x":	20,
+						"y":	223,
+						"width":	588,
+						"height":	18
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	{
+						"font":	1
+					},
+					"props":	{
+						"id":	"lblFirstName",
+						"enabled":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"text":	"First Name *",
+						"common_line_id":	"line267"
+					},
+					"coordinates":	{
+						"x":	18,
+						"y":	272,
+						"width":	57,
+						"height":	14
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"aFirstName",
+						"enabled":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"mgformat":	"mgFormat",
+						"attribute":	"A",
+						"common_line_id":	"line267"
+					},
+					"coordinates":	{
+						"x":	80,
+						"y":	267,
+						"width":	528,
+						"height":	18
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	{
+						"font":	1
+					},
+					"props":	{
+						"id":	"lblLastName",
+						"enabled":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"text":	"Last Name *",
+						"common_line_id":	"line297"
+					},
+					"coordinates":	{
+						"x":	20,
+						"y":	301,
+						"width":	57,
+						"height":	14
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"aLastName",
+						"enabled":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"mgformat":	"mgFormat",
+						"attribute":	"A",
+						"common_line_id":	"line297"
+					},
+					"coordinates":	{
+						"x":	81,
+						"y":	297,
+						"width":	528,
+						"height":	18
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	{
+						"font":	1
+					},
+					"props":	{
+						"id":	"lblEmail",
+						"enabled":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"text":	"Email *",
+						"common_line_id":	"line328"
+					},
+					"coordinates":	{
+						"x":	20,
+						"y":	328,
+						"width":	35,
+						"height":	14
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"aEmail",
+						"enabled":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"mgformat":	"mgFormat",
+						"attribute":	"A",
+						"common_line_id":	"line328"
+					},
+					"coordinates":	{
+						"x":	80,
+						"y":	328,
+						"width":	528,
+						"height":	18
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	{
+						"font":	1
+					},
+					"props":	{
+						"id":	"Label24",
+						"visible":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"text":	"Pass :",
+						"common_line_id":	"line357"
+					},
+					"coordinates":	{
+						"x":	17,
+						"y":	359,
+						"width":	60,
+						"height":	14
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"aLinkToPassPage",
+						"visible":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"mgformat":	"mgFormat",
+						"attribute":	"A",
+						"common_line_id":	"line357"
+					},
+					"coordinates":	{
+						"x":	80,
+						"y":	359,
+						"width":	400,
+						"height":	18
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"btn_Pay",
+						"enabled":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"format":	"Go To Payment",
+						"common_line_id":	"line357"
+					},
+					"coordinates":	{
+						"x":	496,
+						"y":	357,
+						"width":	110,
+						"height":	22
+					},
+					"hint":	null,
+					"controlType":	"B",
+					"children":	null
+				}
+			]
 		}
 	]
 }

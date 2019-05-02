@@ -51,7 +51,7 @@
                 CreateEvent</button>
         </div>
         <div style="display: flex; flex-direction: row">
-            <div class="example-container mat-elevation-z8 Table3TableContainerProps">
+            <div class="example-container mat-elevation-z8 Table6TableContainerProps">
                 <mat-table
                     #table
                     [dataSource]="dataSource"
@@ -77,7 +77,23 @@
                                     [formGroup]="mg.getFormGroupByRow(row.rowId)"
                                     style="display: flex; flex-direction: row"
                                 >
-                                    <label
+                                    <mat-form-field *ngIf="mg.isRowInRowEditing(row)">
+                                        <div><input
+                                                *ngIf="mg.isRowInRowEditing(row)"
+                                                matInput
+                                                magic="ShortDescription"
+                                                [rowId]="row.rowId"
+                                                formControlName="ShortDescription"
+                                                mgFormat
+                                                required
+                                            >
+                                            <mgError
+                                                magic="ShortDescription"
+                                                [rowId]="row.rowId"
+                                            > </mgError>
+                                        </div>
+                                    </mat-form-field><label
+                                        *ngIf="!mg.isRowInRowEditing(row)"
                                         magic="ShortDescription"
                                         [rowId]="row.rowId"
                                     >
@@ -162,6 +178,29 @@
                             </div>
                         </mat-cell>
                     </ng-container>
+                    <ng-container
+                        magic="Column17"
+                        matColumnDef="Column17"
+                    >
+                        <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    mat-raised-button
+                                    color="primary"
+                                    magic="btnTickets"
+                                    [rowId]="row.rowId"
+                                >
+                                    Tickets</button>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
                     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
                     <mat-row
                         *matRowDef="let row; columns: displayedColumns;"
@@ -180,18 +219,43 @@
                 >
                 </mat-paginator>
             </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <mat-card>
-                <magic-subform magic="eventsubform">
-                </magic-subform>
-            </mat-card>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <mat-card>
-                <magic-subform magic="ticket_subform">
-                </magic-subform>
-            </mat-card>
+            <div>
+                <mat-tab-group
+                    magic="Tab20"
+                    (selectedTabChange)="task.mgOnTabSelectionChanged('Tab20', $event.index)"
+                    [selectedIndex]="mg.getTabSelectedIndex('Tab20')"
+                >
+                    <mat-tab
+                        *ngFor="let o of mg.getItemListValues('Tab20')"
+                        [label]="mg.getTabpageText('Tab20', o.index)"
+                    >
+                    </mat-tab>
+                </mat-tab-group>
+                <div
+                    class="tab_content"
+                    [style.display]="mg.isTabPageSelected('Tab20', 1) ? 'flex' : 'none' "
+                    style="flex-direction: column"
+                >
+                    <div style="display: flex; flex-direction: row">
+                        <mat-card>
+                            <magic-subform magic="eventsubform">
+                            </magic-subform>
+                        </mat-card>
+                    </div>
+                </div>
+                <div
+                    class="tab_content"
+                    [style.display]="mg.isTabPageSelected('Tab20', 2) ? 'flex' : 'none' "
+                    style="flex-direction: column"
+                >
+                    <div style="display: flex; flex-direction: row">
+                        <mat-card>
+                            <magic-subform magic="ticketsubform">
+                            </magic-subform>
+                        </mat-card>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

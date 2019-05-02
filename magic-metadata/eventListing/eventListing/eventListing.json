@@ -8,8 +8,8 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	920,
-		"height":	590
+		"width":	968,
+		"height":	489
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -24,8 +24,8 @@
 				"common_line_id":	"line9"
 			},
 			"coordinates":	{
-				"x":	38,
-				"y":	10,
+				"x":	8,
+				"y":	13,
 				"width":	56,
 				"height":	14
 			},
@@ -42,7 +42,7 @@
 				"common_line_id":	"line9"
 			},
 			"coordinates":	{
-				"x":	99,
+				"x":	69,
 				"y":	10,
 				"width":	73,
 				"height":	18
@@ -61,8 +61,8 @@
 				"common_line_id":	"line9"
 			},
 			"coordinates":	{
-				"x":	185,
-				"y":	10,
+				"x":	154,
+				"y":	13,
 				"width":	44,
 				"height":	14
 			},
@@ -79,8 +79,8 @@
 				"common_line_id":	"line9"
 			},
 			"coordinates":	{
-				"x":	234,
-				"y":	10,
+				"x":	202,
+				"y":	12,
 				"width":	73,
 				"height":	18
 			},
@@ -96,7 +96,7 @@
 				"common_line_id":	"line9"
 			},
 			"coordinates":	{
-				"x":	357,
+				"x":	327,
 				"y":	9,
 				"width":	84,
 				"height":	22
@@ -117,7 +117,7 @@
 				"common_line_id":	"line33"
 			},
 			"coordinates":	{
-				"x":	37,
+				"x":	12,
 				"y":	33,
 				"width":	404,
 				"height":	16
@@ -129,17 +129,17 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Table2",
+				"id":	"Table7",
 				"table_row_height":	92,
 				"web_style":	2,
-				"table_title_height":	0,
+				"table_title_height":	35,
 				"no_modifiable_descendants":	true,
-				"common_line_id":	"line52"
+				"common_line_id":	"line50"
 			},
 			"coordinates":	{
-				"x":	39,
+				"x":	9,
 				"y":	52,
-				"width":	402,
+				"width":	665,
 				"height":	422
 			},
 			"hint":	null,
@@ -148,8 +148,8 @@
 				{
 					"style":	null,
 					"props":	{
-						"id":	"Column9",
-						"column_title":	"dEventDate",
+						"id":	"clmEventDate",
+						"column_title":	"Event Date",
 						"is_table_child":	true,
 						"web_style":	2
 					},
@@ -168,18 +168,34 @@
 								"attribute":	"D",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line56"
+								"common_line_id":	"line91"
 							},
 							"coordinates":	{
-								"x":	43,
-								"y":	56,
+								"x":	13,
+								"y":	91,
 								"width":	72,
-								"height":	30
+								"height":	18
 							},
 							"hint":	null,
 							"controlType":	"T",
 							"children":	null
-						},
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"clmEventTime",
+						"column_title":	"Event Time",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	80
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
 						{
 							"style":	null,
 							"props":	{
@@ -192,10 +208,10 @@
 								"common_line_id":	"line91"
 							},
 							"coordinates":	{
-								"x":	43,
+								"x":	94,
 								"y":	91,
 								"width":	72,
-								"height":	31
+								"height":	18
 							},
 							"hint":	null,
 							"controlType":	"T",
@@ -206,13 +222,13 @@
 				{
 					"style":	null,
 					"props":	{
-						"id":	"Column17",
-						"column_title":	"aEventShortDescription",
+						"id":	"clmEvent",
+						"column_title":	"Event",
 						"is_table_child":	true,
 						"web_style":	2
 					},
 					"coordinates":	{
-						"width":	308
+						"width":	150
 					},
 					"hint":	null,
 					"controlType":	"K",
@@ -226,18 +242,34 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line56"
+								"common_line_id":	"line91"
 							},
 							"coordinates":	{
-								"x":	124,
-								"y":	56,
-								"width":	300,
+								"x":	174,
+								"y":	91,
+								"width":	138,
 								"height":	18
 							},
 							"hint":	null,
 							"controlType":	"T",
 							"children":	null
-						},
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"clmDescription",
+						"column_title":	"Description",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	280
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
 						{
 							"style":	null,
 							"props":	{
@@ -247,18 +279,33 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line78"
+								"common_line_id":	"line91"
 							},
 							"coordinates":	{
-								"x":	124,
-								"y":	78,
-								"width":	300,
+								"x":	325,
+								"y":	91,
+								"width":	277,
 								"height":	18
 							},
 							"hint":	null,
 							"controlType":	"T",
 							"children":	null
-						},
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column23",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	74
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
 						{
 							"style":	null,
 							"props":	{
@@ -271,11 +318,11 @@
 								"is_table_child":	true,
 								"web_style":	2,
 								"row_editing_type":	0,
-								"common_line_id":	"line100"
+								"common_line_id":	"line91"
 							},
 							"coordinates":	{
-								"x":	223,
-								"y":	100,
+								"x":	604,
+								"y":	91,
 								"width":	66,
 								"height":	22
 							},
@@ -290,36 +337,17 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"aFeaturedShortDesctription",
-				"modifiable":	false,
-				"mgformat":	"mgFormat",
-				"attribute":	"A",
-				"common_line_id":	"line52"
+				"id":	"buyticketsubform",
+				"common_line_id":	"line50"
 			},
 			"coordinates":	{
-				"x":	560,
-				"y":	254,
-				"width":	228,
-				"height":	18
+				"x":	682,
+				"y":	50,
+				"width":	269,
+				"height":	423
 			},
 			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Image1",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	568,
-				"y":	52,
-				"width":	262,
-				"height":	415
-			},
-			"hint":	null,
-			"controlType":	"I",
+			"controlType":	"F",
 			"children":	null
 		}
 	]

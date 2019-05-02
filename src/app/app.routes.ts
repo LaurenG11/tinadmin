@@ -15,7 +15,7 @@ export const routes: Routes = [{
     path: 'Events/:inEoIsn',
     component: RouterContainerMagicComponent,
 }, {
-    path: 'EventListing/:inEoIsn',
+    path: 'EventListing/:inEoIsn/:inLongitude/:inLatitude/:inRange',
     component: RouterContainerMagicComponent,
 }, ];
 @NgModule({

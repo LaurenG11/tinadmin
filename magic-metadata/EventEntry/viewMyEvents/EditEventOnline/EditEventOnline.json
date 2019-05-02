@@ -19,6 +19,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"SaveEventButton",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"format":	"Save Event",
 				"common_line_id":	"line12"
 			},

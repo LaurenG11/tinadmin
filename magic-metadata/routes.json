@@ -9,7 +9,7 @@
 				"children":	null
 			},
 			{
-				"RouteName":	"EventListing/:inEoIsn",
+				"RouteName":	"EventListing/:inEoIsn/:inLongitude/:inLatitude/:inRange",
 				"ModuleName":	"",
 				"OutletName":	"",
 				"children":	null

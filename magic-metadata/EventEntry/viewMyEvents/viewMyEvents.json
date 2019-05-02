@@ -10,7 +10,7 @@
 		"x":	0,
 		"y":	0,
 		"width":	1068,
-		"height":	560
+		"height":	443
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -106,17 +106,16 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Table3",
+				"id":	"Table6",
 				"table_row_height":	100,
 				"table_title_height":	18,
-				"no_modifiable_descendants":	true,
 				"common_line_id":	"line64"
 			},
 			"coordinates":	{
-				"x":	25,
+				"x":	0,
 				"y":	64,
-				"width":	920,
-				"height":	164
+				"width":	475,
+				"height":	293
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -139,7 +138,8 @@
 							"style":	null,
 							"props":	{
 								"id":	"ShortDescription",
-								"modifiable":	false,
+								"must_input":	true,
+								"modifiable":	true,
 								"mgformat":	"mgFormat",
 								"attribute":	"A",
 								"is_table_child":	true,
@@ -147,7 +147,7 @@
 								"common_line_id":	"line86"
 							},
 							"coordinates":	{
-								"x":	29,
+								"x":	4,
 								"y":	86,
 								"width":	250,
 								"height":	18
@@ -185,7 +185,7 @@
 								"common_line_id":	"line86"
 							},
 							"coordinates":	{
-								"x":	279,
+								"x":	254,
 								"y":	86,
 								"width":	73,
 								"height":	18
@@ -220,7 +220,7 @@
 								"common_line_id":	"line86"
 							},
 							"coordinates":	{
-								"x":	360,
+								"x":	335,
 								"y":	86,
 								"width":	39,
 								"height":	22
@@ -255,7 +255,42 @@
 								"common_line_id":	"line86"
 							},
 							"coordinates":	{
-								"x":	407,
+								"x":	382,
+								"y":	86,
+								"width":	39,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column17",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	47
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnTickets",
+								"format":	"Tickets",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line86"
+							},
+							"coordinates":	{
+								"x":	429,
 								"y":	86,
 								"width":	39,
 								"height":	22
@@ -271,34 +306,77 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"eventsubform",
-				"common_line_id":	"line244"
+				"id":	"Tab20",
+				"items_list":	"D,T",
+				"attribute":	"A",
+				"common_line_id":	"line64"
 			},
 			"coordinates":	{
-				"x":	24,
-				"y":	244,
-				"width":	921,
-				"height":	211
+				"x":	474,
+				"y":	64,
+				"width":	487,
+				"height":	294
 			},
 			"hint":	null,
-			"controlType":	"F",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"ticket_subform",
-				"common_line_id":	"line473"
-			},
-			"coordinates":	{
-				"x":	24,
-				"y":	473,
-				"width":	920,
-				"height":	192
-			},
-			"hint":	null,
-			"controlType":	"F",
-			"children":	null
+			"controlType":	"J",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"layer":	1,
+						"id":	"Tab20"
+					},
+					"coordinates":	null,
+					"hint":	null,
+					"controlType":	"Z",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"eventsubform",
+								"common_line_id":	"line86"
+							},
+							"coordinates":	{
+								"x":	477,
+								"y":	86,
+								"width":	475,
+								"height":	258
+							},
+							"hint":	null,
+							"controlType":	"F",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"layer":	2,
+						"id":	"Tab20"
+					},
+					"coordinates":	null,
+					"hint":	null,
+					"controlType":	"Z",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"ticketsubform",
+								"common_line_id":	"line87"
+							},
+							"coordinates":	{
+								"x":	479,
+								"y":	87,
+								"width":	476,
+								"height":	265
+							},
+							"hint":	null,
+							"controlType":	"F",
+							"children":	null
+						}
+					]
+				}
+			]
 		}
 	]
 }

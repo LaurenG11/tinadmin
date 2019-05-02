@@ -8,8 +8,8 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	820,
-		"height":	461
+		"width":	540,
+		"height":	409
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -23,11 +23,11 @@
 					"has_exp":	true
 				},
 				"text":	"No Tickets Exist",
-				"common_line_id":	"line16"
+				"common_line_id":	"line6"
 			},
 			"coordinates":	{
-				"x":	10,
-				"y":	17,
+				"x":	17,
+				"y":	7,
 				"width":	297,
 				"height":	31
 			},
@@ -40,11 +40,11 @@
 			"props":	{
 				"id":	"CreateTicket",
 				"format":	"Create Ticket",
-				"common_line_id":	"line16"
+				"common_line_id":	"line6"
 			},
 			"coordinates":	{
-				"x":	603,
-				"y":	16,
+				"x":	344,
+				"y":	6,
 				"width":	87,
 				"height":	22
 			},
@@ -56,6 +56,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"Table2",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"table_row_height":	48,
 				"table_title_height":	18,
 				"common_line_id":	"line48"
@@ -63,7 +67,7 @@
 			"coordinates":	{
 				"x":	15,
 				"y":	48,
-				"width":	676,
+				"width":	505,
 				"height":	127
 			},
 			"hint":	null,
@@ -190,7 +194,7 @@
 			"coordinates":	{
 				"x":	17,
 				"y":	196,
-				"width":	673,
+				"width":	503,
 				"height":	192
 			},
 			"hint":	null,

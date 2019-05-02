@@ -14,5 +14,6 @@ import {
         'Column24',
         'Column10',
         'Column22',
+        'Column17',
     ];
 }

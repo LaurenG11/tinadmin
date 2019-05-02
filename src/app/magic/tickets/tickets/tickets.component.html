@@ -20,7 +20,10 @@
                 Create Ticket</button>
         </div>
         <div style="display: flex; flex-direction: row">
-            <div class="example-container mat-elevation-z8 Table2TableContainerProps">
+            <div
+                class="example-container mat-elevation-z8 Table2TableContainerProps"
+                [style.visibility]="mg.getVisible('Table2')"
+            >
                 <mat-table
                     #table
                     [dataSource]="dataSource"
