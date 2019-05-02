@@ -187,13 +187,19 @@
                 color="primary"
                 magic="btnBuyTicket"
             >
-                Add</button>
+                Update Basket</button>
         </div>
         <div style="display: flex; flex-direction: row">
             <mat-card
                 magic="grpPayment"
                 class="container_border"
             >
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        magic="lblBasket"
+                        class="lable_overflow"
+                    >
+                        Basket</label></div>
                 <div style="display: flex; flex-direction: row">
                     <label magic="aTicketPurchaseSummary">
                         {{mg.getValue('aTicketPurchaseSummary') }}

@@ -22,11 +22,11 @@
 			"props":	{
 				"id":	"Label14",
 				"text":	"* From Date",
-				"common_line_id":	"line15"
+				"common_line_id":	"line5"
 			},
 			"coordinates":	{
-				"x":	24,
-				"y":	19,
+				"x":	9,
+				"y":	7,
 				"width":	56,
 				"height":	14
 			},
@@ -39,11 +39,11 @@
 			"props":	{
 				"id":	"dFromDate",
 				"attribute":	"D",
-				"common_line_id":	"line15"
+				"common_line_id":	"line5"
 			},
 			"coordinates":	{
-				"x":	85,
-				"y":	15,
+				"x":	69,
+				"y":	6,
 				"width":	73,
 				"height":	18
 			},
@@ -57,11 +57,11 @@
 				"id":	"aSearchString",
 				"mgformat":	"mgFormat",
 				"attribute":	"A",
-				"common_line_id":	"line15"
+				"common_line_id":	"line5"
 			},
 			"coordinates":	{
-				"x":	296,
-				"y":	17,
+				"x":	146,
+				"y":	6,
 				"width":	180,
 				"height":	18
 			},
@@ -74,29 +74,12 @@
 			"props":	{
 				"id":	"Search",
 				"format":	"Search",
-				"common_line_id":	"line15"
+				"common_line_id":	"line5"
 			},
 			"coordinates":	{
-				"x":	481,
-				"y":	16,
+				"x":	330,
+				"y":	5,
 				"width":	60,
-				"height":	22
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"CreateEvent",
-				"format":	"CreateEvent",
-				"common_line_id":	"line15"
-			},
-			"coordinates":	{
-				"x":	545,
-				"y":	15,
-				"width":	77,
 				"height":	22
 			},
 			"hint":	null,
@@ -109,13 +92,13 @@
 				"id":	"Table6",
 				"table_row_height":	100,
 				"table_title_height":	18,
-				"common_line_id":	"line64"
+				"common_line_id":	"line37"
 			},
 			"coordinates":	{
 				"x":	0,
-				"y":	64,
-				"width":	475,
-				"height":	293
+				"y":	38,
+				"width":	470,
+				"height":	396
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -123,8 +106,8 @@
 				{
 					"style":	null,
 					"props":	{
-						"id":	"Column8",
-						"column_title":	"Short Description",
+						"id":	"clmEvent",
+						"column_title":	"Event",
 						"is_table_child":	true,
 						"web_style":	2
 					},
@@ -144,11 +127,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line86"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	4,
-								"y":	86,
+								"y":	60,
 								"width":	250,
 								"height":	18
 							},
@@ -161,8 +144,8 @@
 				{
 					"style":	null,
 					"props":	{
-						"id":	"Column24",
-						"column_title":	"dStartDate",
+						"id":	"clmDate",
+						"column_title":	"Date",
 						"is_table_child":	true,
 						"web_style":	2
 					},
@@ -182,11 +165,11 @@
 								"attribute":	"D",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line86"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	254,
-								"y":	86,
+								"y":	60,
 								"width":	73,
 								"height":	18
 							},
@@ -199,12 +182,12 @@
 				{
 					"style":	null,
 					"props":	{
-						"id":	"Column10",
+						"id":	"Column9",
 						"is_table_child":	true,
 						"web_style":	2
 					},
 					"coordinates":	{
-						"width":	47
+						"width":	136
 					},
 					"hint":	null,
 					"controlType":	"K",
@@ -212,73 +195,43 @@
 						{
 							"style":	null,
 							"props":	{
-								"id":	"Modify",
+								"id":	"btnModify",
 								"format":	"Modify",
 								"is_table_child":	true,
 								"web_style":	2,
 								"row_editing_type":	0,
-								"common_line_id":	"line86"
+								"common_line_id":	"line59"
 							},
 							"coordinates":	{
 								"x":	335,
-								"y":	86,
+								"y":	59,
 								"width":	39,
 								"height":	22
 							},
 							"hint":	null,
 							"controlType":	"B",
 							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column22",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	47
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
+						},
 						{
 							"style":	null,
 							"props":	{
-								"id":	"Delete",
+								"id":	"btnDelete",
 								"format":	"Delete",
 								"is_table_child":	true,
 								"web_style":	2,
 								"row_editing_type":	0,
-								"common_line_id":	"line86"
+								"common_line_id":	"line59"
 							},
 							"coordinates":	{
-								"x":	382,
-								"y":	86,
+								"x":	376,
+								"y":	59,
 								"width":	39,
 								"height":	22
 							},
 							"hint":	null,
 							"controlType":	"B",
 							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column17",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	47
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
+						},
 						{
 							"style":	null,
 							"props":	{
@@ -287,11 +240,11 @@
 								"is_table_child":	true,
 								"web_style":	2,
 								"row_editing_type":	0,
-								"common_line_id":	"line86"
+								"common_line_id":	"line59"
 							},
 							"coordinates":	{
-								"x":	429,
-								"y":	86,
+								"x":	417,
+								"y":	59,
 								"width":	39,
 								"height":	22
 							},
@@ -306,6 +259,23 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"btnNewEvent",
+				"format":	"NewEvent",
+				"common_line_id":	"line37"
+			},
+			"coordinates":	{
+				"x":	474,
+				"y":	37,
+				"width":	77,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"Tab20",
 				"items_list":	"D,T",
 				"attribute":	"A",
@@ -315,7 +285,7 @@
 				"x":	474,
 				"y":	64,
 				"width":	487,
-				"height":	294
+				"height":	369
 			},
 			"hint":	null,
 			"controlType":	"J",
@@ -340,7 +310,7 @@
 								"x":	477,
 								"y":	86,
 								"width":	475,
-								"height":	258
+								"height":	341
 							},
 							"hint":	null,
 							"controlType":	"F",
@@ -368,7 +338,7 @@
 								"x":	479,
 								"y":	87,
 								"width":	476,
-								"height":	265
+								"height":	340
 							},
 							"hint":	null,
 							"controlType":	"F",

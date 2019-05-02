@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737179" _time="64187" date="30/04/2019" time="17:49:47"/>
+          <LastModified _date="737181" _time="43142" date="02/05/2019" time="11:59:02"/>
         </Header>
         <ItemIsn val="4"/>
         <Resource>
@@ -88,9 +88,9 @@
             <Column id="4" name="aJsonString">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="5000"/>
+                <Picture id="157" valUnicode="8000"/>
                 <StoredAs id="173" val="1"/>
-                <Size id="174" val="5000"/>
+                <Size id="174" val="8000"/>
                 <_Flip id="194"/>
               </PropertyList>
             </Column>

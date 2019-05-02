@@ -83337,7 +83337,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject FolderIsn="2" PhysicalName="tickets" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="363" name="tickets">
+<DataObject FolderIsn="2" PhysicalName="#tickets" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="363" name="#tickets">
 
   <Encrypt val="N"/>
 
@@ -83364,15 +83364,15 @@
   <MetaTreeRTIndex val="-1"/>
 
   <Columns>
-    <Column id="1" name="isn">
+    <Column id="1" name="ticketIsn">
       <PropertyList model="FIELD">
         <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="128"/>
         <StoredAs id="173" val="4"/>
         <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
-        <DbColumnName id="178" val="isn"/>
+        <DbColumnName id="178" val="ticketIsn"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="isn" PIC_U="9" Size="4" SqlType="integer" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldPhysical Name="ticketIsn" PIC_U="9" Size="4" SqlType="integer" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
       </PropertyList>
     </Column>
     <Column id="2" name="ticketName">
@@ -83453,7 +83453,7 @@
   </Columns>
 
   <Indexes>
-    <Index id="1" name="PK_#tickets">
+    <Index id="1" name="PK_tmptickets">
       <Mode val="S"/>
       <Order val="T"/>
       <Range val="Q"/>
@@ -83466,74 +83466,6 @@
       <Segments>
         <Segment>
           <Size val="4"/>
-          <Column val="1"/>
-          <Order val="A"/>
-        </Segment>
-      </Segments>
-    </Index>
-  </Indexes>
-
-  <ForeignKeys/>
-
-  <WebS/>
-
-</DataObject> 
-<DataObject FolderIsn="2" PhysicalName="test" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="364" name="test">
-
-  <Encrypt val="N"/>
-
-  <Cache val="D"/>
-
-  <IdentifyRowModifications val="U"/>
-
-  <HasHint val="Y"/>
-
-  <Cursor val="D"/>
-
-  <CheckExistence val="Y"/>
-
-  <ObjectType val="T"/>
-
-  <Position val="D"/>
-
-  <PositionIndex val="1"/>
-
-  <IndexesLastIsn val="1"/>
-
-  <MetaTreeRTIndex val="-1"/>
-
-  <Columns>
-    <Column id="1" name="test">
-      <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_NUMERIC" id="1"/>
-        <Picture id="157" valUnicode="3"/>
-        <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
-        <Definition id="175" val="2"/>
-        <DbColumnName id="178" val="test"/>
-        <_Dec id="181"/>
-        <_Whole id="182" val="3"/>
-        <_Negative id="192"/>
-        <_Flip id="194"/>
-        <_FieldStyle id="276" val="1"/>
-      </PropertyList>
-    </Column>
-  </Columns>
-
-  <Indexes>
-    <Index id="1" name="ok_test">
-      <Mode val="S"/>
-      <Order val="T"/>
-      <Range val="Q"/>
-      <IndexType val="R"/>
-      <PhysicalName val="ok_test"/>
-      <HasHint val="Y"/>
-      <Clustered val="N"/>
-      <DropOnReindex val="N"/>
-      <Primary val="Y"/>
-      <Segments>
-        <Segment>
-          <Size val="2"/>
           <Column val="1"/>
           <Order val="A"/>
         </Segment>

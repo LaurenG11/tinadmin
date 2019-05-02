@@ -7,21 +7,12 @@
         magic="EditEventOnline"
     >
         <div style="display: flex; flex-direction: row">
-            <button
-                mat-raised-button
-                color="primary"
-                magic="SaveEventButton"
-                [disabled]="mg.isDisabled('SaveEventButton' )"
-            >
-                Save Event</button>
-        </div>
-        <div style="display: flex; flex-direction: row">
             <label
-                magic="Label14"
+                magic="lblEventName"
                 class="lable_overflow mgFont1"
-                [attr.disabled]="mg.isDisabled('Label14' )"
+                [attr.disabled]="mg.isDisabled('lblEventName' )"
             >
-                * Event Name</label>
+                Event Name *</label>
             <mat-form-field>
                 <div><input
                         matInput
@@ -31,12 +22,33 @@
                     >
                     <mgError magic="aShortDescription"> </mgError>
                 </div>
-            </mat-form-field><label
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblSummary"
+                class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('lblSummary' )"
+            >
+                Summary *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        magic="aLongDescription"
+                        formControlName="aLongDescription"
+                        mgFormat
+                    >
+                    <mgError magic="aLongDescription"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
                 magic="StartDateLabel"
                 class="lable_overflow mgFont1"
                 [attr.disabled]="mg.isDisabled('StartDateLabel' )"
             >
-                Start Date</label>
+                Start Date *</label>
             <mat-form-field
                 magic="dStartDate"
                 [eventsOnly]=true
@@ -57,7 +69,7 @@
                 class="lable_overflow mgFont1"
                 [attr.disabled]="mg.isDisabled('EndDateLabel' )"
             >
-                End Date</label>
+                End Date *</label>
             <mat-form-field
                 magic="dEndDate"
                 [eventsOnly]=true
@@ -109,29 +121,11 @@
         </div>
         <div style="display: flex; flex-direction: row">
             <label
-                magic="Label36"
+                magic="lblCategory"
                 class="lable_overflow mgFont1"
-                [attr.disabled]="mg.isDisabled('Label36' )"
+                [attr.disabled]="mg.isDisabled('lblCategory' )"
             >
-                Summary</label>
-            <mat-form-field>
-                <div><input
-                        matInput
-                        magic="aLongDescription"
-                        formControlName="aLongDescription"
-                        mgFormat
-                    >
-                    <mgError magic="aLongDescription"> </mgError>
-                </div>
-            </mat-form-field>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                magic="Label29"
-                class="lable_overflow mgFont1"
-                [attr.disabled]="mg.isDisabled('Label29' )"
-            >
-                * Event Category</label>
+                Event Category *</label>
             <div>
                 <mat-form-field>
                     <mat-select
@@ -146,7 +140,10 @@
                         </mat-option>
                     </mat-select>
                 </mat-form-field>
-            </div><label
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
                 magic="Label18"
                 class="lable_overflow mgFont1"
                 [attr.disabled]="mg.isDisabled('Label18' )"
@@ -164,6 +161,12 @@
             </mat-form-field>
         </div>
         <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label20"
+                class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('Label20' )"
+            >
+                Location *</label>
             <mat-form-field>
                 <div><input
                         matInput
@@ -173,7 +176,10 @@
                     >
                     <mgError magic="aLocation"> </mgError>
                 </div>
-            </mat-form-field><label
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
                 magic="Label22"
                 class="lable_overflow mgFont1"
                 [attr.disabled]="mg.isDisabled('Label22' )"
@@ -188,12 +194,15 @@
                     >
                     <mgError magic="aAddress"> </mgError>
                 </div>
-            </mat-form-field><label
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
                 magic="Label24"
                 class="lable_overflow mgFont1"
                 [attr.disabled]="mg.isDisabled('Label24' )"
             >
-                * PostalCode</label>
+                PostalCode *</label>
             <mat-form-field>
                 <div><input
                         matInput
@@ -207,45 +216,6 @@
         </div>
         <div style="display: flex; flex-direction: row">
             <label
-                magic="Label20"
-                class="lable_overflow mgFont1"
-                [attr.disabled]="mg.isDisabled('Label20' )"
-            >
-                * Location</label></div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                magic="Label16"
-                class="lable_overflow mgFont1"
-                [attr.disabled]="mg.isDisabled('Label16' )"
-            >
-                Price</label>
-            <mat-form-field>
-                <div><input
-                        matInput
-                        type='number'
-                        magic="aEventPrice"
-                        formControlName="aEventPrice"
-                        mgFormat
-                    >
-                    <mgError magic="aEventPrice"> </mgError>
-                </div>
-            </mat-form-field><label
-                magic="Label27"
-                class="lable_overflow mgFont1"
-                [attr.disabled]="mg.isDisabled('Label27' )"
-            >
-                BonusFactor</label>
-            <mat-form-field [matTooltip]="mg.getTitle('nBonusFactor')">
-                <div><input
-                        matInput
-                        type='number'
-                        magic="nBonusFactor"
-                        formControlName="nBonusFactor"
-                        mgFormat
-                    >
-                    <mgError magic="nBonusFactor"> </mgError>
-                </div>
-            </mat-form-field><label
                 magic="Label38"
                 class="lable_overflow mgFont1"
                 [attr.disabled]="mg.isDisabled('Label38' )"
@@ -264,6 +234,42 @@
         </div>
         <div style="display: flex; flex-direction: row">
             <label
+                magic="lbContactNumber"
+                [matTooltip]="mg.getTitle('lbContactNumber')"
+                class="lable_overflow mgFont1"
+            >
+                Tel. Number *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        magic="aContactNumber"
+                        formControlName="aContactNumber"
+                        mgFormat
+                    >
+                    <mgError magic="aContactNumber"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblEmail"
+                [matTooltip]="mg.getTitle('lblEmail')"
+                class="lable_overflow mgFont1"
+            >
+                Organiser Email *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        magic="aEventContactEmail"
+                        formControlName="aEventContactEmail"
+                        mgFormat
+                    >
+                    <mgError magic="aEventContactEmail"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
                 magic="Label30"
                 class="lable_overflow mgFont1"
                 [attr.disabled]="mg.isDisabled('Label30' )"
@@ -274,11 +280,8 @@
                     magic="lPublishEvent"
                     formControlName="lPublishEvent"
                 >
-                    Publish Event?</mat-checkbox>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
+                </mat-checkbox>
+            </div><label
                 magic="Label32"
                 class="lable_overflow mgFont1"
                 [attr.disabled]="mg.isDisabled('Label32' )"
@@ -289,8 +292,17 @@
                     magic="lFeatureEvent"
                     formControlName="lFeatureEvent"
                 >
-                    Feature Event?</mat-checkbox>
+                </mat-checkbox>
             </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                mat-raised-button
+                color="primary"
+                magic="btnSaveEvent"
+                [disabled]="mg.isDisabled('btnSaveEvent' )"
+            >
+                Save Event</button>
         </div>
     </div>
 </div>

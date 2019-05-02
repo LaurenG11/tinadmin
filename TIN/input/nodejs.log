@@ -1,20 +1,4 @@
 Generation output:
-Generate New Project
-
- Generate Modules
-
-C:\Magic\Web\tinadmingit>echo off 
-copying files
-
-
-
-C:\Magic\Web\tinadmingit>echo off 
-generating modules
-[V-CLI] cmd.exe /c ng g @magic-xpa/cli:modules --skip-install
-   Number of modules to be check for generate: 1
-Nothing to be done.
-
-Generate Components
 
 C:\Magic\Web\tinadmingit>echo off 
 copying files
@@ -28,16 +12,17 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file ./magic-metadata/eventListing/eventListing/eventListing.json
+[>] Loading JSON file ./magic-metadata/tickets/buyTicket/buyTicket.json
 *** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component eventListing
+[>] Processing JSON file for component buyTicket
 *** Step 3: generate components. (1 components) ***
-[>] generate component eventListing
+[>] generate component buyTicket
 [>] Step 4: components-list.
 [>]  ********************************* E N D    GENERATE *********************************
-UPDATE src/app/magic/eventListing/eventListing/eventListing.component.ts (492 bytes)
-UPDATE src/app/magic/eventListing/eventListing/eventListing.component.html (10030 bytes)
+UPDATE src/app/magic/tickets/buyTicket/buyTicket.component.ts (429 bytes)
+UPDATE src/app/magic/tickets/buyTicket/buyTicket.component.html (13534 bytes)
 UPDATE src/app/magic/component-list.g.ts (2656 bytes)
 
 
 
+Generation warnings/errors:

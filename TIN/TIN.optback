@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <MobileDesignMode Val="N"/>
+
+  <EditProjectMode Val="N"/>
+
+  <DebugMode Val="N"/>
+
+  <RIAExecutionPlatform Val="Desktop"/>
+
+  <Breakpoints>
+    <DelAll/>
+    <Breakpoint>
+      <Condition Val=""/>
+      <Location Val="jsonToParams"/>
+      <HandlerId Val="3"/>
+      <OperationId Val="11"/>
+      <LineIndex Val="5"/>
+      <HandlerDesc Val="Task Prefix"/>
+      <Count Val="0"/>
+      <Enable Val="1"/>
+      <Component1 Val="329656046"/>
+      <Component2 Val="25416"/>
+      <Component3 Val="17760"/>
+      <Component4 Val="-736434012"/>
+      <Component5 Val="1858909254"/>
+      <Prog Val="819"/>
+      <Subtask Val="1"/>
+      <Type Val="1"/>
+      <Operation Val="11"/>
+    </Breakpoint>
+    <Breakpoint>
+      <Condition Val=""/>
+      <Location Val="jsonToParams"/>
+      <HandlerId Val="3"/>
+      <OperationId Val="13"/>
+      <LineIndex Val="6"/>
+      <HandlerDesc Val="Task Prefix"/>
+      <Count Val="0"/>
+      <Enable Val="1"/>
+      <Component1 Val="329656046"/>
+      <Component2 Val="25416"/>
+      <Component3 Val="17760"/>
+      <Component4 Val="-736434012"/>
+      <Component5 Val="1858909254"/>
+      <Prog Val="819"/>
+      <Subtask Val="1"/>
+      <Type Val="1"/>
+      <Operation Val="13"/>
+    </Breakpoint>
+    <Breakpoint>
+      <Condition Val=""/>
+      <Location Val="jsonToParams"/>
+      <HandlerId Val="3"/>
+      <OperationId Val="17"/>
+      <LineIndex Val="7"/>
+      <HandlerDesc Val="Task Prefix"/>
+      <Count Val="0"/>
+      <Enable Val="1"/>
+      <Component1 Val="329656046"/>
+      <Component2 Val="25416"/>
+      <Component3 Val="17760"/>
+      <Component4 Val="-736434012"/>
+      <Component5 Val="1858909254"/>
+      <Prog Val="819"/>
+      <Subtask Val="1"/>
+      <Type Val="1"/>
+      <Operation Val="17"/>
+    </Breakpoint>
+  </Breakpoints>
+
+  <WatchListItems>
+    <RestData/>
+  </WatchListItems>
+
+</Application>

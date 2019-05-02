@@ -10,10 +10,8 @@ import {
     providers: [...matMagicProviders],
     templateUrl: './viewMyEvents.component.html'
 }) export class viewMyEvents extends BaseMatTableMagicComponent {
-    displayedColumns = ['Column8',
-        'Column24',
-        'Column10',
-        'Column22',
-        'Column17',
+    displayedColumns = ['clmEvent',
+        'clmDate',
+        'Column9',
     ];
 }

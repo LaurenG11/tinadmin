@@ -43,12 +43,6 @@
                 magic="Search"
             >
                 Search</button>
-            <button
-                mat-raised-button
-                color="primary"
-                magic="CreateEvent"
-            >
-                CreateEvent</button>
         </div>
         <div style="display: flex; flex-direction: row">
             <div class="example-container mat-elevation-z8 Table6TableContainerProps">
@@ -61,10 +55,10 @@
                     (matSortChange)="tableService.sortData($event)"
                 >
                     <ng-container
-                        magic="Column8"
-                        matColumnDef="Column8"
+                        magic="clmEvent"
+                        matColumnDef="clmEvent"
                     >
-                        <mat-header-cell *matHeaderCellDef> Short Description </mat-header-cell>
+                        <mat-header-cell *matHeaderCellDef> Event </mat-header-cell>
                         <mat-cell
                             *matCellDef="let row"
                             magicMark="magicTableRowContainer"
@@ -105,10 +99,10 @@
                         </mat-cell>
                     </ng-container>
                     <ng-container
-                        magic="Column24"
-                        matColumnDef="Column24"
+                        magic="clmDate"
+                        matColumnDef="clmDate"
                     >
-                        <mat-header-cell *matHeaderCellDef> dStartDate </mat-header-cell>
+                        <mat-header-cell *matHeaderCellDef> Date </mat-header-cell>
                         <mat-cell
                             *matCellDef="let row"
                             magicMark="magicTableRowContainer"
@@ -133,8 +127,8 @@
                         </mat-cell>
                     </ng-container>
                     <ng-container
-                        magic="Column10"
-                        matColumnDef="Column10"
+                        magic="Column9"
+                        matColumnDef="Column9"
                     >
                         <mat-header-cell *matHeaderCellDef> </mat-header-cell>
                         <mat-cell
@@ -148,49 +142,17 @@
                                 <button
                                     mat-raised-button
                                     color="primary"
-                                    magic="Modify"
+                                    magic="btnModify"
                                     [rowId]="row.rowId"
                                 >
                                     Modify</button>
-                            </div>
-                        </mat-cell>
-                    </ng-container>
-                    <ng-container
-                        magic="Column22"
-                        matColumnDef="Column22"
-                    >
-                        <mat-header-cell *matHeaderCellDef> </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
                                 <button
                                     mat-raised-button
                                     color="primary"
-                                    magic="Delete"
+                                    magic="btnDelete"
                                     [rowId]="row.rowId"
                                 >
                                     Delete</button>
-                            </div>
-                        </mat-cell>
-                    </ng-container>
-                    <ng-container
-                        magic="Column17"
-                        matColumnDef="Column17"
-                    >
-                        <mat-header-cell *matHeaderCellDef> </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
                                 <button
                                     mat-raised-button
                                     color="primary"
@@ -218,42 +180,47 @@
                     (page)="tableService.mgOnPaginateChange($event)"
                 >
                 </mat-paginator>
-            </div>
-            <div>
-                <mat-tab-group
-                    magic="Tab20"
-                    (selectedTabChange)="task.mgOnTabSelectionChanged('Tab20', $event.index)"
-                    [selectedIndex]="mg.getTabSelectedIndex('Tab20')"
+            </div> <button
+                mat-raised-button
+                color="primary"
+                magic="btnNewEvent"
+            >
+                NewEvent</button>
+        </div>
+        <div>
+            <mat-tab-group
+                magic="Tab20"
+                (selectedTabChange)="task.mgOnTabSelectionChanged('Tab20', $event.index)"
+                [selectedIndex]="mg.getTabSelectedIndex('Tab20')"
+            >
+                <mat-tab
+                    *ngFor="let o of mg.getItemListValues('Tab20')"
+                    [label]="mg.getTabpageText('Tab20', o.index)"
                 >
-                    <mat-tab
-                        *ngFor="let o of mg.getItemListValues('Tab20')"
-                        [label]="mg.getTabpageText('Tab20', o.index)"
-                    >
-                    </mat-tab>
-                </mat-tab-group>
-                <div
-                    class="tab_content"
-                    [style.display]="mg.isTabPageSelected('Tab20', 1) ? 'flex' : 'none' "
-                    style="flex-direction: column"
-                >
-                    <div style="display: flex; flex-direction: row">
-                        <mat-card>
-                            <magic-subform magic="eventsubform">
-                            </magic-subform>
-                        </mat-card>
-                    </div>
+                </mat-tab>
+            </mat-tab-group>
+            <div
+                class="tab_content"
+                [style.display]="mg.isTabPageSelected('Tab20', 1) ? 'flex' : 'none' "
+                style="flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <mat-card>
+                        <magic-subform magic="eventsubform">
+                        </magic-subform>
+                    </mat-card>
                 </div>
-                <div
-                    class="tab_content"
-                    [style.display]="mg.isTabPageSelected('Tab20', 2) ? 'flex' : 'none' "
-                    style="flex-direction: column"
-                >
-                    <div style="display: flex; flex-direction: row">
-                        <mat-card>
-                            <magic-subform magic="ticketsubform">
-                            </magic-subform>
-                        </mat-card>
-                    </div>
+            </div>
+            <div
+                class="tab_content"
+                [style.display]="mg.isTabPageSelected('Tab20', 2) ? 'flex' : 'none' "
+                style="flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <mat-card>
+                        <magic-subform magic="ticketsubform">
+                        </magic-subform>
+                    </mat-card>
                 </div>
             </div>
         </div>

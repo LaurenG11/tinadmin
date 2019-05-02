@@ -920,3 +920,43 @@ Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN"
  <529955119744768768> 02/05/2019 08:53:09.786     [Error  ] - admin-tin-magic : JSON text is not properly formatted. Unexpected character '"' is found at position 3987., Program: "mainRoute.eventListing".
  <529955119744768768> 02/05/2019 08:53:09.788     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
  <529955119744768768> 02/05/2019 08:53:09.791     [Error  ] - EndTaskRequest(): Invalid SQL command, database: tinAzureSQLDb : eventListing admin-tin-magic : JSON text is not properly formatted. Unexpected character '"' is found at position 3987.Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN")  (msgid "2623"), Program: "Main Program".
+ <-1> 02/05/2019 10:39:59.386     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 02/05/2019 10:39:59.503     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 02/05/2019 10:39:59.505     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 02/05/2019 10:48:06.824     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 02/05/2019 10:48:06.975     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 02/05/2019 10:48:06.978     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 02/05/2019 10:48:17.864     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 02/05/2019 10:48:17.866     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 02/05/2019 10:48:17.869     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <62028175470592592> 02/05/2019 12:33:03.634     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <62028175470592592> 02/05/2019 12:33:03.639     [Error  ] -  : TCP Provider: An existing connection was forcibly closed by the remote host.
+, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <62028175470592592> 02/05/2019 12:33:03.651     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <62028175470592592> 02/05/2019 12:33:03.655     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <62028175470592592> 02/05/2019 12:34:18.944     [Error  ] - Failed to open, data source:, Program: "mainRoute.eventListing".
+ <62028175470592592> 02/05/2019 12:34:18.946     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
+ <62028175470592592> 02/05/2019 12:34:19.016     [Error  ] - EndTaskRequest(): Failed to open, data source: : eventListing  : TCP Provider: An existing connection was forcibly closed by the remote host.
+Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN")  (msgid "87"), Program: "Main Program".
+ <497999929169374976> 02/05/2019 12:59:32.838     [Error  ] - Create error: #tickets, Program: "Browse - #tickets".
+ <515369629335186368> 02/05/2019 13:06:18.309     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.eventListing.createTmpTickets".
+ <515369629335186368> 02/05/2019 13:06:18.311     [Error  ] - admin-tin-magic : Column name or number of supplied values does not match table definition., Program: "mainRoute.eventListing.createTmpTickets".
+ <95640564492759296> 02/05/2019 13:08:00.573     [Error  ] - Create error: #tickets, Program: "mainRoute.eventListing.buyTicket".
+ <95640564492759296> 02/05/2019 13:08:00.578     [Error  ] - EndTaskRequest(): Create error: #tickets : buyTicket admin-tin-magic : There is already an object named 'PK_#tickets' in the database. : "mainRoute.eventListing" ("TIN")  (msgid "229"), Program: "Main Program".
+ <340166824311836096> 02/05/2019 13:08:53.421     [Error  ] - Create error: #tickets, Program: "mainRoute.eventListing.buyTicket".
+ <340166824311836096> 02/05/2019 13:08:53.424     [Error  ] - EndTaskRequest(): Create error: #tickets : buyTicket admin-tin-magic : There is already an object named 'PK_#tickets' in the database. : "mainRoute.eventListing" ("TIN")  (msgid "236"), Program: "Main Program".
+ <457821244066727872> 02/05/2019 13:09:37.314     [Error  ] - Failed to open, data source: #tickets, Program: "mainRoute.eventListing.buyTicket".
+ <457821244066727872> 02/05/2019 13:09:37.320     [Error  ] - EndTaskRequest(): Failed to open, data source: #tickets : buyTicket admin-tin-magic : Invalid object name '#tickets'. : "mainRoute.eventListing" ("TIN")  (msgid "243"), Program: "Main Program".
+ <454923834247086144> 02/05/2019 13:11:16.404     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.eventListing.createTmpTickets".
+ <454923834247086144> 02/05/2019 13:11:16.406     [Error  ] - admin-tin-magic : Invalid object name '##tickets'., Program: "mainRoute.eventListing.createTmpTickets".
+ <317289940587983680> 02/05/2019 13:12:13.797     [Error  ] - Failed to open, data source: ##tickets, Program: "mainRoute.eventListing.buyTicket".
+ <317289940587983680> 02/05/2019 13:12:13.811     [Error  ] - EndTaskRequest(): Failed to open, data source: ##tickets : buyTicket admin-tin-magic : Invalid column name 'isn'. : "mainRoute.eventListing" ("TIN")  (msgid "256"), Program: "Main Program".

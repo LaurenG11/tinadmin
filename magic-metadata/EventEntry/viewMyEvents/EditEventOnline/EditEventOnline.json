@@ -9,49 +9,28 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	892,
-		"height":	286
+		"width":	556,
+		"height":	363
 	},
 	"hint":	null,
 	"controlType":	null,
 	"children":	[
 		{
-			"style":	null,
-			"props":	{
-				"id":	"SaveEventButton",
-				"enabled":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"format":	"Save Event",
-				"common_line_id":	"line12"
-			},
-			"coordinates":	{
-				"x":	684,
-				"y":	12,
-				"width":	156,
-				"height":	22
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
-		},
-		{
 			"style":	{
 				"font":	1
 			},
 			"props":	{
-				"id":	"Label14",
+				"id":	"lblEventName",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"text":	"* Event Name",
-				"common_line_id":	"line38"
+				"text":	"Event Name *",
+				"common_line_id":	"line4"
 			},
 			"coordinates":	{
-				"x":	0,
-				"y":	38,
+				"x":	8,
+				"y":	8,
 				"width":	72,
 				"height":	14
 			},
@@ -69,12 +48,57 @@
 				},
 				"mgformat":	"mgFormat",
 				"attribute":	"A",
-				"common_line_id":	"line38"
+				"common_line_id":	"line4"
 			},
 			"coordinates":	{
-				"x":	64,
-				"y":	38,
+				"x":	84,
+				"y":	4,
 				"width":	300,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"lblSummary",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Summary *",
+				"common_line_id":	"line28"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	32,
+				"width":	67,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"aLongDescription",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"attribute":	"A",
+				"common_line_id":	"line28"
+			},
+			"coordinates":	{
+				"x":	84,
+				"y":	28,
+				"width":	461,
 				"height":	18
 			},
 			"hint":	null,
@@ -91,12 +115,12 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"text":	"Start Date",
-				"common_line_id":	"line38"
+				"text":	"Start Date *",
+				"common_line_id":	"line52"
 			},
 			"coordinates":	{
-				"x":	380,
-				"y":	38,
+				"x":	8,
+				"y":	56,
 				"width":	52,
 				"height":	14
 			},
@@ -113,11 +137,11 @@
 					"has_exp":	true
 				},
 				"attribute":	"D",
-				"common_line_id":	"line38"
+				"common_line_id":	"line52"
 			},
 			"coordinates":	{
-				"x":	433,
-				"y":	38,
+				"x":	84,
+				"y":	52,
 				"width":	73,
 				"height":	18
 			},
@@ -135,12 +159,12 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"text":	"End Date",
-				"common_line_id":	"line38"
+				"text":	"End Date *",
+				"common_line_id":	"line52"
 			},
 			"coordinates":	{
-				"x":	509,
-				"y":	38,
+				"x":	164,
+				"y":	52,
 				"width":	50,
 				"height":	14
 			},
@@ -157,11 +181,11 @@
 					"has_exp":	true
 				},
 				"attribute":	"D",
-				"common_line_id":	"line38"
+				"common_line_id":	"line52"
 			},
 			"coordinates":	{
-				"x":	535,
-				"y":	38,
+				"x":	220,
+				"y":	52,
 				"width":	73,
 				"height":	18
 			},
@@ -180,11 +204,11 @@
 					"has_exp":	true
 				},
 				"text":	"Time From",
-				"common_line_id":	"line38"
+				"common_line_id":	"line52"
 			},
 			"coordinates":	{
-				"x":	619,
-				"y":	38,
+				"x":	309,
+				"y":	52,
 				"width":	53,
 				"height":	14
 			},
@@ -201,11 +225,11 @@
 					"has_exp":	true
 				},
 				"attribute":	"T",
-				"common_line_id":	"line38"
+				"common_line_id":	"line52"
 			},
 			"coordinates":	{
-				"x":	660,
-				"y":	38,
+				"x":	364,
+				"y":	52,
 				"width":	57,
 				"height":	18
 			},
@@ -224,11 +248,11 @@
 					"has_exp":	true
 				},
 				"text":	"Time To",
-				"common_line_id":	"line38"
+				"common_line_id":	"line52"
 			},
 			"coordinates":	{
-				"x":	728,
-				"y":	38,
+				"x":	420,
+				"y":	56,
 				"width":	46,
 				"height":	14
 			},
@@ -245,11 +269,11 @@
 					"has_exp":	true
 				},
 				"attribute":	"T",
-				"common_line_id":	"line38"
+				"common_line_id":	"line52"
 			},
 			"coordinates":	{
-				"x":	773,
-				"y":	38,
+				"x":	473,
+				"y":	52,
 				"width":	57,
 				"height":	18
 			},
@@ -262,62 +286,17 @@
 				"font":	1
 			},
 			"props":	{
-				"id":	"Label36",
+				"id":	"lblCategory",
 				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"text":	"Summary",
-				"common_line_id":	"line77"
+				"text":	"Event Category *",
+				"common_line_id":	"line80"
 			},
 			"coordinates":	{
 				"x":	4,
-				"y":	77,
-				"width":	86,
-				"height":	14
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"aLongDescription",
-				"enabled":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"mgformat":	"mgFormat",
-				"attribute":	"A",
-				"common_line_id":	"line77"
-			},
-			"coordinates":	{
-				"x":	80,
-				"y":	77,
-				"width":	800,
-				"height":	18
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	{
-				"font":	1
-			},
-			"props":	{
-				"id":	"Label29",
-				"enabled":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"text":	"* Event Category",
-				"common_line_id":	"line116"
-			},
-			"coordinates":	{
-				"x":	4,
-				"y":	117,
+				"y":	88,
 				"width":	64,
 				"height":	14
 			},
@@ -335,11 +314,11 @@
 				},
 				"items_list":	"",
 				"attribute":	"N",
-				"common_line_id":	"line116"
+				"common_line_id":	"line80"
 			},
 			"coordinates":	{
-				"x":	88,
-				"y":	116,
+				"x":	84,
+				"y":	80,
 				"width":	164,
 				"height":	17
 			},
@@ -358,11 +337,11 @@
 					"has_exp":	true
 				},
 				"text":	"URL",
-				"common_line_id":	"line116"
+				"common_line_id":	"line108"
 			},
 			"coordinates":	{
-				"x":	253,
-				"y":	117,
+				"x":	1,
+				"y":	108,
 				"width":	56,
 				"height":	14
 			},
@@ -380,16 +359,39 @@
 				},
 				"mgformat":	"mgFormat",
 				"attribute":	"A",
-				"common_line_id":	"line116"
+				"common_line_id":	"line108"
 			},
 			"coordinates":	{
-				"x":	328,
-				"y":	117,
+				"x":	64,
+				"y":	112,
 				"width":	336,
 				"height":	18
 			},
 			"hint":	null,
 			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label20",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Location *",
+				"common_line_id":	"line136"
+			},
+			"coordinates":	{
+				"x":	1,
+				"y":	140,
+				"width":	57,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
 			"children":	null
 		},
 		{
@@ -402,11 +404,11 @@
 				},
 				"mgformat":	"mgFormat",
 				"attribute":	"A",
-				"common_line_id":	"line155"
+				"common_line_id":	"line136"
 			},
 			"coordinates":	{
-				"x":	73,
-				"y":	155,
+				"x":	64,
+				"y":	136,
 				"width":	322,
 				"height":	18
 			},
@@ -425,13 +427,13 @@
 					"has_exp":	true
 				},
 				"text":	"Address",
-				"common_line_id":	"line155"
+				"common_line_id":	"line164"
 			},
 			"coordinates":	{
-				"x":	400,
-				"y":	155,
-				"width":	48,
-				"height":	14
+				"x":	1,
+				"y":	168,
+				"width":	55,
+				"height":	16
 			},
 			"hint":	null,
 			"controlType":	"L",
@@ -447,11 +449,11 @@
 				},
 				"mgformat":	"mgFormat",
 				"attribute":	"A",
-				"common_line_id":	"line155"
+				"common_line_id":	"line164"
 			},
 			"coordinates":	{
-				"x":	433,
-				"y":	155,
+				"x":	68,
+				"y":	164,
 				"width":	324,
 				"height":	18
 			},
@@ -469,12 +471,12 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"text":	"* PostalCode",
-				"common_line_id":	"line155"
+				"text":	"PostalCode *",
+				"common_line_id":	"line188"
 			},
 			"coordinates":	{
-				"x":	764,
-				"y":	155,
+				"x":	1,
+				"y":	196,
 				"width":	64,
 				"height":	14
 			},
@@ -492,129 +494,12 @@
 				},
 				"mgformat":	"mgFormat",
 				"attribute":	"A",
-				"common_line_id":	"line155"
+				"common_line_id":	"line188"
 			},
 			"coordinates":	{
-				"x":	808,
-				"y":	155,
+				"x":	81,
+				"y":	188,
 				"width":	62,
-				"height":	18
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	{
-				"font":	1
-			},
-			"props":	{
-				"id":	"Label20",
-				"enabled":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"text":	"* Location",
-				"common_line_id":	"line168"
-			},
-			"coordinates":	{
-				"x":	0,
-				"y":	168,
-				"width":	57,
-				"height":	14
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	{
-				"font":	1
-			},
-			"props":	{
-				"id":	"Label16",
-				"enabled":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"text":	"Price",
-				"common_line_id":	"line207"
-			},
-			"coordinates":	{
-				"x":	4,
-				"y":	207,
-				"width":	60,
-				"height":	14
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"aEventPrice",
-				"enabled":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"mgformat":	"mgFormat",
-				"attribute":	"N",
-				"common_line_id":	"line207"
-			},
-			"coordinates":	{
-				"x":	80,
-				"y":	207,
-				"width":	83,
-				"height":	18
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	{
-				"font":	1
-			},
-			"props":	{
-				"id":	"Label27",
-				"enabled":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"text":	"BonusFactor",
-				"common_line_id":	"line207"
-			},
-			"coordinates":	{
-				"x":	173,
-				"y":	207,
-				"width":	68,
-				"height":	14
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"nBonusFactor",
-				"enabled":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"tooltip":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"mgformat":	"mgFormat",
-				"attribute":	"N",
-				"common_line_id":	"line207"
-			},
-			"coordinates":	{
-				"x":	248,
-				"y":	207,
-				"width":	21,
 				"height":	18
 			},
 			"hint":	null,
@@ -632,11 +517,11 @@
 					"has_exp":	true
 				},
 				"text":	"Event Image",
-				"common_line_id":	"line207"
+				"common_line_id":	"line212"
 			},
 			"coordinates":	{
-				"x":	308,
-				"y":	207,
+				"x":	4,
+				"y":	220,
 				"width":	64,
 				"height":	14
 			},
@@ -658,12 +543,94 @@
 				},
 				"mgformat":	"mgFormat",
 				"attribute":	"A",
-				"common_line_id":	"line207"
+				"common_line_id":	"line212"
 			},
 			"coordinates":	{
-				"x":	373,
-				"y":	208,
+				"x":	89,
+				"y":	212,
 				"width":	300,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"lbContactNumber",
+				"tooltip":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Tel. Number *",
+				"common_line_id":	"line244"
+			},
+			"coordinates":	{
+				"x":	1,
+				"y":	244,
+				"width":	82,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"aContactNumber",
+				"mgformat":	"mgFormat",
+				"attribute":	"A",
+				"common_line_id":	"line244"
+			},
+			"coordinates":	{
+				"x":	92,
+				"y":	244,
+				"width":	437,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"lblEmail",
+				"tooltip":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Organiser Email *",
+				"common_line_id":	"line268"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	272,
+				"width":	98,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"aEventContactEmail",
+				"mgformat":	"mgFormat",
+				"attribute":	"A",
+				"common_line_id":	"line268"
+			},
+			"coordinates":	{
+				"x":	92,
+				"y":	268,
+				"width":	436,
 				"height":	18
 			},
 			"hint":	null,
@@ -681,11 +648,11 @@
 					"has_exp":	true
 				},
 				"text":	"Publish Event?",
-				"common_line_id":	"line247"
+				"common_line_id":	"line300"
 			},
 			"coordinates":	{
-				"x":	8,
-				"y":	247,
+				"x":	4,
+				"y":	304,
 				"width":	72,
 				"height":	14
 			},
@@ -701,14 +668,14 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"text":	"Publish  Event?",
+				"text":	"",
 				"attribute":	"B",
-				"common_line_id":	"line247"
+				"common_line_id":	"line300"
 			},
 			"coordinates":	{
-				"x":	100,
-				"y":	247,
-				"width":	96,
+				"x":	96,
+				"y":	304,
+				"width":	20,
 				"height":	19
 			},
 			"hint":	null,
@@ -726,12 +693,12 @@
 					"has_exp":	true
 				},
 				"text":	"Featured Event?",
-				"common_line_id":	"line259"
+				"common_line_id":	"line300"
 			},
 			"coordinates":	{
-				"x":	368,
-				"y":	259,
-				"width":	72,
+				"x":	128,
+				"y":	304,
+				"width":	85,
 				"height":	14
 			},
 			"hint":	null,
@@ -746,18 +713,39 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"text":	"Feature Event?",
+				"text":	"",
 				"attribute":	"B",
-				"common_line_id":	"line259"
+				"common_line_id":	"line300"
 			},
 			"coordinates":	{
-				"x":	448,
-				"y":	259,
-				"width":	96,
+				"x":	216,
+				"y":	300,
+				"width":	17,
 				"height":	19
 			},
 			"hint":	null,
 			"controlType":	"C",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSaveEvent",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"format":	"Save Event",
+				"common_line_id":	"line328"
+			},
+			"coordinates":	{
+				"x":	1,
+				"y":	328,
+				"width":	156,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
 			"children":	null
 		}
 	]
