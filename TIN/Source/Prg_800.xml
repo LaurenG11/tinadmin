@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737180" _time="64164" date="01/05/2019" time="17:49:24"/>
+          <LastModified _date="737181" _time="30902" date="02/05/2019" time="08:35:02"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -179,6 +179,14 @@
                 </Update>
               </LogicLine>
               <LogicLine>
+                <Evaluate FlowIsn="12">
+                  <Expression val="2"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
                 <CallTask FlowIsn="9">
                   <OperationType val="T"/>
                   <Event>
@@ -210,6 +218,10 @@
           <Expression id="1">
             <ExpSyntax val="RepStr({0,1},'''','test')"/>
             <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="2">
+            <ExpSyntax val="Blb2File({0,1},'C:\Users\admin-tin-magic\predicthq')"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">
