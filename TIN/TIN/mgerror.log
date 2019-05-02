@@ -1,0 +1,4 @@
+﻿ <283466007425534272> 22/04/2019 09:43:34.703     [Error  ] - Handshake "<Richclient><Requires EncryptionKey="False"/><RIAProtocolVersion="14001"/></Richclient>" failed: ERR-INCOMPATIBLE_CLIENT_VERSION (-275).
+ <506953572940233088> 22/04/2019 10:27:38.841     [Error  ] - Handshake "<Richclient><Requires EncryptionKey="False"/><RIAProtocolVersion="14001"/></Richclient>" failed: ERR-INCOMPATIBLE_CLIENT_VERSION (-275).
+ <108706734460480256> 22/04/2019 10:32:47.559     [Error  ] - Handshake "<Richclient><Requires EncryptionKey="False"/><RIAProtocolVersion="14001"/></Richclient>" failed: ERR-INCOMPATIBLE_CLIENT_VERSION (-275).
+ <51492232012946368> 22/04/2019 10:40:58.779     [Error  ] - Handshake "<Richclient><Requires EncryptionKey="False"/><RIAProtocolVersion="14001"/></Richclient>" failed: ERR-INCOMPATIBLE_CLIENT_VERSION (-275).
