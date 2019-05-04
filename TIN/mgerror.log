@@ -960,3 +960,18 @@ Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN"
  <454923834247086144> 02/05/2019 13:11:16.406     [Error  ] - admin-tin-magic : Invalid object name '##tickets'., Program: "mainRoute.eventListing.createTmpTickets".
  <317289940587983680> 02/05/2019 13:12:13.797     [Error  ] - Failed to open, data source: ##tickets, Program: "mainRoute.eventListing.buyTicket".
  <317289940587983680> 02/05/2019 13:12:13.811     [Error  ] - EndTaskRequest(): Failed to open, data source: ##tickets : buyTicket admin-tin-magic : Invalid column name 'isn'. : "mainRoute.eventListing" ("TIN")  (msgid "256"), Program: "Main Program".
+ <-1> 03/05/2019 18:20:59.426     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 03/05/2019 18:20:59.523     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 03/05/2019 18:20:59.525     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <230901428901191968> 03/05/2019 18:23:20.960     [Error  ] - Failed to open, data source: #tickets, Program: "mainRoute.eventListing.buyTicket".
+ <230901428901191968> 03/05/2019 18:23:20.972     [Error  ] - EndTaskRequest(): Failed to open, data source: #tickets : buyTicket admin-tin-magic : Invalid object name '#tickets'. : "mainRoute.eventListing" ("TIN")  (msgid "275"), Program: "Main Program".
+ <158683188449975488> 03/05/2019 18:26:19.525     [Error  ] - Failed to open, data source: #tickets, Program: "Browse - #tickets".
+ <95234057461798288> 03/05/2019 18:31:53.586     [Error  ] - Failed to open, data source: #tickets, Program: "mainRoute.eventListing.buyTicket".
+ <95234057461798288> 03/05/2019 18:31:53.591     [Error  ] - EndTaskRequest(): Failed to open, data source: #tickets : buyTicket admin-tin-magic : Invalid object name '#tickets'. : "mainRoute.eventListing" ("TIN")  (msgid "300"), Program: "Main Program".
+ <282851483681139712> 03/05/2019 18:32:23.427     [Error  ] - Failed to open, data source: #tickets, Program: "mainRoute.eventListing.buyTicket".
+ <282851483681139712> 03/05/2019 18:32:23.444     [Error  ] - EndTaskRequest(): Failed to open, data source: #tickets : buyTicket admin-tin-magic : Invalid object name '#tickets'. : "mainRoute.eventListing" ("TIN")  (msgid "307"), Program: "Main Program".
+ <153794611046132160> 03/05/2019 18:33:53.503     [Error  ] - Failed to open, data source: #tickets, Program: "mainRoute.eventListing.buyTicket".
+ <153794611046132160> 03/05/2019 18:33:53.508     [Error  ] - EndTaskRequest(): Failed to open, data source: #tickets : buyTicket admin-tin-magic : Invalid object name '#tickets'. : "mainRoute.eventListing" ("TIN")  (msgid "323"), Program: "Main Program".

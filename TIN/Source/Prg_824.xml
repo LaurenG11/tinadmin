@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737181" _time="45448" date="02/05/2019" time="12:37:28"/>
+          <LastModified _date="737182" _time="66772" date="03/05/2019" time="18:32:52"/>
         </Header>
         <ItemIsn val="1"/>
         <Resource>
@@ -102,7 +102,7 @@
             <Direction val="V"/>
           </BOX>
         </Information>
-        <SQL_FORM DB="tinAzureSQLDb" RESTAB="Memory">
+        <SQL_FORM DB="tinAzureSQLDb" RESTAB="tinAzureSQLDb">
           <SQL_STMT_U val="exec getTickets :1"/>
           <INARG>
             <Arguments>

@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737181" _time="46614" date="02/05/2019" time="12:56:54"/>
+          <LastModified _date="737181" _time="61933" date="02/05/2019" time="17:12:13"/>
         </Header>
         <ItemIsn val="29"/>
         <Resource>
@@ -169,10 +169,10 @@
           </TaskProperties>
           <SIDE_WIN>
             <AllowOptions val="N"/>
-            <AllowQuery val="Y"/>
+            <AllowQuery val="N"/>
             <AllowModify val="Y"/>
-            <AllowCreate val="Y"/>
-            <AllowDelete val="Y"/>
+            <AllowCreate val="N"/>
+            <AllowDelete val="N"/>
             <AllowLocate val="Y"/>
             <AllowRange val="Y"/>
             <AllowIndexChange val="N"/>
@@ -627,7 +627,7 @@
                 <Y id="22" val="8"/>
                 <Width id="23" val="604"/>
                 <Height id="24" val="155"/>
-                <ControlName id="46" val="Table1"/>
+                <ControlName id="46" val="tblTickets"/>
                 <TitleHeight id="79" val="18"/>
                 <RowHeight id="80" val="70"/>
                 <Elements id="81" val="3"/>
