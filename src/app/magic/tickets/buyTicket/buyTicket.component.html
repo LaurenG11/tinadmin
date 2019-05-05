@@ -275,19 +275,28 @@
                             >
                             <mgError magic="aLinkToPassPage"> </mgError>
                         </div>
-                    </mat-form-field> <button
-                        mat-raised-button
-                        color="primary"
-                        magic="btn_Pay"
-                        [disabled]="mg.isDisabled('btn_Pay' )"
-                    >
-                        Go To Payment</button>
+                    </mat-form-field>    
+                    
+                    <mat-form-field [style.visibility]="mg.getVisible('nTotalAmount')">
+                        <div>
+                            <input
+                                matInput
+                                type='number'
+                                magic="nTotalAmount"
+                                formControlName="nTotalAmount"
+                                mgFormat
+                            >
+                            <mgError magic="nTotalAmount"> </mgError>
+                        </div>
+                    </mat-form-field>      
                 </div>
+            <input type="number" [(ngModel)]="nTotalAmount" style="padding-bottom: 10px;">
+            <h2 *ngIf="paypalLoad">Paypal button is loading</h2>
+            <div id="paypal-checkout-btn"></div>
+
             </mat-card>
-            <div>
-                <input type ="number" [(ngModel)]="finalAmount">
-                <div id="paypal-checkout-button"></div>
-            </div>
+  
+
         </div>
     </div>
 </div>

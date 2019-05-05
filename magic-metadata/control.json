@@ -1,15 +1,21 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"Image41"
+		"id":	"nTotalAmount",
+		"visible":	{
+			"value":	null,
+			"has_exp":	true
+		},
+		"mgformat":	"mgFormat",
+		"attribute":	"N"
 	},
 	"coordinates":	{
 		"x":	80,
-		"y":	416,
-		"width":	160,
-		"height":	83
+		"y":	381,
+		"width":	55,
+		"height":	18
 	},
 	"hint":	null,
-	"controlType":	"I",
+	"controlType":	"T",
 	"children":	null
 }

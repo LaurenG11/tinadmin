@@ -83337,7 +83337,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject FolderIsn="2" PhysicalName="#tickets" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="363" name="#tickets">
+<DataObject FolderIsn="2" PhysicalName="tickets" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="363" name="tickets">
 
   <Encrypt val="N"/>
 
@@ -83372,7 +83372,7 @@
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="ticketIsn"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="ticketIsn" PIC_U="9" Size="4" SqlType="integer" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldPhysical Name="isn" PIC_U="9" Size="4" SqlType="integer" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
       </PropertyList>
     </Column>
     <Column id="2" name="ticketName">

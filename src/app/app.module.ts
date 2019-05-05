@@ -12,7 +12,7 @@ import { MagicGenLibModule } from './magic/magic.gen.lib.module';
 import { routes } from './app.routes';
 import {HttpClientModule}  from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-
+import { NgxPayPalModule} from 'ngx-paypal';
 
 
 @NgModule({
@@ -30,7 +30,9 @@ import { FormsModule } from '@angular/forms';
     MagicGenLibModule,
     CloudinaryMediaModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxPayPalModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

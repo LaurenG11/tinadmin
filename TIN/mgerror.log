@@ -975,3 +975,36 @@ Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN"
  <282851483681139712> 03/05/2019 18:32:23.444     [Error  ] - EndTaskRequest(): Failed to open, data source: #tickets : buyTicket admin-tin-magic : Invalid object name '#tickets'. : "mainRoute.eventListing" ("TIN")  (msgid "307"), Program: "Main Program".
  <153794611046132160> 03/05/2019 18:33:53.503     [Error  ] - Failed to open, data source: #tickets, Program: "mainRoute.eventListing.buyTicket".
  <153794611046132160> 03/05/2019 18:33:53.508     [Error  ] - EndTaskRequest(): Failed to open, data source: #tickets : buyTicket admin-tin-magic : Invalid object name '#tickets'. : "mainRoute.eventListing" ("TIN")  (msgid "323"), Program: "Main Program".
+ <-1> 04/05/2019 09:02:47.888     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 04/05/2019 09:02:48.131     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 04/05/2019 09:02:48.134     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <532704097824622848> 04/05/2019 09:03:35.613     [Error  ] - Failed to open, data source: #tickets, Program: "mainRoute.eventListing.buyTicket".
+ <532704097824622848> 04/05/2019 09:03:35.619     [Error  ] - EndTaskRequest(): Failed to open, data source: #tickets : buyTicket admin-tin-magic : Invalid object name '#tickets'. : "mainRoute.eventListing" ("TIN")  (msgid "388"), Program: "Main Program".
+ <239742661885146944> 04/05/2019 09:04:41.003     [Error  ] - Failed to open, data source: #tickets, Program: "mainRoute.eventListing.buyTicket".
+ <239742661885146944> 04/05/2019 09:04:41.011     [Error  ] - EndTaskRequest(): Failed to open, data source: #tickets : buyTicket admin-tin-magic : Invalid object name '#tickets'. : "mainRoute.eventListing" ("TIN")  (msgid "398"), Program: "Main Program".
+ <158701919603906912> 04/05/2019 09:05:49.593     [Error  ] - Failed to open, data source: tickets, Program: "Browse - #tickets".
+ <195165193451103680> 04/05/2019 09:06:53.151     [Error  ] - Failed to open, data source: tickets, Program: "mainRoute.eventListing.buyTicket".
+ <195165193451103680> 04/05/2019 09:06:53.156     [Error  ] - EndTaskRequest(): Failed to open, data source: tickets : buyTicket admin-tin-magic : Invalid column name 'isn'. : "mainRoute.eventListing" ("TIN")  (msgid "411"), Program: "Main Program".
+ <-1> 04/05/2019 09:54:45.770     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 04/05/2019 09:54:45.903     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 04/05/2019 09:54:45.905     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 04/05/2019 13:27:24.738     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 04/05/2019 13:27:24.768     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 04/05/2019 13:27:24.771     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <417510567673480128> 05/05/2019 15:08:57.020     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <417510567673480128> 05/05/2019 15:08:57.027     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <417510567673480128> 05/05/2019 15:08:57.038     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <417510567673480128> 05/05/2019 15:08:57.040     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <417510567673480128> 05/05/2019 15:08:57.676     [Error  ] - Failed to open, data source:, Program: "mainRoute.eventListing".
+ <417510567673480128> 05/05/2019 15:08:57.678     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
+ <417510567673480128> 05/05/2019 15:08:57.889     [Error  ] - EndTaskRequest(): Failed to open, data source: : eventListing  : TCP Provider: An existing connection was forcibly closed by the remote host.
+Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN")  (msgid "498"), Program: "Main Program".

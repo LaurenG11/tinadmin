@@ -10,7 +10,7 @@
 		"x":	0,
 		"y":	0,
 		"width":	624,
-		"height":	456
+		"height":	412
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -129,7 +129,7 @@
 								"is_table_child":	true,
 								"web_style":	2,
 								"row_editing_type":	0,
-								"common_line_id":	"line29"
+								"common_line_id":	"line30"
 							},
 							"coordinates":	{
 								"x":	482,
@@ -149,7 +149,7 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line29"
+								"common_line_id":	"line30"
 							},
 							"coordinates":	{
 								"x":	524,
@@ -169,12 +169,12 @@
 								"is_table_child":	true,
 								"web_style":	2,
 								"row_editing_type":	0,
-								"common_line_id":	"line29"
+								"common_line_id":	"line30"
 							},
 							"coordinates":	{
-								"x":	561,
-								"y":	29,
-								"width":	35,
+								"x":	557,
+								"y":	30,
+								"width":	39,
 								"height":	22
 							},
 							"hint":	null,
@@ -189,7 +189,7 @@
 			"style":	null,
 			"props":	{
 				"id":	"btnBuyTicket",
-				"format":	"Update Basket",
+				"format":	"Add",
 				"common_line_id":	"line167"
 			},
 			"coordinates":	{
@@ -212,7 +212,7 @@
 				"x":	12,
 				"y":	193,
 				"width":	603,
-				"height":	236
+				"height":	204
 			},
 			"hint":	null,
 			"controlType":	"G",
@@ -220,32 +220,15 @@
 				{
 					"style":	null,
 					"props":	{
-						"id":	"lblBasket",
-						"text":	"Basket",
-						"common_line_id":	"line201"
-					},
-					"coordinates":	{
-						"x":	16,
-						"y":	201,
-						"width":	107,
-						"height":	19
-					},
-					"hint":	null,
-					"controlType":	"L",
-					"children":	null
-				},
-				{
-					"style":	null,
-					"props":	{
 						"id":	"aTicketPurchaseSummary",
 						"modifiable":	false,
 						"mgformat":	"mgFormat",
 						"attribute":	"A",
-						"common_line_id":	"line229"
+						"common_line_id":	"line223"
 					},
 					"coordinates":	{
-						"x":	12,
-						"y":	229,
+						"x":	20,
+						"y":	223,
 						"width":	588,
 						"height":	18
 					},

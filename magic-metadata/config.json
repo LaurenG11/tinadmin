@@ -16,7 +16,7 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"tickets/buyTicket/buyTicket"
+				"control"
 			]
 		}
 	]
