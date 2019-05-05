@@ -15,7 +15,7 @@ declare let paypal: any;
     selector: 'mga-buyTicket',
     providers: [...matMagicProviders],
     templateUrl: './buyTicket.component.html'
-}) export class buyTicket extends BaseMatTableMagicComponent implements OnInit{
+}) export class buyTicket extends BaseMatTableMagicComponent implements OnInit, AfterViewChecked{
     displayedColumns = ['clmTicket',
         'clmPrice',
         'Column5',
@@ -24,6 +24,7 @@ declare let paypal: any;
     paypalLoad: boolean = true;
     
     finalAmount: number = 15;
+    currency: string = 'GBP';
    
     paypalConfig = {
       env: 'sandbox',
@@ -36,7 +37,7 @@ declare let paypal: any;
         return actions.payment.create({
           payment: {
             transactions: [
-              { amount: { total: this.finalAmount, currency: 'USD' } }
+              { amount: { total: this.finalAmount, currency: this.currency } }
             ]
           }
         });

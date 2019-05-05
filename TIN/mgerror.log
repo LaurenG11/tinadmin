@@ -1008,3 +1008,12 @@ Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN"
  <417510567673480128> 05/05/2019 15:08:57.678     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
  <417510567673480128> 05/05/2019 15:08:57.889     [Error  ] - EndTaskRequest(): Failed to open, data source: : eventListing  : TCP Provider: An existing connection was forcibly closed by the remote host.
 Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN")  (msgid "498"), Program: "Main Program".
+ <348384695570069248> 05/05/2019 17:29:24.772     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <348384695570069248> 05/05/2019 17:29:24.778     [Error  ] -  : TCP Provider: An existing connection was forcibly closed by the remote host.
+, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <348384695570069248> 05/05/2019 17:29:24.828     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <348384695570069248> 05/05/2019 17:29:24.830     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <348384695570069248> 05/05/2019 17:29:42.803     [Error  ] - Failed to open, data source:, Program: "mainRoute.eventListing".
+ <348384695570069248> 05/05/2019 17:29:42.805     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
+ <348384695570069248> 05/05/2019 17:29:42.895     [Error  ] - EndTaskRequest(): Failed to open, data source: : eventListing  : TCP Provider: An existing connection was forcibly closed by the remote host.
+Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN")  (msgid "678"), Program: "Main Program".

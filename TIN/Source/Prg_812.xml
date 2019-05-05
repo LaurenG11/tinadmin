@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737184" _time="62658" date="05/05/2019" time="17:24:18"/>
+          <LastModified _date="737184" _time="62868" date="05/05/2019" time="17:27:48"/>
         </Header>
         <ItemIsn val="36"/>
         <Resource>
@@ -359,7 +359,6 @@
                     <v>19</v>
                     <v>21</v>
                     <v>20</v>
-                    <v>22</v>
                   </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="Y"/>
@@ -426,6 +425,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="22"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="Y"/>
                   <Condition val="Y"/>
@@ -473,7 +473,7 @@
                     <v>24</v>
                     <v>23</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="22"/>
+                  <_DitIndexForToolkit val="21"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -717,7 +717,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="28" _last_test_id="28" id="1">
+          <FormEntry _last_isn="30" _last_test_id="30" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="624"/>
               <Height id="24" val="456"/>
@@ -972,21 +972,6 @@
                 <Enabled Exp="5" id="62"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="27" PDOD="128" _test_id="22" id="22">
-              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="496"/>
-                <Y id="22" val="357"/>
-                <Width id="23" val="110"/>
-                <Height id="24" val="22"/>
-                <ControlName id="46" val="btn_Pay"/>
-                <Enabled Exp="5" id="62"/>
-                <Format id="82" valUnicode="Go To Payment"/>
-                <RaiseEvent id="234">
-                  <EventType val="U"/>
-                  <PublicObject comp="-1" obj="4"/>
-                </RaiseEvent>
-              </PropertyList>
-            </Control>
             <Control ISN_FATHER="27" _test_id="24" id="24">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="Pass :"/>
@@ -1011,6 +996,20 @@
                 <Data FieldID="26" id="43"/>
                 <ControlName id="46" val="aLinkToPassPage"/>
                 <Visible Exp="6" id="61"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="27" PDOD="145" _test_id="29" id="29">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="36"/>
+                </Model>
+                <X id="21" val="80"/>
+                <Y id="22" val="381"/>
+                <Width id="23" val="55"/>
+                <Height id="24" val="18"/>
+                <Data FieldID="36" id="43"/>
+                <ControlName id="46" val="nTotalAmount"/>
+                <Visible Exp="10" id="61"/>
               </PropertyList>
             </Control>
           </FormEntry>
@@ -1047,6 +1046,10 @@
           <Expression id="9">
             <ExpSyntax val="VarIndex('dStartDate')"/>
             <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="10">
+            <ExpSyntax val="'FALSE'LOG"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <EVNT DESC="BuyTicket" FORCE_EXIT="N" id="1">
