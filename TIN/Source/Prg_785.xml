@@ -35,7 +35,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737181" _time="32025" date="02/05/2019" time="08:53:45"/>
+          <LastModified _date="737185" _time="41298" date="06/05/2019" time="11:28:18"/>
         </Header>
         <ItemIsn val="10"/>
         <Resource>
@@ -90,9 +90,9 @@
             <Column id="10" name="aPredictHQReturnPayload">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="8000"/>
+                <Picture id="157" valUnicode="10000"/>
                 <StoredAs id="173" val="1"/>
-                <Size id="174" val="8000"/>
+                <Size id="174" val="10000"/>
                 <_Flip id="194"/>
               </PropertyList>
             </Column>

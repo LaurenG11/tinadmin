@@ -1,18 +1,19 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"nTotalAmount",
+		"id":	"lPaypalSuccess",
 		"visible":	{
 			"value":	null,
 			"has_exp":	true
 		},
 		"mgformat":	"mgFormat",
-		"attribute":	"N"
+		"validator":	"rangevalidator",
+		"attribute":	"B"
 	},
 	"coordinates":	{
-		"x":	80,
+		"x":	167,
 		"y":	381,
-		"width":	55,
+		"width":	11,
 		"height":	18
 	},
 	"hint":	null,

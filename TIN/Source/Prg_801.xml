@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737181" _time="41155" date="02/05/2019" time="11:25:55"/>
+          <LastModified _date="737185" _time="43635" date="06/05/2019" time="12:07:15"/>
         </Header>
         <ItemIsn val="16"/>
         <Resource>
@@ -145,16 +145,16 @@
             <LockingStrategy val="M"/>
             <CacheStrategy val="D"/>
             <ForceRecordSuffix val="N"/>
-            <TransactionMode val="D"/>
-            <TransactionBegin val="P"/>
+            <TransactionMode val="O"/>
+            <TransactionBegin val="N"/>
             <PreloadView val="N"/>
             <AllowEmptyDataview val="Y"/>
             <KeepCreatedContext val="N"/>
           </TaskProperties>
           <SIDE_WIN>
-            <AllowOptions val="Y"/>
+            <AllowOptions val="N"/>
             <AllowQuery val="Y"/>
-            <AllowModify val="N"/>
+            <AllowModify val="Y"/>
             <AllowCreate val="N"/>
             <AllowDelete val="N"/>
             <AllowLocate val="Y"/>
@@ -291,12 +291,6 @@
                   <INT_RCMP_INFO>
                     <v>17</v>
                   </INT_RCMP_INFO>
-                  <INT_DIT_INFO>
-                    <v>10</v>
-                  </INT_DIT_INFO>
-                  <INT_OLESUBFORM_INFO>
-                    <v>10</v>
-                  </INT_OLESUBFORM_INFO>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="Y"/>
                   <Condition val="Y"/>
@@ -345,10 +339,6 @@
                   <INT_DIT_INFO>
                     <v>10</v>
                   </INT_DIT_INFO>
-                  <INT_OLESUBFORM_INFO>
-                    <v>10</v>
-                    <v>10</v>
-                  </INT_OLESUBFORM_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -711,6 +701,43 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="7" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="302"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="Table3"/>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <Remark FlowIsn="67">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="68">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="295"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
         </TaskLogic>
         <TaskForms>
           <FormEntry _last_isn="10" _last_test_id="13" id="1">
@@ -829,20 +856,9 @@
                 <Height id="24" val="220"/>
                 <ControlName id="46" val="createModifyTicket"/>
                 <Visible Exp="12" id="61"/>
-                <Arguments id="126">
-                  <Arguments>
-                    <Argument>
-                      <Variable val="16"/>
-                      <Skip val="N"/>
-                    </Argument>
-                    <Argument>
-                      <Expression val="11"/>
-                      <Skip val="N"/>
-                    </Argument>
-                  </Arguments>
-                </Arguments>
-                <ConnectTo id="156" val="2"/>
-                <TaskNumber comp="-1" id="183" obj="2"/>
+                <Arguments id="126"/>
+                <ConnectTo id="156" val="4"/>
+                <TaskNumber id="183"/>
               </PropertyList>
             </Control>
           </FormEntry>
@@ -888,10 +904,6 @@
             <ExpSyntax val="'Q'"/>
             <ExpAttribute val="A"/>
           </Expression>
-          <Expression id="11">
-            <ExpSyntax val="IF({0,16}='C',0,{0,4})"/>
-            <ExpAttribute val="N"/>
-          </Expression>
         </Expressions>
         <EVNT DESC="CreateTicket" FORCE_EXIT="N" id="1">
           <Event>
@@ -930,9 +942,9 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="737179" _time="63174" date="30/04/2019" time="17:32:54"/>
+            <LastModified _date="737185" _time="43581" date="06/05/2019" time="12:06:21"/>
           </Header>
-          <ItemIsn val="16"/>
+          <ItemIsn val="18"/>
           <Resource>
             <DB id="1">
               <DataObject comp="-1" obj="339"/>
@@ -1500,6 +1512,14 @@
               <ExecuteOn_ val="O"/>
               <LogicLines>
                 <LogicLine>
+                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="28" FlowIsn="124" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="Error" VR_DISP="B">
+                    <AppendToErrorLog val="Y"/>
+                    <Condition Exp="27"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </STP>
+                </LogicLine>
+                <LogicLine>
                   <CallTask FlowIsn="17">
                     <OperationType val="P"/>
                     <Event>
@@ -1802,10 +1822,22 @@
                   </CallTask>
                 </LogicLine>
                 <LogicLine>
-                  <RaiseEvent FlowIsn="23">
+                  <Update FlowIsn="133">
+                    <Parent val="1"/>
+                    <FieldID val="16"/>
+                    <WithValue val="29"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="135">
                     <Event>
                       <EventType val="I"/>
-                      <InternalEventID val="294"/>
+                      <InternalEventID val="295"/>
                       <PublicObject comp="-1"/>
                     </Event>
                     <Wait val="78"/>
@@ -1846,10 +1878,10 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="9" _last_test_id="9" id="1">
+            <FormEntry _last_isn="11" _last_test_id="11" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
-                <Width id="23" val="572"/>
-                <Height id="24" val="301"/>
+                <Width id="23" val="502"/>
+                <Height id="24" val="158"/>
                 <_Comment id="218"/>
                 <FormName id="311" valUnicode="modifyCreateTicket"/>
               </PropertyList>
@@ -1877,7 +1909,7 @@
               </Control>
               <Control _test_id="6" id="2">
                 <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                  <Text id="19" valUnicode="Ticket Type"/>
+                  <Text id="19" valUnicode="Ticket Type *"/>
                   <X id="21" val="8"/>
                   <Y id="22" val="7"/>
                   <Width id="23" val="67"/>
@@ -1889,7 +1921,7 @@
               </Control>
               <Control _test_id="2" id="3">
                 <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                  <Text id="19" valUnicode="Ticket Name"/>
+                  <Text id="19" valUnicode="Ticket Name *"/>
                   <X id="21" val="9"/>
                   <Y id="22" val="36"/>
                   <Width id="23" val="67"/>
@@ -1918,8 +1950,8 @@
                   <Model ID="MODEL_WEB_CLIENT" id="1">
                     <Var FieldID="7"/>
                   </Model>
-                  <X id="21" val="138"/>
-                  <Y id="22" val="63"/>
+                  <X id="21" val="165"/>
+                  <Y id="22" val="64"/>
                   <Width id="23" val="55"/>
                   <Height id="24" val="18"/>
                   <Data FieldID="7" id="43"/>
@@ -1929,10 +1961,10 @@
               </Control>
               <Control _test_id="4" id="6">
                 <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                  <Text id="19" valUnicode="Maximum Number of Tickets"/>
+                  <Text id="19" valUnicode="Maximum Number of Tickets *"/>
                   <X id="21" val="6"/>
                   <Y id="22" val="66"/>
-                  <Width id="23" val="126"/>
+                  <Width id="23" val="154"/>
                   <Height id="24" val="14"/>
                   <ControlName id="46" val="Label4"/>
                   <Font id="50" val="1"/>
@@ -1941,9 +1973,9 @@
               </Control>
               <Control _test_id="9" id="7">
                 <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                  <Text id="19" valUnicode="Price"/>
-                  <X id="21" val="10"/>
-                  <Y id="22" val="97"/>
+                  <Text id="19" valUnicode="Price *"/>
+                  <X id="21" val="9"/>
+                  <Y id="22" val="99"/>
                   <Width id="23" val="32"/>
                   <Height id="24" val="14"/>
                   <ControlName id="46" val="Label9"/>
@@ -1956,8 +1988,8 @@
                   <Model ID="MODEL_WEB_CLIENT" id="1">
                     <Var FieldID="6"/>
                   </Model>
-                  <X id="21" val="47"/>
-                  <Y id="22" val="97"/>
+                  <X id="21" val="45"/>
+                  <Y id="22" val="99"/>
                   <Width id="23" val="55"/>
                   <Height id="24" val="18"/>
                   <Data FieldID="6" id="43"/>
@@ -1968,7 +2000,7 @@
               <Control PDOD="128" _test_id="7" id="9">
                 <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                   <X id="21" val="6"/>
-                  <Y id="22" val="138"/>
+                  <Y id="22" val="125"/>
                   <Width id="23" val="68"/>
                   <Height id="24" val="22"/>
                   <ControlName id="46" val="save_ticket"/>
@@ -2070,6 +2102,18 @@
             <Expression id="21">
               <ExpSyntax val="{1,2}"/>
               <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="27">
+              <ExpSyntax val="{0,4}='' OR {0,5}=0 OR{0,6}=0 OR {0,7}=0"/>
+              <ExpAttribute val="B"/>
+            </Expression>
+            <Expression id="29">
+              <ExpSyntax val="'Q'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="28">
+              <ExpSyntax val="'Please enter all mandatory (*) fields'"/>
+              <ExpAttribute val="A"/>
             </Expression>
           </Expressions>
           <EVNT DESC="SaveTicket" FORCE_EXIT="N" id="1">

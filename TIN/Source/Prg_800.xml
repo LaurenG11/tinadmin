@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737181" _time="31296" date="02/05/2019" time="08:41:36"/>
+          <LastModified _date="737185" _time="41242" date="06/05/2019" time="11:27:22"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -38,8 +38,8 @@
             <Column id="1" name="iaJsonPayload">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="8000"/>
-                <Size id="174" val="8000"/>
+                <Picture id="157" valUnicode="10000"/>
+                <Size id="174" val="10000"/>
                 <_Flip id="194"/>
                 <_FieldStyle id="276" val="1"/>
               </PropertyList>

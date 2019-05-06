@@ -15,14 +15,14 @@
                 No Tickets Exist</label> <button
                 mat-raised-button
                 color="primary"
-                magic="CreateTicket"
+                magic="btnNewTicket"
             >
-                Create Ticket</button>
+                New Ticket</button>
         </div>
         <div style="display: flex; flex-direction: row">
             <div
-                class="example-container mat-elevation-z8 Table2TableContainerProps"
-                [style.visibility]="mg.getVisible('Table2')"
+                class="example-container mat-elevation-z8 Table3TableContainerProps"
+                [style.visibility]="mg.getVisible('Table3')"
             >
                 <mat-table
                     #table
@@ -33,10 +33,10 @@
                     (matSortChange)="tableService.sortData($event)"
                 >
                     <ng-container
-                        magic="Column3"
-                        matColumnDef="Column3"
+                        magic="clmTicketType"
+                        matColumnDef="clmTicketType"
                     >
-                        <mat-header-cell *matHeaderCellDef> aTicketName </mat-header-cell>
+                        <mat-header-cell *matHeaderCellDef> Ticket Type </mat-header-cell>
                         <mat-cell
                             *matCellDef="let row"
                             magicMark="magicTableRowContainer"
@@ -76,8 +76,8 @@
                         </mat-cell>
                     </ng-container>
                     <ng-container
-                        magic="Column7"
-                        matColumnDef="Column7"
+                        magic="Column5"
+                        matColumnDef="Column5"
                     >
                         <mat-header-cell *matHeaderCellDef> </mat-header-cell>
                         <mat-cell
@@ -95,22 +95,6 @@
                                     [rowId]="row.rowId"
                                 >
                                     Modify</button>
-                            </div>
-                        </mat-cell>
-                    </ng-container>
-                    <ng-container
-                        magic="Column9"
-                        matColumnDef="Column9"
-                    >
-                        <mat-header-cell *matHeaderCellDef> </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
                                 <button
                                     mat-raised-button
                                     color="primary"
@@ -142,8 +126,11 @@
             </div>
         </div>
         <div style="display: flex; flex-direction: row">
-            <mat-card>
-                <magic-subform magic="createModifyTicket">
+            <mat-card [style.visibility]="mg.getVisible('createModifyTicket')">
+                <magic-subform
+                    magic="createModifyTicket"
+                    [style.visibility]="mg.getVisible('createModifyTicket')"
+                >
                 </magic-subform>
             </mat-card>
         </div>

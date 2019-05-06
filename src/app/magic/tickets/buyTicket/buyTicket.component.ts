@@ -22,9 +22,10 @@ declare let paypal: any;
     ];
     addScript: boolean = false;
     paypalLoad: boolean = true;
+    paypalSuccess: boolean = false;
     
-    finalAmount: number = 15;
-    currency: string = 'GBP';
+    finalAmount: number;
+    currency: string;
    
     paypalConfig = {
       env: 'sandbox',
@@ -39,14 +40,29 @@ declare let paypal: any;
             transactions: [
               { amount: { total: this.finalAmount, currency: this.currency } }
             ]
+          },
+          experience: {
+            input_fields: {
+              no_shipping: 1
+            }
           }
         });
       },
       onAuthorize: (data, actions) => {
         return actions.payment.execute().then((payment) => {
-          //Do something when payment is successful.
+          
         })
-      }
+
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+            // Show a success message to the buyer
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            // set success = true to trigger pass creation in magic
+            this.paypalSuccess = true;
+        });
+    }
+
     };
    
     ngAfterViewChecked(): void {

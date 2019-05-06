@@ -1017,3 +1017,31 @@ Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN"
  <348384695570069248> 05/05/2019 17:29:42.805     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
  <348384695570069248> 05/05/2019 17:29:42.895     [Error  ] - EndTaskRequest(): Failed to open, data source: : eventListing  : TCP Provider: An existing connection was forcibly closed by the remote host.
 Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN")  (msgid "678"), Program: "Main Program".
+ <-1> 06/05/2019 09:18:06.272     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 06/05/2019 09:18:06.286     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 06/05/2019 09:18:06.293     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 06/05/2019 10:29:27.161     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 06/05/2019 10:29:27.166     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 06/05/2019 10:29:27.168     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <468453818802783424> 06/05/2019 11:15:30.993     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <468453818802783424> 06/05/2019 11:15:30.996     [Error  ] -  : TCP Provider: An existing connection was forcibly closed by the remote host.
+, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <468453818802783424> 06/05/2019 11:15:31.004     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <468453818802783424> 06/05/2019 11:15:31.005     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <468453818802783424> 06/05/2019 11:15:31.742     [Error  ] - Failed to open, data source:, Program: "mainRoute.viewMyEvents".
+ <468453818802783424> 06/05/2019 11:15:31.744     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.viewMyEvents".
+ <468453818802783424> 06/05/2019 11:15:31.877     [Error  ] - EndTaskRequest(): Failed to open, data source: : viewMyEvents Communication link failureFailed to create sort/temporary data source : viewMyEvents  : "mainRoute" ("TIN")  (msgid "899"), Program: "Main Program".
+ <451414341107164032> 06/05/2019 11:26:00.700     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.eventListing".
+ <451414341107164032> 06/05/2019 11:26:00.702     [Error  ] - admin-tin-magic : JSON text is not properly formatted. Unexpected character '"' is found at position 7991., Program: "mainRoute.eventListing".
+ <451414341107164032> 06/05/2019 11:26:00.704     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
+ <451414341107164032> 06/05/2019 11:26:00.706     [Error  ] - EndTaskRequest(): Invalid SQL command, database: tinAzureSQLDb : eventListing admin-tin-magic : JSON text is not properly formatted. Unexpected character '"' is found at position 7991.Failed to create sort/temporary data source : eventListing  : "mainRoute.viewMyEvents" ("TIN")  (msgid "1007"), Program: "Main Program".
+ <256675780499235904> 06/05/2019 11:26:20.800     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.eventListing".
+ <256675780499235904> 06/05/2019 11:26:20.802     [Error  ] - admin-tin-magic : JSON text is not properly formatted. Unexpected character '"' is found at position 7991., Program: "mainRoute.eventListing".
+ <256675780499235904> 06/05/2019 11:26:20.803     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
+ <256675780499235904> 06/05/2019 11:26:20.805     [Error  ] - EndTaskRequest(): Invalid SQL command, database: tinAzureSQLDb : eventListing admin-tin-magic : JSON text is not properly formatted. Unexpected character '"' is found at position 7991.Failed to create sort/temporary data source : eventListing  : "mainRoute.viewMyEvents" ("TIN")  (msgid "1016"), Program: "Main Program".

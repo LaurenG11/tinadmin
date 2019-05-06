@@ -89,10 +89,27 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"btnNewEvent",
+				"format":	"NewEvent",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	392,
+				"y":	6,
+				"width":	77,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"Table6",
 				"table_row_height":	100,
 				"table_title_height":	18,
-				"common_line_id":	"line37"
+				"common_line_id":	"line38"
 			},
 			"coordinates":	{
 				"x":	0,
@@ -259,27 +276,10 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"btnNewEvent",
-				"format":	"NewEvent",
-				"common_line_id":	"line37"
-			},
-			"coordinates":	{
-				"x":	474,
-				"y":	37,
-				"width":	77,
-				"height":	22
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"Tab20",
 				"items_list":	"D,T",
 				"attribute":	"A",
-				"common_line_id":	"line64"
+				"common_line_id":	"line38"
 			},
 			"coordinates":	{
 				"x":	474,

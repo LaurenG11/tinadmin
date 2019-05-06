@@ -34,7 +34,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737181" _time="41436" date="02/05/2019" time="11:30:36"/>
+          <LastModified _date="737185" _time="37989" date="06/05/2019" time="10:33:09"/>
         </Header>
         <ItemIsn val="10"/>
         <Resource>
@@ -916,6 +916,20 @@
                 <ControlName id="46" val="aSearchString"/>
               </PropertyList>
             </Control>
+            <Control PDOD="128" _test_id="18" id="2">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="392"/>
+                <Y id="22" val="6"/>
+                <Width id="23" val="77"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="btnNewEvent"/>
+                <Format id="82" valUnicode="NewEvent"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="4"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
             <Control _test_id="14" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="* From Date"/>
@@ -925,20 +939,6 @@
                 <Height id="24" val="14"/>
                 <ControlName id="46" val="Label14"/>
                 <Font id="50" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="18" id="2">
-              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="474"/>
-                <Y id="22" val="37"/>
-                <Width id="23" val="77"/>
-                <Height id="24" val="22"/>
-                <ControlName id="46" val="btnNewEvent"/>
-                <Format id="82" valUnicode="NewEvent"/>
-                <RaiseEvent id="234">
-                  <EventType val="U"/>
-                  <PublicObject comp="-1" obj="4"/>
-                </RaiseEvent>
               </PropertyList>
             </Control>
             <Control _test_id="3" id="6">
@@ -1227,9 +1227,9 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="737181" _time="41436" date="02/05/2019" time="11:30:36"/>
+            <LastModified _date="737185" _time="37896" date="06/05/2019" time="10:31:36"/>
           </Header>
-          <ItemIsn val="55"/>
+          <ItemIsn val="57"/>
           <Resource>
             <Columns>
               <Column id="1" name="iaMode">
@@ -1426,6 +1426,22 @@
                   <StoredAs id="173" val="1"/>
                   <Size id="174" val="150"/>
                   <_Flip id="194"/>
+                </PropertyList>
+              </Column>
+              <Column id="56" name="nPrice">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="18"/>
+                  <DbColumnName id="178"/>
+                  <Type id="179"/>
+                  <UserType id="180"/>
+                </PropertyList>
+              </Column>
+              <Column id="57" name="nCurrencyIsn">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="444"/>
+                  <DbColumnName id="178"/>
+                  <Type id="179"/>
+                  <UserType id="180"/>
                 </PropertyList>
               </Column>
               <Column id="19" name="lFeatureEvent">
@@ -1887,6 +1903,14 @@
                       <v>21</v>
                       <v>29</v>
                       <v>28</v>
+                      <v>38</v>
+                      <v>39</v>
+                      <v>40</v>
+                      <v>41</v>
+                      <v>35</v>
+                      <v>34</v>
+                      <v>36</v>
+                      <v>37</v>
                       <v>33</v>
                       <v>30</v>
                       <v>31</v>
@@ -2139,7 +2163,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="26"/>
+                    <_DitIndexForToolkit val="30"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -2152,8 +2176,36 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="27"/>
+                    <_DitIndexForToolkit val="31"/>
                     <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="56" FlowIsn="168" id="56">
+                    <Column val="56"/>
+                    <Type val="V"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="25"/>
+                    <DIFF_UPDATE val="T"/>
+                    <PartOfDataview val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="57" FlowIsn="169" id="57">
+                    <Column val="57"/>
+                    <Type val="V"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="28"/>
+                    <DIFF_UPDATE val="T"/>
+                    <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
                     <Direction val="C"/>
@@ -2165,7 +2217,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="29"/>
+                    <_DitIndexForToolkit val="33"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
@@ -2179,7 +2231,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="31"/>
+                    <_DitIndexForToolkit val="35"/>
                     <DIFF_UPDATE val="T"/>
                     <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
@@ -3241,10 +3293,10 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="37" _last_test_id="67" id="1">
+            <FormEntry _last_isn="41" _last_test_id="71" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
                 <Width id="23" val="556"/>
-                <Height id="24" val="363"/>
+                <Height id="24" val="434"/>
                 <FormUnits id="33" val="4"/>
                 <ShowGrid id="37" val="Y"/>
                 <GridX id="38" val="2"/>
@@ -3577,16 +3629,81 @@
                   <Enabled Exp="25" id="62"/>
                 </PropertyList>
               </Control>
+              <Control PDOD="145" _test_id="68" id="38">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <Model ID="MODEL_WEB_CLIENT" id="1">
+                    <Var FieldID="56"/>
+                  </Model>
+                  <X id="21" val="88"/>
+                  <Y id="22" val="240"/>
+                  <Width id="23" val="55"/>
+                  <Height id="24" val="18"/>
+                  <Data FieldID="56" id="43"/>
+                  <ControlName id="46" val="nPrice"/>
+                  <Enabled Exp="25" id="62"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="69" id="39">
+                <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                  <Text id="19" valUnicode="Price"/>
+                  <X id="21" val="8"/>
+                  <Y id="22" val="244"/>
+                  <Width id="23" val="32"/>
+                  <Height id="24" val="14"/>
+                  <ControlName id="46" val="lblPrice"/>
+                  <Font id="50" val="1"/>
+                  <Enabled Exp="25" id="62"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="70" id="40">
+                <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                  <Text id="19" valUnicode="Currency *"/>
+                  <X id="21" val="4"/>
+                  <Y id="22" val="264"/>
+                  <Width id="23" val="63"/>
+                  <Height id="24" val="16"/>
+                  <ControlName id="46" val="lblCurrency"/>
+                  <Font id="50" val="1"/>
+                  <Enabled Exp="25" id="62"/>
+                </PropertyList>
+              </Control>
+              <Control PDOD="1" _test_id="71" id="41">
+                <PropertyList model="CTRL_WEB_CLIENT_COMBOBOX">
+                  <X id="21" val="84"/>
+                  <Y id="22" val="264"/>
+                  <Width id="23" val="194"/>
+                  <Height id="24" val="17"/>
+                  <Data FieldID="57" id="43"/>
+                  <ControlName id="46" val="cmbCurrency"/>
+                  <Enabled Exp="25" id="62"/>
+                  <SourceTable comp="-1" id="150" obj="339"/>
+                  <_DisplayField comp="-1" id="443" obj="7"/>
+                  <_LinkField comp="-1" id="444" obj="1"/>
+                  <_Index comp="-1" id="445" obj="3"/>
+                </PropertyList>
+                <FieldRanges>
+                  <FLD_RNG>
+                    <_Column comp="-1" obj="2"/>
+                    <MIN val="32"/>
+                    <MAX val="32"/>
+                  </FLD_RNG>
+                  <FLD_RNG>
+                    <_Column comp="-1" obj="20"/>
+                    <MIN val="33"/>
+                    <MAX val="33"/>
+                  </FLD_RNG>
+                </FieldRanges>
+              </Control>
               <Control _test_id="65" id="35">
                 <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                   <Text id="19" valUnicode="Tel. Number *"/>
-                  <X id="21" val="1"/>
-                  <Y id="22" val="244"/>
+                  <Y id="22" val="288"/>
                   <Width id="23" val="82"/>
                   <Height id="24" val="14"/>
                   <ControlName id="46" val="lbContactNumber"/>
                   <Font id="50" val="1"/>
                   <Tooltip Exp="30" id="56"/>
+                  <Enabled Exp="25" id="62"/>
                 </PropertyList>
               </Control>
               <Control _test_id="64" id="34">
@@ -3595,11 +3712,12 @@
                     <Var FieldID="54"/>
                   </Model>
                   <X id="21" val="92"/>
-                  <Y id="22" val="244"/>
+                  <Y id="22" val="288"/>
                   <Width id="23" val="437"/>
                   <Height id="24" val="18"/>
                   <Data FieldID="54" id="43"/>
                   <ControlName id="46" val="aContactNumber"/>
+                  <Enabled Exp="25" id="62"/>
                 </PropertyList>
               </Control>
               <Control _test_id="66" id="36">
@@ -3608,28 +3726,30 @@
                     <Var FieldID="55"/>
                   </Model>
                   <X id="21" val="92"/>
-                  <Y id="22" val="268"/>
+                  <Y id="22" val="312"/>
                   <Width id="23" val="436"/>
                   <Height id="24" val="18"/>
                   <Data FieldID="55" id="43"/>
                   <ControlName id="46" val="aEventContactEmail"/>
+                  <Enabled Exp="25" id="62"/>
                 </PropertyList>
               </Control>
               <Control _test_id="67" id="37">
                 <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                   <Text id="19" valUnicode="Organiser Email *"/>
-                  <Y id="22" val="272"/>
+                  <Y id="22" val="316"/>
                   <Width id="23" val="98"/>
                   <Height id="24" val="14"/>
                   <ControlName id="46" val="lblEmail"/>
                   <Font id="50" val="1"/>
                   <Tooltip Exp="31" id="56"/>
+                  <Enabled Exp="25" id="62"/>
                 </PropertyList>
               </Control>
               <Control PDOD="192" _test_id="31" id="33">
                 <PropertyList model="CTRL_WEB_CLIENT_CHECKBOX">
                   <X id="21" val="216"/>
-                  <Y id="22" val="300"/>
+                  <Y id="22" val="344"/>
                   <Width id="23" val="17"/>
                   <Height id="24" val="19"/>
                   <Data FieldID="19" id="43"/>
@@ -3642,7 +3762,7 @@
                 <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                   <Text id="19" valUnicode="Publish Event?"/>
                   <X id="21" val="4"/>
-                  <Y id="22" val="304"/>
+                  <Y id="22" val="348"/>
                   <Width id="23" val="72"/>
                   <Height id="24" val="14"/>
                   <ControlName id="46" val="Label30"/>
@@ -3653,7 +3773,7 @@
               <Control PDOD="192" _test_id="25" id="31">
                 <PropertyList model="CTRL_WEB_CLIENT_CHECKBOX">
                   <X id="21" val="96"/>
-                  <Y id="22" val="304"/>
+                  <Y id="22" val="348"/>
                   <Width id="23" val="20"/>
                   <Height id="24" val="19"/>
                   <Data FieldID="20" id="43"/>
@@ -3666,7 +3786,7 @@
                 <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                   <Text id="19" valUnicode="Featured Event?"/>
                   <X id="21" val="128"/>
-                  <Y id="22" val="304"/>
+                  <Y id="22" val="348"/>
                   <Width id="23" val="85"/>
                   <Height id="24" val="14"/>
                   <ControlName id="46" val="Label32"/>
@@ -3676,8 +3796,7 @@
               </Control>
               <Control PDOD="128" _test_id="9" id="1">
                 <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                  <X id="21" val="1"/>
-                  <Y id="22" val="328"/>
+                  <Y id="22" val="372"/>
                   <Width id="23" val="156"/>
                   <Height id="24" val="22"/>
                   <ControlName id="46" val="btnSaveEvent"/>
@@ -3715,6 +3834,14 @@
             </Expression>
             <Expression id="6">
               <ExpSyntax val="2280"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="32">
+              <ExpSyntax val="9000"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="33">
+              <ExpSyntax val="1"/>
               <ExpAttribute val="N"/>
             </Expression>
             <Expression id="7">
@@ -3766,7 +3893,7 @@
               <ExpAttribute val="D"/>
             </Expression>
             <Expression id="19">
-              <ExpSyntax val="{0,3}='' OR {0,8}='' OR {0,12}='' OR ISNULL({0,14}) OR ISNULL({0,15}) OR {0,18}=0 OR{0,54}='' OR{0,55}=''"/>
+              <ExpSyntax val="{0,3}='' OR {0,8}='' OR {0,12}='' OR ISNULL({0,14}) OR ISNULL({0,15}) OR {0,18}=0 OR {0,54}='' OR {0,55}='' OR {0,57}=0"/>
               <ExpAttribute val="B"/>
             </Expression>
             <Expression id="20">

@@ -10,8 +10,7 @@ import {
     providers: [...matMagicProviders],
     templateUrl: './tickets.component.html'
 }) export class tickets extends BaseMatTableMagicComponent {
-    displayedColumns = ['Column3',
-        'Column7',
-        'Column9',
+    displayedColumns = ['clmTicketType',
+        'Column5',
     ];
 }

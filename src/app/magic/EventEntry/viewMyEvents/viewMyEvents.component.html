@@ -43,6 +43,12 @@
                 magic="Search"
             >
                 Search</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="btnNewEvent"
+            >
+                NewEvent</button>
         </div>
         <div style="display: flex; flex-direction: row">
             <div class="example-container mat-elevation-z8 Table6TableContainerProps">
@@ -180,47 +186,42 @@
                     (page)="tableService.mgOnPaginateChange($event)"
                 >
                 </mat-paginator>
-            </div> <button
-                mat-raised-button
-                color="primary"
-                magic="btnNewEvent"
-            >
-                NewEvent</button>
-        </div>
-        <div>
-            <mat-tab-group
-                magic="Tab20"
-                (selectedTabChange)="task.mgOnTabSelectionChanged('Tab20', $event.index)"
-                [selectedIndex]="mg.getTabSelectedIndex('Tab20')"
-            >
-                <mat-tab
-                    *ngFor="let o of mg.getItemListValues('Tab20')"
-                    [label]="mg.getTabpageText('Tab20', o.index)"
-                >
-                </mat-tab>
-            </mat-tab-group>
-            <div
-                class="tab_content"
-                [style.display]="mg.isTabPageSelected('Tab20', 1) ? 'flex' : 'none' "
-                style="flex-direction: column"
-            >
-                <div style="display: flex; flex-direction: row">
-                    <mat-card>
-                        <magic-subform magic="eventsubform">
-                        </magic-subform>
-                    </mat-card>
-                </div>
             </div>
-            <div
-                class="tab_content"
-                [style.display]="mg.isTabPageSelected('Tab20', 2) ? 'flex' : 'none' "
-                style="flex-direction: column"
-            >
-                <div style="display: flex; flex-direction: row">
-                    <mat-card>
-                        <magic-subform magic="ticketsubform">
-                        </magic-subform>
-                    </mat-card>
+            <div>
+                <mat-tab-group
+                    magic="Tab20"
+                    (selectedTabChange)="task.mgOnTabSelectionChanged('Tab20', $event.index)"
+                    [selectedIndex]="mg.getTabSelectedIndex('Tab20')"
+                >
+                    <mat-tab
+                        *ngFor="let o of mg.getItemListValues('Tab20')"
+                        [label]="mg.getTabpageText('Tab20', o.index)"
+                    >
+                    </mat-tab>
+                </mat-tab-group>
+                <div
+                    class="tab_content"
+                    [style.display]="mg.isTabPageSelected('Tab20', 1) ? 'flex' : 'none' "
+                    style="flex-direction: column"
+                >
+                    <div style="display: flex; flex-direction: row">
+                        <mat-card>
+                            <magic-subform magic="eventsubform">
+                            </magic-subform>
+                        </mat-card>
+                    </div>
+                </div>
+                <div
+                    class="tab_content"
+                    [style.display]="mg.isTabPageSelected('Tab20', 2) ? 'flex' : 'none' "
+                    style="flex-direction: column"
+                >
+                    <div style="display: flex; flex-direction: row">
+                        <mat-card>
+                            <magic-subform magic="ticketsubform">
+                            </magic-subform>
+                        </mat-card>
+                    </div>
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	540,
+		"width":	515,
 		"height":	409
 	},
 	"hint":	null,
@@ -23,11 +23,11 @@
 					"has_exp":	true
 				},
 				"text":	"No Tickets Exist",
-				"common_line_id":	"line6"
+				"common_line_id":	"line13"
 			},
 			"coordinates":	{
-				"x":	17,
-				"y":	7,
+				"x":	4,
+				"y":	14,
 				"width":	297,
 				"height":	31
 			},
@@ -38,13 +38,13 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"CreateTicket",
-				"format":	"Create Ticket",
-				"common_line_id":	"line6"
+				"id":	"btnNewTicket",
+				"format":	"New Ticket",
+				"common_line_id":	"line13"
 			},
 			"coordinates":	{
-				"x":	344,
-				"y":	6,
+				"x":	305,
+				"y":	13,
 				"width":	87,
 				"height":	22
 			},
@@ -55,19 +55,19 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Table2",
+				"id":	"Table3",
 				"visible":	{
 					"value":	null,
 					"has_exp":	true
 				},
-				"table_row_height":	48,
+				"table_row_height":	52,
 				"table_title_height":	18,
 				"common_line_id":	"line48"
 			},
 			"coordinates":	{
-				"x":	15,
+				"x":	5,
 				"y":	48,
-				"width":	505,
+				"width":	500,
 				"height":	127
 			},
 			"hint":	null,
@@ -76,8 +76,8 @@
 				{
 					"style":	null,
 					"props":	{
-						"id":	"Column3",
-						"column_title":	"aTicketName",
+						"id":	"clmTicketType",
+						"column_title":	"Ticket Type",
 						"is_table_child":	true,
 						"web_style":	2
 					},
@@ -98,7 +98,7 @@
 								"common_line_id":	"line70"
 							},
 							"coordinates":	{
-								"x":	19,
+								"x":	9,
 								"y":	70,
 								"width":	400,
 								"height":	18
@@ -112,12 +112,12 @@
 				{
 					"style":	null,
 					"props":	{
-						"id":	"Column7",
+						"id":	"Column5",
 						"is_table_child":	true,
 						"web_style":	2
 					},
 					"coordinates":	{
-						"width":	47
+						"width":	87
 					},
 					"hint":	null,
 					"controlType":	"K",
@@ -133,7 +133,7 @@
 								"common_line_id":	"line70"
 							},
 							"coordinates":	{
-								"x":	427,
+								"x":	417,
 								"y":	70,
 								"width":	39,
 								"height":	22
@@ -141,22 +141,7 @@
 							"hint":	null,
 							"controlType":	"B",
 							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column9",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	47
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
+						},
 						{
 							"style":	null,
 							"props":	{
@@ -172,7 +157,7 @@
 								"common_line_id":	"line70"
 							},
 							"coordinates":	{
-								"x":	474,
+								"x":	459,
 								"y":	70,
 								"width":	39,
 								"height":	22
@@ -189,13 +174,17 @@
 			"style":	null,
 			"props":	{
 				"id":	"createModifyTicket",
-				"common_line_id":	"line196"
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"common_line_id":	"line179"
 			},
 			"coordinates":	{
-				"x":	17,
-				"y":	196,
+				"x":	4,
+				"y":	179,
 				"width":	503,
-				"height":	192
+				"height":	220
 			},
 			"hint":	null,
 			"controlType":	"F",

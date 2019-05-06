@@ -268,6 +268,30 @@
                 </div>
             </mat-form-field>
         </div>
+         
+        <label
+        magic="lblCurrency"
+        class="lable_overflow mgFont1"
+        >
+        Currency *
+        </label>
+         
+        <div>
+            <mat-form-field>
+                <mat-select
+                    magic="cmbCurrency"
+                    formControlName="cmbCurrency"
+                >
+                    <mat-option
+                        *ngFor="let o of mg.getItemListValues('cmbCurrency');"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
         <div style="display: flex; flex-direction: row">
             <label
                 magic="Label30"

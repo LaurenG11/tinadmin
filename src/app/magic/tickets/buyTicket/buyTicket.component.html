@@ -289,9 +289,37 @@
                             >
                             <mgError magic="nTotalAmount"> </mgError>
                         </div>
-                    </mat-form-field>      
+                    </mat-form-field>  
+                     
+                    <mat-form-field [style.visibility]="mg.getVisible('aPaypalCurrencyCode')">
+                        <div>
+                            <input
+                                matInput
+                                magic="aPaypalCurrencyCode"
+                                [(ngModel)]="currency"
+                                formControlName="aPaypalCurrencyCode"
+                                mgFormat
+                            >
+                            <mgError magic="aPaypalCurrencyCode"> </mgError>
+                        </div>
+                    </mat-form-field>
+                     
+                    <mat-form-field [style.visibility]="mg.getVisible('lPaypalSuccess')">
+                        <div>
+                            <input
+                                matInput
+                                magic="lPaypalSuccess"
+                                formControlName="lPaypalSuccess"
+                                [(ngModel)]="paypalSuccess"
+                                mgFormat
+                                rangevalidator
+                            >
+                            <mgError magic="lPaypalSuccess"> </mgError>
+                        </div>
+                    </mat-form-field>
+    
                 </div>
-            <input type="number" [(ngModel)]="finalAmount" style="padding-bottom: 10px;" [style.visibility]="false">
+            <!--<input type="number" [(ngModel)]="finalAmount" style="padding-bottom: 10px;" [style.visibility]="hidden">-->
 
             <h2 *ngIf="paypalLoad">Paypal button is loading</h2>
             <div id="paypal-checkout-btn"></div>
