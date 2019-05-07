@@ -6,7 +6,8 @@ import {
     matMagicProviders
 } from "@magic-xpa/angular-material-core";
 import { IPayPalConfig, ICreateOrderRequest} from 'ngx-paypal';
-
+import {MatSnackBarModule, MatSnackBarRef} from '@angular/material/snack-bar';
+import { NGXLogger } from 'ngx-logger';
 
 declare let paypal: any;
 
@@ -23,10 +24,13 @@ declare let paypal: any;
     addScript: boolean = false;
     paypalLoad: boolean = true;
     paypalSuccess: boolean = false;
+  
     
     finalAmount: number;
     currency: string;
-   
+    paypalDetails: string = 'blah';
+    
+    
     paypalConfig = {
       env: 'sandbox',
       client: {
@@ -35,6 +39,7 @@ declare let paypal: any;
       },
       commit: true,
       payment: (data, actions) => {
+        
         return actions.payment.create({
           payment: {
             transactions: [
@@ -49,19 +54,43 @@ declare let paypal: any;
         });
       },
       onAuthorize: (data, actions) => {
-        return actions.payment.execute().then((payment) => {
+        this.paypalSuccess = true;
+        actions.order.get().then(details => {
+          //this.paypalDetails = details;
+
+        }
+      );
+      actions.payment.execute().then(details => {
+        // Show a confirmation message to the buyer
+        window.alert('Thank you for your purchase!');
+        this.paypalDetails = details.state;
+        if (this.paypalDetails == 'approved')
+        {
+          this.paypalSuccess = true;
           
-        })
+        }
+        else{
+          this.paypalSuccess = false;
+        }
+      });
+        
 
       },
       onApprove: function(data, actions) {
-        return actions.order.capture().then(function(details) {
-            // Show a success message to the buyer
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
-            // set success = true to trigger pass creation in magic
-            this.paypalSuccess = true;
-        });
-    }
+
+
+        console.log('onApprove - transaction was approved, but not authorized', data, actions);
+        actions.order.get().then(details => {
+        console.log('onApprove - you can get full order details inside onApprove: ', details);
+        
+        })
+      },
+      onError: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+          this.paypalDetails = details.error;
+          details.error;
+        })
+      }
 
     };
    
@@ -72,7 +101,7 @@ declare let paypal: any;
           this.paypalLoad = false;
         })
       }
-    }
+    };
     
     addPaypalScript() {
       this.addScript = true;
@@ -82,7 +111,18 @@ declare let paypal: any;
         scripttagElement.onload = resolve;
         document.body.appendChild(scripttagElement);
       })
-    }
-   
+    };
+
+    isApproved () {
+      if (this.paypalDetails == 'approved')
+      {
+        return true;
+      }
+        else
+      {
+        return false;
+      }
+    };
+
   
 }

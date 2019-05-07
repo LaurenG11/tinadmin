@@ -8,7 +8,8 @@ import {
 @Component({
     selector: 'mga-viewMyEvents',
     providers: [...matMagicProviders],
-    templateUrl: './viewMyEvents.component.html'
+    templateUrl: './viewMyEvents.component.html',
+    styleUrls: ['./viewMyEvents.component.css']
 }) export class viewMyEvents extends BaseMatTableMagicComponent {
     displayedColumns = ['clmEvent',
         'clmDate',

@@ -13,6 +13,7 @@ import { routes } from './app.routes';
 import {HttpClientModule}  from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NgxPayPalModule} from 'ngx-paypal';
+import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { NgxPayPalModule} from 'ngx-paypal';
     HttpClientModule,
     FormsModule,
     NgxPayPalModule,
+    LoggerModule.forRoot({serverLoggingUrl: '/api/logs', level: NgxLoggerLevel.DEBUG, serverLogLevel: NgxLoggerLevel.ERROR})
 
   ],
   providers: [],

@@ -12,16 +12,16 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file ./magic-metadata/tickets/tickets/modifyCreateTicket/modifyCreateTicket.json
+[>] Loading JSON file ./magic-metadata/tickets/tickets/tickets.json
 *** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component modifyCreateTicket
+[>] Processing JSON file for component tickets
 *** Step 3: generate components. (1 components) ***
-[>] generate component modifyCreateTicket
+[>] generate component tickets
 [>] Step 4: components-list.
 [>]  ********************************* E N D    GENERATE *********************************
-UPDATE src/app/magic/tickets/tickets/modifyCreateTicket/modifyCreateTicket.component.ts (344 bytes)
-UPDATE src/app/magic/tickets/tickets/modifyCreateTicket/modifyCreateTicket.component.html (3346 bytes)
-UPDATE src/app/magic/component-list.g.ts (2656 bytes)
+UPDATE src/app/magic/tickets/tickets/tickets.component.ts (427 bytes)
+UPDATE src/app/magic/tickets/tickets/tickets.component.html (8075 bytes)
+UPDATE src/app/magic/component-list.g.ts (2850 bytes)
 
 
 

@@ -234,9 +234,52 @@
         </div>
         <div style="display: flex; flex-direction: row">
             <label
+                magic="lblPrice"
+                class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('lblPrice' )"
+            >
+                Price</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        type='number'
+                        magic="nPrice"
+                        formControlName="nPrice"
+                        mgFormat
+                    >
+                    <mgError magic="nPrice"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblCurrency"
+                class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('lblCurrency' )"
+            >
+                Currency *</label>
+            <div>
+                <mat-form-field>
+                    <mat-select
+                        magic="cmbCurrency"
+                        formControlName="cmbCurrency"
+                    >
+                        <mat-option
+                            *ngFor="let o of mg.getItemListValues('cmbCurrency');"
+                            [value]="o.index"
+                        >
+                            {{o.displayValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
                 magic="lbContactNumber"
                 [matTooltip]="mg.getTitle('lbContactNumber')"
                 class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('lbContactNumber' )"
             >
                 Tel. Number *</label>
             <mat-form-field>
@@ -255,6 +298,7 @@
                 magic="lblEmail"
                 [matTooltip]="mg.getTitle('lblEmail')"
                 class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('lblEmail' )"
             >
                 Organiser Email *</label>
             <mat-form-field>
@@ -268,30 +312,6 @@
                 </div>
             </mat-form-field>
         </div>
-         
-        <label
-        magic="lblCurrency"
-        class="lable_overflow mgFont1"
-        >
-        Currency *
-        </label>
-         
-        <div>
-            <mat-form-field>
-                <mat-select
-                    magic="cmbCurrency"
-                    formControlName="cmbCurrency"
-                >
-                    <mat-option
-                        *ngFor="let o of mg.getItemListValues('cmbCurrency');"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
-        </div>
-
         <div style="display: flex; flex-direction: row">
             <label
                 magic="Label30"
@@ -327,6 +347,23 @@
                 [disabled]="mg.isDisabled('btnSaveEvent' )"
             >
                 Save Event</button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label43"
+                class="lable_overflow mgFont1"
+            >
+                name1</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        magic="name1"
+                        formControlName="name1"
+                        mgFormat
+                    >
+                    <mgError magic="name1"> </mgError>
+                </div>
+            </mat-form-field>
         </div>
     </div>
 </div>

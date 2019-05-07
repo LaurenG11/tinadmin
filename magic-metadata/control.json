@@ -7,13 +7,12 @@
 			"has_exp":	true
 		},
 		"mgformat":	"mgFormat",
-		"validator":	"rangevalidator",
-		"attribute":	"B"
+		"attribute":	"A"
 	},
 	"coordinates":	{
 		"x":	167,
 		"y":	381,
-		"width":	11,
+		"width":	71,
 		"height":	18
 	},
 	"hint":	null,

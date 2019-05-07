@@ -16,12 +16,16 @@
 .Table2_table_rowProps {}
 
 .Table2_table_rowProps:hover {
-    background-color: #EEEEEE;
+    background-color: rgb(138, 117, 117);
 }
 
+
 .selected {
-    background: #F5F5F5;
+    outline: rgba(140, 156, 95, 0.479);
+    outline-width: thick;
+    background-color: antiquewhite;
 }
+
 
 .Column3Props {}
 

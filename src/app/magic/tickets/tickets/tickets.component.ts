@@ -8,9 +8,11 @@ import {
 @Component({
     selector: 'mga-tickets',
     providers: [...matMagicProviders],
-    templateUrl: './tickets.component.html'
+    templateUrl: './tickets.component.html',
+    styleUrls: ['./tickets.component.css']
 }) export class tickets extends BaseMatTableMagicComponent {
     displayedColumns = ['clmTicketType',
+        'Column15',
         'Column5',
     ];
 }

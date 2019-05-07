@@ -98,3 +98,7 @@
 }
 
 .lFeatureEventProps {}
+
+.selected {
+    background-color: red;
+  }

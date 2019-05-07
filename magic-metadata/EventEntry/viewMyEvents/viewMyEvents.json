@@ -107,14 +107,15 @@
 			"style":	null,
 			"props":	{
 				"id":	"Table6",
-				"table_row_height":	100,
+				"table_row_height":	25,
+				"web_style":	2,
 				"table_title_height":	18,
 				"common_line_id":	"line38"
 			},
 			"coordinates":	{
 				"x":	0,
 				"y":	38,
-				"width":	470,
+				"width":	564,
 				"height":	396
 			},
 			"hint":	null,
@@ -204,7 +205,7 @@
 						"web_style":	2
 					},
 					"coordinates":	{
-						"width":	136
+						"width":	216
 					},
 					"hint":	null,
 					"controlType":	"K",
@@ -282,9 +283,9 @@
 				"common_line_id":	"line38"
 			},
 			"coordinates":	{
-				"x":	474,
+				"x":	579,
 				"y":	64,
-				"width":	487,
+				"width":	429,
 				"height":	369
 			},
 			"hint":	null,
@@ -307,9 +308,9 @@
 								"common_line_id":	"line86"
 							},
 							"coordinates":	{
-								"x":	477,
+								"x":	582,
 								"y":	86,
-								"width":	475,
+								"width":	421,
 								"height":	341
 							},
 							"hint":	null,
@@ -335,7 +336,7 @@
 								"common_line_id":	"line87"
 							},
 							"coordinates":	{
-								"x":	479,
+								"x":	584,
 								"y":	87,
 								"width":	476,
 								"height":	340

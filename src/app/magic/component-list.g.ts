@@ -9,11 +9,15 @@ import { mainRoute as mainRoute_mainRoute } from './route/mainRoute/mainRoute.co
 import { eventListing as eventListing_eventListing } from './eventListing/eventListing/eventListing.component';
 import { buyTicket as buyTicket_buyTicket } from './tickets/buyTicket/buyTicket.component';
 import { detailsSubform as buyTicket_detailsSubform_detailsSubform } from './tickets/buyTicket/detailsSubform/detailsSubform.component';
+import { tickets1 as tickets1_tickets1 } from './tickets/tickets1/tickets1.component';
+
 
 
 export const title = "";
 
-export const magicGenCmpsHash = {               buyTicket_detailsSubform_detailsSubform:buyTicket_detailsSubform_detailsSubform,
+export const magicGenCmpsHash = {               tickets1_tickets1:tickets1_tickets1,
+                     
+                      buyTicket_detailsSubform_detailsSubform:buyTicket_detailsSubform_detailsSubform,
                       buyTicket_buyTicket:buyTicket_buyTicket,
                       eventListing_eventListing:eventListing_eventListing,
                       mainRoute_mainRoute:mainRoute_mainRoute,
@@ -28,7 +32,7 @@ export const magicGenCmpsHash = {               buyTicket_detailsSubform_details
        
 };
 
-export const magicGenComponents = [ buyTicket_detailsSubform_detailsSubform ,  buyTicket_buyTicket ,  eventListing_eventListing ,  mainRoute_mainRoute ,  rootTest_roottest ,  tickets_tickets,
+export const magicGenComponents = [ tickets1_tickets1 ,  buyTicket_detailsSubform_detailsSubform ,  buyTicket_buyTicket ,  eventListing_eventListing ,  mainRoute_mainRoute ,  rootTest_roottest ,  tickets_tickets,
 tickets_modifyCreateTicket_modifyCreateTicket,
 viewMyEvents_EditEventOnline_EditEventOnline ,  viewMyEvents_viewMyEvents ,  sicListingOnline_sicListingOnline,
 EditEventOnline_EditEventOnline 

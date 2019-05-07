@@ -10,7 +10,7 @@
 		"x":	0,
 		"y":	0,
 		"width":	556,
-		"height":	363
+		"height":	434
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -560,17 +560,111 @@
 				"font":	1
 			},
 			"props":	{
+				"id":	"lblPrice",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Price",
+				"common_line_id":	"line240"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	244,
+				"width":	32,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"nPrice",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"attribute":	"N",
+				"common_line_id":	"line240"
+			},
+			"coordinates":	{
+				"x":	88,
+				"y":	240,
+				"width":	55,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"lblCurrency",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Currency *",
+				"common_line_id":	"line264"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	264,
+				"width":	63,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"cmbCurrency",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"items_list":	"",
+				"attribute":	"N",
+				"common_line_id":	"line264"
+			},
+			"coordinates":	{
+				"x":	84,
+				"y":	264,
+				"width":	194,
+				"height":	17
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
 				"id":	"lbContactNumber",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"tooltip":	{
 					"value":	null,
 					"has_exp":	true
 				},
 				"text":	"Tel. Number *",
-				"common_line_id":	"line244"
+				"common_line_id":	"line288"
 			},
 			"coordinates":	{
-				"x":	1,
-				"y":	244,
+				"x":	0,
+				"y":	288,
 				"width":	82,
 				"height":	14
 			},
@@ -582,13 +676,17 @@
 			"style":	null,
 			"props":	{
 				"id":	"aContactNumber",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"mgformat":	"mgFormat",
 				"attribute":	"A",
-				"common_line_id":	"line244"
+				"common_line_id":	"line288"
 			},
 			"coordinates":	{
 				"x":	92,
-				"y":	244,
+				"y":	288,
 				"width":	437,
 				"height":	18
 			},
@@ -602,16 +700,20 @@
 			},
 			"props":	{
 				"id":	"lblEmail",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"tooltip":	{
 					"value":	null,
 					"has_exp":	true
 				},
 				"text":	"Organiser Email *",
-				"common_line_id":	"line268"
+				"common_line_id":	"line312"
 			},
 			"coordinates":	{
 				"x":	0,
-				"y":	272,
+				"y":	316,
 				"width":	98,
 				"height":	14
 			},
@@ -623,13 +725,17 @@
 			"style":	null,
 			"props":	{
 				"id":	"aEventContactEmail",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"mgformat":	"mgFormat",
 				"attribute":	"A",
-				"common_line_id":	"line268"
+				"common_line_id":	"line312"
 			},
 			"coordinates":	{
 				"x":	92,
-				"y":	268,
+				"y":	312,
 				"width":	436,
 				"height":	18
 			},
@@ -648,11 +754,11 @@
 					"has_exp":	true
 				},
 				"text":	"Publish Event?",
-				"common_line_id":	"line300"
+				"common_line_id":	"line344"
 			},
 			"coordinates":	{
 				"x":	4,
-				"y":	304,
+				"y":	348,
 				"width":	72,
 				"height":	14
 			},
@@ -670,11 +776,11 @@
 				},
 				"text":	"",
 				"attribute":	"B",
-				"common_line_id":	"line300"
+				"common_line_id":	"line344"
 			},
 			"coordinates":	{
 				"x":	96,
-				"y":	304,
+				"y":	348,
 				"width":	20,
 				"height":	19
 			},
@@ -693,11 +799,11 @@
 					"has_exp":	true
 				},
 				"text":	"Featured Event?",
-				"common_line_id":	"line300"
+				"common_line_id":	"line344"
 			},
 			"coordinates":	{
 				"x":	128,
-				"y":	304,
+				"y":	348,
 				"width":	85,
 				"height":	14
 			},
@@ -715,11 +821,11 @@
 				},
 				"text":	"",
 				"attribute":	"B",
-				"common_line_id":	"line300"
+				"common_line_id":	"line344"
 			},
 			"coordinates":	{
 				"x":	216,
-				"y":	300,
+				"y":	344,
 				"width":	17,
 				"height":	19
 			},
@@ -736,16 +842,53 @@
 					"has_exp":	true
 				},
 				"format":	"Save Event",
-				"common_line_id":	"line328"
+				"common_line_id":	"line372"
 			},
 			"coordinates":	{
-				"x":	1,
-				"y":	328,
+				"x":	0,
+				"y":	372,
 				"width":	156,
 				"height":	22
 			},
 			"hint":	null,
 			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label43",
+				"text":	"name1",
+				"common_line_id":	"line384"
+			},
+			"coordinates":	{
+				"x":	240,
+				"y":	384,
+				"width":	34,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"name1",
+				"mgformat":	"mgFormat",
+				"attribute":	"A",
+				"common_line_id":	"line384"
+			},
+			"coordinates":	{
+				"x":	276,
+				"y":	384,
+				"width":	324,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
 			"children":	null
 		}
 	]

@@ -7,12 +7,7 @@
         magic="tickets"
     >
         <div style="display: flex; flex-direction: row">
-            <label
-                magic="NoTicketsMessage"
-                [style.visibility]="mg.getVisible('NoTicketsMessage')"
-                class="lable_overflow"
-            >
-                No Tickets Exist</label> <button
+            <button
                 mat-raised-button
                 color="primary"
                 magic="btnNewTicket"
@@ -20,10 +15,7 @@
                 New Ticket</button>
         </div>
         <div style="display: flex; flex-direction: row">
-            <div
-                class="example-container mat-elevation-z8 Table3TableContainerProps"
-                [style.visibility]="mg.getVisible('Table3')"
-            >
+            <div class="example-container mat-elevation-z8 Table3TableContainerProps">
                 <mat-table
                     #table
                     [dataSource]="dataSource"
@@ -69,6 +61,49 @@
                                         [rowId]="row.rowId"
                                     >
                                         {{mg.getValue('aTicketName', row.rowId)
+}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="Column15"
+                        matColumnDef="Column15"
+                    >
+                        <mat-header-cell *matHeaderCellDef> nPrice </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div
+                                    [formGroup]="mg.getFormGroupByRow(row.rowId)"
+                                    style="display: flex; flex-direction: row"
+                                >
+                                    <mat-form-field *ngIf="mg.isRowInRowEditing(row)">
+                                        <div><input
+                                                *ngIf="mg.isRowInRowEditing(row)"
+                                                matInput
+                                                magic="nPrice"
+                                                [rowId]="row.rowId"
+                                                formControlName="nPrice"
+                                                mgFormat
+                                            >
+                                            <mgError
+                                                magic="nPrice"
+                                                [rowId]="row.rowId"
+                                            > </mgError>
+                                        </div>
+                                    </mat-form-field><label
+                                        *ngIf="!mg.isRowInRowEditing(row)"
+                                        magic="nPrice"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue('nPrice', row.rowId)
 }}
                                     </label>
                                 </div>
@@ -126,10 +161,10 @@
             </div>
         </div>
         <div style="display: flex; flex-direction: row">
-            <mat-card [style.visibility]="mg.getVisible('createModifyTicket')">
+            <mat-card [style.visibility]="mg.getVisible('sfCreateModify')">
                 <magic-subform
-                    magic="createModifyTicket"
-                    [style.visibility]="mg.getVisible('createModifyTicket')"
+                    magic="sfCreateModify"
+                    [style.visibility]="mg.getVisible('sfCreateModify')"
                 >
                 </magic-subform>
             </mat-card>
