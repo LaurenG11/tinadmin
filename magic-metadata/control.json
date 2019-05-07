@@ -1,18 +1,18 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"lPaypalSuccess",
+		"id":	"aMessage",
 		"visible":	{
 			"value":	null,
 			"has_exp":	true
 		},
-		"mgformat":	"mgFormat",
-		"attribute":	"A"
+		"dataexp":	true,
+		"modifiable":	false
 	},
 	"coordinates":	{
-		"x":	167,
-		"y":	381,
-		"width":	71,
+		"x":	20,
+		"y":	353,
+		"width":	580,
 		"height":	18
 	},
 	"hint":	null,

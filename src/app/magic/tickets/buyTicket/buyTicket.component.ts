@@ -8,6 +8,7 @@ import {
 import { IPayPalConfig, ICreateOrderRequest} from 'ngx-paypal';
 import {MatSnackBarModule, MatSnackBarRef} from '@angular/material/snack-bar';
 import { NGXLogger } from 'ngx-logger';
+import { TrueFalseValues } from '@magic-xpa/utils';
 
 declare let paypal: any;
 
@@ -54,7 +55,7 @@ declare let paypal: any;
         });
       },
       onAuthorize: (data, actions) => {
-        this.paypalSuccess = true;
+        // this.paypalSuccess = true;
         actions.order.get().then(details => {
           //this.paypalDetails = details;
 
@@ -123,6 +124,15 @@ declare let paypal: any;
         return false;
       }
     };
+    getVisible() {
+      if (this.paypalDetails != "")
+    {
+      return true;  
+    }
+    else 
+    {
+      return false;
+    }
 
   
 }

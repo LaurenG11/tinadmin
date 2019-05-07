@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737186" _time="69472" date="07/05/2019" time="19:17:52"/>
+          <LastModified _date="737186" _time="71459" date="07/05/2019" time="19:50:59"/>
         </Header>
         <ItemIsn val="51"/>
         <Resource>
@@ -488,7 +488,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="22"/>
+                  <_DitIndexForToolkit val="20"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="Y"/>
                   <Condition val="Y"/>
@@ -532,11 +532,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <INT_DIT_INFO>
-                    <v>24</v>
-                    <v>23</v>
-                  </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="21"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -673,7 +668,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="23"/>
+                  <_DitIndexForToolkit val="21"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -686,7 +681,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="24"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -699,6 +693,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="22"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -928,7 +923,7 @@
             <Scope val="S"/>
             <EngineDirective val="S"/>
             <ShowMessage val="Y"/>
-            <Condition val="89"/>
+            <Condition val="78"/>
             <Event>
               <EventType val="S"/>
               <PublicObject comp="-1"/>
@@ -969,22 +964,16 @@
                 </STP>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="215">
-                  <OperationType val="T"/>
+                <RaiseEvent FlowIsn="215">
                   <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="4"/>
                   </Event>
-                  <TaskID comp="-1" obj="16"/>
-                  <Lock val="N"/>
-                  <Wait val="Y"/>
-                  <SyncData val="N"/>
-                  <IsRoute val="N"/>
-                  <RetainFocus val="N"/>
+                  <Wait val="89"/>
                   <Condition Exp="15"/>
                   <Modifier val="S"/>
                   <Direction val="C"/>
-                </CallTask>
+                </RaiseEvent>
               </LogicLine>
               <LogicLine>
                 <Update FlowIsn="228">
@@ -1001,7 +990,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="38" _last_test_id="38" id="1">
+          <FormEntry _last_isn="42" _last_test_id="42" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="624"/>
               <Height id="24" val="456"/>
@@ -1256,32 +1245,6 @@
                 <Enabled Exp="5" id="62"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="27" _test_id="24" id="24">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="Pass :"/>
-                <X id="21" val="17"/>
-                <Y id="22" val="359"/>
-                <Width id="23" val="60"/>
-                <Height id="24" val="14"/>
-                <ControlName id="46" val="Label24"/>
-                <Font id="50" val="1"/>
-                <Visible Exp="6" id="61"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="27" _test_id="23" id="23">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="26"/>
-                </Model>
-                <X id="21" val="80"/>
-                <Y id="22" val="359"/>
-                <Width id="23" val="400"/>
-                <Height id="24" val="18"/>
-                <Data FieldID="26" id="43"/>
-                <ControlName id="46" val="aLinkToPassPage"/>
-                <Visible Exp="6" id="61"/>
-              </PropertyList>
-            </Control>
             <Control ISN_FATHER="27" PDOD="145" _test_id="29" id="29">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
@@ -1310,18 +1273,19 @@
                 <Visible Exp="14" id="61"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="27" _test_id="33" id="33">
+            <Control ISN_FATHER="27" PDOD="128" _test_id="39" id="39">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="45"/>
+                  <Var FieldID="48"/>
                 </Model>
-                <X id="21" val="167"/>
+                <X id="21" val="160"/>
                 <Y id="22" val="381"/>
-                <Width id="23" val="71"/>
+                <Width id="23" val="142"/>
                 <Height id="24" val="18"/>
-                <Data FieldID="45" id="43"/>
-                <ControlName id="46" val="lPaypalSuccess"/>
+                <Data FieldID="48" id="43"/>
+                <ControlName id="46" val="aPaypalDetails"/>
                 <Visible Exp="14" id="61"/>
+                <Format id="82" valUnicode="30"/>
               </PropertyList>
             </Control>
           </FormEntry>
@@ -1349,10 +1313,6 @@
           </Expression>
           <Expression id="5">
             <ExpSyntax val="{0,15}"/>
-            <ExpAttribute val="B"/>
-          </Expression>
-          <Expression id="6">
-            <ExpSyntax val="{0,26}&lt;>''"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="8">

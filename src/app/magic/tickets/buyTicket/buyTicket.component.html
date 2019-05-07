@@ -260,22 +260,7 @@
                     </mat-form-field>
                 </div>
                 <div style="display: flex; flex-direction: row">
-                    <label
-                        magic="Label24"
-                        [style.visibility]="mg.getVisible('Label24')"
-                        class="lable_overflow mgFont1"
-                    >
-                        Pass :</label>
-                    <mat-form-field [style.visibility]="mg.getVisible('aLinkToPassPage')">
-                        <div><input
-                                matInput
-                                magic="aLinkToPassPage"
-                                formControlName="aLinkToPassPage"
-                                mgFormat
-                            >
-                            <mgError magic="aLinkToPassPage"> </mgError>
-                        </div>
-                    </mat-form-field>    
+                     
                     
                     <mat-form-field [style.visibility]="mg.getVisible('nTotalAmount')">
                         <div>
@@ -304,27 +289,29 @@
                         </div>
                     </mat-form-field>
                      
-                    <mat-form-field [style.visibility]="mg.getVisible('lPaypalSuccess')">
+ 
+                    <mat-form-field [style.visibility]="mg.getVisible('aPaypalDetails')">>
                         <div>
                             <input
                                 matInput
-                                magic="lPaypalSuccess"
-                                [(ngModel)]="paypalSuccess"
-                                formControlName="lPaypalSuccess"
+                                magic="aPaypalDetails"
+                                [(ngModel)]="paypalDetails"
+                                formControlName="aPaypalDetails"
                                 mgFormat
-                                rangevalidator
                             >
-                            <mgError magic="lPaypalSuccess"> </mgError>
+                            <mgError magic="aPaypalDetails"> </mgError>
                         </div>
                     </mat-form-field>
+                    
+                    
                      
  
 
     
                 </div>
             <!--<input type="number" [(ngModel)]="finalAmount" style="padding-bottom: 10px;" [style.visibility]="hidden">-->
-            <p>{{paypalDetails}}</p>
-            <p>{{paypalSuccess}}</p>
+            <p [style.visibility] ="getVisible()">Transaction {{paypalDetails}} ! Please click link below to retrieve wallet passes</p>
+  
             <h2 *ngIf="paypalLoad">Paypal button is loading</h2>
             <div id="paypal-checkout-btn"></div>
 
