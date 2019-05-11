@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="14050.00"/>
+    <WithIsn val="Y"/>
+    <Exe comp="-1"/>
+    <LastIsn val="26"/>
+    <LastIsnFolder val="7"/>
+    <Folders>
+      <Folder id="1">
+        <Name val="eventListing"/>
+      </Folder>
+      <Folder id="2">
+        <Name val="route"/>
+      </Folder>
+      <Folder id="3">
+        <Name val="batch"/>
+      </Folder>
+      <Folder id="4">
+        <Name val="api"/>
+      </Folder>
+      <Folder id="5">
+        <Name val="tickets"/>
+      </Folder>
+      <Folder id="6">
+        <Name val="SICListings"/>
+      </Folder>
+      <Folder id="7">
+        <Name val="EventEntry"/>
+      </Folder>
+    </Folders>
+  </Header>
+
+  <ProgramsRepositoryOutLine>
+    <Programs>
+      <Program id="1"/>
+      <Program FolderIsn="1" id="2"/>
+      <Program FolderIsn="2" id="3"/>
+      <Program FolderIsn="3" id="4"/>
+      <Program FolderIsn="3" id="5"/>
+      <Program FolderIsn="3" id="6"/>
+      <Program FolderIsn="3" id="7"/>
+      <Program FolderIsn="3" id="8"/>
+      <Program FolderIsn="3" id="9"/>
+      <Program FolderIsn="3" id="10"/>
+      <Program FolderIsn="3" id="11"/>
+      <Program FolderIsn="4" id="12"/>
+      <Program FolderIsn="4" id="13"/>
+      <Program FolderIsn="4" id="14"/>
+      <Program FolderIsn="4" id="15"/>
+      <Program FolderIsn="4" id="16"/>
+      <Program FolderIsn="4" id="17"/>
+      <Program FolderIsn="4" id="18"/>
+      <Program FolderIsn="5" id="19"/>
+      <Program FolderIsn="6" id="20"/>
+      <Program FolderIsn="6" id="21"/>
+      <Program FolderIsn="6" id="22"/>
+      <Program FolderIsn="7" id="23"/>
+      <Program FolderIsn="7" id="24"/>
+      <Program FolderIsn="7" id="25"/>
+      <Program FolderIsn="7" id="26"/>
+    </Programs>
+  </ProgramsRepositoryOutLine>
+
+</Application>

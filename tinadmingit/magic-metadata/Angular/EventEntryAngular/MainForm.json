@@ -1,0 +1,33 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"MainForm",
+		"component_path":	"Angular/EventEntryAngular/",
+		"component_uniquename":	"EventEntryAngular_MainForm"
+	},
+	"coordinates":	{
+		"width":	880,
+		"height":	584
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"EventEntry",
+				"tab_order":	0,
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	0,
+				"width":	875,
+				"height":	575
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

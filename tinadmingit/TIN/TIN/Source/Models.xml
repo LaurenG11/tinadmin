@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="14050.00"/>
+    <WithIsn val="Y"/>
+    <LastIsn val="53"/>
+    <LastIsnFolder val="0"/>
+  </Header>
+
+  <ModelsRepository>
+    <Models>
+      <Object id="1" name="Logic">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_LOGICAL" id="1"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="2" name="Date">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_DATE" id="1"/>
+          <Picture id="157" valUnicode="YYYY/MM/DD"/>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="3" name="Time">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_TIME" id="1"/>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="4" name="Alphanum identification code">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="5" name="Identification Number">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="10P0"/>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="10"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="6" name="Code">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="5P0"/>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="5"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="7" name="Code Alpha">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="U5"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="5"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="8" name="Name (A1000)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="1000"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1000"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="9" name="Name (A200)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="200"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="200"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="10" name="Name (A100)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="100"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="100"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="11" name="Name (A30)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="30"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="30"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="12" name="Amount">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="6.2-;"/>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="2"/>
+          <_Whole id="182" val="6"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="13" name="City">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="50"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="50"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="14" name="State/Province">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="40"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="40"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="15" name="Zip/Postal Code">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="9"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="9"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="16" name="Session ID">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="17" name="URL">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="200"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="200"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="18" name="comp./direc. id">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="19" name="sort order">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="8"/>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="8"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="20" name="comp./direct. template id">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="5"/>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="5"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="21" name="comp./direct. template file">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="100"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="100"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="22" name="Property Description">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="200"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="200"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="23" name="Yes/No">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_LOGICAL" id="1"/>
+          <Range id="98" valUnicode="Yes,No"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="4"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="4"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <RichClient id="453">
+            <PropertyList model="CTRL_RICH_CLIENT_EDIT"/>
+          </RichClient>
+          <RichClientTable id="454">
+            <PropertyList model="CTRL_RICH_CLIENT_EDIT"/>
+          </RichClientTable>
+        </PropertyList>
+      </Object>
+      <Object id="24" name="Order ID">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="4"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="4"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="10"/>
+          <_Negative id="192"/>
+          <RichClient id="453">
+            <PropertyList model="CTRL_RICH_CLIENT_EDIT"/>
+          </RichClient>
+          <RichClientTable id="454">
+            <PropertyList model="CTRL_RICH_CLIENT_EDIT"/>
+          </RichClientTable>
+        </PropertyList>
+      </Object>
+      <Object id="25" name="Output_Filename">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="200"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="200"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="26" name="Output_Filename_Extension">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="27" name="isn">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="9"/>
+          <DbColumnName id="178" val="isn"/>
+          <Type id="179" val="integer"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="9"/>
+          <_Negative id="192"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object Public="small_int_2_bytes" id="28" name="small_int_2_bytes">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="4"/>
+          <StoredAs id="173"/>
+          <Type id="179" val="smallint"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="4"/>
+          <_Negative id="192"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object Public="isn" id="29" name="isn">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="9"/>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <DbColumnName id="178" val="isn"/>
+          <Type id="179" val="integer"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="9"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object Public="decimal_qty" id="30" name="decimal_qty">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N10.5"/>
+          <NullValue id="167" val="0"/>
+          <NullDisplay id="168"/>
+          <NullDefault id="169"/>
+          <StoredAs id="173"/>
+          <DbColumnName id="178" val="qty"/>
+          <Type id="179" val="decimal(15,5)"/>
+          <_Dec id="181" val="5"/>
+          <_Whole id="182" val="10"/>
+          <_Negative id="192" val="Y"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object Public="generic A30" id="31" name="generic A30">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="30"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="30"/>
+          <Type id="179" val="varchar(30)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="generic A50" id="32" name="generic A50">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="50"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="50"/>
+          <Type id="179" val="varchar(50)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="name" id="33" name="name">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="50"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="50"/>
+          <DbColumnName id="178" val="name"/>
+          <Type id="179" val="varchar(50)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="long_name" id="34" name="long_name">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="200"/>
+          <NullValue id="167"/>
+          <NullDisplay id="168"/>
+          <NullDefault id="169"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="200"/>
+          <DbColumnName id="178" val="long_name"/>
+          <Type id="179" val="varchar(200)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="long_datetime" id="35" name="long_datetime">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="23"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="23"/>
+          <Type id="179" val="datetime"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="long_comment_500" id="36" name="long_comment_500">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="500"/>
+          <NullValue id="167"/>
+          <NullDisplay id="168"/>
+          <NullDefault id="169"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="500"/>
+          <DbColumnName id="178" val="long_comment"/>
+          <Type id="179" val="varchar(500)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="long_comment_1000" id="37" name="long_comment_1000">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="1000"/>
+          <NullValue id="167"/>
+          <NullDisplay id="168"/>
+          <NullDefault id="169"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1000"/>
+          <DbColumnName id="178" val="long_comment"/>
+          <Type id="179" val="varchar(1000)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="long_comment_7000" id="38" name="long_comment_7000">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="7000"/>
+          <NullValue id="167"/>
+          <NullDisplay id="168"/>
+          <NullDefault id="169"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="7000"/>
+          <DbColumnName id="178" val="long_comment"/>
+          <Type id="179" val="varchar(7000)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="small_int_2_bytes" id="39" name="small_int_2_bytes">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="4"/>
+          <StoredAs id="173"/>
+          <Type id="179" val="smallint"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="4"/>
+          <_Negative id="192"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object Public="isn" id="40" name="isn">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="9"/>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <DbColumnName id="178" val="isn"/>
+          <Type id="179" val="integer"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="9"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object Public="decimal_qty" id="41" name="decimal_qty">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N10.5"/>
+          <NullValue id="167" val="0"/>
+          <NullDisplay id="168"/>
+          <NullDefault id="169"/>
+          <StoredAs id="173"/>
+          <DbColumnName id="178" val="qty"/>
+          <Type id="179" val="decimal(15,5)"/>
+          <_Dec id="181" val="5"/>
+          <_Whole id="182" val="10"/>
+          <_Negative id="192" val="Y"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object Public="generic A20" id="42" name="generic A20">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <NullValue id="167"/>
+          <NullDisplay id="168"/>
+          <NullDefault id="169"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <Type id="179" val="varchar(20)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="generic A30" id="43" name="generic A30">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="30"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="30"/>
+          <Type id="179" val="varchar(30)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="generic A100" id="44" name="generic A100">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="100"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="100"/>
+          <Type id="179" val="varchar(100)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="name" id="45" name="name">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="50"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="50"/>
+          <DbColumnName id="178" val="name"/>
+          <Type id="179" val="varchar(50)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="long_name" id="46" name="long_name">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="200"/>
+          <NullValue id="167"/>
+          <NullDisplay id="168"/>
+          <NullDefault id="169"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="200"/>
+          <DbColumnName id="178" val="long_name"/>
+          <Type id="179" val="varchar(200)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="long_datetime" id="47" name="long_datetime">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="23"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="23"/>
+          <Type id="179" val="datetime"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="hierarchy_string" id="48" name="hierarchy_string">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="200"/>
+          <NullValue id="167"/>
+          <NullDisplay id="168"/>
+          <NullDefault id="169"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="200"/>
+          <DbColumnName id="178" val="hierarchy_string"/>
+          <Type id="179" val="varchar(200)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="long_comment_500" id="49" name="long_comment_500">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="500"/>
+          <NullValue id="167"/>
+          <NullDisplay id="168"/>
+          <NullDefault id="169"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="500"/>
+          <DbColumnName id="178" val="long_comment"/>
+          <Type id="179" val="varchar(500)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="long_comment_2000" id="50" name="long_comment_2000">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="2000"/>
+          <NullValue id="167"/>
+          <NullDisplay id="168"/>
+          <NullDefault id="169"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="2000"/>
+          <DbColumnName id="178" val="long_comment"/>
+          <Type id="179" val="varchar(2000)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="long_comment_5000" id="51" name="long_comment_5000">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="5000"/>
+          <NullValue id="167"/>
+          <NullDisplay id="168"/>
+          <NullDefault id="169"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="5000"/>
+          <DbColumnName id="178" val="long_comment"/>
+          <Type id="179" val="varchar(5000)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="long_comment_7000" id="52" name="long_comment_7000">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="7000"/>
+          <NullValue id="167"/>
+          <NullDisplay id="168"/>
+          <NullDefault id="169"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="7000"/>
+          <DbColumnName id="178" val="long_comment"/>
+          <Type id="179" val="varchar(7000)"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object Public="aSessionID" id="53" name="aSessionID">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="60"/>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="60"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+    </Models>
+  </ModelsRepository>
+
+</Application>

@@ -1,0 +1,29 @@
+ <Application>
+ 
+<Header>
+
+  <Version val="14050.00"/>
+
+  <WithIsn val="Y"/>
+
+  <Exe comp="-1"/>
+
+  <LastIsn val="18"/>
+
+  <LastIsnFolder val="0"/>
+
+</Header>
+ <DataSourceRepository>
+  <DataObjects>
+ 
+<DataObject PhysicalName="eo" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="10" name="eo" offset="200" length="27506"/> 
+<DataObject PhysicalName="tracking" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="11" name="tracking" offset="27707" length="31666"/> 
+<DataObject PhysicalName="contact" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="12" name="contact" offset="59374" length="25101"/> 
+<DataObject PhysicalName="relations" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="13" name="relations" offset="84476" length="19261"/> 
+<DataObject PhysicalName="profiles" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="14" name="profiles" offset="103738" length="11906"/> 
+<DataObject PhysicalName="logon" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="15" name="logon" offset="115645" length="12617"/> 
+<DataObject PhysicalName="sessions" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="16" name="sessions" offset="128263" length="5958"/> 
+<DataObject PhysicalName="codes" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="17" name="codes" offset="134222" length="7284"/> 
+<DataObject PhysicalName="messages" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="18" name="messages" offset="141507" length="5953"/>  </DataObjects>
+ </DataSourceRepository>
+ <LastModified val="30734575-87807628"/>  </Application>

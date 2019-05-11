@@ -1,0 +1,58 @@
+/*this is a component css*/
+.eventListingProps {}
+
+.Label6Props {
+    overflow: hidden;
+}
+
+.dFromDateProps {}
+
+.Label8Props {
+    overflow: hidden;
+}
+
+.dToDateProps {}
+
+.SearchProps {}
+
+.NoEventsProps {
+    overflow: hidden;
+}
+
+.Table2TableContainerProps {}
+
+.Table2Props {
+    border: lightskyblue solid 1px;
+}
+
+.Table2_table_rowProps {}
+
+.Table2_table_rowProps:hover {
+    background-color: #EEEEEE;
+}
+
+.selected {
+    background: #F5F5F5;
+}
+
+.Column9Props {}
+
+.mat-column-Column9 {}
+
+.dEventDateProps {}
+
+.tEventTimeProps {}
+
+.Column17Props {}
+
+.mat-column-Column17 {}
+
+.aEventShortDescriptionProps {}
+
+.aEventLongDescriptionProps {}
+
+.TicketsProps {}
+
+.aFeaturedShortDesctriptionProps {}
+
+.Image1Props {}

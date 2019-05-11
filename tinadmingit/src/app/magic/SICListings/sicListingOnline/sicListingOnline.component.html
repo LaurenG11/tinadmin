@@ -1,0 +1,441 @@
+<form
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="sicListingOnline"
+        class="sicListingOnlineProps"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label13"
+                class="Label13Props"
+            >
+                2 Digit SIC</label>
+            <div>
+                <mat-form-field class="oa2DigitSICProps">
+                    <mat-select
+                        magic="oa2DigitSIC"
+                        class="oa2DigitSICProps"
+                        formControlName="oa2DigitSIC"
+                    >
+                        <mat-option
+                            *ngFor="let o of mg.getItemListValues('oa2DigitSIC');"
+                            [value]="o.index"
+                        >
+                            {{o.displayValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div><label
+                magic="Label14"
+                class="Label14Props"
+            >
+                Search:</label>
+            <mat-form-field class="oaSearchStringProps">
+                <div>
+                    <input
+                        matInput
+                        magic="oaSearchString"
+                        formControlName="oaSearchString"
+                        pattern="^.{0,30}$"
+                    >
+                    <div *ngIf="(screenFormGroup.get('oaSearchString').dirty) && (
+screenFormGroup.get('oaSearchString').hasError('pattern')
+)">
+                        <p>{{ mg.getErrMsg('oaSearchString') }}</p>
+                    </div>
+                </div>
+            </mat-form-field>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Go"
+                class="GoProps"
+            >
+                Go</button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                mat-raised-button
+                color="primary"
+                magic="A"
+                class="AProps"
+            >
+                A</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="B"
+                class="BProps"
+            >
+                B</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="C"
+                class="CProps"
+            >
+                C</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button30"
+                class="Button30Props"
+            >
+                D</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button28"
+                class="Button28Props"
+            >
+                E</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button29"
+                class="Button29Props"
+            >
+                F</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button32"
+                class="Button32Props"
+            >
+                G</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button36"
+                class="Button36Props"
+            >
+                H</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button35"
+                class="Button35Props"
+            >
+                I</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button34"
+                class="Button34Props"
+            >
+                J</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button33"
+                class="Button33Props"
+            >
+                K</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button31"
+                class="Button31Props"
+            >
+                L</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button44"
+                class="Button44Props"
+            >
+                M</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button42"
+                class="Button42Props"
+            >
+                N</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button41"
+                class="Button41Props"
+            >
+                O</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button40"
+                class="Button40Props"
+            >
+                P</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button39"
+                class="Button39Props"
+            >
+                Q</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button38"
+                class="Button38Props"
+            >
+                R</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button43"
+                class="Button43Props"
+            >
+                S</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button48"
+                class="Button48Props"
+            >
+                T</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button47"
+                class="Button47Props"
+            >
+                U</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button46"
+                class="Button46Props"
+            >
+                V</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button45"
+                class="Button45Props"
+            >
+                W</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button37"
+                class="Button37Props"
+            >
+                X</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button49"
+                class="Button49Props"
+            >
+                Y</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="Button50"
+                class="Button50Props"
+            >
+                Z</button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label12"
+                class="Label12Props"
+            >
+                Link SIC code to the Portals Listing section/category</label>
+            <div>
+                <mat-form-field class="entityClassificationProps">
+                    <mat-select
+                        magic="entityClassification"
+                        class="entityClassificationProps"
+                        formControlName="entityClassification"
+                    >
+                        <mat-option
+                            *ngFor="let o of mg.getItemListValues('entityClassification');"
+                            [value]="o.index"
+                        >
+                            {{o.displayValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div><label
+                magic="Label23"
+                [style.visibility]="mg.getVisible('Label23')"
+                class="Label23Props"
+            >
+                Select Category:</label>
+            <div>
+                <mat-form-field
+                    [style.visibility]="mg.getVisible('entityProperty')"
+                    class="entityPropertyProps"
+                >
+                    <mat-select
+                        magic="entityProperty"
+                        [style.visibility]="mg.getVisible('entityProperty')"
+                        class="entityPropertyProps"
+                        formControlName="entityProperty"
+                    >
+                        <mat-option
+                            *ngFor="let o of mg.getItemListValues('entityProperty');"
+                            [value]="o.index"
+                        >
+                            {{o.displayValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div class="example-container mat-elevation-z8 Table15TableContainerProps">
+                <mat-table
+                    #table
+                    [dataSource]="dataSource"
+                    class="Table15Props"
+                    matSort
+                    matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)"
+                >
+                    <ng-container
+                        magic="Column16"
+                        matColumnDef="Column16"
+                    >
+                        <mat-header-cell *matHeaderCellDef> sic </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <label
+                                    magic="sic"
+                                    [rowId]="row.rowId"
+                                    class="sicProps hidden_border"
+                                >
+                                    {{mg.getValue('sic', row.rowId)
+}}</label>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="Column18"
+                        matColumnDef="Column18"
+                    >
+                        <mat-header-cell *matHeaderCellDef> sicDescription </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <label
+                                    magic="sicDescription"
+                                    [rowId]="row.rowId"
+                                    class="sicDescriptionProps hidden_border"
+                                >
+                                    {{mg.getValue('sicDescription', row.rowId)
+}}</label>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="Column24"
+                        matColumnDef="Column24"
+                    >
+                        <mat-header-cell *matHeaderCellDef> section </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <label
+                                    magic="section"
+                                    [rowId]="row.rowId"
+                                    class="sectionProps hidden_border"
+                                >
+                                    {{mg.getValue('section', row.rowId)
+}}</label>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="Column26"
+                        matColumnDef="Column26"
+                    >
+                        <mat-header-cell *matHeaderCellDef> category </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <label
+                                    magic="category"
+                                    [rowId]="row.rowId"
+                                    class="categoryProps hidden_border"
+                                >
+                                    {{mg.getValue('category', row.rowId)
+}}</label>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="Column20"
+                        matColumnDef="Column20"
+                    >
+                        <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    mat-raised-button
+                                    color="primary"
+                                    magic="Link"
+                                    [rowId]="row.rowId"
+                                    class="LinkProps"
+                                >
+                                    {{mg.getValue('Link', row.rowId)}}
+                                </button>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row
+                        *matHeaderRowDef="displayedColumns"
+                        class="Table15_table_headerRowProps"
+                    ></mat-header-row>
+                    <mat-row
+                        *matRowDef="let row; columns: displayedColumns;"
+                        class="Table15_table_rowProps"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}"
+                        magicMark="magicTableRowContainer"
+                        (click)="tableService.selectRow(row.rowId)"
+                    >
+                    </mat-row>
+                </mat-table>
+                <mat-paginator
+                    #paginator
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 20]"
+                    (page)="tableService.mgOnPaginateChange($event)"
+                >
+                </mat-paginator>
+            </div>
+        </div>
+    </div>
+</form>

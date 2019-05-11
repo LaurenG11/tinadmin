@@ -1,0 +1,98 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="modifyCreateTicket"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label6"
+                class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('Label6' )"
+            >
+                Ticket Type *</label>
+            <div>
+                <mat-form-field>
+                    <mat-select
+                        magic="nTicketTypeIsn"
+                        formControlName="nTicketTypeIsn"
+                    >
+                        <mat-option
+                            *ngFor="let o of mg.getItemListValues('nTicketTypeIsn');"
+                            [value]="o.index"
+                        >
+                            {{o.displayValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label2"
+                class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('Label2' )"
+            >
+                Ticket Name *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        magic="aTicketName"
+                        formControlName="aTicketName"
+                        mgFormat
+                    >
+                    <mgError magic="aTicketName"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label4"
+                class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('Label4' )"
+            >
+                Maximum Number of Tickets *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        type='number'
+                        magic="nMaximumNumberTickets"
+                        formControlName="nMaximumNumberTickets"
+                        mgFormat
+                    >
+                    <mgError magic="nMaximumNumberTickets"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label9"
+                class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('Label9' )"
+            >
+                Price *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        type='number'
+                        magic="nPrice"
+                        formControlName="nPrice"
+                        mgFormat
+                    >
+                    <mgError magic="nPrice"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                mat-raised-button
+                color="primary"
+                magic="save_ticket"
+                [disabled]="mg.isDisabled('save_ticket' )"
+            >
+                Save Ticket</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1128 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"viewMyEvents",
+		"window_type":	1,
+		"component_path":	"EventEntry/viewMyEvents/",
+		"component_uniquename":	"viewMyEvents_viewMyEvents"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	1068,
+		"height":	443
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"lblSearch",
+				"text":	"* From Date",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	7,
+				"width":	56,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"dFromDate",
+				"attribute":	"D",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	69,
+				"y":	6,
+				"width":	73,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"aSearchString",
+				"mgformat":	"mgFormat",
+				"attribute":	"A",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	146,
+				"y":	6,
+				"width":	180,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Search",
+				"format":	"Search",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	330,
+				"y":	5,
+				"width":	60,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnNewEvent",
+				"format":	"NewEvent",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	392,
+				"y":	6,
+				"width":	77,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"tblEvents",
+				"table_row_height":	25,
+				"web_style":	2,
+				"table_title_height":	18,
+				"common_line_id":	"line38"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	38,
+				"width":	564,
+				"height":	396
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"clmEvent",
+						"column_title":	"Event",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	250
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"ShortDescription",
+								"must_input":	true,
+								"modifiable":	true,
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line60"
+							},
+							"coordinates":	{
+								"x":	4,
+								"y":	60,
+								"width":	250,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"clmDate",
+						"column_title":	"Date",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	81
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"dStartDateCol",
+								"must_input":	false,
+								"modifiable":	false,
+								"formatter":	"magicDate",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line60"
+							},
+							"coordinates":	{
+								"x":	254,
+								"y":	60,
+								"width":	73,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column9",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	216
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnModify",
+								"format":	"Modify",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	335,
+								"y":	59,
+								"width":	39,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnDelete",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"tooltip":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"format":	"Delete",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	376,
+								"y":	59,
+								"width":	39,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnTickets",
+								"format":	"Tickets",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	417,
+								"y":	59,
+								"width":	39,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"tabEventOrTicket",
+				"items_list":	"D,T",
+				"attribute":	"A",
+				"common_line_id":	"line38"
+			},
+			"coordinates":	{
+				"x":	579,
+				"y":	64,
+				"width":	429,
+				"height":	369
+			},
+			"hint":	null,
+			"controlType":	"J",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"layer":	1,
+						"id":	"tabEventOrTicket"
+					},
+					"coordinates":	null,
+					"hint":	null,
+					"controlType":	"Z",
+					"children":	[
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblEventName",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Event Name *",
+								"common_line_id":	"line89"
+							},
+							"coordinates":	{
+								"x":	590,
+								"y":	90,
+								"width":	87,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"aShortDescriptionTable",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"common_line_id":	"line89"
+							},
+							"coordinates":	{
+								"x":	682,
+								"y":	89,
+								"width":	200,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblSummary",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Summary *",
+								"common_line_id":	"line111"
+							},
+							"coordinates":	{
+								"x":	591,
+								"y":	111,
+								"width":	86,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"aLongDescription",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"common_line_id":	"line111"
+							},
+							"coordinates":	{
+								"x":	682,
+								"y":	111,
+								"width":	300,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblAddres",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Address *",
+								"common_line_id":	"line132"
+							},
+							"coordinates":	{
+								"x":	590,
+								"y":	132,
+								"width":	48,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"aAddress",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"common_line_id":	"line132"
+							},
+							"coordinates":	{
+								"x":	643,
+								"y":	132,
+								"width":	200,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblLocation",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Location",
+								"common_line_id":	"line156"
+							},
+							"coordinates":	{
+								"x":	590,
+								"y":	156,
+								"width":	48,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"aLocation",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"common_line_id":	"line156"
+							},
+							"coordinates":	{
+								"x":	643,
+								"y":	156,
+								"width":	200,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblCity",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"City",
+								"common_line_id":	"line180"
+							},
+							"coordinates":	{
+								"x":	590,
+								"y":	180,
+								"width":	25,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"aCity",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"common_line_id":	"line180"
+							},
+							"coordinates":	{
+								"x":	620,
+								"y":	180,
+								"width":	324,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblPostCode",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Postal/Zip Code *",
+								"common_line_id":	"line205"
+							},
+							"coordinates":	{
+								"x":	582,
+								"y":	205,
+								"width":	95,
+								"height":	17
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"aPostCode",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"common_line_id":	"line205"
+							},
+							"coordinates":	{
+								"x":	682,
+								"y":	205,
+								"width":	62,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblEventImage",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Event Image",
+								"common_line_id":	"line229"
+							},
+							"coordinates":	{
+								"x":	584,
+								"y":	229,
+								"width":	65,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"aEventImage",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"common_line_id":	"line229"
+							},
+							"coordinates":	{
+								"x":	655,
+								"y":	229,
+								"width":	1284,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblUrl",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Event URL",
+								"common_line_id":	"line253"
+							},
+							"coordinates":	{
+								"x":	589,
+								"y":	253,
+								"width":	48,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"aEventUrl",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"common_line_id":	"line253"
+							},
+							"coordinates":	{
+								"x":	640,
+								"y":	253,
+								"width":	1284,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblStartDate",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Start Date *",
+								"common_line_id":	"line274"
+							},
+							"coordinates":	{
+								"x":	590,
+								"y":	275,
+								"width":	52,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"dStartDate",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"attribute":	"D",
+								"common_line_id":	"line274"
+							},
+							"coordinates":	{
+								"x":	645,
+								"y":	275,
+								"width":	22,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblEndDate",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"End Date *",
+								"common_line_id":	"line274"
+							},
+							"coordinates":	{
+								"x":	681,
+								"y":	278,
+								"width":	50,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"dEndDate",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"attribute":	"D",
+								"common_line_id":	"line274"
+							},
+							"coordinates":	{
+								"x":	734,
+								"y":	274,
+								"width":	22,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblFromTime",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"From Time *",
+								"common_line_id":	"line274"
+							},
+							"coordinates":	{
+								"x":	778,
+								"y":	276,
+								"width":	53,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"tFromTime",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"common_line_id":	"line274"
+							},
+							"coordinates":	{
+								"x":	834,
+								"y":	276,
+								"width":	22,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblToTime",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"To Time *",
+								"common_line_id":	"line274"
+							},
+							"coordinates":	{
+								"x":	861,
+								"y":	279,
+								"width":	42,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"tToTime",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"common_line_id":	"line274"
+							},
+							"coordinates":	{
+								"x":	906,
+								"y":	275,
+								"width":	22,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblCategory",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Category *",
+								"common_line_id":	"line298"
+							},
+							"coordinates":	{
+								"x":	587,
+								"y":	302,
+								"width":	52,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"cmbCategory",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"items_list":	"",
+								"attribute":	"N",
+								"common_line_id":	"line298"
+							},
+							"coordinates":	{
+								"x":	644,
+								"y":	298,
+								"width":	144,
+								"height":	17
+							},
+							"hint":	null,
+							"controlType":	"D",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblCurrency",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Currency *",
+								"common_line_id":	"line321"
+							},
+							"coordinates":	{
+								"x":	589,
+								"y":	321,
+								"width":	52,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"cmbCurrency",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"items_list":	"",
+								"attribute":	"N",
+								"common_line_id":	"line321"
+							},
+							"coordinates":	{
+								"x":	643,
+								"y":	321,
+								"width":	145,
+								"height":	17
+							},
+							"hint":	null,
+							"controlType":	"D",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblContactEmail",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Contact Email *",
+								"common_line_id":	"line347"
+							},
+							"coordinates":	{
+								"x":	590,
+								"y":	347,
+								"width":	71,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"aContactEmail",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"common_line_id":	"line347"
+							},
+							"coordinates":	{
+								"x":	664,
+								"y":	347,
+								"width":	300,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	{
+								"font":	1
+							},
+							"props":	{
+								"id":	"lblContactNumber",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Contact Number *",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	589,
+								"y":	364,
+								"width":	82,
+								"height":	14
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"aContactNumber",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	674,
+								"y":	364,
+								"width":	300,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"chkPublish",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Publish?",
+								"attribute":	"B",
+								"common_line_id":	"line396"
+							},
+							"coordinates":	{
+								"x":	612,
+								"y":	396,
+								"width":	64,
+								"height":	19
+							},
+							"hint":	null,
+							"controlType":	"C",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"chkFeature",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	"Feature?",
+								"attribute":	"B",
+								"common_line_id":	"line396"
+							},
+							"coordinates":	{
+								"x":	681,
+								"y":	396,
+								"width":	75,
+								"height":	19
+							},
+							"hint":	null,
+							"controlType":	"C",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnSave",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"format":	"Save",
+								"common_line_id":	"line396"
+							},
+							"coordinates":	{
+								"x":	888,
+								"y":	396,
+								"width":	65,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"layer":	2,
+						"id":	"tabEventOrTicket"
+					},
+					"coordinates":	null,
+					"hint":	null,
+					"controlType":	"Z",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"ticketsubform",
+								"common_line_id":	"line87"
+							},
+							"coordinates":	{
+								"x":	584,
+								"y":	87,
+								"width":	476,
+								"height":	340
+							},
+							"hint":	null,
+							"controlType":	"F",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

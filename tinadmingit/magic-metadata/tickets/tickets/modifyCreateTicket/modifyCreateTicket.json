@@ -1,0 +1,219 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"modifyCreateTicket",
+		"component_path":	"tickets/tickets/modifyCreateTicket/",
+		"component_uniquename":	"tickets_modifyCreateTicket_modifyCreateTicket"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	502,
+		"height":	158
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label6",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Ticket Type *",
+				"common_line_id":	"line6"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	7,
+				"width":	67,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"nTicketTypeIsn",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"items_list":	"",
+				"attribute":	"N",
+				"common_line_id":	"line6"
+			},
+			"coordinates":	{
+				"x":	72,
+				"y":	6,
+				"width":	190,
+				"height":	17
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label2",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Ticket Name *",
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	36,
+				"width":	67,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"aTicketName",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"attribute":	"A",
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	80,
+				"y":	36,
+				"width":	400,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label4",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Maximum Number of Tickets *",
+				"common_line_id":	"line64"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	66,
+				"width":	154,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"nMaximumNumberTickets",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"attribute":	"N",
+				"common_line_id":	"line64"
+			},
+			"coordinates":	{
+				"x":	165,
+				"y":	64,
+				"width":	55,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label9",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Price *",
+				"common_line_id":	"line99"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	99,
+				"width":	32,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"nPrice",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"attribute":	"N",
+				"common_line_id":	"line99"
+			},
+			"coordinates":	{
+				"x":	45,
+				"y":	99,
+				"width":	55,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"save_ticket",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"format":	"Save Ticket",
+				"common_line_id":	"line125"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	125,
+				"width":	68,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}
