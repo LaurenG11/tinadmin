@@ -1,6 +1,6 @@
 {
    "protocol": "http",
-   "server": "tinmagic",
+   "server": "40.117.85.216:8080",
    "requester": "MagicScripts/MGrqispi.dll",
    "appname": "TIN",
    "LogClientSequenceForActivityMonitor": "N",
