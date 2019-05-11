@@ -12,7 +12,11 @@ import {
     styleUrls: ['./tickets.component.css']
 }) export class tickets extends BaseMatTableMagicComponent {
     displayedColumns = ['clmTicketType',
-        'Column15',
+        'clmPrice',
+        'Column18',
+        'clmSold',
+        'clmRemaining',
         'Column5',
+        'Column36',
     ];
 }

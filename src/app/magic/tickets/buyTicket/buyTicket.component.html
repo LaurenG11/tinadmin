@@ -100,6 +100,22 @@
 }}
                                     </label>
                                 </div>
+                                 
+                                <div
+                                [formGroup]="mg.getFormGroupByRow(row.rowId)"
+                                style="display: flex; flex-direction: row"
+                                >
+                                <label
+                                    magic="clmTicketInfo"
+                                    [rowId]="row.rowId"
+                                >
+                                    {{mg.getValue('clmTicketInfo', row.rowId)
+                                }}
+                                </label>
+                                </div>
+
+
+
                             </div>
                         </mat-cell>
                     </ng-container>
@@ -200,7 +216,7 @@
                         class="lable_overflow"
                     >
                         Basket</label></div>
-                <div style="display: flex; flex-direction: row">
+                <div style="display: flex; flex-direction: row" [style.visibility]="mg.getVisible('aTicketPurchaseSummary')">
                     <label magic="aTicketPurchaseSummary">
                         {{mg.getValue('aTicketPurchaseSummary') }}
                     </label>
@@ -212,7 +228,7 @@
                         [attr.disabled]="mg.isDisabled('lblFirstName' )"
                     >
                         First Name *</label>
-                    <mat-form-field>
+                    <mat-form-field [style.visibility]="mg.getVisible('aFirstName')">
                         <div><input
                                 matInput
                                 magic="aFirstName"
@@ -230,7 +246,7 @@
                         [attr.disabled]="mg.isDisabled('lblLastName' )"
                     >
                         Last Name *</label>
-                    <mat-form-field>
+                    <mat-form-field [style.visibility]="mg.getVisible('aLastName')">
                         <div><input
                                 matInput
                                 magic="aLastName"
@@ -248,7 +264,7 @@
                         [attr.disabled]="mg.isDisabled('lblEmail' )"
                     >
                         Email *</label>
-                    <mat-form-field>
+                    <mat-form-field [style.visibility]="mg.getVisible('aEmail')">
                         <div><input
                                 matInput
                                 magic="aEmail"
@@ -261,7 +277,13 @@
                 </div>
                 <div style="display: flex; flex-direction: row">
                      
-                    
+                    <p [style.visibility] ="getMessageVisible()">Transaction {{paypalDetails}}! Please click link below to retrieve wallet pass/es</p>
+                
+                <ng-container *ngIf = "showButton">
+                    <h2 *ngIf="paypalLoad">Paypal button is loading</h2>
+                    <div id="paypal-checkout-btn" ></div>   
+                </ng-container>
+
                     <mat-form-field [style.visibility]="mg.getVisible('nTotalAmount')">
                         <div>
                             <input
@@ -302,6 +324,8 @@
                             <mgError magic="aPaypalDetails"> </mgError>
                         </div>
                     </mat-form-field>
+
+                    
                     
                     
                      
@@ -310,10 +334,7 @@
     
                 </div>
             <!--<input type="number" [(ngModel)]="finalAmount" style="padding-bottom: 10px;" [style.visibility]="hidden">-->
-            <p [style.visibility] ="getVisible()">Transaction {{paypalDetails}} ! Please click link below to retrieve wallet passes</p>
-  
-            <h2 *ngIf="paypalLoad">Paypal button is loading</h2>
-            <div id="paypal-checkout-btn"></div>
+
 
             </mat-card>
   

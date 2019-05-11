@@ -8,11 +8,14 @@
 
   <Exe comp="-1"/>
 
-  <LastIsn val="365"/>
+  <LastIsn val="366"/>
 
-  <LastIsnFolder val="3"/>
+  <LastIsnFolder val="6"/>
 
   <Folders>
+    <Folder id="4">
+      <Name val="view"/>
+    </Folder>
     <Folder id="2">
       <Name val="temp"/>
     </Folder>
@@ -83337,6 +83340,104 @@
   <WebS/>
 
 </DataObject> 
+<DataObject FolderIsn="4" PhysicalName="vPassesSoldByTicket" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="366" name="vPassesSoldByTicket">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="N"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="V"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="1"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="isn">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="444"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="ticketName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="12"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="ticketName"/>
+        <_Flip id="194"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="soldPasses">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="5"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="soldPasses"/>
+        <Type id="179" val="INTEGER"/>
+        <UserType id="180"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="5"/>
+        <_Negative id="192"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="uk1_vPassesSoldByTicket">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="uk1_vPassesSoldByTicket"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
 <DataObject FolderIsn="2" PhysicalName="tickets" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="363" name="tickets">
 
   <Encrypt val="N"/>
@@ -83349,7 +83450,7 @@
 
   <Cursor val="D"/>
 
-  <CheckExistence val="N"/>
+  <CheckExistence val="Y"/>
 
   <ObjectType val="T"/>
 
@@ -83370,9 +83471,10 @@
         <StoredAs id="173" val="4"/>
         <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
         <DbColumnName id="178" val="ticketIsn"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="isn" PIC_U="9" Size="4" SqlType="integer" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldPhysical PIC_U="9" Size="4" SqlType="integer" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
       </PropertyList>
     </Column>
     <Column id="2" name="ticketName">
@@ -83381,9 +83483,10 @@
         <StoredAs id="173" val="3"/>
         <Size id="174" val="1000"/>
         <Definition id="175" val="1"/>
+        <UpdateStyle id="176" val="A"/>
         <DbColumnName id="178" val="ticketName"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="ticketName" PIC_U="1000" Size="1000" allowed_null="N" attribute="A" context_cookies="Y" database_definition="1" id="231" storage="3" translate="1"/>
+        <_FieldPhysical PIC_U="1000" Size="1000" allowed_null="N" attribute="A" context_cookies="Y" database_definition="1" id="231" storage="1" translate="1"/>
       </PropertyList>
     </Column>
     <Column id="3" name="maxTickets">
@@ -83393,12 +83496,13 @@
         <StoredAs id="173" val="4"/>
         <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
         <DbColumnName id="178" val="maxTickets"/>
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="maxTickets" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldPhysical PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <_FieldStyle id="276" val="1"/>
       </PropertyList>
     </Column>
@@ -83409,12 +83513,13 @@
         <StoredAs id="173" val="3"/>
         <Size id="174" val="150"/>
         <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
         <DbColumnName id="178" val="passCreatorUid"/>
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="passCreatorUid" PIC_U="150" Size="150" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldPhysical PIC_U="150" Size="150" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="1" translate="1"/>
         <_FieldStyle id="276" val="1"/>
       </PropertyList>
     </Column>
@@ -83425,12 +83530,13 @@
         <StoredAs id="173" val="6"/>
         <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
         <DbColumnName id="178" val="ticketPrice"/>
         <_Dec id="181" val="2"/>
         <_Whole id="182" val="7"/>
         <_Negative id="192"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="ticketPrice" PIC_U="7.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
+        <_FieldPhysical PIC_U="7.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
         <_FieldStyle id="276" val="1"/>
       </PropertyList>
     </Column>
@@ -83441,12 +83547,13 @@
         <StoredAs id="173" val="4"/>
         <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
         <DbColumnName id="178" val="noTickets"/>
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="noTickets" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldPhysical PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <_FieldStyle id="276" val="1"/>
       </PropertyList>
     </Column>
@@ -83478,27 +83585,25 @@
   <WebS/>
 
 </DataObject> 
-<DataObject FolderIsn="2" PhysicalName="tmpEventDetails" Resident="N" UniqueISNConvState="12" data_source="tinAzureSQLDb" id="365" name="tmpEventDetails">
+<DataObject FolderIsn="2" PhysicalName="tmpEventDetails" Resident="N" UniqueISNConvState="12" data_source="Memory" id="365" name="tmpEventDetails">
 
   <Encrypt val="N"/>
 
   <Cache val="D"/>
 
-  <IdentifyRowModifications val="U"/>
+  <IdentifyRowModifications val="P"/>
 
   <HasHint val="N"/>
 
   <Cursor val="D"/>
 
-  <CheckExistence val="D"/>
+  <CheckExistence val="Y"/>
 
   <ObjectType val="T"/>
 
   <Owner val="dbo"/>
 
-  <Position val="D"/>
-
-  <PositionIndex val="1"/>
+  <PositionIndex val="-1"/>
 
   <IndexesLastIsn val="1"/>
 
@@ -83507,7 +83612,7 @@
   <Columns>
     <Column id="1" name="isn">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="444"/>
         <Modifiable id="53" val="Y"/>
         <Range id="98" valUnicode="\-2147483648-2147483647"/>
         <Picture id="157" valUnicode="N10"/>
@@ -83515,11 +83620,12 @@
         <NullDefault id="169" val="Y"/>
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
-        <StoredAs id="173" val="4"/>
-        <Size id="174" val="4"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
         <DatabaseInformation id="177"/>
-        <DbColumnName id="178" val="isn"/>
+        <DbColumnName id="178"/>
         <Type id="179" val="INTEGER"/>
         <UserType id="180"/>
         <_Dec id="181"/>
@@ -83529,9 +83635,9 @@
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
-    <Column id="2" name="name">
+    <Column id="2" name="aShortDesctiption">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="12"/>
         <Modifiable id="53" val="Y"/>
         <Range id="98"/>
         <Picture id="157" valUnicode="1000"/>
@@ -83539,15 +83645,242 @@
         <NullDefault id="169" val="Y"/>
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
-        <StoredAs id="173" val="3"/>
+        <StoredAs id="173" val="1"/>
         <Size id="174" val="1000"/>
         <Definition id="175" val="1"/>
+        <UpdateStyle id="176" val="A"/>
         <DatabaseInformation id="177"/>
-        <DbColumnName id="178" val="name"/>
+        <DbColumnName id="178"/>
         <Type id="179" val="VARCHAR(1000)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
         <_FieldPhysical Name="name" PIC_U="1000" Size="1000" SqlType="VARCHAR(1000)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="1" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="aLongDescription">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="11"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="1"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="1"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Summary" PIC_U="1000" Size="1000" allowed_null="N" attribute="A" context_cookies="Y" database_definition="1" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="aLocation">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="12"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="1"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Location" PIC_U="200" Size="200" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="aAddress">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="26"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="1"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Address" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="aCity">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="27"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="1"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="City" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="13" name="aPostCode">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="29"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="1"/>
+        <Size id="174" val="9"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="PostZipCode" PIC_U="9" Size="9" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="aContactNumber">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="31"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="1"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="ContactNo" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="aContactEmail">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="32"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="1"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="ContactEmail" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="9" name="nCategory">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="444"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="CategoryIsn" PIC_U="9" Size="4" SqlType="integer" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="10" name="nCurrencyIsn">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="444"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="CurrencyIsn" PIC_U="9" Size="4" SqlType="integer" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="11" name="dStartDate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" comp="-1" id="1" obj="2"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="StartDate" PIC_U="YYYY/MM/DD" Size="4" allowed_null="Y" attribute="D" context_cookies="Y" database_definition="2" id="231" storage="17" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="12" name="dEndDate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" comp="-1" id="1" obj="2"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="EndDate" PIC_U="YYYY/MM/DD" Size="4" allowed_null="Y" attribute="D" context_cookies="Y" database_definition="2" id="231" storage="17" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="14" name="tFromTime">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_TIME" comp="-1" id="1" obj="3"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="23"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="FromTime" PIC_U="HH:MM:SS" Size="6" allowed_null="N" attribute="T" context_cookies="Y" database_definition="2" id="231" storage="24" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="15" name="tToTime">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_TIME" comp="-1" id="1" obj="3"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="23"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="ToTime" PIC_U="HH:MM:SS" Size="6" allowed_null="N" attribute="T" context_cookies="Y" database_definition="2" id="231" storage="24" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="16" name="aEventUrl">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="48"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="1"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="EventUrl" PIC_U="200" Size="200" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="17" name="aEventImage">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="11"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="1"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="1"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="EventImage" PIC_U="1000" Size="1000" allowed_null="N" attribute="A" context_cookies="Y" database_definition="1" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="18" name="lPublish">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" comp="-1" id="1" obj="1"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="lPublish" PIC_U="5" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="19" name="lFeature">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" comp="-1" id="1" obj="1"/>
+        <DatabaseDefault id="171"/>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Feature" PIC_U="5" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
       </PropertyList>
     </Column>
   </Columns>
@@ -83565,7 +83898,7 @@
       <Primary val="N"/>
       <Segments>
         <Segment>
-          <Size val="4"/>
+          <Size val="8"/>
           <Column val="1"/>
           <Order val="A"/>
         </Segment>

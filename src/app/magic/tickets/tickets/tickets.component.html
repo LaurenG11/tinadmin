@@ -28,7 +28,7 @@
                         magic="clmTicketType"
                         matColumnDef="clmTicketType"
                     >
-                        <mat-header-cell *matHeaderCellDef> Ticket Type </mat-header-cell>
+                        <mat-header-cell *matHeaderCellDef> Ticket </mat-header-cell>
                         <mat-cell
                             *matCellDef="let row"
                             magicMark="magicTableRowContainer"
@@ -41,26 +41,11 @@
                                     [formGroup]="mg.getFormGroupByRow(row.rowId)"
                                     style="display: flex; flex-direction: row"
                                 >
-                                    <mat-form-field *ngIf="mg.isRowInRowEditing(row)">
-                                        <div><input
-                                                *ngIf="mg.isRowInRowEditing(row)"
-                                                matInput
-                                                magic="aTicketName"
-                                                [rowId]="row.rowId"
-                                                formControlName="aTicketName"
-                                                mgFormat
-                                            >
-                                            <mgError
-                                                magic="aTicketName"
-                                                [rowId]="row.rowId"
-                                            > </mgError>
-                                        </div>
-                                    </mat-form-field><label
-                                        *ngIf="!mg.isRowInRowEditing(row)"
-                                        magic="aTicketName"
+                                    <label
+                                        magic="aTicketNameTable"
                                         [rowId]="row.rowId"
                                     >
-                                        {{mg.getValue('aTicketName', row.rowId)
+                                        {{mg.getValue('aTicketNameTable', row.rowId)
 }}
                                     </label>
                                 </div>
@@ -68,10 +53,66 @@
                         </mat-cell>
                     </ng-container>
                     <ng-container
-                        magic="Column15"
-                        matColumnDef="Column15"
+                        magic="clmPrice"
+                        matColumnDef="clmPrice"
                     >
-                        <mat-header-cell *matHeaderCellDef> nPrice </mat-header-cell>
+                        <mat-header-cell *matHeaderCellDef> Price </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div
+                                    [formGroup]="mg.getFormGroupByRow(row.rowId)"
+                                    style="display: flex; flex-direction: row"
+                                >
+                                    <label
+                                        magic="nPriceTable"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue('nPriceTable', row.rowId)
+}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="Column18"
+                        matColumnDef="Column18"
+                    >
+                        <mat-header-cell *matHeaderCellDef> Total </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div
+                                    [formGroup]="mg.getFormGroupByRow(row.rowId)"
+                                    style="display: flex; flex-direction: row"
+                                >
+                                    <label
+                                        magic="maxNumberTickets"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue('maxNumberTickets', row.rowId)
+}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="clmSold"
+                        matColumnDef="clmSold"
+                    >
+                        <mat-header-cell *matHeaderCellDef> Sold </mat-header-cell>
                         <mat-cell
                             *matCellDef="let row"
                             magicMark="magicTableRowContainer"
@@ -88,22 +129,51 @@
                                         <div><input
                                                 *ngIf="mg.isRowInRowEditing(row)"
                                                 matInput
-                                                magic="nPrice"
+                                                type='number'
+                                                magic="soldTickets"
                                                 [rowId]="row.rowId"
-                                                formControlName="nPrice"
+                                                formControlName="soldTickets"
                                                 mgFormat
                                             >
                                             <mgError
-                                                magic="nPrice"
+                                                magic="soldTickets"
                                                 [rowId]="row.rowId"
                                             > </mgError>
                                         </div>
                                     </mat-form-field><label
                                         *ngIf="!mg.isRowInRowEditing(row)"
-                                        magic="nPrice"
+                                        magic="soldTickets"
                                         [rowId]="row.rowId"
                                     >
-                                        {{mg.getValue('nPrice', row.rowId)
+                                        {{mg.getValue('soldTickets', row.rowId)
+}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="clmRemaining"
+                        matColumnDef="clmRemaining"
+                    >
+                        <mat-header-cell *matHeaderCellDef> Remaining </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div
+                                    [formGroup]="mg.getFormGroupByRow(row.rowId)"
+                                    style="display: flex; flex-direction: row"
+                                >
+                                    <label
+                                        magic="RemainingTickets"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue('RemainingTickets', row.rowId)
 }}
                                     </label>
                                 </div>
@@ -126,16 +196,31 @@
                                 <button
                                     mat-raised-button
                                     color="primary"
-                                    magic="Modify"
+                                    magic="btnModify"
                                     [rowId]="row.rowId"
                                 >
                                     Modify</button>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="Column36"
+                        matColumnDef="Column36"
+                    >
+                        <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
                                 <button
                                     mat-raised-button
                                     color="primary"
-                                    magic="Button10"
+                                    magic="btnDelete"
                                     [rowId]="row.rowId"
-                                    [disabled]="mg.isDisabled('Button10' , row.rowId)"
                                 >
                                     Delete</button>
                             </div>
@@ -161,13 +246,91 @@
             </div>
         </div>
         <div style="display: flex; flex-direction: row">
-            <mat-card [style.visibility]="mg.getVisible('sfCreateModify')">
-                <magic-subform
-                    magic="sfCreateModify"
-                    [style.visibility]="mg.getVisible('sfCreateModify')"
-                >
-                </magic-subform>
-            </mat-card>
+            <label
+                magic="lblTicketType"
+                class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('lblTicketType' )"
+            >
+                Ticket Type *</label>
+            <div>
+                <mat-form-field>
+                    <mat-select
+                        magic="cmbTicketType"
+                        formControlName="cmbTicketType"
+                    >
+                        <mat-option
+                            *ngFor="let o of mg.getItemListValues('cmbTicketType');"
+                            [value]="o.index"
+                        >
+                            {{o.displayValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
         </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblTicketName"
+                class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('lblTicketName' )"
+            >
+                Ticket Name *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        magic="aTicketName"
+                        formControlName="aTicketName"
+                        mgFormat
+                    >
+                    <mgError magic="aTicketName"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblPrice"
+                class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('lblPrice' )"
+            >
+                Price *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        type='number'
+                        magic="nPrice"
+                        formControlName="nPrice"
+                        mgFormat
+                    >
+                    <mgError magic="nPrice"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblMaxTickets"
+                class="lable_overflow mgFont1"
+                [attr.disabled]="mg.isDisabled('lblMaxTickets' )"
+            >
+                Number of Tickets *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        type='number'
+                        magic="nMaxNumberTickets"
+                        formControlName="nMaxNumberTickets"
+                        mgFormat
+                    >
+                    <mgError magic="nMaxNumberTickets"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+ <button
+                mat-raised-button
+                color="primary"
+                magic="btnSave"
+                [disabled]="mg.isDisabled('btnSave' )"
+            >
+                Save</button>
+        
     </div>
 </div>

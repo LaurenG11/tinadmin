@@ -25,11 +25,13 @@ declare let paypal: any;
     addScript: boolean = false;
     paypalLoad: boolean = true;
     paypalSuccess: boolean = false;
+    showButton: boolean = true;
   
     
     finalAmount: number;
     currency: string;
     paypalDetails: string = 'blah';
+    paypalBlob: string;
     
     
     paypalConfig = {
@@ -63,8 +65,10 @@ declare let paypal: any;
       );
       actions.payment.execute().then(details => {
         // Show a confirmation message to the buyer
-        window.alert('Thank you for your purchase!');
+        // window.alert('Thank you for your purchase!');
         this.paypalDetails = details.state;
+        this.paypalBlob = details;
+        this.showButton = false;
         if (this.paypalDetails == 'approved')
         {
           this.paypalSuccess = true;
@@ -124,15 +128,16 @@ declare let paypal: any;
         return false;
       }
     };
-    getVisible() {
-      if (this.paypalDetails != "")
+    getMessageVisible() {
+      if (this.paypalDetails == '')
     {
-      return true;  
+      return false;  
     }
     else 
     {
-      return false;
+      return true;
     }
+  }
 
   
 }

@@ -1178,3 +1178,503 @@ Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN"
 "Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
  <-1> 07/05/2019 19:15:09.381     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
 "Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 07/05/2019 20:02:42.446     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 07/05/2019 20:02:42.451     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 07/05/2019 20:02:42.454     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 08/05/2019 10:49:33.400     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 08/05/2019 10:49:33.408     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 08/05/2019 10:49:33.410     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <410150126109211328> 08/05/2019 11:56:12.916     [Error  ] - Failed to open, data source: tmpEventDetails, Program: "Browse - tmpEventDetails".
+ <508850617706153408> 08/05/2019 11:57:11.287     [Error  ] - Failed to open, data source: tmpEventDetails, Program: "Browse - #tmpEventDetails".
+ <458979507427401856> 08/05/2019 12:30:37.355     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <458979507427401856> 08/05/2019 12:30:37.358     [Error  ] -  : TCP Provider: An existing connection was forcibly closed by the remote host.
+, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <458979507427401856> 08/05/2019 12:30:37.366     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <458979507427401856> 08/05/2019 12:30:37.368     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <458979507427401856> 08/05/2019 12:30:38.028     [Error  ] - Failed to open, data source:, Program: "mainRoute.viewMyEvents".
+ <458979507427401856> 08/05/2019 12:30:38.030     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.viewMyEvents".
+ <458979507427401856> 08/05/2019 12:30:38.150     [Error  ] - EndTaskRequest(): Failed to open, data source: : viewMyEvents Communication link failureFailed to create sort/temporary data source : viewMyEvents  : "mainRoute" ("TIN")  (msgid "1912"), Program: "Main Program".
+ <366170007370111808> 08/05/2019 12:31:25.285     [Error  ] - Failed to open, data source: tmpEventDetails, Program: "Browse - tmpEventDetails".
+ <302849864367938048> 08/05/2019 12:32:31.297     [Error  ] - Update operation failed, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <408042156274810240> 08/05/2019 12:38:11.681     [Error  ] - Update operation failed, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <441861531049765312> 08/05/2019 12:40:37.769     [Error  ] - Update operation failed, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <509833720230720320> 08/05/2019 12:44:29.802     [Error  ] - Update operation failed, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <333528514185658944> 08/05/2019 12:45:59.152     [Error  ] - Update operation failed, data source: tmpEventDetails, Program: "tmpEventDetails.writeTmpEventDetails".
+ <369105342162255040> 08/05/2019 12:47:54.252     [Error  ] - Update operation failed, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <120616126078870304> 08/05/2019 12:49:02.004     [Error  ] - Update operation failed, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <459269134527895808> 08/05/2019 12:49:50.508     [Error  ] - Update operation failed, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <450797086567235648> 08/05/2019 12:50:18.364     [Error  ] - Constraint failure, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <268119559484849440> 08/05/2019 12:51:07.068     [Error  ] - Constraint failure, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <448490063327234176> 08/05/2019 12:51:50.754     [Error  ] - Constraint failure, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <124755105070551520> 08/05/2019 12:57:35.839     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <409609689408941696> 08/05/2019 12:59:51.620     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <409609689408941696> 08/05/2019 12:59:53.856     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <409609689408941696> 08/05/2019 12:59:54.769     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <409609689408941696> 08/05/2019 12:59:57.249     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <409609689408941696> 08/05/2019 12:59:57.379     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <409609689408941696> 08/05/2019 12:59:57.503     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <409609689408941696> 08/05/2019 12:59:57.637     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <409609689408941696> 08/05/2019 12:59:57.863     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <409609689408941696> 08/05/2019 12:59:59.320     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <409609689408941696> 08/05/2019 13:00:00.476     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <409609689408941696> 08/05/2019 13:00:03.680     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <409609689408941696> 08/05/2019 13:00:10.772     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "call_786.tmpEventDetails.writeTmpEventDetails".
+ <223476102366931904> 08/05/2019 13:22:50.645     [Error  ] - No records within defined range, Program: "mainRoute.viewMyEvents".
+ <105682579143019904> 08/05/2019 13:26:07.796     [Error  ] - Failed to open, data source:, Program: "mainRoute.viewMyEvents.tickets.ticketExist".
+ <105682579143019904> 08/05/2019 13:26:07.851     [Error  ] - EndTaskRequest(): Failed to open, data source: : ticketExist  : TCP Provider: An existing connection was forcibly closed by the remote host.
+ : "mainRoute" ("TIN")  (msgid "2030"), Program: "Main Program".
+ <549023933170580736> 08/05/2019 13:27:18.299     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <456300249441019584> 08/05/2019 13:28:56.165     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <74753953165676160> 08/05/2019 13:34:07.095     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <131908282054655888> 08/05/2019 13:36:06.167     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <107127707279177248> 08/05/2019 13:37:20.759     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <25992692368713996> 08/05/2019 13:38:45.633     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <348257229662636608> 08/05/2019 13:40:56.305     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <348257229662636608> 08/05/2019 13:40:56.489     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <357854299454480256> 08/05/2019 13:42:03.677     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <357854299454480256> 08/05/2019 13:42:03.869     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <76958034302478272> 08/05/2019 13:44:24.820     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <76958034302478272> 08/05/2019 13:44:24.988     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <76958034302478272> 08/05/2019 13:44:25.133     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <113306727616600272> 08/05/2019 13:44:59.776     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <113306727616600272> 08/05/2019 13:44:59.921     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <113306727616600272> 08/05/2019 13:45:00.128     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <44271080422201064> 08/05/2019 13:47:12.546     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <44271080422201064> 08/05/2019 13:47:12.683     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <44271080422201064> 08/05/2019 13:47:12.825     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <44271080422201064> 08/05/2019 13:47:12.989     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <44271080422201064> 08/05/2019 13:47:13.134     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <535348993487573248> 08/05/2019 13:47:58.086     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <535348993487573248> 08/05/2019 13:47:58.221     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <535348993487573248> 08/05/2019 13:47:58.358     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <535348993487573248> 08/05/2019 13:47:58.505     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <535348993487573248> 08/05/2019 13:47:58.683     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <535348993487573248> 08/05/2019 13:47:58.832     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <535465825684737984> 08/05/2019 13:49:15.213     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <535465825684737984> 08/05/2019 13:49:15.340     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <535465825684737984> 08/05/2019 13:49:15.473     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <535465825684737984> 08/05/2019 13:49:15.620     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <535465825684737984> 08/05/2019 13:49:15.756     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <535465825684737984> 08/05/2019 13:49:15.906     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <535465825684737984> 08/05/2019 13:49:16.041     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <436867880380421120> 08/05/2019 13:49:47.167     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <436867880380421120> 08/05/2019 13:49:47.305     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <436867880380421120> 08/05/2019 13:49:47.488     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <253115961010671040> 08/05/2019 13:52:38.496     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <253115961010671040> 08/05/2019 13:52:38.670     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <253115961010671040> 08/05/2019 13:52:38.798     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <253115961010671040> 08/05/2019 13:52:38.956     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <253115961010671040> 08/05/2019 13:52:39.160     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <253115961010671040> 08/05/2019 13:52:39.341     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <253115961010671040> 08/05/2019 13:52:39.497     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <253115961010671040> 08/05/2019 13:52:43.312     [Error  ] - No records within defined range, Program: "mainRoute.viewMyEvents.EditEventOnline".
+ <253115961010671040> 08/05/2019 13:52:47.102     [Error  ] - No records within defined range, Program: "mainRoute.viewMyEvents.EditEventOnline".
+ <340442522639380288> 08/05/2019 13:55:04.308     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <340442522639380288> 08/05/2019 13:55:04.475     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <340442522639380288> 08/05/2019 13:55:04.644     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <340442522639380288> 08/05/2019 13:55:04.824     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <340442522639380288> 08/05/2019 13:55:04.958     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <340442522639380288> 08/05/2019 13:55:05.105     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <340442522639380288> 08/05/2019 13:55:05.272     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <88877735040794688> 08/05/2019 14:48:17.928     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <88877735040794688> 08/05/2019 14:48:17.930     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <88877735040794688> 08/05/2019 14:48:17.938     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <88877735040794688> 08/05/2019 14:48:17.939     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <88877735040794688> 08/05/2019 14:48:20.123     [Error  ] - Failed to open, data source:, Program: "mainRoute.viewMyEvents".
+ <88877735040794688> 08/05/2019 14:48:20.125     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.viewMyEvents".
+ <88877735040794688> 08/05/2019 14:48:20.207     [Error  ] - EndTaskRequest(): Failed to open, data source: : viewMyEvents Communication link failureFailed to create sort/temporary data source : viewMyEvents  : "mainRoute" ("TIN")  (msgid "2199"), Program: "Main Program".
+ <262961995160210880> 08/05/2019 14:49:50.695     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <262961995160210880> 08/05/2019 14:49:50.829     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <262961995160210880> 08/05/2019 14:49:50.985     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <262961995160210880> 08/05/2019 14:49:51.202     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <398862500994075008> 08/05/2019 14:51:10.139     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <398862500994075008> 08/05/2019 14:51:10.281     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <398862500994075008> 08/05/2019 14:51:10.482     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <398862500994075008> 08/05/2019 14:51:10.625     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <100838227618259200> 08/05/2019 14:57:44.820     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <100838227618259200> 08/05/2019 14:57:44.956     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <100838227618259200> 08/05/2019 14:57:45.105     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <100838227618259200> 08/05/2019 14:57:45.259     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <100838227618259200> 08/05/2019 14:57:45.406     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <279448547494860416> 08/05/2019 14:59:07.009     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <279448547494860416> 08/05/2019 14:59:07.150     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <279448547494860416> 08/05/2019 14:59:07.292     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <279448547494860416> 08/05/2019 14:59:07.441     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <279448547494860416> 08/05/2019 14:59:07.615     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <361435891416156288> 08/05/2019 15:02:03.378     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <361435891416156288> 08/05/2019 15:02:03.548     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <361435891416156288> 08/05/2019 15:02:03.700     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <361435891416156288> 08/05/2019 15:02:03.837     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <361435891416156288> 08/05/2019 15:02:04.086     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <39742186501883936> 08/05/2019 15:06:19.094     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <39742186501883936> 08/05/2019 15:06:19.241     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <39742186501883936> 08/05/2019 15:06:19.424     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <39742186501883936> 08/05/2019 15:06:36.548     [Error  ] - No records within defined range, Program: "mainRoute.viewMyEvents.EditEventOnline".
+ <39742186501883936> 08/05/2019 15:07:14.382     [Error  ] - No records within defined range, Program: "mainRoute.viewMyEvents.EditEventOnline".
+ <-1> 08/05/2019 15:12:07.311     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 08/05/2019 15:12:07.317     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 08/05/2019 15:12:07.319     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <370325529502190272> 08/05/2019 15:13:34.773     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <370325529502190272> 08/05/2019 15:13:34.837     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <370325529502190272> 08/05/2019 15:13:34.901     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <370325529502190272> 08/05/2019 15:13:41.857     [Error  ] - No records within defined range, Program: "mainRoute.viewMyEvents.EditEventOnline".
+ <370325529502190272> 08/05/2019 15:13:43.634     [Error  ] - No records within defined range, Program: "mainRoute.viewMyEvents.EditEventOnline".
+ <-1> 08/05/2019 15:18:18.798     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 08/05/2019 15:18:18.801     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 08/05/2019 15:18:18.803     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <393483576828788416> 08/05/2019 15:19:28.574     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <393483576828788416> 08/05/2019 15:19:28.663     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <393483576828788416> 08/05/2019 15:19:28.734     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <393483576828788416> 08/05/2019 15:19:28.846     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <393483576828788416> 08/05/2019 15:19:28.917     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <393483576828788416> 08/05/2019 15:19:32.135     [Error  ] - No records within defined range, Program: "mainRoute.viewMyEvents.EditEventOnline".
+ <393483576828788416> 08/05/2019 15:19:34.626     [Error  ] - No records within defined range, Program: "mainRoute.viewMyEvents.EditEventOnline".
+ <270979221632739520> 08/05/2019 15:22:55.384     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <270979221632739520> 08/05/2019 15:22:55.449     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <270979221632739520> 08/05/2019 15:22:55.518     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <270979221632739520> 08/05/2019 15:22:55.582     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <270979221632739520> 08/05/2019 15:22:55.654     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <270979221632739520> 08/05/2019 15:23:11.701     [Error  ] - No records within defined range, Program: "mainRoute.viewMyEvents.EditEventOnline".
+ <270979221632739520> 08/05/2019 15:23:13.358     [Error  ] - No records within defined range, Program: "mainRoute.viewMyEvents.EditEventOnline".
+ <245398153701832896> 08/05/2019 15:24:09.091     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <245398153701832896> 08/05/2019 15:24:09.185     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <245398153701832896> 08/05/2019 15:24:09.251     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <245398153701832896> 08/05/2019 15:24:09.328     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <245398153701832896> 08/05/2019 15:24:09.404     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <245398153701832896> 08/05/2019 15:24:26.158     [Error  ] - No records within defined range, Program: "mainRoute.viewMyEvents.EditEventOnline".
+ <245398153701832896> 08/05/2019 15:24:27.694     [Error  ] - No records within defined range, Program: "mainRoute.viewMyEvents.EditEventOnline".
+ <81405785515208144> 08/05/2019 15:39:50.977     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <81405785515208144> 08/05/2019 15:39:51.043     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <81405785515208144> 08/05/2019 15:39:51.109     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <81405785515208144> 08/05/2019 15:39:51.185     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <81405785515208144> 08/05/2019 15:39:51.256     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <279363319583384576> 08/05/2019 15:40:41.490     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <279363319583384576> 08/05/2019 15:40:41.561     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <279363319583384576> 08/05/2019 15:40:41.622     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <279363319583384576> 08/05/2019 15:40:41.685     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <279363319583384576> 08/05/2019 15:40:41.769     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <280783346822620000> 08/05/2019 15:41:39.720     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <280783346822620000> 08/05/2019 15:41:39.787     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <280783346822620000> 08/05/2019 15:41:39.869     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <280783346822620000> 08/05/2019 15:41:39.938     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <280783346822620000> 08/05/2019 15:41:40.012     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <286355380388663136> 08/05/2019 15:42:18.774     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <286355380388663136> 08/05/2019 15:42:18.839     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <286355380388663136> 08/05/2019 15:42:18.904     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <286355380388663136> 08/05/2019 15:42:18.985     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <286355380388663136> 08/05/2019 15:42:19.073     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <257928684813208384> 08/05/2019 15:44:19.321     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <257928684813208384> 08/05/2019 15:44:19.385     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <257928684813208384> 08/05/2019 15:44:19.452     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <257928684813208384> 08/05/2019 15:44:19.513     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <257928684813208384> 08/05/2019 15:44:19.599     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <257928684813208384> 08/05/2019 15:44:19.700     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <469941593084269184> 08/05/2019 15:45:19.220     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <469941593084269184> 08/05/2019 15:45:19.290     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <469941593084269184> 08/05/2019 15:45:19.362     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <469941593084269184> 08/05/2019 15:45:19.428     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <469941593084269184> 08/05/2019 15:45:19.498     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <469941593084269184> 08/05/2019 15:45:19.562     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <469941593084269184> 08/05/2019 15:45:19.633     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <231152414695119520> 08/05/2019 15:46:56.083     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <231152414695119520> 08/05/2019 15:46:56.175     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <231152414695119520> 08/05/2019 15:46:56.241     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <231152414695119520> 08/05/2019 15:46:56.311     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <231152414695119520> 08/05/2019 15:46:56.375     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <231152414695119520> 08/05/2019 15:46:56.440     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <231152414695119520> 08/05/2019 15:46:56.542     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <125810105359682288> 08/05/2019 15:47:28.394     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <125810105359682288> 08/05/2019 15:47:28.475     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <125810105359682288> 08/05/2019 15:47:28.547     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <125810105359682288> 08/05/2019 15:47:28.629     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <125810105359682288> 08/05/2019 15:47:28.726     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <125810105359682288> 08/05/2019 15:47:28.796     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <125810105359682288> 08/05/2019 15:47:28.869     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <125810105359682288> 08/05/2019 15:47:28.941     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <86395491665410224> 08/05/2019 15:50:19.269     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <86395491665410224> 08/05/2019 15:50:19.344     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <86395491665410224> 08/05/2019 15:50:19.421     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <86395491665410224> 08/05/2019 15:50:19.482     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <86395491665410224> 08/05/2019 15:50:19.548     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <86395491665410224> 08/05/2019 15:50:19.658     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <86395491665410224> 08/05/2019 15:50:19.735     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <86395491665410224> 08/05/2019 15:50:19.872     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <378696487768837632> 08/05/2019 15:50:56.591     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <378696487768837632> 08/05/2019 15:50:56.658     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <378696487768837632> 08/05/2019 15:50:56.750     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <378696487768837632> 08/05/2019 15:50:56.846     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <378696487768837632> 08/05/2019 15:50:56.915     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <378696487768837632> 08/05/2019 15:50:56.987     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <378696487768837632> 08/05/2019 15:50:57.051     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <378696487768837632> 08/05/2019 15:50:57.174     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <378696487768837632> 08/05/2019 15:50:57.262     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <563428647934970624> 08/05/2019 17:36:42.554     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <563428647934970624> 08/05/2019 17:36:42.556     [Error  ] -  : TCP Provider: An existing connection was forcibly closed by the remote host.
+, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <563428647934970624> 08/05/2019 17:36:42.565     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <563428647934970624> 08/05/2019 17:36:42.568     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <563428647934970624> 08/05/2019 17:36:43.524     [Error  ] - Failed to open, data source:, Program: "mainRoute.viewMyEvents".
+ <563428647934970624> 08/05/2019 17:36:43.527     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.viewMyEvents".
+ <563428647934970624> 08/05/2019 17:36:43.645     [Error  ] - EndTaskRequest(): Failed to open, data source: : viewMyEvents Communication link failureFailed to create sort/temporary data source : viewMyEvents  : "mainRoute" ("TIN")  (msgid "2451"), Program: "Main Program".
+ <152017757357684064> 08/05/2019 17:38:11.514     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.viewMyEvents".
+ <152017757357684064> 08/05/2019 17:38:11.516     [Error  ] - admin-tin-magic : Incorrect syntax near the keyword 'and'., Program: "mainRoute.viewMyEvents".
+ <152017757357684064> 08/05/2019 17:38:11.519     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.viewMyEvents".
+ <152017757357684064> 08/05/2019 17:38:11.521     [Error  ] - EndTaskRequest(): Invalid SQL command, database: tinAzureSQLDb : viewMyEvents admin-tin-magic : Incorrect syntax near the keyword 'and'.Failed to create sort/temporary data source : viewMyEvents  : "mainRoute" ("TIN")  (msgid "2455"), Program: "Main Program".
+ <474794491491341248> 08/05/2019 17:38:52.679     [Error  ] - Failed to open, data source:, Program: "mainRoute.viewMyEvents".
+ <474794491491341248> 08/05/2019 17:38:52.682     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.viewMyEvents".
+ <474794491491341248> 08/05/2019 17:38:52.685     [Error  ] - EndTaskRequest(): Failed to open, data source: : viewMyEvents Requested conversion is not supported.Failed to create sort/temporary data source : viewMyEvents  : "mainRoute" ("TIN")  (msgid "2459"), Program: "Main Program".
+ <11893495530135116> 08/05/2019 17:39:51.162     [Error  ] - Failed to open, data source:, Program: "mainRoute.viewMyEvents".
+ <11893495530135116> 08/05/2019 17:39:51.165     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.viewMyEvents".
+ <11893495530135116> 08/05/2019 17:39:51.168     [Error  ] - EndTaskRequest(): Failed to open, data source: : viewMyEvents Requested conversion is not supported.Failed to create sort/temporary data source : viewMyEvents  : "mainRoute" ("TIN")  (msgid "2463"), Program: "Main Program".
+ <513729050942327360> 08/05/2019 17:40:50.651     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <513729050942327360> 08/05/2019 17:40:50.718     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <513729050942327360> 08/05/2019 17:40:50.788     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <513729050942327360> 08/05/2019 17:40:50.853     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <513729050942327360> 08/05/2019 17:40:50.943     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <513729050942327360> 08/05/2019 17:40:51.005     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <513729050942327360> 08/05/2019 17:40:51.133     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <513729050942327360> 08/05/2019 17:40:51.197     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <513729050942327360> 08/05/2019 17:40:51.271     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <113298023224832352> 08/05/2019 17:41:24.370     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <113298023224832352> 08/05/2019 17:41:24.435     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <113298023224832352> 08/05/2019 17:41:24.529     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <113298023224832352> 08/05/2019 17:41:24.595     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <113298023224832352> 08/05/2019 17:41:24.669     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <113298023224832352> 08/05/2019 17:41:24.736     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <113298023224832352> 08/05/2019 17:41:24.799     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <113298023224832352> 08/05/2019 17:41:24.860     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <113298023224832352> 08/05/2019 17:41:24.937     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <94461424530543648> 08/05/2019 17:58:48.750     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <94461424530543648> 08/05/2019 17:58:48.763     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <94461424530543648> 08/05/2019 17:58:48.777     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <94461424530543648> 08/05/2019 17:58:48.795     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <94461424530543648> 08/05/2019 17:58:48.818     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <94461424530543648> 08/05/2019 17:58:48.832     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <94461424530543648> 08/05/2019 17:58:48.845     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <94461424530543648> 08/05/2019 17:58:48.859     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <94461424530543648> 08/05/2019 17:58:48.882     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <454375672623338624> 08/05/2019 18:00:01.789     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <454375672623338624> 08/05/2019 18:00:01.813     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <454375672623338624> 08/05/2019 18:00:01.831     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <454375672623338624> 08/05/2019 18:00:01.856     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <454375672623338624> 08/05/2019 18:00:01.878     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <454375672623338624> 08/05/2019 18:00:01.895     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <454375672623338624> 08/05/2019 18:00:01.910     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <454375672623338624> 08/05/2019 18:00:01.933     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <454375672623338624> 08/05/2019 18:00:01.966     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <211576198040512128> 08/05/2019 19:10:51.250     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <211576198040512128> 08/05/2019 19:10:51.252     [Error  ] -  : TCP Provider: An existing connection was forcibly closed by the remote host.
+, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <211576198040512128> 08/05/2019 19:10:51.261     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <211576198040512128> 08/05/2019 19:10:51.263     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <211576198040512128> 08/05/2019 19:10:52.280     [Error  ] - Failed to open, data source:, Program: "mainRoute.viewMyEvents".
+ <211576198040512128> 08/05/2019 19:10:52.285     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.viewMyEvents".
+ <211576198040512128> 08/05/2019 19:10:52.378     [Error  ] - EndTaskRequest(): Failed to open, data source: : viewMyEvents Communication link failureFailed to create sort/temporary data source : viewMyEvents  : "mainRoute" ("TIN")  (msgid "2492"), Program: "Main Program".
+ <335807306489239552> 08/05/2019 19:11:16.977     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <335807306489239552> 08/05/2019 19:11:16.992     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <335807306489239552> 08/05/2019 19:11:17.006     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <335807306489239552> 08/05/2019 19:11:17.021     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <335807306489239552> 08/05/2019 19:11:17.046     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <335807306489239552> 08/05/2019 19:11:17.067     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <335807306489239552> 08/05/2019 19:11:17.081     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <335807306489239552> 08/05/2019 19:11:17.099     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <335807306489239552> 08/05/2019 19:11:17.125     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <337495573932192000> 08/05/2019 19:14:55.254     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <337495573932192000> 08/05/2019 19:14:55.269     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <337495573932192000> 08/05/2019 19:14:55.282     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <337495573932192000> 08/05/2019 19:14:55.305     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <337495573932192000> 08/05/2019 19:14:55.320     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <337495573932192000> 08/05/2019 19:14:55.334     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <337495573932192000> 08/05/2019 19:14:55.348     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <337495573932192000> 08/05/2019 19:14:55.362     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <337495573932192000> 08/05/2019 19:14:55.383     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538595391536600064> 08/05/2019 19:17:41.725     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538595391536600064> 08/05/2019 19:17:41.739     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538595391536600064> 08/05/2019 19:17:41.753     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538595391536600064> 08/05/2019 19:17:41.767     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538595391536600064> 08/05/2019 19:17:41.781     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538595391536600064> 08/05/2019 19:17:41.794     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538595391536600064> 08/05/2019 19:17:41.808     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538595391536600064> 08/05/2019 19:17:41.823     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538595391536600064> 08/05/2019 19:17:41.845     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213488756403906560> 08/05/2019 19:20:54.470     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213488756403906560> 08/05/2019 19:20:54.496     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213488756403906560> 08/05/2019 19:20:54.511     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213488756403906560> 08/05/2019 19:20:54.526     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213488756403906560> 08/05/2019 19:20:54.541     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213488756403906560> 08/05/2019 19:20:54.556     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213488756403906560> 08/05/2019 19:20:54.570     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213488756403906560> 08/05/2019 19:20:54.588     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213488756403906560> 08/05/2019 19:20:54.611     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <227498676790584096> 08/05/2019 19:25:39.567     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <227498676790584096> 08/05/2019 19:25:39.587     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <227498676790584096> 08/05/2019 19:25:39.607     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <227498676790584096> 08/05/2019 19:25:39.621     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <227498676790584096> 08/05/2019 19:25:39.674     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <227498676790584096> 08/05/2019 19:25:39.692     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <227498676790584096> 08/05/2019 19:25:39.706     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <227498676790584096> 08/05/2019 19:25:39.725     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <227498676790584096> 08/05/2019 19:25:39.751     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <315166944907167552> 08/05/2019 19:28:21.760     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <315166944907167552> 08/05/2019 19:28:21.775     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <315166944907167552> 08/05/2019 19:28:21.789     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <315166944907167552> 08/05/2019 19:28:21.803     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <315166944907167552> 08/05/2019 19:28:21.818     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <315166944907167552> 08/05/2019 19:28:21.832     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <315166944907167552> 08/05/2019 19:28:21.846     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <315166944907167552> 08/05/2019 19:28:21.863     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <315166944907167552> 08/05/2019 19:28:21.885     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <19283686225762168> 08/05/2019 19:36:48.759     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <19283686225762168> 08/05/2019 19:36:48.776     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <19283686225762168> 08/05/2019 19:36:48.791     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <19283686225762168> 08/05/2019 19:36:48.808     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <19283686225762168> 08/05/2019 19:36:48.825     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <19283686225762168> 08/05/2019 19:36:48.846     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <19283686225762168> 08/05/2019 19:36:48.861     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <19283686225762168> 08/05/2019 19:36:48.875     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <19283686225762168> 08/05/2019 19:36:48.900     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <391945474818980416> 08/05/2019 19:38:34.438     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <391945474818980416> 08/05/2019 19:38:34.452     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <391945474818980416> 08/05/2019 19:38:34.468     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <391945474818980416> 08/05/2019 19:38:34.497     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <391945474818980416> 08/05/2019 19:38:34.511     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <391945474818980416> 08/05/2019 19:38:34.524     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <391945474818980416> 08/05/2019 19:38:34.537     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <391945474818980416> 08/05/2019 19:38:34.552     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <391945474818980416> 08/05/2019 19:38:34.579     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <115458152920573280> 08/05/2019 19:41:33.108     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <115458152920573280> 08/05/2019 19:41:33.124     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <115458152920573280> 08/05/2019 19:41:33.140     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <115458152920573280> 08/05/2019 19:41:33.156     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <115458152920573280> 08/05/2019 19:41:33.169     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <115458152920573280> 08/05/2019 19:41:33.181     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <115458152920573280> 08/05/2019 19:41:33.194     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <115458152920573280> 08/05/2019 19:41:33.208     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <115458152920573280> 08/05/2019 19:41:33.229     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538714381885459584> 08/05/2019 19:43:06.594     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538714381885459584> 08/05/2019 19:43:06.610     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538714381885459584> 08/05/2019 19:43:06.626     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538714381885459584> 08/05/2019 19:43:06.642     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538714381885459584> 08/05/2019 19:43:06.658     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538714381885459584> 08/05/2019 19:43:06.673     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538714381885459584> 08/05/2019 19:43:06.687     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538714381885459584> 08/05/2019 19:43:06.701     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <538714381885459584> 08/05/2019 19:43:06.724     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <484996479799603072> 08/05/2019 19:44:36.620     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <484996479799603072> 08/05/2019 19:44:36.636     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <484996479799603072> 08/05/2019 19:44:36.652     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <484996479799603072> 08/05/2019 19:44:36.667     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <484996479799603072> 08/05/2019 19:44:36.680     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <484996479799603072> 08/05/2019 19:44:36.692     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <484996479799603072> 08/05/2019 19:44:36.706     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <484996479799603072> 08/05/2019 19:44:36.721     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <484996479799603072> 08/05/2019 19:44:36.741     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213540466772122432> 08/05/2019 19:49:33.141     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213540466772122432> 08/05/2019 19:49:33.156     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213540466772122432> 08/05/2019 19:49:33.169     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213540466772122432> 08/05/2019 19:49:33.182     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213540466772122432> 08/05/2019 19:49:33.195     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213540466772122432> 08/05/2019 19:49:33.210     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213540466772122432> 08/05/2019 19:49:33.226     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213540466772122432> 08/05/2019 19:49:33.241     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <213540466772122432> 08/05/2019 19:49:33.263     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <349951211919246720> 08/05/2019 19:55:06.300     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <349951211919246720> 08/05/2019 19:55:06.314     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <349951211919246720> 08/05/2019 19:55:06.327     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <349951211919246720> 08/05/2019 19:55:06.340     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <349951211919246720> 08/05/2019 19:55:06.356     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <349951211919246720> 08/05/2019 19:55:06.369     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <349951211919246720> 08/05/2019 19:55:06.382     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <349951211919246720> 08/05/2019 19:55:06.396     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <349951211919246720> 08/05/2019 19:55:06.409     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <349951211919246720> 08/05/2019 19:55:06.430     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <211035540076766976> 08/05/2019 19:56:47.967     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <211035540076766976> 08/05/2019 19:56:48.006     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <211035540076766976> 08/05/2019 19:56:48.025     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <211035540076766976> 08/05/2019 19:56:48.044     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <211035540076766976> 08/05/2019 19:56:48.073     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <211035540076766976> 08/05/2019 19:56:48.109     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <211035540076766976> 08/05/2019 19:56:48.125     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <211035540076766976> 08/05/2019 19:56:48.148     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <211035540076766976> 08/05/2019 19:56:48.177     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <211035540076766976> 08/05/2019 19:56:48.200     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <470038985821709120> 08/05/2019 19:58:25.585     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <470038985821709120> 08/05/2019 19:58:25.608     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <470038985821709120> 08/05/2019 19:58:25.673     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <470038985821709120> 08/05/2019 19:58:25.688     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <470038985821709120> 08/05/2019 19:58:25.720     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <470038985821709120> 08/05/2019 19:58:25.738     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <470038985821709120> 08/05/2019 19:58:25.754     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <470038985821709120> 08/05/2019 19:58:25.770     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <470038985821709120> 08/05/2019 19:58:25.784     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <470038985821709120> 08/05/2019 19:58:25.806     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <470038985821709120> 08/05/2019 19:58:25.829     [Error  ] - Duplicate index, data source: tmpEventDetails, Program: "mainRoute.viewMyEvents.tmpEventDetails.writeTmpEventDetails".
+ <-1> 08/05/2019 20:59:30.441     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 08/05/2019 20:59:30.465     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 08/05/2019 20:59:30.466     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 09:24:43.086     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 09:24:43.090     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 09:24:43.096     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <151588576707151840> 09/05/2019 10:37:39.328     [Error  ] - Failed to open, data source:, Program: "mainRoute.viewMyEvents.tickets.ticketExist".
+ <151588576707151840> 09/05/2019 10:37:39.379     [Error  ] - EndTaskRequest(): Failed to open, data source: : ticketExist  : TCP Provider: An existing connection was forcibly closed by the remote host.
+ : "mainRoute" ("TIN")  (msgid "2753"), Program: "Main Program".
+ <-1> 09/05/2019 10:54:22.636     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 10:54:22.906     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 10:54:22.908     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 11:42:37.702     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 11:42:37.735     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 11:42:37.737     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 12:30:07.897     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 12:30:07.924     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 12:30:07.927     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 13:02:53.100     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 13:02:53.103     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 13:02:53.104     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 13:26:39.932     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 13:26:40.069     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 13:26:40.072     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 14:05:40.638     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 14:05:40.873     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 14:05:41.099     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 14:16:34.311     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 14:16:34.338     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 09/05/2019 14:16:34.339     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."

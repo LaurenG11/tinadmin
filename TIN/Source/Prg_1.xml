@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="Y">
-        <Header Description="Main Program" ISN_2="1" LastIsn="1" id="1">
+        <Header Description="Main Program" ISN_2="1" LastIsn="2" id="1">
           <Resident val="N"/>
           <SQL val="N"/>
           <ReturnValue>
@@ -28,7 +28,7 @@
           <RunProjectAs val="W"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736975" _time="70881" date="08/10/2018" time="19:41:21"/>
+          <LastModified _date="737187" _time="41263" date="08/05/2019" time="11:27:43"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>
@@ -523,6 +523,33 @@
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="2" propagate="78">
+            <Level val="F"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="F"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="getValueFromXml"/>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Remark FlowIsn="20">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="21">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
               </LogicLine>
             </LogicLines>
           </LogicUnit>

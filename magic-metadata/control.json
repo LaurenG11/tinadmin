@@ -1,18 +1,18 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"aMessage",
+		"id":	"bPaypalBlob",
 		"visible":	{
 			"value":	null,
 			"has_exp":	true
 		},
-		"dataexp":	true,
-		"modifiable":	false
+		"mgformat":	"mgFormat",
+		"attribute":	"A"
 	},
 	"coordinates":	{
-		"x":	20,
-		"y":	353,
-		"width":	580,
+		"x":	306,
+		"y":	381,
+		"width":	50,
 		"height":	18
 	},
 	"hint":	null,

@@ -8,7 +8,7 @@
     >
         <div style="display: flex; flex-direction: row">
             <label
-                magic="Label14"
+                magic="lblSearch"
                 class="lable_overflow mgFont1"
             >
                 * From Date</label>
@@ -51,7 +51,7 @@
                 NewEvent</button>
         </div>
         <div style="display: flex; flex-direction: row">
-            <div class="example-container mat-elevation-z8 Table6TableContainerProps">
+            <div class="example-container mat-elevation-z8 tblEventsTableContainerProps">
                 <mat-table
                     #table
                     [dataSource]="dataSource"
@@ -122,11 +122,11 @@
                                     style="display: flex; flex-direction: row"
                                 >
                                     <label
-                                        magic="dStartDate"
+                                        magic="dStartDateCol"
                                         [rowId]="row.rowId"
                                     >
-                                        {{mg.getValue('dStartDate', row.rowId)
-| magicDate : 'dStartDate'}}
+                                        {{mg.getValue('dStartDateCol', row.rowId)
+| magicDate : 'dStartDateCol'}}
                                     </label>
                                 </div>
                             </div>
@@ -157,6 +157,8 @@
                                     color="primary"
                                     magic="btnDelete"
                                     [rowId]="row.rowId"
+                                    [matTooltip]="mg.getTitle('btnDelete', row.rowId)"
+                                    [disabled]="mg.isDisabled('btnDelete' , row.rowId)"
                                 >
                                     Delete</button>
                                 <button
@@ -189,31 +191,348 @@
             </div>
             <div>
                 <mat-tab-group
-                    magic="Tab20"
-                    (selectedTabChange)="task.mgOnTabSelectionChanged('Tab20', $event.index)"
-                    [selectedIndex]="mg.getTabSelectedIndex('Tab20')"
+                    magic="tabEventOrTicket"
+                    (selectedTabChange)="task.mgOnTabSelectionChanged('tabEventOrTicket', $event.index)"
+                    [selectedIndex]="mg.getTabSelectedIndex('tabEventOrTicket')"
                 >
                     <mat-tab
-                        *ngFor="let o of mg.getItemListValues('Tab20')"
-                        [label]="mg.getTabpageText('Tab20', o.index)"
+                        *ngFor="let o of mg.getItemListValues('tabEventOrTicket')"
+                        [label]="mg.getTabpageText('tabEventOrTicket', o.index)"
                     >
                     </mat-tab>
                 </mat-tab-group>
                 <div
                     class="tab_content"
-                    [style.display]="mg.isTabPageSelected('Tab20', 1) ? 'flex' : 'none' "
+                    [style.display]="mg.isTabPageSelected('tabEventOrTicket', 1) ? 'flex' : 'none' "
                     style="flex-direction: column"
                 >
                     <div style="display: flex; flex-direction: row">
-                        <mat-card>
-                            <magic-subform magic="eventsubform">
-                            </magic-subform>
-                        </mat-card>
+                        <label
+                            magic="lblEventName"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblEventName' )"
+                        >
+                            Event Name *</label>
+                        <mat-form-field>
+                            <div><input
+                                    matInput
+                                    magic="aShortDescriptionTable"
+                                    formControlName="aShortDescriptionTable"
+                                    mgFormat
+                                >
+                                <mgError magic="aShortDescriptionTable"> </mgError>
+                            </div>
+                        </mat-form-field>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            magic="lblSummary"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblSummary' )"
+                        >
+                            Summary *</label>
+                        <mat-form-field>
+                            <div><input
+                                    matInput
+                                    magic="aLongDescription"
+                                    formControlName="aLongDescription"
+                                    mgFormat
+                                >
+                                <mgError magic="aLongDescription"> </mgError>
+                            </div>
+                        </mat-form-field>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            magic="lblAddres"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblAddres' )"
+                        >
+                            Address *</label>
+                        <mat-form-field>
+                            <div><input
+                                    matInput
+                                    magic="aAddress"
+                                    formControlName="aAddress"
+                                    mgFormat
+                                >
+                                <mgError magic="aAddress"> </mgError>
+                            </div>
+                        </mat-form-field>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            magic="lblLocation"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblLocation' )"
+                        >
+                            Location</label>
+                        <mat-form-field>
+                            <div><input
+                                    matInput
+                                    magic="aLocation"
+                                    formControlName="aLocation"
+                                    mgFormat
+                                >
+                                <mgError magic="aLocation"> </mgError>
+                            </div>
+                        </mat-form-field>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            magic="lblCity"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblCity' )"
+                        >
+                            City</label>
+                        <mat-form-field>
+                            <div><input
+                                    matInput
+                                    magic="aCity"
+                                    formControlName="aCity"
+                                    mgFormat
+                                >
+                                <mgError magic="aCity"> </mgError>
+                            </div>
+                        </mat-form-field>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            magic="lblPostCode"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblPostCode' )"
+                        >
+                            Postal/Zip Code *</label>
+                        <mat-form-field>
+                            <div><input
+                                    matInput
+                                    magic="aPostCode"
+                                    formControlName="aPostCode"
+                                    mgFormat
+                                >
+                                <mgError magic="aPostCode"> </mgError>
+                            </div>
+                        </mat-form-field>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            magic="lblEventImage"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblEventImage' )"
+                        >
+                            Event Image</label>
+                        <mat-form-field>
+                            <div><input
+                                    matInput
+                                    magic="aEventImage"
+                                    formControlName="aEventImage"
+                                    mgFormat
+                                >
+                                <mgError magic="aEventImage"> </mgError>
+                            </div>
+                        </mat-form-field>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            magic="lblUrl"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblUrl' )"
+                        >
+                            Event URL</label>
+                        <mat-form-field>
+                            <div><input
+                                    matInput
+                                    magic="aEventUrl"
+                                    formControlName="aEventUrl"
+                                    mgFormat
+                                >
+                                <mgError magic="aEventUrl"> </mgError>
+                            </div>
+                        </mat-form-field>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            magic="lblStartDate"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblStartDate' )"
+                        >
+                            Start Date *</label>
+                        <mat-form-field
+                            magic="dStartDate"
+                            [eventsOnly]=true
+                        ><input
+                                matInput
+                                [matDatepicker]="dStartDate"
+                                magic="dStartDate"
+                                formControlName="dStartDate"
+                            >
+                            <mat-datepicker-toggle
+                                matSuffix
+                                [for]="dStartDate"
+                                *ngIf="mg.checkIsReadOnly('dStartDate')"
+                            ></mat-datepicker-toggle>
+                            <mat-datepicker #dStartDate></mat-datepicker>
+                        </mat-form-field><label
+                            magic="lblEndDate"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblEndDate' )"
+                        >
+                            End Date *</label>
+                        <mat-form-field
+                            magic="dEndDate"
+                            [eventsOnly]=true
+                        ><input
+                                matInput
+                                [matDatepicker]="dEndDate"
+                                magic="dEndDate"
+                                formControlName="dEndDate"
+                            >
+                            <mat-datepicker-toggle
+                                matSuffix
+                                [for]="dEndDate"
+                                *ngIf="mg.checkIsReadOnly('dEndDate')"
+                            ></mat-datepicker-toggle>
+                            <mat-datepicker #dEndDate></mat-datepicker>
+                        </mat-form-field><label
+                            magic="lblFromTime"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblFromTime' )"
+                        >
+                            From Time *</label>
+                        <mat-form-field>
+                            <div><input
+                                    matInput
+                                    magic="tFromTime"
+                                    formControlName="tFromTime"
+                                    mgFormat
+                                >
+                                <mgError magic="tFromTime"> </mgError>
+                            </div>
+                        </mat-form-field><label
+                            magic="lblToTime"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblToTime' )"
+                        >
+                            To Time *</label>
+                        <mat-form-field>
+                            <div><input
+                                    matInput
+                                    magic="tToTime"
+                                    formControlName="tToTime"
+                                    mgFormat
+                                >
+                                <mgError magic="tToTime"> </mgError>
+                            </div>
+                        </mat-form-field>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            magic="lblCategory"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblCategory' )"
+                        >
+                            Category *</label>
+                        <div>
+                            <mat-form-field>
+                                <mat-select
+                                    magic="cmbCategory"
+                                    formControlName="cmbCategory"
+                                >
+                                    <mat-option
+                                        *ngFor="let o of mg.getItemListValues('cmbCategory');"
+                                        [value]="o.index"
+                                    >
+                                        {{o.displayValue}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            magic="lblCurrency"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblCurrency' )"
+                        >
+                            Currency *</label>
+                        <div>
+                            <mat-form-field>
+                                <mat-select
+                                    magic="cmbCurrency"
+                                    formControlName="cmbCurrency"
+                                >
+                                    <mat-option
+                                        *ngFor="let o of mg.getItemListValues('cmbCurrency');"
+                                        [value]="o.index"
+                                    >
+                                        {{o.displayValue}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            magic="lblContactEmail"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblContactEmail' )"
+                        >
+                            Contact Email *</label>
+                        <mat-form-field>
+                            <div><input
+                                    matInput
+                                    magic="aContactEmail"
+                                    formControlName="aContactEmail"
+                                    mgFormat
+                                >
+                                <mgError magic="aContactEmail"> </mgError>
+                            </div>
+                        </mat-form-field>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            magic="lblContactNumber"
+                            class="lable_overflow mgFont1"
+                            [attr.disabled]="mg.isDisabled('lblContactNumber' )"
+                        >
+                            Contact Number *</label>
+                        <mat-form-field>
+                            <div><input
+                                    matInput
+                                    magic="aContactNumber"
+                                    formControlName="aContactNumber"
+                                    mgFormat
+                                >
+                                <mgError magic="aContactNumber"> </mgError>
+                            </div>
+                        </mat-form-field>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <div>
+                            <mat-checkbox
+                                magic="chkPublish"
+                                formControlName="chkPublish"
+                            >
+                                Publish?</mat-checkbox>
+                        </div>
+                        <div>
+                            <mat-checkbox
+                                magic="chkFeature"
+                                formControlName="chkFeature"
+                            >
+                                Feature?</mat-checkbox>
+                        </div> <button
+                            mat-raised-button
+                            color="primary"
+                            magic="btnSave"
+                            [disabled]="mg.isDisabled('btnSave' )"
+                        >
+                            Save</button>
                     </div>
                 </div>
                 <div
                     class="tab_content"
-                    [style.display]="mg.isTabPageSelected('Tab20', 2) ? 'flex' : 'none' "
+                    [style.display]="mg.isTabPageSelected('tabEventOrTicket', 2) ? 'flex' : 'none' "
                     style="flex-direction: column"
                 >
                     <div style="display: flex; flex-direction: row">

@@ -19,8 +19,8 @@ generating components
 [>] generate component tickets
 [>] Step 4: components-list.
 [>]  ********************************* E N D    GENERATE *********************************
-UPDATE src/app/magic/tickets/tickets/tickets.component.ts (427 bytes)
-UPDATE src/app/magic/tickets/tickets/tickets.component.html (8075 bytes)
+UPDATE src/app/magic/tickets/tickets/tickets.component.ts (510 bytes)
+UPDATE src/app/magic/tickets/tickets/tickets.component.html (15341 bytes)
 UPDATE src/app/magic/component-list.g.ts (2850 bytes)
 
 

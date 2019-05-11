@@ -15,11 +15,10 @@
 
 .Table3TableContainerProps {}
 
+
 .Table3Props {
     border: lightskyblue solid 1px;
 
-    width: 100%;
-    white-space: nowrap;
 }
 
 .Table3_table_rowProps {}
