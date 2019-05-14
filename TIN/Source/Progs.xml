@@ -6,8 +6,11 @@
     <WithIsn val="Y"/>
     <Exe comp="-1"/>
     <LastIsn val="832"/>
-    <LastIsnFolder val="8"/>
+    <LastIsnFolder val="9"/>
     <Folders>
+      <Folder id="9">
+        <Name val="proximity"/>
+      </Folder>
       <Folder id="8">
         <Name val="tmpTables"/>
       </Folder>
@@ -820,9 +823,6 @@
       <Program id="783"/>
       <Program id="809"/>
       <Program id="810"/>
-      <Program FolderIsn="8" id="830"/>
-      <Program FolderIsn="8" id="832"/>
-      <Program FolderIsn="8" id="831"/>
       <Program FolderIsn="1" id="784"/>
       <Program FolderIsn="2" id="785"/>
       <Program FolderIsn="3" id="786"/>

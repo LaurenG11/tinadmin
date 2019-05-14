@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737180" _time="34406" date="01/05/2019" time="09:33:26"/>
+          <LastModified _date="737193" _time="44729" date="14/05/2019" time="12:25:29"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -49,8 +49,8 @@
             <Column id="3" name="ibPassPayload">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="1000"/>
-                <Size id="174" val="1000"/>
+                <Picture id="157" valUnicode="5000"/>
+                <Size id="174" val="5000"/>
                 <_Flip id="194"/>
                 <_FieldStyle id="276" val="1"/>
               </PropertyList>
@@ -212,7 +212,7 @@
                       <Skip val="N"/>
                     </Argument>
                     <Argument>
-                      <Variable val="3"/>
+                      <Expression val="5"/>
                       <Skip val="N"/>
                     </Argument>
                     <Argument>
@@ -254,6 +254,10 @@
           </Expression>
           <Expression id="3">
             <ExpSyntax val="'Authorization: 5bb9ff355505b002438561'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="5">
+            <ExpSyntax val="Trim({0,3})"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>

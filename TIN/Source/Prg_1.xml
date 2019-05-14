@@ -28,7 +28,7 @@
           <RunProjectAs val="W"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737187" _time="41263" date="08/05/2019" time="11:27:43"/>
+          <LastModified _date="737192" _time="31705" date="13/05/2019" time="08:48:25"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>
@@ -526,30 +526,26 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
-          <LogicUnit id="2" propagate="78">
-            <Level val="F"/>
+          <LogicUnit id="3" propagate="78">
+            <Level val="T"/>
+            <Type val="P"/>
             <Scope val="S"/>
             <EngineDirective val="S"/>
             <ShowMessage val="Y"/>
             <Condition val="89"/>
             <Event>
-              <EventType val="F"/>
+              <EventType val="S"/>
               <PublicObject comp="-1"/>
             </Event>
-            <TXT val="getValueFromXml"/>
             <Expanded val="1"/>
             <LogicLines>
               <LogicLine>
-                <Remark FlowIsn="20">
-                  <Type val="2"/>
-                  <Text val=" "/>
-                </Remark>
-              </LogicLine>
-              <LogicLine>
-                <Remark FlowIsn="21">
-                  <Type val="2"/>
-                  <Text val=" "/>
-                </Remark>
+                <Evaluate FlowIsn="22">
+                  <Expression val="19"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -593,6 +589,10 @@
           <Expression id="4">
             <ExpSyntax val="INIGet ('[MAGIC_LOGICAL_NAMES]secure_domain')"/>
             <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="19">
+            <ExpSyntax val="INIPut('[MAGIC_LOGICAL_NAMES]CTX=CtxGetName()','TRUE'LOG)"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="5">
             <ExpSyntax val="'c:\swblue\merge\templates\'"/>

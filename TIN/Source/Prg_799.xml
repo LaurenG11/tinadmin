@@ -35,7 +35,7 @@
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
           <ToBeMigrated val="Y"/>
-          <LastModified _date="737110" _time="52590" date="20/02/2019" time="14:36:30"/>
+          <LastModified _date="737193" _time="44211" date="14/05/2019" time="12:16:51"/>
         </Header>
         <ItemIsn val="7"/>
         <Resource>
@@ -66,8 +66,8 @@
             <Column id="3" name="ibMessage">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="500"/>
-                <Size id="174" val="500"/>
+                <Picture id="157" valUnicode="5000"/>
+                <Size id="174" val="5000"/>
                 <_Flip id="194"/>
                 <_FieldStyle id="276" val="1"/>
               </PropertyList>
@@ -370,7 +370,7 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="2">
-            <ExpSyntax val="HTTPCall({0,1},{0,2},{0,3},{0,4})"/>
+            <ExpSyntax val="HTTPCall({0,1},{0,2},Trim({0,3}),{0,4})"/>
             <ExpAttribute val="O"/>
           </Expression>
           <Expression id="3">

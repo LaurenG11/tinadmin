@@ -23,7 +23,7 @@
             <ParametersAttributes>
               <Attr MgAttr="N"/>
               <Attr MgAttr="N"/>
-              <Attr MgAttr="O"/>
+              <Attr MgAttr="A"/>
             </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
@@ -32,28 +32,10 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737181" _time="43142" date="02/05/2019" time="11:59:02"/>
+          <LastModified _date="737193" _time="44006" date="14/05/2019" time="12:13:26"/>
         </Header>
         <ItemIsn val="4"/>
         <Resource>
-          <IO id="1">
-            <Description val="file"/>
-            <IOExpression val="1"/>
-            <OpenPrintDialog val="N"/>
-            <PaperSize val="68"/>
-            <Format val="L"/>
-            <Media val="S"/>
-            <Access val="W"/>
-            <Orientation val="P"/>
-            <PrintPreview val="N"/>
-            <PDF val="N"/>
-            <PrintingAllowed val="Y"/>
-            <ContentCopyingAllowed val="Y"/>
-            <ChangesAllowed val="Y"/>
-            <PageLayoutAllowed val="Y"/>
-            <Vis2LogTranslation val="N"/>
-            <FlipLines val="N"/>
-          </IO>
           <Columns>
             <Column id="1" name="inVarIndexFrom">
               <PropertyList model="FIELD">
@@ -77,20 +59,19 @@
             </Column>
             <Column id="3" name="obJson">
               <PropertyList model="FIELD">
-                <Model attr_obj="FIELD_BLOB" id="1"/>
-                <StoredAs id="173" val="34"/>
-                <Size id="174" val="28"/>
-                <Definition id="175" val="1"/>
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="5000"/>
+                <Size id="174" val="5000"/>
+                <_Flip id="194"/>
                 <_FieldStyle id="276" val="1"/>
-                <Content id="434" val="2"/>
               </PropertyList>
             </Column>
             <Column id="4" name="aJsonString">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="8000"/>
+                <Picture id="157" valUnicode="5000"/>
                 <StoredAs id="173" val="1"/>
-                <Size id="174" val="8000"/>
+                <Size id="174" val="5000"/>
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
@@ -277,14 +258,8 @@
             </PropertyList>
           </FormEntry>
         </TaskForms>
-        <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="'C:\Users\admin-tin-magic\json.txt'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-        </Expressions>
         <Task MainProgram="N">
-          <Header Description="fileOutput" ISN_2="1" LastIsn="2" id="817">
+          <Header Description="output" ISN_2="1" LastIsn="2" id="817">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -297,20 +272,11 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="737179" _time="64187" date="30/04/2019" time="17:49:47"/>
+            <LastModified _date="737193" _time="43337" date="14/05/2019" time="12:02:17"/>
           </Header>
           <ItemIsn val="5"/>
           <Resource>
             <Columns>
-              <Column id="4" name="jsonString">
-                <PropertyList model="FIELD">
-                  <Model attr_obj="FIELD_ALPHA" id="1"/>
-                  <Picture id="157" valUnicode="5000"/>
-                  <StoredAs id="173" val="1"/>
-                  <Size id="174" val="5000"/>
-                  <_Flip id="194"/>
-                </PropertyList>
-              </Column>
               <Column id="5" name="nRunningVarindex">
                 <PropertyList model="FIELD">
                   <Model attr_obj="FIELD_NUMERIC" id="1"/>
@@ -401,18 +367,6 @@
                   </DATAVIEW_SRC>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="4" FlowIsn="8" id="4">
-                    <Column val="4"/>
-                    <Type val="V"/>
-                    <ExposedToRoute val="N"/>
-                    <IsParameter val="N"/>
-                    <DIFF_UPDATE val="T"/>
-                    <Condition val="Y"/>
-                    <Modifier val="S"/>
-                    <Direction val="C"/>
-                  </Select>
-                </LogicLine>
-                <LogicLine>
                   <Select FieldID="5" FlowIsn="13" id="5">
                     <Column val="5"/>
                     <Type val="V"/>
@@ -440,17 +394,6 @@
               <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
-                  <Update FlowIsn="19">
-                    <FieldID val="4"/>
-                    <WithValue val="15"/>
-                    <Incremental val="N"/>
-                    <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </Update>
-                </LogicLine>
-                <LogicLine>
                   <Update FlowIsn="52">
                     <Parent val="2"/>
                     <FieldID val="4"/>
@@ -461,22 +404,6 @@
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </Update>
-                </LogicLine>
-                <LogicLine>
-                  <FormIO FlowIsn="28">
-                    <OperationType val="O"/>
-                    <Page val="A"/>
-                    <IODeviceInfo>
-                      <IoDeviceParent val="2"/>
-                      <IoDeviceIndex val="1"/>
-                    </IODeviceInfo>
-                    <FormEntryInfo>
-                      <FormEntryIndex val="2"/>
-                    </FormEntryInfo>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </FormIO>
                 </LogicLine>
                 <LogicLine>
                   <Remark FlowIsn="31">
@@ -503,17 +430,6 @@
                   </Update>
                 </LogicLine>
                 <LogicLine>
-                  <Update FlowIsn="11">
-                    <FieldID val="4"/>
-                    <WithValue val="2"/>
-                    <Incremental val="N"/>
-                    <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </Update>
-                </LogicLine>
-                <LogicLine>
                   <Update FlowIsn="56">
                     <Parent val="2"/>
                     <FieldID val="4"/>
@@ -526,56 +442,6 @@
                   </Update>
                 </LogicLine>
                 <LogicLine>
-                  <Remark FlowIsn="54">
-                    <Type val="2"/>
-                    <Text val=" "/>
-                  </Remark>
-                </LogicLine>
-                <LogicLine>
-                  <Update FlowIsn="40">
-                    <FieldID val="4"/>
-                    <WithValue val="8"/>
-                    <Incremental val="N"/>
-                    <ForcedUpdate val="Y"/>
-                    <Condition Exp="9"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </Update>
-                </LogicLine>
-                <LogicLine>
-                  <Remark FlowIsn="55">
-                    <Type val="2"/>
-                    <Text val=" "/>
-                  </Remark>
-                </LogicLine>
-                <LogicLine>
-                  <Update FlowIsn="46">
-                    <FieldID val="4"/>
-                    <WithValue val="10"/>
-                    <Incremental val="N"/>
-                    <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </Update>
-                </LogicLine>
-                <LogicLine>
-                  <FormIO FlowIsn="27">
-                    <OperationType val="O"/>
-                    <Page val="A"/>
-                    <IODeviceInfo>
-                      <IoDeviceParent val="2"/>
-                      <IoDeviceIndex val="1"/>
-                    </IODeviceInfo>
-                    <FormEntryInfo>
-                      <FormEntryIndex val="2"/>
-                    </FormEntryInfo>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </FormIO>
-                </LogicLine>
-                <LogicLine>
                   <END_BLK FlowIsn="7"/>
                 </LogicLine>
                 <LogicLine>
@@ -583,17 +449,6 @@
                     <Type val="2"/>
                     <Text val=" "/>
                   </Remark>
-                </LogicLine>
-                <LogicLine>
-                  <Update FlowIsn="20">
-                    <FieldID val="4"/>
-                    <WithValue val="6"/>
-                    <Incremental val="N"/>
-                    <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </Update>
                 </LogicLine>
                 <LogicLine>
                   <Update FlowIsn="57">
@@ -620,22 +475,6 @@
                   </Update>
                 </LogicLine>
                 <LogicLine>
-                  <FormIO FlowIsn="30">
-                    <OperationType val="O"/>
-                    <Page val="A"/>
-                    <IODeviceInfo>
-                      <IoDeviceParent val="2"/>
-                      <IoDeviceIndex val="1"/>
-                    </IODeviceInfo>
-                    <FormEntryInfo>
-                      <FormEntryIndex val="2"/>
-                    </FormEntryInfo>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </FormIO>
-                </LogicLine>
-                <LogicLine>
                   <Remark FlowIsn="71">
                     <Type val="2"/>
                     <Text val=" "/>
@@ -655,36 +494,26 @@
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
+            <LogicUnit id="4" propagate="78">
+              <Level val="T"/>
+              <Type val="S"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <Expanded val="1"/>
+            </LogicUnit>
           </TaskLogic>
           <TaskForms>
             <FormEntry id="1">
               <PropertyList model="FORM_GUI0">
                 <_Comment id="218"/>
-                <FormName id="311" valUnicode="fileOutput"/>
-              </PropertyList>
-            </FormEntry>
-          </TaskForms>
-          <TaskForms>
-            <FormEntry CLSS="1" _last_isn="4" _last_test_id="4" id="2">
-              <PropertyList model="FORM_GUI1">
-                <Width id="23" val="28000"/>
-                <Height id="24" val="8"/>
-                <Font id="50" val="1"/>
-                <_Comment id="218"/>
                 <FormName id="311" valUnicode="output"/>
               </PropertyList>
-              <Control _test_id="3" id="3">
-                <PropertyList model="CTRL_GUI1_EDIT">
-                  <Model ID="MODEL_GUI_NI" id="1">
-                    <Var FieldID="4"/>
-                  </Model>
-                  <X id="21" val="2"/>
-                  <Width id="23" val="2667"/>
-                  <Height id="24" val="8"/>
-                  <Data FieldID="4" id="43"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
             </FormEntry>
           </TaskForms>
           <Expressions>
@@ -692,45 +521,21 @@
               <ExpSyntax val="LoopCounter()&lt;=({2,2}-{2,1}+1)"/>
               <ExpAttribute val="B"/>
             </Expression>
-            <Expression id="10">
-              <ExpSyntax val="RepStr({0,4},'%','.')"/>
-              <ExpAttribute val="A"/>
-            </Expression>
             <Expression id="13">
               <ExpSyntax val="Left(Trim({2,4}), Len(Trim({2,4}))-3)"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="8">
-              <ExpSyntax val="Left(Trim({0,4}), Len(Trim({0,4}))-1)"/>
               <ExpAttribute val="A"/>
             </Expression>
             <Expression id="12">
               <ExpSyntax val="Trim({2,4})&amp;'&quot;'&amp;StrToken(VarName({0,5}),2,'.')&amp;'&quot;:&quot;'&amp;Trim(VarCurrN(StrToken(VarName({0,5}),2,'.')))&amp;'&quot;,'&amp;ASCIIChr(13)&amp;ASCIIChr(10)"/>
               <ExpAttribute val="A"/>
             </Expression>
-            <Expression id="2">
-              <ExpSyntax val="'&quot;'&amp;StrToken(VarName({0,5}),2,'.')&amp;'&quot;:&quot;'&amp;Trim(VarCurrN(StrToken(VarName({0,5}),2,'.')))&amp;'&quot;,'"/>
-              <ExpAttribute val="A"/>
-            </Expression>
             <Expression id="7">
               <ExpSyntax val="{2,1}+LoopCounter()-1"/>
               <ExpAttribute val="N"/>
             </Expression>
-            <Expression id="15">
-              <ExpSyntax val="'{'"/>
-              <ExpAttribute val="A"/>
-            </Expression>
             <Expression id="5">
               <ExpSyntax val="'{'&amp;ASCIIChr(13)&amp;ASCIIChr(10)"/>
               <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="6">
-              <ExpSyntax val="'}'"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="9">
-              <ExpSyntax val="LoopCounter()= {2,2}-{2,1}+1"/>
-              <ExpAttribute val="B"/>
             </Expression>
             <Expression id="11">
               <ExpSyntax val="RepStr(Trim({2,4}),'%','.')&amp;ASCIIChr(13)&amp;ASCIIChr(10)&amp;'}'"/>

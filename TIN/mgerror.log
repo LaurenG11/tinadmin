@@ -1678,3 +1678,175 @@ Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN"
 "Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
  <-1> 09/05/2019 14:16:34.339     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
 "Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 11/05/2019 09:13:29.766     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 11/05/2019 09:13:29.813     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 11/05/2019 09:13:29.815     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 12/05/2019 12:39:30.640     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 12/05/2019 12:39:30.667     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 12/05/2019 12:39:30.668     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 08:43:07.492     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 08:43:07.518     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 08:43:07.521     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <466864942378020992> 13/05/2019 08:49:03.347     [Error  ] - Initial Task mode not allowed, Program: "mainRoute.eventListing.buyTicket".
+ <263001138358760032> 13/05/2019 08:50:02.049     [Error  ] - Unexpected error, data source:, Program: "mainRoute.eventListing.buyTicket".
+ <263001138358760032> 13/05/2019 08:50:02.051     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing.buyTicket".
+ <263001138358760032> 13/05/2019 08:50:02.055     [Error  ] - EndTaskRequest(): Unexpected error, data source: : buyTicket Failed to create sort/temporary data source : buyTicket  : "mainRoute.eventListing" ("TIN")  (msgid "16"), Program: "Main Program".
+ <-1> 13/05/2019 08:57:15.869     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 08:57:15.872     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 08:57:15.875     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <292523028255414016> 13/05/2019 08:58:37.998     [Error  ] - Unexpected error, data source:, Program: "mainRoute.eventListing.buyTicket".
+ <292523028255414016> 13/05/2019 08:58:38.000     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing.buyTicket".
+ <292523028255414016> 13/05/2019 08:58:38.003     [Error  ] - EndTaskRequest(): Unexpected error, data source: : buyTicket Failed to create sort/temporary data source : buyTicket  : "mainRoute.eventListing" ("TIN")  (msgid "24"), Program: "Main Program".
+ <-1> 13/05/2019 09:04:28.466     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 09:04:28.469     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 09:04:28.470     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <172037918754797088> 13/05/2019 09:05:57.899     [Error  ] - Unexpected error, data source:, Program: "mainRoute.eventListing.buyTicket".
+ <172037918754797088> 13/05/2019 09:05:57.901     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing.buyTicket".
+ <172037918754797088> 13/05/2019 09:05:57.904     [Error  ] - EndTaskRequest(): Unexpected error, data source: : buyTicket Failed to create sort/temporary data source : buyTicket  : "mainRoute.eventListing" ("TIN")  (msgid "32"), Program: "Main Program".
+ <-1> 13/05/2019 09:17:24.519     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 09:17:24.523     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 09:17:24.525     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <159041424473288160> 13/05/2019 09:17:34.719     [Error  ] - Unexpected error, data source:, Program: "mainRoute.eventListing.buyTicket".
+ <159041424473288160> 13/05/2019 09:17:34.721     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing.buyTicket".
+ <159041424473288160> 13/05/2019 09:17:34.724     [Error  ] - EndTaskRequest(): Unexpected error, data source: : buyTicket Failed to create sort/temporary data source : buyTicket  : "mainRoute.eventListing" ("TIN")  (msgid "91"), Program: "Main Program".
+ <209743408972109440> 13/05/2019 09:18:26.864     [Error  ] - Unexpected error, data source:, Program: "mainRoute.eventListing.buyTicket".
+ <209743408972109440> 13/05/2019 09:18:26.866     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing.buyTicket".
+ <209743408972109440> 13/05/2019 09:18:26.868     [Error  ] - EndTaskRequest(): Unexpected error, data source: : buyTicket Failed to create sort/temporary data source : buyTicket  : "mainRoute.eventListing" ("TIN")  (msgid "99"), Program: "Main Program".
+ <487823258504844800> 13/05/2019 09:20:02.849     [Error  ] - Unexpected error, data source:, Program: "mainRoute.eventListing.buyTicket".
+ <487823258504844800> 13/05/2019 09:20:02.851     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing.buyTicket".
+ <487823258504844800> 13/05/2019 09:20:02.854     [Error  ] - EndTaskRequest(): Unexpected error, data source: : buyTicket Failed to create sort/temporary data source : buyTicket  : "mainRoute.eventListing" ("TIN")  (msgid "107"), Program: "Main Program".
+ <-1> 13/05/2019 09:56:11.522     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 09:56:11.550     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 09:56:11.552     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <39447124184352416> 13/05/2019 10:04:04.103     [Error  ] - Constraint failure, data source: TmpTickets, Program: "mainRoute.eventListing.buyTicket.addOrRemoveTicket".
+ <70321110396125872> 13/05/2019 10:05:20.266     [Error  ] - Constraint failure, data source: TmpTickets, Program: "mainRoute.eventListing.buyTicket.addOrRemoveTicket".
+ <472046836798255232> 13/05/2019 10:07:07.864     [Error  ] - Constraint failure, data source: TmpTickets, Program: "mainRoute.eventListing.buyTicket.addOrRemoveTicket".
+ <-1> 13/05/2019 10:17:57.008     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 10:17:57.039     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 10:17:57.041     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <562805925424987008> 13/05/2019 10:19:38.126     [Error  ] - Failed to open, data source: TmpTickets, Program: "mainRoute.eventListing.buyTicket".
+ <562805925424987008> 13/05/2019 10:19:38.137     [Error  ] - Failed to open, data source: TmpTickets, Program: "mainRoute.eventListing.buyTicket".
+ <562805925424987008> 13/05/2019 10:19:38.184     [Error  ] - EndTaskRequest(): Failed to open, data source: TmpTickets : buyTicket admin-tin-magic : Error converting data type varchar to numeric.Failed to open, data source: TmpTickets : buyTicket admin-tin-magic : Error converting data type varchar to numeric. : "mainRoute.eventListing" ("TIN")  (msgid "281"), Program: "Main Program".
+ <201612300755014944> 13/05/2019 10:20:29.046     [Error  ] - Failed to open, data source: TmpTickets, Program: "mainRoute.eventListing.buyTicket".
+ <201612300755014944> 13/05/2019 10:20:29.054     [Error  ] - Failed to open, data source: TmpTickets, Program: "mainRoute.eventListing.buyTicket".
+ <201612300755014944> 13/05/2019 10:20:29.108     [Error  ] - EndTaskRequest(): Failed to open, data source: TmpTickets : buyTicket admin-tin-magic : Invalid column name 'CtxName'.Failed to open, data source: TmpTickets : buyTicket admin-tin-magic : Invalid column name 'CtxName'. : "mainRoute.eventListing" ("TIN")  (msgid "289"), Program: "Main Program".
+ <91204620380372256> 13/05/2019 11:49:01.270     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.eventListing".
+ <91204620380372256> 13/05/2019 11:49:01.272     [Error  ] - Communication link failure, Program: "mainRoute.eventListing".
+ <91204620380372256> 13/05/2019 11:49:01.275     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.eventListing.buyTicket".
+ <91204620380372256> 13/05/2019 11:49:01.277     [Error  ] - Communication link failure, Program: "mainRoute.eventListing.buyTicket".
+ <91204620380372256> 13/05/2019 11:49:01.280     [Error  ] - EndTaskRequest(): Invalid SQL command, database: tinAzureSQLDb : eventListing Communication link failureInvalid SQL command, database: tinAzureSQLDb : buyTicket Communication link failure : "mainRoute.eventListing.buyTicket" ("TIN")  (msgid "312"), Program: "Main Program".
+ <313661143613118592> 13/05/2019 12:00:13.248     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <313661143613118592> 13/05/2019 12:00:13.249     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <313661143613118592> 13/05/2019 12:00:13.257     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <313661143613118592> 13/05/2019 12:00:13.259     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <313661143613118592> 13/05/2019 12:00:16.186     [Error  ] - Failed to open, data source:, Program: "mainRoute.eventListing".
+ <313661143613118592> 13/05/2019 12:00:16.188     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
+ <313661143613118592> 13/05/2019 12:00:16.372     [Error  ] - EndTaskRequest(): Failed to open, data source: : eventListing  : TCP Provider: An existing connection was forcibly closed by the remote host.
+Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN")  (msgid "316"), Program: "Main Program".
+ <156263076403989216> 13/05/2019 13:17:52.432     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <156263076403989216> 13/05/2019 13:17:52.434     [Error  ] -  : TCP Provider: An existing connection was forcibly closed by the remote host.
+, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <156263076403989216> 13/05/2019 13:17:52.442     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <156263076403989216> 13/05/2019 13:17:52.443     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <156263076403989216> 13/05/2019 13:17:53.158     [Error  ] - Failed to open, data source:, Program: "mainRoute.eventListing".
+ <156263076403989216> 13/05/2019 13:17:53.160     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
+ <156263076403989216> 13/05/2019 13:17:53.292     [Error  ] - EndTaskRequest(): Failed to open, data source: : eventListing  : TCP Provider: An existing connection was forcibly closed by the remote host.
+Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN")  (msgid "508"), Program: "Main Program".
+ <-1> 13/05/2019 14:24:16.039     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 14:24:16.041     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 14:24:16.043     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <556466745876267136> 13/05/2019 15:26:32.587     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.eventListing".
+ <556466745876267136> 13/05/2019 15:26:32.592     [Error  ] - Communication link failure, Program: "mainRoute.eventListing".
+ <400146634804340544> 13/05/2019 15:26:57.187     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <400146634804340544> 13/05/2019 15:26:57.189     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <400146634804340544> 13/05/2019 15:26:57.199     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <400146634804340544> 13/05/2019 15:26:57.200     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <400146634804340544> 13/05/2019 15:26:58.274     [Error  ] - Failed to open, data source:, Program: "mainRoute.eventListing".
+ <400146634804340544> 13/05/2019 15:26:58.276     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
+ <400146634804340544> 13/05/2019 15:26:58.424     [Error  ] - EndTaskRequest(): Failed to open, data source: : eventListing  : TCP Provider: An existing connection was forcibly closed by the remote host.
+Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN")  (msgid "915"), Program: "Main Program".
+ <-1> 13/05/2019 16:39:21.307     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 16:39:21.333     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 13/05/2019 16:39:21.338     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <306791935700463232> 13/05/2019 17:37:37.276     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.eventListing".
+ <306791935700463232> 13/05/2019 17:37:37.297     [Error  ] - Communication link failure, Program: "mainRoute.eventListing".
+ <306791935700463232> 13/05/2019 17:37:37.299     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.eventListing.buyTicket".
+ <306791935700463232> 13/05/2019 17:37:37.301     [Error  ] - Communication link failure, Program: "mainRoute.eventListing.buyTicket".
+ <306791935700463232> 13/05/2019 17:37:37.303     [Error  ] - EndTaskRequest(): Invalid SQL command, database: tinAzureSQLDb : eventListing Communication link failureInvalid SQL command, database: tinAzureSQLDb : buyTicket Communication link failure : "mainRoute.eventListing.buyTicket" ("TIN")  (msgid "1299"), Program: "Main Program".
+ <375294284345939136> 13/05/2019 17:37:47.259     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <375294284345939136> 13/05/2019 17:37:47.261     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <375294284345939136> 13/05/2019 17:37:47.271     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <375294284345939136> 13/05/2019 17:37:47.272     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <375294284345939136> 13/05/2019 17:37:48.404     [Error  ] - Failed to open, data source:, Program: "mainRoute.eventListing".
+ <375294284345939136> 13/05/2019 17:37:48.406     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
+ <375294284345939136> 13/05/2019 17:37:48.487     [Error  ] - EndTaskRequest(): Failed to open, data source: : eventListing  : TCP Provider: An existing connection was forcibly closed by the remote host.
+Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN")  (msgid "1303"), Program: "Main Program".
+ <531232150167140416> 14/05/2019 10:34:38.065     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.eventListing".
+ <531232150167140416> 14/05/2019 10:34:38.067     [Error  ] - Communication link failure, Program: "mainRoute.eventListing".
+ <531232150167140416> 14/05/2019 10:34:38.071     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.eventListing.buyTicket".
+ <531232150167140416> 14/05/2019 10:34:38.073     [Error  ] - Communication link failure, Program: "mainRoute.eventListing.buyTicket".
+ <531232150167140416> 14/05/2019 10:34:38.076     [Error  ] - EndTaskRequest(): Invalid SQL command, database: tinAzureSQLDb : eventListing Communication link failureInvalid SQL command, database: tinAzureSQLDb : buyTicket Communication link failure : "mainRoute.eventListing.buyTicket" ("TIN")  (msgid "1398"), Program: "Main Program".
+ <2591537528536154> 14/05/2019 11:01:19.692     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <2591537528536154> 14/05/2019 11:01:19.694     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <2591537528536154> 14/05/2019 11:01:19.702     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <2591537528536154> 14/05/2019 11:01:19.704     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <2591537528536154> 14/05/2019 11:01:50.275     [Error  ] - Failed to open, data source:, Program: "mainRoute.eventListing".
+ <2591537528536154> 14/05/2019 11:01:50.278     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.eventListing".
+ <2591537528536154> 14/05/2019 11:01:50.386     [Error  ] - EndTaskRequest(): Failed to open, data source: : eventListing  : TCP Provider: An existing connection was forcibly closed by the remote host.
+Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN")  (msgid "1402"), Program: "Main Program".
+ <-1> 14/05/2019 11:09:53.325     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 14/05/2019 11:09:53.329     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 14/05/2019 11:09:53.486     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 14/05/2019 11:48:20.102     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 14/05/2019 11:48:20.130     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 14/05/2019 11:48:20.132     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 14/05/2019 12:07:54.507     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 14/05/2019 12:07:54.536     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <-1> 14/05/2019 12:07:54.538     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
+"Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <119142535911520736> 14/05/2019 12:24:32.482     [Error  ] - Non-modifiable control, Program: "mainRoute.eventListing.buyTicket.createPass.jsonToParams".
+ <487351642084315264> 14/05/2019 12:27:12.362     [Error  ] - Non-modifiable control, Program: "mainRoute.eventListing.buyTicket.createPass.jsonToParams".
+ <10906711809179210> 14/05/2019 12:41:03.238     [Error  ] - Update operation failed, data source: eo, Program: "mainRoute.eventListing.buyTicket.createPass.Insert/Update EO.Insert Into EO".
+ <10906711809179210> 14/05/2019 12:41:04.677     [Error  ] - Update operation failed, data source: eo, Program: "mainRoute.eventListing.buyTicket.createPass.Insert/Update EO.Insert Into EO".
+ <10906711809179210> 14/05/2019 12:41:06.176     [Error  ] - Update operation failed, data source: eo, Program: "mainRoute.eventListing.buyTicket.createPass.Insert/Update EO.Insert Into EO".
+ <10906711809179210> 14/05/2019 12:41:07.739     [Error  ] - Update operation failed, data source: eo, Program: "mainRoute.eventListing.buyTicket.createPass.Insert/Update EO.Insert Into EO".
+ <395052786014273088> 14/05/2019 12:49:50.397     [Error  ] - Update operation failed, data source: eo, Program: "mainRoute.eventListing.buyTicket.createPass.Insert/Update EO.Insert Into EO".
+ <395052786014273088> 14/05/2019 12:49:51.830     [Error  ] - Update operation failed, data source: eo, Program: "mainRoute.eventListing.buyTicket.createPass.Insert/Update EO.Insert Into EO".

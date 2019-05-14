@@ -31,7 +31,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737188" _time="42970" date="09/05/2019" time="11:56:10"/>
+          <LastModified _date="737193" _time="49392" date="14/05/2019" time="13:43:12"/>
         </Header>
         <ItemIsn val="4"/>
         <Resource>
@@ -39,9 +39,9 @@
             <Column id="1" name="iaPassCreatorTemplateUID">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="100"/>
+                <Picture id="157" valUnicode="200"/>
                 <StoredAs id="173" val="1"/>
-                <Size id="174" val="100"/>
+                <Size id="174" val="200"/>
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
@@ -208,6 +208,14 @@
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="5" FlowIsn="10" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
               </LogicLine>
               <LogicLine>
                 <Evaluate FlowIsn="9">

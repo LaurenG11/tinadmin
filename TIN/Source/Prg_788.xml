@@ -19,9 +19,8 @@
           <SQL val="Y"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <TSK_PARAMS val="3"/>
+            <TSK_PARAMS val="2"/>
             <ParametersAttributes>
-              <Attr MgAttr="N"/>
               <Attr MgAttr="N"/>
               <Attr MgAttr="B"/>
             </ParametersAttributes>
@@ -32,20 +31,12 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737164" _time="57727" date="15/04/2019" time="16:02:07"/>
+          <LastModified _date="737193" _time="50043" date="14/05/2019" time="13:54:03"/>
         </Header>
         <ItemIsn val="4"/>
         <Resource>
           <Columns>
             <Column id="1" name="inEoIsn">
-              <PropertyList model="FIELD">
-                <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="444"/>
-                <StoredAs id="173" val="4"/>
-                <Size id="174" val="4"/>
-                <Definition id="175" val="2"/>
-              </PropertyList>
-            </Column>
-            <Column id="2" name="inLocationIsn">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="444"/>
                 <StoredAs id="173" val="4"/>
@@ -134,11 +125,11 @@
           </BOX>
         </Information>
         <SQL_FORM DB="tinAzureSQLDb" RESTAB="Memory">
-          <SQL_STMT_U val="select count(*) from eo where eo_type = 2284 and isn in (select eo2_isn from relations where (eo1_isn = :1 and relation_type = 2717) or (eo1_isn =:2 and relation_type = 2716))"/>
+          <SQL_STMT_U val="select count(*) from eo where eo_type = 2284 and isn in (select eo2_isn from relations where eo1_isn = :1)"/>
           <INARG>
             <Arguments>
               <Argument Variable="1"/>
-              <Argument Variable="2"/>
+              <Argument/>
             </Arguments>
           </INARG>
           <OUTARG>
@@ -170,19 +161,6 @@
               <LogicLine>
                 <Select FieldID="1" FlowIsn="3" id="1">
                   <Column val="1"/>
-                  <Type val="V"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="Y"/>
-                  <DIFF_UPDATE val="T"/>
-                  <PartOfDataview val="Y"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
-                <Select FieldID="2" FlowIsn="4" id="2">
-                  <Column val="2"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>

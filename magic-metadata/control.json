@@ -1,21 +1,25 @@
 {
-	"style":	null,
+	"style":	{
+		"font":	1
+	},
 	"props":	{
-		"id":	"bPaypalBlob",
+		"id":	"lblClickHere",
 		"visible":	{
 			"value":	null,
 			"has_exp":	true
 		},
-		"mgformat":	"mgFormat",
-		"attribute":	"A"
+		"text":	{
+			"value":	null,
+			"has_exp":	true
+		}
 	},
 	"coordinates":	{
-		"x":	306,
-		"y":	381,
-		"width":	50,
-		"height":	18
+		"x":	92,
+		"y":	179,
+		"width":	396,
+		"height":	16
 	},
 	"hint":	null,
-	"controlType":	"T",
+	"controlType":	"L",
 	"children":	null
 }
