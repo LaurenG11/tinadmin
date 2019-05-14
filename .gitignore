@@ -2,6 +2,8 @@
 
 # Magic lock file
 /TIN/TIN.lock
+/TIN/sqlite.SQLite
+/TIN/mgerror.log
 # compiled output
 /dist
 /tmp

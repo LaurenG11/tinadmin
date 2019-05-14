@@ -910,3 +910,10 @@ Failed to create sort/temporary data source : eventListing  : "mainRoute" ("TIN"
 "Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
  <-1> 02/05/2019 08:27:56.714     [Error  ] - Failed to Load Assembly : "C:\Windows\assembly\GAC_MSIL\Microsoft.Web.Iis.Rewrite\1.0.0.0__31bf3856ad364e35\Microsoft.Web.Iis.Rewrite.dll"
 "Could not load file or assembly 'Microsoft.Web.Iis.Rewrite.dll' or one of its dependencies. The system cannot find the path specified."
+ <123091177992162608> 14/05/2019 16:45:10.116     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <123091177992162608> 14/05/2019 16:45:10.118     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.delete".
+ <123091177992162608> 14/05/2019 16:45:10.126     [Error  ] - Invalid SQL command, database: tinAzureSQLDb, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <123091177992162608> 14/05/2019 16:45:10.128     [Error  ] - Communication link failure, Program: "mainRoute.PredictHQpayloadToDb.insert".
+ <123091177992162608> 14/05/2019 16:45:10.817     [Error  ] - Failed to open, data source:, Program: "mainRoute.viewMyEvents".
+ <123091177992162608> 14/05/2019 16:45:10.819     [Error  ] - Failed to create sort/temporary data source, Program: "mainRoute.viewMyEvents".
+ <123091177992162608> 14/05/2019 16:45:10.975     [Error  ] - EndTaskRequest(): Failed to open, data source: : viewMyEvents Communication link failureFailed to create sort/temporary data source : viewMyEvents  : "mainRoute" ("TIN")  (msgid "2155"), Program: "Main Program".
