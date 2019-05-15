@@ -27,18 +27,16 @@ declare let paypal: any;
     paypalSuccess: boolean = false;
     showButton: boolean = true;
   
-    
-    finalAmount: number;
-    currency: string;
-    paypalDetails: string = 'blah';
+
     paypalBlob: string;
     
     
     paypalConfig = {
-      env: 'sandbox',
+      env: 'production',
       client: {
         sandbox: 'AUvLtONjzey_L6OzINfysqo8IcYsswv6Eb8adnu1kFKmzndmOJyYUoKOqUDCTSa4EIPBW9zq1qFxQ9RE',
-        production: '<your-production-key here>'
+        production: 'ATCVagPWdf5p--xP9SV-ErFihFUBZ9JgV9IblV87iIYiHTFKJbP1PVC108AwJj6rTmz4WvLIeFcV3HG_'
+      
       },
       commit: true,
       payment: (data, actions) => {
@@ -46,7 +44,10 @@ declare let paypal: any;
         return actions.payment.create({
           payment: {
             transactions: [
-              { amount: { total: this.finalAmount, currency: this.currency } }
+              { amount: { total: this.screenFormGroup.controls.nTotalAmount.value
+                        , currency: this.screenFormGroup.controls.aPaypalCurrencyCode.value
+                        } 
+              }
             ]
           },
           experience: {
@@ -57,19 +58,21 @@ declare let paypal: any;
         });
       },
       onAuthorize: (data, actions) => {
-        // this.paypalSuccess = true;
+        
         actions.order.get().then(details => {
-          //this.paypalDetails = details;
+          
 
         }
       );
       actions.payment.execute().then(details => {
         // Show a confirmation message to the buyer
         // window.alert('Thank you for your purchase!');
-        this.paypalDetails = details.state;
-        this.paypalBlob = details;
+       
+        //hard-code for now while sandox is down
+        this.screenFormGroup.patchValue({aPaypalDetails:details.state})
+        //this.screenFormGroup.patchValue({aPaypalDetails:'approved'})
         this.showButton = false;
-        if (this.paypalDetails == 'approved')
+        if (this.screenFormGroup.controls.aPaypalDetails.value == 'approved')
         {
           this.paypalSuccess = true;
           
@@ -92,8 +95,8 @@ declare let paypal: any;
       },
       onError: function(data, actions) {
           return actions.order.capture().then(function(details) {
-          this.paypalDetails = details.error;
-          details.error;
+          //this.screenFormGroup.controls.aPaypalDetails.setValue(details.error);
+          //details.error;
         })
       }
 
@@ -119,7 +122,7 @@ declare let paypal: any;
     };
 
     isApproved () {
-      if (this.paypalDetails == 'approved')
+      if (this.screenFormGroup.controls.aPaypalDetails.value == 'approved')
       {
         return true;
       }
@@ -129,7 +132,7 @@ declare let paypal: any;
       }
     };
     getMessageVisible() {
-      if (this.paypalDetails == '')
+      if (this.screenFormGroup.controls.aPaypalDetails.value == '')
     {
       return false;  
     }
