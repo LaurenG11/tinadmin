@@ -19,7 +19,7 @@
 			"props":	{
 				"id":	"btnEvents",
 				"format":	"Events",
-				"common_line_id":	"line4"
+				"common_line_id":	"line3"
 			},
 			"coordinates":	{
 				"x":	8,
@@ -32,51 +32,14 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"font":	1
-			},
-			"props":	{
-				"id":	"Label4",
-				"text":	"eoIsn",
-				"common_line_id":	"line4"
-			},
-			"coordinates":	{
-				"x":	57,
-				"y":	7,
-				"width":	28,
-				"height":	14
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"eoIsn",
-				"mgformat":	"mgFormat",
-				"attribute":	"N",
-				"common_line_id":	"line4"
-			},
-			"coordinates":	{
-				"x":	91,
-				"y":	6,
-				"width":	55,
-				"height":	18
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
 			"style":	null,
 			"props":	{
 				"id":	"btnListing",
 				"format":	"Listing",
-				"common_line_id":	"line4"
+				"common_line_id":	"line3"
 			},
 			"coordinates":	{
-				"x":	150,
+				"x":	51,
 				"y":	4,
 				"width":	39,
 				"height":	22
@@ -86,114 +49,37 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"font":	1
-			},
+			"style":	null,
 			"props":	{
-				"id":	"Label7",
-				"text":	"inLongitude",
-				"common_line_id":	"line4"
+				"id":	"btnProximity",
+				"format":	"Beacon",
+				"common_line_id":	"line3"
 			},
 			"coordinates":	{
-				"x":	193,
-				"y":	7,
+				"x":	101,
+				"y":	4,
 				"width":	56,
-				"height":	14
+				"height":	22
 			},
 			"hint":	null,
-			"controlType":	"L",
+			"controlType":	"B",
 			"children":	null
 		},
 		{
 			"style":	null,
 			"props":	{
-				"id":	"inLongitude",
-				"mgformat":	"mgFormat",
-				"attribute":	"N",
-				"common_line_id":	"line4"
+				"id":	"routeScenario",
+				"format":	"Scenario",
+				"common_line_id":	"line3"
 			},
 			"coordinates":	{
-				"x":	254,
-				"y":	8,
-				"width":	72,
-				"height":	18
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	{
-				"font":	1
-			},
-			"props":	{
-				"id":	"Label9",
-				"text":	"inLatitude",
-				"common_line_id":	"line4"
-			},
-			"coordinates":	{
-				"x":	331,
-				"y":	10,
-				"width":	47,
-				"height":	14
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"inLatitude",
-				"mgformat":	"mgFormat",
-				"attribute":	"N",
-				"common_line_id":	"line4"
-			},
-			"coordinates":	{
-				"x":	383,
-				"y":	10,
-				"width":	72,
-				"height":	18
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	{
-				"font":	1
-			},
-			"props":	{
-				"id":	"Label11",
-				"text":	"inOffset",
-				"common_line_id":	"line4"
-			},
-			"coordinates":	{
-				"x":	460,
-				"y":	10,
-				"width":	36,
-				"height":	14
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"inOffset",
-				"mgformat":	"mgFormat",
-				"attribute":	"N",
-				"common_line_id":	"line4"
-			},
-			"coordinates":	{
-				"x":	501,
-				"y":	10,
+				"x":	161,
+				"y":	3,
 				"width":	60,
-				"height":	18
+				"height":	22
 			},
 			"hint":	null,
-			"controlType":	"T",
+			"controlType":	"B",
 			"children":	null
 		},
 		{

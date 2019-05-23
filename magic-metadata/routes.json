@@ -13,6 +13,18 @@
 				"ModuleName":	"",
 				"OutletName":	"",
 				"children":	null
+			},
+			{
+				"RouteName":	"Proximity/:inLocationIsn",
+				"ModuleName":	"",
+				"OutletName":	"",
+				"children":	null
+			},
+			{
+				"RouteName":	"Scenario/:inEntityIsn",
+				"ModuleName":	"",
+				"OutletName":	"",
+				"children":	null
 			}
 		]
 	}

@@ -2,8 +2,6 @@
 
 # Magic lock file
 /TIN/TIN.lock
-/TIN
-/tinadmingitSAFE
 # compiled output
 /dist
 /tmp
@@ -41,4 +39,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-lauren_test.txt

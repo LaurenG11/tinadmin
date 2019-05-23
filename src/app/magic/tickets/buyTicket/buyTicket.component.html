@@ -296,7 +296,6 @@
                 <div style="display: flex; flex-direction: row">
                      
                
-                <p [style.visibility] ="getMessageVisible()">Transaction {{aPaypalDetails}}! Please click link below to retrieve wallet pass/es</p>
                     
                 
                 <ng-container *ngIf = "showButton">
@@ -334,21 +333,26 @@
                         <div>
                             <input
                                 matInput
-                                magic="aPaypalDetails"                               
+                                magic="aPaypalDetails"                             
                                 formControlName="aPaypalDetails"
                                 mgFormat
                             >
                             <mgError magic="aPaypalDetails"> </mgError>
                         </div>
                     </mat-form-field>
-
-                    
-                    
-                    
-                     
- 
-
-    
+                    <mat-form-field [style.visibility]="mg.getVisible('lPaypalSuccess')">
+                        <div>
+                            <input
+                                matInput
+                                magic="lPaypalSuccess"
+                                [(ngModel)]="paypalSuccess"
+                                formControlName="lPaypalSuccess"
+                                mgFormat
+                            >
+                            <mgError magic="lPaypalSuccess"> </mgError>
+                        </div>
+                    </mat-form-field>
+       
                 </div>
             
 

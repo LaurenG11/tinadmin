@@ -1,0 +1,135 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="createModifyBeacon"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblScenarioName"
+                class="lable_overflow mgFont1"
+            >
+                Scenario Name *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        magic="aBeaconName"
+                        formControlName="aBeaconName"
+                        mgFormat
+                    >
+                    <mgError magic="aBeaconName"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblTrigger"
+                class="lable_overflow mgFont1"
+            >
+                Trigger *</label>
+            <div>
+                <mat-form-field>
+                    <mat-select
+                        magic="cmbTriggerType"
+                        formControlName="cmbTriggerType"
+                    >
+                        <mat-option
+                            *ngFor="let o of mg.getItemListValues('cmbTriggerType');"
+                            [value]="o.index"
+                        >
+                            {{o.displayValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblActivity"
+                class="lable_overflow mgFont1"
+            >
+                Activity *</label>
+            <div>
+                <mat-form-field>
+                    <mat-select
+                        magic="cmbActivityType"
+                        formControlName="cmbActivityType"
+                    >
+                        <mat-option
+                            *ngFor="let o of mg.getItemListValues('cmbActivityType');"
+                            [value]="o.index"
+                        >
+                            {{o.displayValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblURL"
+                class="lable_overflow mgFont1"
+            >
+                aURL</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        magic="aURL"
+                        formControlName="aURL"
+                        mgFormat
+                    >
+                    <mgError magic="aURL"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblTimeFrom"
+                class="lable_overflow mgFont1"
+            >
+                tTimeFrom</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        type='time'
+                        step=1
+                        magic="tTimeFrom"
+                        formControlName="tTimeFrom"
+                    >
+                    <mgError magic="tTimeFrom"> </mgError>
+                </div>
+            </mat-form-field><label
+                magic="lblTimeTo"
+                class="lable_overflow mgFont1"
+            >
+                tTimeTo</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        type='time'
+                        step=1
+                        magic="tTimeTo"
+                        formControlName="tTimeTo"
+                    >
+                    <mgError magic="tTimeTo"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                mat-raised-button
+                color="primary"
+                magic="btnCancel"
+            >
+                Cancel</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="btnSave"
+            >
+                Save</button>
+        </div>
+    </div>
+</div>

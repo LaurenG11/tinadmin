@@ -32,7 +32,7 @@ declare let paypal: any;
     
     
     paypalConfig = {
-      env: 'production',
+      env: 'sandbox',
       client: {
         sandbox: 'AUvLtONjzey_L6OzINfysqo8IcYsswv6Eb8adnu1kFKmzndmOJyYUoKOqUDCTSa4EIPBW9zq1qFxQ9RE',
         production: 'ATCVagPWdf5p--xP9SV-ErFihFUBZ9JgV9IblV87iIYiHTFKJbP1PVC108AwJj6rTmz4WvLIeFcV3HG_'

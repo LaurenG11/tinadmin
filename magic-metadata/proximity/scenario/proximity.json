@@ -1,0 +1,34 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"proximity",
+		"component_path":	"proximity/scenario/",
+		"component_uniquename":	"scenario_proximity"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	955,
+		"height":	546
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"proximitysubform",
+				"common_line_id":	"line11"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	11,
+				"width":	932,
+				"height":	518
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

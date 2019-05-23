@@ -1,25 +1,17 @@
 {
-	"style":	{
-		"font":	1
-	},
+	"style":	null,
 	"props":	{
-		"id":	"lblClickHere",
-		"visible":	{
-			"value":	null,
-			"has_exp":	true
-		},
-		"text":	{
-			"value":	null,
-			"has_exp":	true
-		}
+		"id":	"eventOrEntityName",
+		"mgformat":	"mgFormat",
+		"attribute":	"A"
 	},
 	"coordinates":	{
-		"x":	92,
-		"y":	179,
-		"width":	396,
-		"height":	16
+		"x":	311,
+		"y":	250,
+		"width":	100,
+		"height":	18
 	},
 	"hint":	null,
-	"controlType":	"L",
+	"controlType":	"T",
 	"children":	null
 }

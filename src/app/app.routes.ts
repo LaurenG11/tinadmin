@@ -17,6 +17,12 @@ export const routes: Routes = [{
 }, {
     path: 'EventListing/:inEoIsn/:inLongitude/:inLatitude/:inRange',
     component: RouterContainerMagicComponent,
+}, {
+    path: 'Proximity/:inLocationIsn',
+    component: RouterContainerMagicComponent,
+}, {
+    path: 'Scenario/:inEntityIsn',
+    component: RouterContainerMagicComponent,
 }, ];
 @NgModule({
     imports: [CommonModule,
