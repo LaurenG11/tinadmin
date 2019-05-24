@@ -26,6 +26,8 @@ declare let paypal: any;
     paypalLoad: boolean = true;
     paypalSuccess: boolean = false;
     showButton: boolean = true;
+    paypalDetails: string = '';
+    pass_id: string = '2620140a-ea68-4632-902d-fa2a856f0c70';
   
 
     paypalBlob: string;
@@ -65,16 +67,16 @@ declare let paypal: any;
         }
       );
       actions.payment.execute().then(details => {
-        // Show a confirmation message to the buyer
-        // window.alert('Thank you for your purchase!');
-       
-        //hard-code for now while sandox is down
+
+
         this.screenFormGroup.patchValue({aPaypalDetails:details.state})
-        //this.screenFormGroup.patchValue({aPaypalDetails:'approved'})
+        // this.paypalDetails = details.state;
+        
         this.showButton = false;
         if (this.screenFormGroup.controls.aPaypalDetails.value == 'approved')
         {
           this.paypalSuccess = true;
+        
           
         }
         else{
