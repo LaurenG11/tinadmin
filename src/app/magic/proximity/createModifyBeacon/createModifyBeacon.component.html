@@ -1,0 +1,91 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="createModifyBeacon"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblBeaconName"
+                class="lable_overflow mgFont1"
+            >
+                Beacon Name *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        magic="aBeaconName"
+                        formControlName="aBeaconName"
+                        mgFormat
+                    >
+                    <mgError magic="aBeaconName"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblBeaconUuid"
+                class="lable_overflow mgFont1"
+            >
+                UUID *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        magic="aBeaconUuid"
+                        formControlName="aBeaconUuid"
+                        mgFormat
+                    >
+                    <mgError magic="aBeaconUuid"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="lblMajor"
+                class="lable_overflow mgFont1"
+            >
+                Major *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        type='number'
+                        magic="nMajor"
+                        formControlName="nMajor"
+                        mgFormat
+                    >
+                    <mgError magic="nMajor"> </mgError>
+                </div>
+            </mat-form-field><label
+                magic="lblMinor"
+                class="lable_overflow mgFont1"
+            >
+                Minor *</label>
+            <mat-form-field>
+                <div><input
+                        matInput
+                        type='number'
+                        magic="nMinor"
+                        formControlName="nMinor"
+                        mgFormat
+                    >
+                    <mgError magic="nMinor"> </mgError>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                mat-raised-button
+                color="primary"
+                magic="btnCancel"
+            >
+                Cancel</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="btnSave"
+            >
+                Save</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+[
+	{
+		"module_name":	"",
+		"routesArray":	[
+			{
+				"RouteName":	"Events/:inEoIsn",
+				"ModuleName":	"",
+				"OutletName":	"",
+				"children":	null
+			},
+			{
+				"RouteName":	"EventListing/:inEoIsn/:inLongitude/:inLatitude/:inRange",
+				"ModuleName":	"",
+				"OutletName":	"",
+				"children":	null
+			},
+			{
+				"RouteName":	"Proximity/:inLocationIsn",
+				"ModuleName":	"",
+				"OutletName":	"",
+				"children":	null
+			},
+			{
+				"RouteName":	"Scenario/:inEntityIsn",
+				"ModuleName":	"",
+				"OutletName":	"",
+				"children":	null
+			}
+		]
+	}
+]

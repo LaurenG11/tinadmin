@@ -1,0 +1,17 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"eventOrEntityName",
+		"mgformat":	"mgFormat",
+		"attribute":	"A"
+	},
+	"coordinates":	{
+		"x":	311,
+		"y":	250,
+		"width":	100,
+		"height":	18
+	},
+	"hint":	null,
+	"controlType":	"T",
+	"children":	null
+}

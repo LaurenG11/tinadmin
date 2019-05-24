@@ -1,0 +1,148 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"test",
+		"component_path":	"tickets/test/",
+		"component_uniquename":	"test_test"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	384,
+		"height":	320
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	22,
+				"table_title_height":	18,
+				"common_line_id":	"line21"
+			},
+			"coordinates":	{
+				"x":	25,
+				"y":	21,
+				"width":	240,
+				"height":	102
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"isn",
+						"sortable":	true,
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	63
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"isn",
+								"mgformat":	"mgFormat",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line43"
+							},
+							"coordinates":	{
+								"x":	29,
+								"y":	43,
+								"width":	55,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"eo_type",
+						"sortable":	true,
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	48
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"eo_type",
+								"mgformat":	"mgFormat",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line43"
+							},
+							"coordinates":	{
+								"x":	92,
+								"y":	43,
+								"width":	27,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"Label7",
+				"text":	"isn",
+				"common_line_id":	"line156"
+			},
+			"coordinates":	{
+				"x":	44,
+				"y":	156,
+				"width":	15,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"isn",
+				"mgformat":	"mgFormat",
+				"attribute":	"N",
+				"common_line_id":	"line156"
+			},
+			"coordinates":	{
+				"x":	64,
+				"y":	156,
+				"width":	55,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}

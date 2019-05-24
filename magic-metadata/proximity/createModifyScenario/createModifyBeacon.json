@@ -1,0 +1,272 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"createModifyBeacon",
+		"component_path":	"proximity/createModifyScenario/",
+		"component_uniquename":	"createModifyScenario_createModifyBeacon"
+	},
+	"coordinates":	{
+		"x":	13,
+		"y":	11,
+		"width":	925,
+		"height":	356
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"lblScenarioName",
+				"text":	"Scenario Name *",
+				"common_line_id":	"line21"
+			},
+			"coordinates":	{
+				"x":	20,
+				"y":	21,
+				"width":	75,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"aBeaconName",
+				"mgformat":	"mgFormat",
+				"attribute":	"A",
+				"common_line_id":	"line21"
+			},
+			"coordinates":	{
+				"x":	100,
+				"y":	21,
+				"width":	800,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"lblTrigger",
+				"text":	"Trigger *",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	52,
+				"width":	75,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"cmbTriggerType",
+				"items_list":	"",
+				"attribute":	"N",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	96,
+				"y":	52,
+				"width":	68,
+				"height":	17
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"lblActivity",
+				"text":	"Activity *",
+				"common_line_id":	"line88"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	88,
+				"width":	75,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"cmbActivityType",
+				"items_list":	"",
+				"attribute":	"N",
+				"common_line_id":	"line88"
+			},
+			"coordinates":	{
+				"x":	96,
+				"y":	88,
+				"width":	68,
+				"height":	17
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"lblURL",
+				"text":	"aURL",
+				"common_line_id":	"line127"
+			},
+			"coordinates":	{
+				"x":	20,
+				"y":	127,
+				"width":	29,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"aURL",
+				"mgformat":	"mgFormat",
+				"attribute":	"A",
+				"common_line_id":	"line127"
+			},
+			"coordinates":	{
+				"x":	54,
+				"y":	127,
+				"width":	1284,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"lblTimeFrom",
+				"text":	"tTimeFrom",
+				"common_line_id":	"line158"
+			},
+			"coordinates":	{
+				"x":	20,
+				"y":	159,
+				"width":	53,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"tTimeFrom",
+				"attribute":	"T",
+				"common_line_id":	"line158"
+			},
+			"coordinates":	{
+				"x":	78,
+				"y":	159,
+				"width":	57,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	{
+				"font":	1
+			},
+			"props":	{
+				"id":	"lblTimeTo",
+				"text":	"tTimeTo",
+				"common_line_id":	"line158"
+			},
+			"coordinates":	{
+				"x":	158,
+				"y":	162,
+				"width":	42,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"tTimeTo",
+				"attribute":	"T",
+				"common_line_id":	"line158"
+			},
+			"coordinates":	{
+				"x":	205,
+				"y":	158,
+				"width":	57,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnCancel",
+				"format":	"Cancel",
+				"common_line_id":	"line192"
+			},
+			"coordinates":	{
+				"x":	48,
+				"y":	192,
+				"width":	40,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSave",
+				"format":	"Save",
+				"common_line_id":	"line192"
+			},
+			"coordinates":	{
+				"x":	97,
+				"y":	192,
+				"width":	39,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

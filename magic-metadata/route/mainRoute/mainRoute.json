@@ -1,0 +1,104 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"mainRoute",
+		"component_path":	"route/mainRoute/",
+		"component_uniquename":	"mainRoute_mainRoute"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	795,
+		"height":	574
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnEvents",
+				"format":	"Events",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	5,
+				"width":	39,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnListing",
+				"format":	"Listing",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	51,
+				"y":	4,
+				"width":	39,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnProximity",
+				"format":	"Beacon",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	101,
+				"y":	4,
+				"width":	56,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"routeScenario",
+				"format":	"Scenario",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	3,
+				"width":	60,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"magicRoute",
+				"is_router_outlet":	true,
+				"default_outlet":	true,
+				"common_line_id":	"line33"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	33,
+				"width":	779,
+				"height":	533
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

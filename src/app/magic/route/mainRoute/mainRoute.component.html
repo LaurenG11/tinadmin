@@ -1,0 +1,40 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="mainRoute"
+    >
+        <div style="display: flex; flex-direction: row">
+            <button
+                mat-raised-button
+                color="primary"
+                magic="btnEvents"
+            >
+                Events</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="btnListing"
+            >
+                Listing</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="btnProximity"
+            >
+                Beacon</button>
+            <button
+                mat-raised-button
+                color="primary"
+                magic="routeScenario"
+            >
+                Scenario</button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <router-outlet magic="magicRoute">
+            </router-outlet>
+        </div>
+    </div>
+</div>

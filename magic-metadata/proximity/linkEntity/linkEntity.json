@@ -1,0 +1,148 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"linkEntity",
+		"window_type":	12,
+		"component_path":	"proximity/linkEntity/",
+		"component_uniquename":	"linkEntity_linkEntity"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	384,
+		"height":	320
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnEntity",
+				"format":	"Assign Entity",
+				"common_line_id":	"line9"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	9,
+				"width":	99,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"cmbEntity",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"items_list":	"",
+				"attribute":	"N",
+				"common_line_id":	"line9"
+			},
+			"coordinates":	{
+				"x":	113,
+				"y":	10,
+				"width":	236,
+				"height":	17
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"tblEntity",
+				"table_row_height":	26,
+				"table_title_height":	18,
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	42,
+				"width":	341,
+				"height":	223
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"clmEntity",
+						"column_title":	"aEntityName",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	280
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"aEntityName",
+								"mgformat":	"mgFormat",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line64"
+							},
+							"coordinates":	{
+								"x":	13,
+								"y":	64,
+								"width":	252,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	47
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnRemove",
+								"format":	"Remove",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line64"
+							},
+							"coordinates":	{
+								"x":	293,
+								"y":	64,
+								"width":	39,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

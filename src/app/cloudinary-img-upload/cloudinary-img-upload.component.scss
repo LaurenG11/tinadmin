@@ -1,0 +1,44 @@
+.my-label {
+    width: 122px;
+    height: 122px;
+    display: block;
+    cursor: pointer;
+}
+
+.m-down-8 {
+    margin: 0 0 8px 0;
+}
+
+.add-image {
+    background: url(/assets/images/add-image.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.add-btn {
+    padding: 0 !important;
+    border: 3px solid rgba(0, 0, 0, 0.12);
+}
+
+.hidden-status {
+    overflow-y: scroll;
+    display: none;
+}
+
+.dwd-info {
+    display: inline-block;
+    padding-left: 24px;
+}
+
+.vis-hide {
+    display: none;
+}
+
+label.upload_button.my-label.upload_button.my-label {
+    margin-bottom: 15px;
+    width: 128px;
+    height: 128px;
+    display: block;
+    border: 3px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}

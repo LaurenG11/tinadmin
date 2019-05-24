@@ -1,0 +1,19 @@
+<form
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="roottest"
+        class="roottestProps"
+    >
+        <div style="display: flex; flex-direction: row">
+            <router-outlet
+                magic="Subform1"
+                class="Subform1Props"
+                name="Subform1"
+            >
+            </router-outlet>
+        </div>
+    </div>
+</form>
