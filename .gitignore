@@ -46,3 +46,5 @@ testem.log
 Thumbs.db
 TIN/Exports/20190726.xml
 TIN/TIN.optback
+TIN/mgerror.log
+TIN/TIN.suo
