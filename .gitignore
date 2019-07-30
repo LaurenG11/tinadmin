@@ -4,7 +4,7 @@
 /TIN/TIN.lock
 <<<<<<< Updated upstream
 /TIN/sqlite.SQLite
-/TIN/mgerror.log
+TIN/mgerror.log
 =======
 /TIN/Exports
 >>>>>>> Stashed changes
@@ -46,3 +46,4 @@ testem.log
 .DS_Store
 Thumbs.db
 TIN/Exports/20190726.xml
+TIN/TIN.optback
