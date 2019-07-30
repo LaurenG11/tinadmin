@@ -19,9 +19,10 @@
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <TSK_PARAMS val="3"/>
+            <TSK_PARAMS val="4"/>
             <ParametersAttributes>
               <Attr MgAttr="A"/>
+              <Attr MgAttr="N"/>
               <Attr MgAttr="A"/>
               <Attr MgAttr="O"/>
             </ParametersAttributes>
@@ -32,9 +33,9 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737180" _time="34406" date="01/05/2019" time="09:33:26"/>
+          <LastModified _date="737266" _time="32027" date="26/07/2019" time="08:53:47"/>
         </Header>
-        <ItemIsn val="3"/>
+        <ItemIsn val="5"/>
         <Resource>
           <Columns>
             <Column id="1" name="iaPassTemplateId">
@@ -46,11 +47,19 @@
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
+            <Column id="4" name="inTicketTypeIsn">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="128"/>
+                <DbColumnName id="178"/>
+                <Type id="179"/>
+                <UserType id="180"/>
+              </PropertyList>
+            </Column>
             <Column id="3" name="ibPassPayload">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="1000"/>
-                <Size id="174" val="1000"/>
+                <Picture id="157" valUnicode="8000"/>
+                <Size id="174" val="8000"/>
                 <_Flip id="194"/>
                 <_FieldStyle id="276" val="1"/>
               </PropertyList>
@@ -155,6 +164,31 @@
                 </Select>
               </LogicLine>
               <LogicLine>
+                <Remark FlowIsn="9">
+                  <Type val="0"/>
+                  <Text val="**event ticket, admission, coupon**"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="10">
+                  <Type val="0"/>
+                  <Text val="**we are using the same template for all types due to config restrictions at passcreator**"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4" FlowIsn="8" id="4">
+                  <Column val="4"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Select FieldID="3" FlowIsn="5" id="3">
                   <Column val="3"/>
                   <Type val="V"/>
@@ -212,7 +246,7 @@
                       <Skip val="N"/>
                     </Argument>
                     <Argument>
-                      <Variable val="3"/>
+                      <Expression val="5"/>
                       <Skip val="N"/>
                     </Argument>
                     <Argument>
@@ -254,6 +288,14 @@
           </Expression>
           <Expression id="3">
             <ExpSyntax val="'Authorization: 5bb9ff355505b002438561'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="5">
+            <ExpSyntax val="Trim({0,3})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="6">
+            <ExpSyntax val="Trim({0,1})"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>

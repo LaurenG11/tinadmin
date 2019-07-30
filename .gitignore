@@ -2,8 +2,12 @@
 
 # Magic lock file
 /TIN/TIN.lock
+<<<<<<< Updated upstream
 /TIN/sqlite.SQLite
 /TIN/mgerror.log
+=======
+/TIN/Exports
+>>>>>>> Stashed changes
 # compiled output
 /dist
 /tmp
@@ -41,3 +45,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+TIN/Exports/20190726.xml

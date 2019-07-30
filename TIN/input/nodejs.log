@@ -1,5 +1,14 @@
 Generation output:
 Generate New Project
+Generate Route Map
+
+C:\Magic\Web\tinadmingit>echo off 
+generating routes map
+    routes length: 1
+genRouteFile : []  createRootRoute = true
+    generating 4 root routes
+UPDATE src/app/app.routes.ts (792 bytes)
+
 
  Generate Modules
 
@@ -28,16 +37,32 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file ./magic-metadata/eventListing/eventListing/eventListing.json
-*** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component eventListing
-*** Step 3: generate components. (1 components) ***
-[>] generate component eventListing
+[>] Loading JSON file ./magic-metadata/proximity/scenario/proximity.json
+[>] Loading JSON file ./magic-metadata/proximity/listScenario/listBeacon.json
+[>] Loading JSON file ./magic-metadata/proximity/createModifyScenario/createModifyBeacon.json
+[>] Loading JSON file ./magic-metadata/route/mainRoute/mainRoute.json
+*** Step 2: Processing JSON files -  (4 components) ***
+[>] Processing JSON file for component proximity
+[>] Processing JSON file for component listBeacon
+[>] Processing JSON file for component createModifyBeacon
+[>] Processing JSON file for component mainRoute
+*** Step 3: generate components. (4 components) ***
+[>] generate component proximity
+[>] generate component listBeacon
+[>] generate component createModifyBeacon
+[>] generate component mainRoute
 [>] Step 4: components-list.
+ Total old components: 16, added components: 3. 
 [>]  ********************************* E N D    GENERATE *********************************
-UPDATE src/app/magic/eventListing/eventListing/eventListing.component.ts (492 bytes)
-UPDATE src/app/magic/eventListing/eventListing/eventListing.component.html (10030 bytes)
-UPDATE src/app/magic/component-list.g.ts (2656 bytes)
+CREATE src/app/magic/proximity/scenario/proximity.component.ts (317 bytes)
+CREATE src/app/magic/proximity/scenario/proximity.component.html (377 bytes)
+CREATE src/app/magic/proximity/listScenario/listBeacon.component.ts (509 bytes)
+CREATE src/app/magic/proximity/listScenario/listBeacon.component.html (12950 bytes)
+CREATE src/app/magic/proximity/createModifyScenario/createModifyBeacon.component.ts (344 bytes)
+CREATE src/app/magic/proximity/createModifyScenario/createModifyBeacon.component.html (4430 bytes)
+UPDATE src/app/magic/route/mainRoute/mainRoute.component.ts (317 bytes)
+UPDATE src/app/magic/route/mainRoute/mainRoute.component.html (1063 bytes)
+UPDATE src/app/magic/component-list.g.ts (4318 bytes)
 
 
 

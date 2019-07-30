@@ -35,9 +35,9 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737180" _time="46759" date="01/05/2019" time="12:59:19"/>
+          <LastModified _date="737200" _time="49667" date="21/05/2019" time="13:47:47"/>
         </Header>
-        <ItemIsn val="8"/>
+        <ItemIsn val="10"/>
         <Resource>
           <Columns>
             <Column id="1" name="inRoute">
@@ -85,6 +85,15 @@
                 <_Whole id="182" val="10"/>
                 <_Negative id="192"/>
                 <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="10" name="aPredictHQReturnPayload">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="12000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="12000"/>
+                <_Flip id="194"/>
               </PropertyList>
             </Column>
             <Column id="4" name="Route name">
@@ -209,7 +218,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
-                  <_DitIndexForToolkit val="3"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="Y"/>
                   <Condition val="Y"/>
@@ -229,7 +237,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
-                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -242,7 +249,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
-                  <_DitIndexForToolkit val="8"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -255,7 +261,24 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
-                  <_DitIndexForToolkit val="10"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="27">
+                  <Type val="0"/>
+                  <Text val="**predictHQ for listings**"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="10" FlowIsn="28" id="10">
+                  <Column val="10"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -302,6 +325,12 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="40">
+                  <Type val="2"/>
+                  <Text val="**routes**"/>
+                </Remark>
               </LogicLine>
               <LogicLine>
                 <CallTask FlowIsn="10">
@@ -363,6 +392,54 @@
                   <Direction val="C"/>
                 </CallTask>
               </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="53">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="834"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="2"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="Y"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="63">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="840"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="2"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="Y"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="4" propagate="78">
@@ -396,7 +473,7 @@
                   <WithValue val="7"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
+                  <Condition Exp="12"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
@@ -407,7 +484,7 @@
                   <WithValue val="8"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
+                  <Condition Exp="13"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
@@ -418,16 +495,106 @@
                   <WithValue val="9"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Condition Exp="14"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="26">
+                  <Type val="2"/>
+                  <Text val="**call predict HQ"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="24">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="799"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="2"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Expression val="6"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="10"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="50">
+                  <FieldID val="10"/>
+                  <WithValue val="10"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
               </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="51">
+                  <FieldID val="10"/>
+                  <WithValue val="11"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="25">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="800"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="10"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="11" _last_test_id="11" id="1">
+          <FormEntry _last_isn="13" _last_test_id="13" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="795"/>
               <Height id="24" val="574"/>
@@ -435,9 +602,35 @@
               <_Comment id="218"/>
               <FormName id="311" valUnicode="mainRoute"/>
             </PropertyList>
+            <Control PDOD="128" _test_id="13" id="13">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="161"/>
+                <Y id="22" val="3"/>
+                <Width id="23" val="60"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="routeScenario"/>
+                <Format id="82" valUnicode="Scenario"/>
+                <Arguments id="126">
+                  <Arguments>
+                    <Argument>
+                      <Expression val="16"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                  </Arguments>
+                </Arguments>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="594"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
             <Control PDOD="128" _test_id="5" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="150"/>
+                <X id="21" val="51"/>
                 <Y id="22" val="4"/>
                 <Width id="23" val="39"/>
                 <Height id="24" val="22"/>
@@ -447,6 +640,32 @@
                   <Arguments>
                     <Argument>
                       <Expression val="3"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                  </Arguments>
+                </Arguments>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="594"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="12" id="12">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="101"/>
+                <Y id="22" val="4"/>
+                <Width id="23" val="56"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="btnProximity"/>
+                <Format id="82" valUnicode="Beacon"/>
+                <Arguments id="126">
+                  <Arguments>
+                    <Argument>
+                      <Expression val="15"/>
                       <Skip val="N"/>
                     </Argument>
                     <Argument>
@@ -487,102 +706,6 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="1" _test_id="3" id="4">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="2"/>
-                </Model>
-                <X id="21" val="91"/>
-                <Y id="22" val="6"/>
-                <Width id="23" val="55"/>
-                <Height id="24" val="18"/>
-                <Data FieldID="2" id="43"/>
-                <ControlName id="46" val="eoIsn"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="4" id="3">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="eoIsn"/>
-                <X id="21" val="57"/>
-                <Y id="22" val="7"/>
-                <Width id="23" val="28"/>
-                <Height id="24" val="14"/>
-                <ControlName id="46" val="Label4"/>
-                <Font id="50" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="7" id="7">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="inLongitude"/>
-                <X id="21" val="193"/>
-                <Y id="22" val="7"/>
-                <Width id="23" val="56"/>
-                <Height id="24" val="14"/>
-                <ControlName id="46" val="Label7"/>
-                <Font id="50" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="17" _test_id="6" id="6">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="6"/>
-                </Model>
-                <X id="21" val="254"/>
-                <Y id="22" val="8"/>
-                <Width id="23" val="72"/>
-                <Height id="24" val="18"/>
-                <Data FieldID="6" id="43"/>
-                <ControlName id="46" val="inLongitude"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="9" id="9">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="inLatitude"/>
-                <X id="21" val="331"/>
-                <Y id="22" val="10"/>
-                <Width id="23" val="47"/>
-                <Height id="24" val="14"/>
-                <ControlName id="46" val="Label9"/>
-                <Font id="50" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="17" _test_id="8" id="8">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="7"/>
-                </Model>
-                <X id="21" val="383"/>
-                <Y id="22" val="10"/>
-                <Width id="23" val="72"/>
-                <Height id="24" val="18"/>
-                <Data FieldID="7" id="43"/>
-                <ControlName id="46" val="inLatitude"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="11" id="11">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="inOffset"/>
-                <X id="21" val="460"/>
-                <Y id="22" val="10"/>
-                <Width id="23" val="36"/>
-                <Height id="24" val="14"/>
-                <ControlName id="46" val="Label11"/>
-                <Font id="50" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="1" _test_id="10" id="10">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="8"/>
-                </Model>
-                <X id="21" val="501"/>
-                <Y id="22" val="10"/>
-                <Width id="23" val="60"/>
-                <Height id="24" val="18"/>
-                <Data FieldID="8" id="43"/>
-                <ControlName id="46" val="inOffset"/>
-              </PropertyList>
-            </Control>
             <Control PDOD="128" _test_id="2" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
                 <X id="21" val="9"/>
@@ -604,12 +727,28 @@
             <ExpSyntax val="'Events'"/>
             <ExpAttribute val="A"/>
           </Expression>
+          <Expression id="10">
+            <ExpSyntax val="RepStr({0,10},ASCIIChr(13),'')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="11">
+            <ExpSyntax val="RepStr({0,10},ASCIIChr(10),'')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
           <Expression id="2">
             <ExpSyntax val="'GET'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="3">
             <ExpSyntax val="'EventListing'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="15">
+            <ExpSyntax val="'Proximity'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="16">
+            <ExpSyntax val="'Scenario'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="4">
@@ -621,7 +760,7 @@
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="6">
-            <ExpSyntax val="'http://tin.info/api/v1/events/get_events_phq?offset=0&amp;lat=44.781662&amp;lng=20.484732'"/>
+            <ExpSyntax val="'http://tin.info/api/v1/events/get_events_phq?offset='&amp;Trim(Str({0,8},'10'))&amp;'&amp;lat='&amp;Trim(Str({0,7},'8.3'))&amp;'&amp;lng='&amp;Trim(Str({0,6},'8.3'))"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="7">
@@ -635,6 +774,18 @@
           <Expression id="9">
             <ExpSyntax val="0"/>
             <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="12">
+            <ExpSyntax val="{0,6}=0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="13">
+            <ExpSyntax val="{0,7}=0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="14">
+            <ExpSyntax val="{0,8}=0"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
       </Task>

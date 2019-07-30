@@ -35,7 +35,7 @@
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
           <ToBeMigrated val="Y"/>
-          <LastModified _date="737110" _time="52590" date="20/02/2019" time="14:36:30"/>
+          <LastModified _date="737266" _time="32213" date="26/07/2019" time="08:56:53"/>
         </Header>
         <ItemIsn val="7"/>
         <Resource>
@@ -66,8 +66,8 @@
             <Column id="3" name="ibMessage">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="500"/>
-                <Size id="174" val="500"/>
+                <Picture id="157" valUnicode="8000"/>
+                <Size id="174" val="8000"/>
                 <_Flip id="194"/>
                 <_FieldStyle id="276" val="1"/>
               </PropertyList>
@@ -358,17 +358,13 @@
               <GridY id="39" val="2"/>
               <BorderStyle id="64" val="1"/>
               <_Comment id="218"/>
-              <FormName Exp="1" id="311" valUnicode="not_used"/>
+              <FormName id="311" valUnicode="not_used"/>
               <_TabbingOrder id="318" val="1"/>
               <PersistentFormState id="493"/>
             </PropertyList>
           </FormEntry>
         </TaskForms>
         <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="'EL23_HTTPCall'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
           <Expression id="2">
             <ExpSyntax val="HTTPCall({0,1},{0,2},{0,3},{0,4})"/>
             <ExpAttribute val="O"/>

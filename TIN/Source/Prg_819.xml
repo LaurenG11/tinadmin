@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737179" _time="44010" date="30/04/2019" time="12:13:30"/>
+          <LastModified _date="737193" _time="45027" date="14/05/2019" time="12:30:27"/>
         </Header>
         <ItemIsn val="7"/>
         <Resource>
@@ -417,10 +417,6 @@
           <Expression id="6">
             <ExpSyntax val="RepStr(StrToken(StrToken({0,4},LoopCounter(),''),2,':'),'&quot;','')"/>
             <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="9">
-            <ExpSyntax val="LoopCounter()&lt;=({0,2}-{0,1}+1)"/>
-            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="12">
             <ExpSyntax val="LoopCounter()&lt;10"/>

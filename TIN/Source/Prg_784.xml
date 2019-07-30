@@ -36,7 +36,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737181" _time="30881" date="02/05/2019" time="08:34:41"/>
+          <LastModified _date="737181" _time="45524" date="02/05/2019" time="12:38:44"/>
         </Header>
         <ItemIsn val="33"/>
         <Resource>
@@ -937,96 +937,6 @@
                   <Direction val="C"/>
                 </CallTask>
               </LogicLine>
-              <LogicLine>
-                <Remark FlowIsn="41">
-                  <Type val="2"/>
-                  <Text val="**cal tin.api wrapper for predict_hq events**"/>
-                </Remark>
-              </LogicLine>
-              <LogicLine>
-                <CallTask FlowIsn="42">
-                  <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
-                  <TaskID comp="-1" obj="799"/>
-                  <Lock val="N"/>
-                  <Arguments>
-                    <Argument>
-                      <Expression val="1"/>
-                      <Skip val="N"/>
-                    </Argument>
-                    <Argument>
-                      <Expression val="7"/>
-                      <Skip val="N"/>
-                    </Argument>
-                    <Argument>
-                      <Skip val="Y"/>
-                    </Argument>
-                    <Argument>
-                      <Skip val="Y"/>
-                    </Argument>
-                    <Argument>
-                      <Variable val="19"/>
-                      <Skip val="N"/>
-                    </Argument>
-                  </Arguments>
-                  <Wait val="Y"/>
-                  <SyncData val="N"/>
-                  <IsRoute val="N"/>
-                  <RetainFocus val="N"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </CallTask>
-              </LogicLine>
-              <LogicLine>
-                <Update FlowIsn="43">
-                  <FieldID val="19"/>
-                  <WithValue val="12"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
-              </LogicLine>
-              <LogicLine>
-                <Update FlowIsn="146">
-                  <FieldID val="19"/>
-                  <WithValue val="13"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
-              </LogicLine>
-              <LogicLine>
-                <CallTask FlowIsn="44">
-                  <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
-                  <TaskID comp="-1" obj="800"/>
-                  <Lock val="N"/>
-                  <Arguments>
-                    <Argument>
-                      <Variable val="19"/>
-                      <Skip val="N"/>
-                    </Argument>
-                  </Arguments>
-                  <Wait val="Y"/>
-                  <SyncData val="N"/>
-                  <IsRoute val="N"/>
-                  <RetainFocus val="N"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </CallTask>
-              </LogicLine>
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="4" propagate="78">
@@ -1249,6 +1159,30 @@
             <Expanded val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
+              <LogicLine>
+                <CallTask FlowIsn="131">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="824"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="8"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
               <LogicLine>
                 <CallTask FlowIsn="51">
                   <OperationType val="P"/>
@@ -1526,10 +1460,6 @@
           </FormEntry>
         </TaskForms>
         <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="'GET'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
           <Expression id="2">
             <ExpSyntax val="'FALSE'LOG"/>
             <ExpAttribute val="B"/>
@@ -1550,10 +1480,6 @@
             <ExpSyntax val="AddDate(Date(), 1,0,0)"/>
             <ExpAttribute val="D"/>
           </Expression>
-          <Expression id="7">
-            <ExpSyntax val="'http://tin.info/api/v1/events/get_events_phq?offset='&amp;Trim(Str({0,33},'10'))&amp;'&amp;lat='&amp;Trim(Str({0,32},'3.8'))&amp;'&amp;lng='&amp;Trim(Str({0,31},'3.8'))"/>
-            <ExpAttribute val="A"/>
-          </Expression>
           <Expression id="8">
             <ExpSyntax val="2716"/>
             <ExpAttribute val="N"/>
@@ -1562,21 +1488,9 @@
             <ExpSyntax val="{0,8}"/>
             <ExpAttribute val="N"/>
           </Expression>
-          <Expression id="11">
-            <ExpSyntax val="Blb2File({0,19},'C:\Users\admin-tin-magic\predicthq')"/>
-            <ExpAttribute val="B"/>
-          </Expression>
           <Expression id="10">
             <ExpSyntax val="{0,6}"/>
             <ExpAttribute val="B"/>
-          </Expression>
-          <Expression id="12">
-            <ExpSyntax val="RepStr({0,19},ASCIIChr(13),'')"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="13">
-            <ExpSyntax val="RepStr({0,19},ASCIIChr(10),'')"/>
-            <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <EVNT DESC="tickets" FORCE_EXIT="N" id="1">
