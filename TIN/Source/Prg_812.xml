@@ -32,9 +32,9 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737193" _time="48997" date="14/05/2019" time="13:36:37"/>
+          <LastModified _date="737207" _time="36701" date="28/05/2019" time="10:11:41"/>
         </Header>
-        <ItemIsn val="72"/>
+        <ItemIsn val="75"/>
         <Resource>
           <DB id="2">
             <DataObject comp="-1" obj="339"/>
@@ -261,6 +261,13 @@
                 <UserType id="180"/>
               </PropertyList>
             </Column>
+            <Column id="46" name="aEventImage">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="48"/>
+                <StoredAs id="173" val="3"/>
+                <Definition id="175" val="2"/>
+              </PropertyList>
+            </Column>
             <Column id="16" name="dStartDate">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
@@ -281,12 +288,10 @@
             </Column>
             <Column id="20" name="lPaypalSuccess">
               <PropertyList model="FIELD">
-                <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="10"/>
-                <StoredAs id="173" val="1"/>
-                <Size id="174" val="10"/>
-                <_Flip id="194"/>
-                <_FieldStyle id="276" val="1"/>
+                <Model attr_obj="FIELD_LOGICAL" comp="-1" id="1" obj="1"/>
+                <StoredAs id="173" val="15"/>
+                <Size id="174" val="1"/>
+                <Definition id="175" val="2"/>
               </PropertyList>
             </Column>
             <Column id="23" name="aPaypalDetails">
@@ -297,6 +302,7 @@
                 <Size id="174" val="50"/>
                 <_Flip id="194"/>
                 <_FieldStyle id="276" val="1"/>
+                <PartOfDataview id="449" val="Y"/>
               </PropertyList>
             </Column>
           </Columns>
@@ -318,7 +324,7 @@
           <VarRange/>
           <TaskProperties>
             <SelectionTable val="N"/>
-            <ConfirmUpdate CNFU="Y"/>
+            <ConfirmUpdate CNFU="N"/>
             <ConfirmCancel val="N"/>
             <ErrorStrategy val="R"/>
             <LockingStrategy val="M"/>
@@ -612,7 +618,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="25"/>
+                  <_DitIndexForToolkit val="26"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="Y"/>
                   <Condition val="Y"/>
@@ -795,6 +801,19 @@
                 </Select>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="75" FlowIsn="556" id="75">
+                  <Column val="46"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Select FieldID="35" FlowIsn="119" id="35">
                   <Column val="16"/>
                   <Type val="V"/>
@@ -813,7 +832,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="146" Key="1" Mode="R" SortType="147" VIEW="27" VIEWS="4">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="146" Key="1" Mode="R" SortType="147" VIEW="28" VIEWS="4">
                   <DB comp="-1" obj="339"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
@@ -868,6 +887,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <REAL_VNAME_TXT val="currencySymbol"/>
+                  <_DitIndexForToolkit val="25"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -890,7 +910,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="26"/>
+                  <_DitIndexForToolkit val="27"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -903,7 +923,9 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="29"/>
                   <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
                   <Direction val="C"/>
@@ -915,8 +937,9 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="27"/>
+                  <_DitIndexForToolkit val="28"/>
                   <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
                   <Direction val="C"/>
@@ -972,17 +995,6 @@
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </CallTask>
-              </LogicLine>
-              <LogicLine>
-                <Update FlowIsn="227">
-                  <FieldID val="45"/>
-                  <WithValue val="16"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -1179,18 +1191,6 @@
                   <Direction val="C"/>
                 </Update>
               </LogicLine>
-              <LogicLine>
-                <RaiseEvent FlowIsn="486">
-                  <Event>
-                    <EventType val="U"/>
-                    <PublicObject comp="-1" obj="4"/>
-                  </Event>
-                  <Wait val="89"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </RaiseEvent>
-              </LogicLine>
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="10" propagate="78">
@@ -1266,6 +1266,17 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
+                <Update FlowIsn="550">
+                  <FieldID val="48"/>
+                  <WithValue val="39"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
                 <RaiseEvent FlowIsn="548">
                   <Event>
                     <EventType val="I"/>
@@ -1280,10 +1291,9 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
-          <LogicUnit id="11" propagate="78">
-            <Level val="V"/>
-            <Type val="C"/>
-            <FieldID val="48"/>
+          <LogicUnit id="13" propagate="78">
+            <Level val="R"/>
+            <Type val="P"/>
             <Scope val="S"/>
             <EngineDirective val="S"/>
             <ShowMessage val="Y"/>
@@ -1294,10 +1304,20 @@
             </Event>
             <Expanded val="1"/>
             <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="41" FlowIsn="590" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition Exp="40"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+            </LogicLines>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="51" _last_test_id="51" id="1">
+          <FormEntry _last_isn="55" _last_test_id="55" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="624"/>
               <Height id="24" val="456"/>
@@ -1603,6 +1623,19 @@
                 <Enabled id="62"/>
               </PropertyList>
             </Control>
+            <Control ISN_FATHER="27" _test_id="54" id="54">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="42"/>
+                </Model>
+                <X id="21" val="380"/>
+                <Y id="22" val="364"/>
+                <Width id="23" val="324"/>
+                <Height id="24" val="18"/>
+                <Data FieldID="42" id="43"/>
+                <ControlName id="46" val="currencySymbol"/>
+              </PropertyList>
+            </Control>
             <Control ISN_FATHER="27" PDOD="145" _test_id="29" id="29">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
@@ -1644,6 +1677,32 @@
                 <ControlName id="46" val="aPaypalDetails"/>
                 <Visible id="61"/>
                 <Format id="82" valUnicode="30"/>
+                <CustomProperties id="713"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="27" PDOD="192" _test_id="52" id="52">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="45"/>
+                </Model>
+                <X id="21" val="304"/>
+                <Y id="22" val="381"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="18"/>
+                <Data FieldID="45" id="43"/>
+                <ControlName id="46" val="lPaypalSuccess"/>
+                <Visible Exp="14" id="61"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="27" _test_id="55" id="55">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text id="19" valUnicode="currencySymbol"/>
+                <X id="21" val="420"/>
+                <Y id="22" val="384"/>
+                <Width id="23" val="79"/>
+                <Height id="24" val="14"/>
+                <ControlName id="46" val="Label55"/>
+                <Font id="50" val="1"/>
               </PropertyList>
             </Control>
           </FormEntry>
@@ -1651,6 +1710,14 @@
         <Expressions>
           <Expression id="3">
             <ExpSyntax val="{0,70}>0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="41">
+            <ExpSyntax val="'details'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="40">
+            <ExpSyntax val="{0,48}='approved'"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="36">
@@ -1683,10 +1750,6 @@
           </Expression>
           <Expression id="12">
             <ExpSyntax val="{0,40}"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="16">
-            <ExpSyntax val="'false'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="18">
@@ -1737,6 +1800,10 @@
             <ExpSyntax val="'Your wallet passes are here: ' &amp;Trim({0,26})"/>
             <ExpAttribute val="A"/>
           </Expression>
+          <Expression id="39">
+            <ExpSyntax val="''"/>
+            <ExpAttribute val="A"/>
+          </Expression>
         </Expressions>
         <EVNT DESC="AddToBasket" FORCE_EXIT="N" id="1">
           <Event>
@@ -1776,7 +1843,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="737193" _time="48825" date="14/05/2019" time="13:33:45"/>
+            <LastModified _date="737201" _time="49133" date="22/05/2019" time="13:38:53"/>
           </Header>
           <ItemIsn val="25"/>
           <Resource>
@@ -2737,7 +2804,7 @@
               <External val="N"/>
               <FormType val="N"/>
               <DotNetObjectExists val="N"/>
-              <LastModified _date="737183" _time="49115" date="04/05/2019" time="13:38:35"/>
+              <LastModified _date="737201" _time="49318" date="22/05/2019" time="13:41:58"/>
             </Header>
             <ItemIsn val="14"/>
             <Resource>
@@ -3219,20 +3286,15 @@
                     </Update>
                   </LogicLine>
                   <LogicLine>
-                    <Update FlowIsn="19">
-                      <FieldID val="9"/>
-                      <WithValue val="10"/>
-                      <Incremental val="N"/>
-                      <ForcedUpdate val="Y"/>
-                      <Condition val="Y"/>
-                      <Modifier val="B"/>
-                      <Direction val="C"/>
-                    </Update>
+                    <Remark FlowIsn="71">
+                      <Type val="2"/>
+                      <Text val="**no thumbnails at the moment**"/>
+                    </Remark>
                   </LogicLine>
                   <LogicLine>
                     <Update FlowIsn="23">
                       <FieldID val="10"/>
-                      <WithValue val="10"/>
+                      <WithValue val="15"/>
                       <Incremental val="N"/>
                       <ForcedUpdate val="Y"/>
                       <Condition val="Y"/>
@@ -3356,10 +3418,6 @@
                 <ExpSyntax val="Str({16,5},'9.2')"/>
                 <ExpAttribute val="A"/>
               </Expression>
-              <Expression id="10">
-                <ExpSyntax val="'http:\/\/res.cloudinary.com\/zuguhu\/image\/upload\/v1539010166\/angular\/state_l8tjrz.png'"/>
-                <ExpAttribute val="A"/>
-              </Expression>
               <Expression id="8">
                 <ExpSyntax val="VarIndex('5cc0535f85e235%68116450')"/>
                 <ExpAttribute val="N"/>
@@ -3378,6 +3436,10 @@
               </Expression>
               <Expression id="13">
                 <ExpSyntax val="{1,34}"/>
+                <ExpAttribute val="A"/>
+              </Expression>
+              <Expression id="15">
+                <ExpSyntax val="{1,75}"/>
                 <ExpAttribute val="A"/>
               </Expression>
             </Expressions>

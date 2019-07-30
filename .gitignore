@@ -2,6 +2,7 @@
 
 # Magic lock file
 /TIN/TIN.lock
+/TIN/Exports
 # compiled output
 /dist
 /tmp

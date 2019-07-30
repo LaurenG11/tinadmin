@@ -30,16 +30,16 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737186" _time="40924" date="07/05/2019" time="11:22:04"/>
+          <LastModified _date="737255" _time="43711" date="15/07/2019" time="12:08:31"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
           <Columns>
-            <Column id="1" name="iaJsonPayload">
+            <Column id="1" name="ibJsonPayload">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="12000"/>
-                <Size id="174" val="12000"/>
+                <Picture id="157" valUnicode="20000"/>
+                <Size id="174" val="20000"/>
                 <_Flip id="194"/>
                 <_FieldStyle id="276" val="1"/>
               </PropertyList>
@@ -168,17 +168,6 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="10">
-                  <FieldID val="1"/>
-                  <WithValue val="1"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
-              </LogicLine>
-              <LogicLine>
                 <Evaluate FlowIsn="12">
                   <Expression val="2"/>
                   <Condition val="Y"/>
@@ -215,10 +204,6 @@
           </FormEntry>
         </TaskForms>
         <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="RepStr({0,1},'''','\u2019')"/>
-            <ExpAttribute val="A"/>
-          </Expression>
           <Expression id="2">
             <ExpSyntax val="Blb2File({0,1},'C:\Users\admin-tin-magic\predicthq')"/>
             <ExpAttribute val="B"/>
@@ -339,7 +324,7 @@
           <Header Description="insert" ISN_2="3" LastIsn="3" id="800">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
-            <SQL val="Y"/>
+            <SQL val="N"/>
             <ReturnValue>
               <ReturnValueAttr/>
               <ParametersAttributes/>
@@ -349,9 +334,18 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="737180" _time="64164" date="01/05/2019" time="17:49:24"/>
+            <LastModified _date="737254" _time="57539" date="14/07/2019" time="15:58:59"/>
           </Header>
+          <ItemIsn val="4"/>
           <Resource>
+            <DB id="1">
+              <DataObject comp="-1" obj="369"/>
+              <Access val="W"/>
+              <Share val="W"/>
+              <Open val="N"/>
+              <Cache val="Y"/>
+              <IdentifyRowModifications val="84"/>
+            </DB>
             <Columns/>
           </Resource>
           <Information>
@@ -364,8 +358,8 @@
             </Sort>
             <ForceRecordDelete DEL="N"/>
             <EndTaskCondition val="Y"/>
-            <EvaluateEndCondition val="B"/>
-            <InitialMode val="E"/>
+            <EvaluateEndCondition val="A"/>
+            <InitialMode val="M"/>
             <Locate Direction="A"/>
             <Range Direction="A"/>
             <VarRange/>
@@ -386,7 +380,7 @@
             <SIDE_WIN>
               <AllowOptions val="N"/>
               <AllowQuery val="Y"/>
-              <AllowModify val="N"/>
+              <AllowModify val="Y"/>
               <AllowCreate val="N"/>
               <AllowDelete val="N"/>
               <AllowLocate val="Y"/>
@@ -411,14 +405,6 @@
               <Direction val="V"/>
             </BOX>
           </Information>
-          <SQL_FORM DB="tinAzureSQLDb" RESTAB="Memory">
-            <SQL_STMT_U val="insert into predictHQ&#xD;&#xA;select ':1'"/>
-            <INARG>
-              <Arguments>
-                <Argument Parent="1" Variable="1"/>
-              </Arguments>
-            </INARG>
-          </SQL_FORM>
           <TaskLogic>
             <LogicUnit id="1" propagate="78">
               <Level val="R"/>
@@ -433,11 +419,47 @@
               </Event>
               <LogicLines>
                 <LogicLine>
-                  <DATAVIEW_SRC FlowIsn="1" Type="Q">
+                  <DATAVIEW_SRC FlowIsn="1" Type="M">
                     <Condition val="N"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </DATAVIEW_SRC>
+                </LogicLine>
+                <LogicLine>
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="4" Key="2" Mode="A" SortType="5" VIEW="1" VIEWS="2">
+                    <DB comp="-1" obj="369"/>
+                    <Expanded val="1"/>
+                    <Condition val="Y"/>
+                  </LNK>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="3" FlowIsn="8" id="3">
+                    <ASS val="2"/>
+                    <Column val="2"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="2" FlowIsn="6" id="2">
+                    <ASS val="1"/>
+                    <Column val="1"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <END_LINK FlowIsn="5"/>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
@@ -450,6 +472,16 @@
               </PropertyList>
             </FormEntry>
           </TaskForms>
+          <Expressions>
+            <Expression id="1">
+              <ExpSyntax val="{1,1}"/>
+              <ExpAttribute val="O"/>
+            </Expression>
+            <Expression id="2">
+              <ExpSyntax val="1"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+          </Expressions>
         </Task>
       </Task>
     </Programs>

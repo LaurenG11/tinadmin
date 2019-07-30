@@ -25,10 +25,10 @@
           <External val="N"/>
           <Offline val="N"/>
           <Closeopentasks val="N"/>
-          <RunProjectAs val="W"/>
+          <RunProjectAs val="O"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="737192" _time="31705" date="13/05/2019" time="08:48:25"/>
+          <LastModified _date="737224" _time="45952" date="14/06/2019" time="12:45:52"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>

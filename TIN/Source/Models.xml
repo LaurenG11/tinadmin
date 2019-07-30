@@ -4,8 +4,13 @@
   <Header>
     <Version val="14050.00"/>
     <WithIsn val="Y"/>
-    <LastIsn val="474"/>
-    <LastIsnFolder val="0"/>
+    <LastIsn val="477"/>
+    <LastIsnFolder val="3"/>
+    <Folders>
+      <Folder id="1">
+        <Name val="proximity"/>
+      </Folder>
+    </Folders>
   </Header>
 
   <ModelsRepository>
@@ -7547,6 +7552,32 @@
           <Size id="174" val="28"/>
           <_FieldStyle id="276" val="1"/>
           <Content id="434" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object Public="requestPostBody" id="477" name="requestPostBody">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_BLOB" id="1"/>
+          <Size id="174" val="28"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" id="475" name="BeaconUuid">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="200"/>
+          <Size id="174" val="200"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" id="476" name="LatitudeLongitude">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="3.6"/>
+          <_Dec id="181" val="6"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192"/>
+          <DefaultStorage id="274"/>
+          <_FieldStyle id="276" val="1"/>
         </PropertyList>
       </Object>
     </Models>
